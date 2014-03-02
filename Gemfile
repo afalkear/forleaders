@@ -16,7 +16,7 @@ gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.0.0'
 
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
-# gem 'therubyracer', platforms: :ruby
+gem 'therubyracer', platforms: :ruby
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
@@ -27,8 +27,17 @@ gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 1.2'
 
+# use twitter bootstrap
+gem 'less-rails-bootstrap'
+
 group :development do
   gem 'git-pivotal-tracker-integration'
+end
+
+group :development, :test do
+  gem 'rspec-rails', '~> 3.0.0.beta'
+  gem 'figaro'
+  # Use sqlite3 as the database for Active Record
 end
 
 group :doc do
