@@ -1,0 +1,278 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background-color: #f5f5f5;
+}
+
+#footer img{
+  height: 100%;
+}
+
+.jumbotron p{
+  text-align: center;
+}
+
+.jumbotron h1{
+  text-align: center;
+}
+
+img.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container {
+  width: auto;
+  /*max-width: 680px;*/
+  padding: 0 15px;
+}
+.container .text-muted {
+  margin: 20px 0;
+}
+
+
+
+/* HEADER */
+
+.header-container {
+  min-height: 113px;
+  background: #273451 url("../images/u4774-grad.png") repeat-x left top;
+  background: -webkit-gradient(linear, center top, center bottom, from(#000B1A),color-stop(80%, #273451));
+  background: -webkit-linear-gradient(top,#000B1A ,#273451 80%);
+  background: -moz-linear-gradient(top,#000B1A ,#273451 80%);
+  background: -ms-linear-gradient(top,#000B1A ,#273451 80%);
+  background: -o-linear-gradient(top,#000B1A ,#273451 80%);
+  background: linear-gradient(to bottom,#000B1A ,#273451 80%);
+  border-style: none;
+  border-color: transparent;
+  position: relative;
+}
+
+.header-main-row {
+  min-height: 113px;
+}
+
+.image-row {
+ min-height: 113px;
+}
+
+.image-row a {
+  line-height: 113px;
+}
+
+.image-row img {
+ padding-top: 5px;
+}
+
+.teaching-phrase {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  letter-spacing: 2px;
+  color: #D3BB69;
+  min-height: 83px;
+  line-height: 83px;
+  position: relative;
+  width: 100%;
+}
+.countries-header {
+  min-height: 20px;
+  line-height: 20px;
+  color: white;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: 700;
+}
+
+.teaching-phrase-location {
+  position: absolute;
+  top: 10px;
+  right: 0px;
+}
+
+/* NAVBAR */
+
+.navbar .navbar-nav {
+  display: inline-block;
+  float: none;
+}
+
+.navbar .navbar-collapse {
+  text-align: center;
+}
+
+#my-affix {
+  background-color: white;
+  border-width: 0px;
+}
+
+.affix {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 100;
+}
+
+.navbar-nav a{
+  font-family: 'Open Sans', sans-serif;
+  letter-spacing: 3px;
+  color: #273451;
+  text-align: center;
+  font-weight: 700;
+}
+
+.navbar-nav > li > a {
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+
+.navbar {
+  margin-bottom: 0px;
+  min-height: 0px;
+}
+
+/* SLIDESHOW */
+
+.carousel.container {
+  height: 403px;
+}
+.slide-images {
+  width: 100%;
+}
+
+.carousel-inner {
+  max-height: 400px !important;
+}
+
+.carousel-inner .item {
+  max-height: 400px !important; 
+}
+
+.carousel-caption a {
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  letter-spacing: 2px;
+  font-size: 36px;
+  font-weight: 400;
+}
+
+.carousel-caption a:hover {
+  text-decoration: none;
+}
+
+.you-emphasis {
+  font-weight: 700;
+}
+
+.carousel-control .glyphicon {
+  font-size: 60px;
+}
+
+.carousel-control .glyphicon-circle-arrow-left {
+  position: absolute;
+  top: 50%;
+  z-index: 5;
+  display: inline-block;
+  font-size: 60px;
+}
+
+.carousel-control .glyphicon-circle-arrow-right {
+  position: absolute;
+  top: 50%;
+  z-index: 5;
+  display: inline-block;
+  font-size: 60px;
+  right: 50%;
+}
+
+@media screen and (max-width: 568px) {
+  .carousel-caption a {
+    font-size:20px;
+    }
+}
+
+/* PROGRAMMES */
+
+.programme-container {
+  min-height: 225px;
+}
+
+.programme-title {
+  text-align: center;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  letter-spacing: 2px;
+  font-weight: 700;
+}
+
+.programme-option {
+  text-align: center;
+  border-left-style: solid;
+  border-color: #565561;
+  border-width: thin;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 10px;
+  top: 10px;
+}
+
+.with-left-border {
+  border-left-style: solid;
+  border-color: #D5D5D5;
+  padding-bottom: 50px;
+}
+
+.programme-box {
+  width: 211px;
+  background: #000B1A url("../images/u4315-grad.png") repeat-x left top;
+  background: -webkit-gradient(linear, center top, center bottom, from(#273451),color-stop(100%, #000B1A));
+  background: -webkit-linear-gradient(top,#273451 ,#000B1A 100%);
+  background: -moz-linear-gradient(top,#273451 ,#000B1A 100%);
+  background: -ms-linear-gradient(top,#273451 ,#000B1A 100%);
+  background: -o-linear-gradient(top,#273451 ,#000B1A 100%);
+  background: linear-gradient(to bottom,#273451 ,#000B1A 100%);
+  border-style: none;
+  border-color: transparent;
+  -moz-border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -khtml-border-radius: 30px;
+  border-radius: 30px;
+  position: relative;
+  padding: 7px;
+  right: 20px;
+  top: 20px;
+}
+
+.programme-header {
+  font-family: 'Open Sans', sans-serif;
+  color: #273451;
+  font-size: 18px;
+  letter-spacing: 2px;
+  font-weight: 700;
+}
+
+.programme-subheader {
+  font-weight: 700;
+}
+
+.single-programme-row {
+  padding-top: 5px;
+  top: 5px;
+  text-align: left;
+  color: #273451;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  padding-bottom: 50px;
+}

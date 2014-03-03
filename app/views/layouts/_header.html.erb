@@ -1,26 +1,25 @@
-<div class="navbar navbar-default navbar-static-top" role="navigation">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#">SAM</a>
+<div class="container header-container">
+  <div class="row header-main-row">
+    <div class="col-md-3 image-row">
+      <%= link_to root_path do %>
+        <%= image_tag 'logo_mdl.png', class: "center" %>
+      <% end %>
     </div>
-
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav navbar-right">
-        <form class="navbar-form" role="search">
-          <div class="form-group">
-            <input type="text" class="form-control" placeholder="Search">
-          </div>
-          <button type="submit" class="btn btn-default">Buscar</button>
-        </form>
-      </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
+    <div class="col-md-8">
+      <div class="container">
+        <div class="row pull-right teaching-phrase">
+          <span class="teaching-phrase-location">TEACHING TOP LEADERS SINCE 1960</span>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row pull-right countries-header">
+          Paris &#8226; London &#8226; Roma &#8226; New York &#8226; Barcelona &#8226; Buenos Aires &#8226; Lisboa &#8226; 
+          Porto &#8226; São Paulo &#8226; Rio
+        </div>
+      </div>
+    </div>
+    <div class="col-md-1">
+    </div>
+  </div>
 </div>
+<%= render "layouts/navbar" %>
