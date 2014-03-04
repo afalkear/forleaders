@@ -114,7 +114,23 @@ img.center {
 
 #my-affix {
   background-color: white;
-  border-width: 0px;
+  /*border-width: 0px;*/
+}
+
+.affix-top > .container-fluid > .navbar-header {
+  display: none;
+}
+
+.affix > .container-fluid > .navbar-header {
+  display: block;
+  height: 40px;
+}
+
+.affix > .container-fluid > .navbar-header img{
+  height: 35px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 40px;
 }
 
 .affix {
@@ -122,6 +138,9 @@ img.center {
     top: 0px;
     width: 100%;
     z-index: 100;
+    border-bottom: black;
+    border-bottom-style: solid;
+    border-bottom-width: thin;
 }
 
 .navbar-nav a{
