@@ -133,6 +133,14 @@ img.center {
   padding-left: 40px;
 }
 
+.icon-bar {
+  background-color: #cccccc;
+}
+
+.navbar-toggle {
+  border-color: #dddddd;
+}
+
 .affix {
     position: fixed;
     top: 0px;
