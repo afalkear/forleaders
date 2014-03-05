@@ -303,3 +303,96 @@ img.center {
   font-weight: 400;
   padding-bottom: 50px;
 }
+
+/* PARTNERS */
+
+.no-padding {
+  padding: 0;
+}
+
+.partners-container table {
+  width: 100%;
+}
+
+.partners-title {
+  border-bottom: #273451;
+  border-bottom-style: solid;
+  border-bottom-width: thin;
+}
+
+.partners-image {
+  display: inline-block;
+  padding: 2px;
+  height: 86px;
+  /*width: 100%;*/
+}
+
+.partners-image.google {
+  background:transparent url('google.png') center no-repeat;
+  min-width: 130px;
+}
+
+.partners-image.google:hover {
+  background:transparent url('google-hover.png') center no-repeat;
+  min-width: 130px;
+}
+
+.partners-image.itau {
+  background:transparent url('itau.png') center no-repeat;
+  min-width: 100px;
+}
+
+.partners-image.itau:hover {
+  background:transparent url('itau-hover.png') center no-repeat;
+  min-width: 100px;
+}
+
+.partners-image.park-hyatt {
+  background:transparent url('park-hyatt.png') center no-repeat;
+  min-width: 100px;
+}
+
+.partners-image.park-hyatt:hover {
+  background:transparent url('park-hyatt-hover.png') center no-repeat;
+  min-width: 100px;
+}
+
+.partners-image.adidas {
+  background:transparent url('adidas.png') center no-repeat;
+  min-width: 100px;
+}
+
+.partners-image.adidas:hover {
+  background:transparent url('adidas-hover.png') center no-repeat;
+  min-width: 100px;
+}
+
+.partners-image.exxon {
+  background:transparent url('exxon.png') center no-repeat;
+  min-width: 180px;
+}
+
+.partners-image.exxon:hover {
+  background:transparent url('exxon-hover.png') center no-repeat;
+  min-width: 180px;
+}
+
+.partners-image.petrobras {
+  background:transparent url('petrobras.png') center no-repeat;
+  min-width: 90px;
+}
+
+.partners-image.petrobras:hover {
+  background:transparent url('petrobras-hover.png') center no-repeat;
+  min-width: 90px;
+}
+
+.partners-image.visa {
+  background:transparent url('visa.png') center no-repeat;
+  min-width: 100px;
+}
+
+.partners-image.visa:hover {
+  background:transparent url('visa-hover.png') center no-repeat;
+  min-width: 100px;
+}
