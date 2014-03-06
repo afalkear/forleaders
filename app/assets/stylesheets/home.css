@@ -310,14 +310,30 @@ img.center {
   padding: 0;
 }
 
+.partners-images-container {
+  margin-top: 7px;
+  padding-bottom: 20px;
+}
+
+.partners-container {
+  background: #FFFFFF url("blizzard.jpg") repeat left top;
+}
+
 .partners-container table {
   width: 100%;
 }
 
 .partners-title {
+  font-family: 'Open Sans', sans-serif;
+  color: #273451;
+  font-size: 18px;
+  letter-spacing: 3px;
+  font-weight: 700; 
   border-bottom: #273451;
   border-bottom-style: solid;
   border-bottom-width: thin;
+  padding-bottom: 5px;
+  padding-top: 15px;
 }
 
 .partners-image {
@@ -379,12 +395,12 @@ img.center {
 
 .partners-image.petrobras {
   background:transparent url('petrobras.png') center no-repeat;
-  min-width: 90px;
+  min-width: 120px;
 }
 
 .partners-image.petrobras:hover {
   background:transparent url('petrobras-hover.png') center no-repeat;
-  min-width: 90px;
+  min-width: 120px;
 }
 
 .partners-image.visa {
