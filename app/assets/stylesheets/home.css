@@ -4,7 +4,7 @@ html {
 }
 body {
   /* Margin bottom by footer height */
-  margin-bottom: 60px;
+  /*margin-bottom: 60px;*/
 }
 #footer {
   position: absolute;
@@ -315,6 +315,10 @@ img.center {
   padding-bottom: 20px;
 }
 
+.programme-container {
+  background: #FFFFFF url("blizzard.jpg") repeat left top;
+}
+
 .partners-container {
   background: #FFFFFF url("blizzard.jpg") repeat left top;
 }
@@ -411,4 +415,68 @@ img.center {
 .partners-image.visa:hover {
   background:transparent url('visa-hover.png') center no-repeat;
   min-width: 100px;
+}
+
+/* FOOTER */
+.footer-container {
+  background: #000B1A url("u374-grad.png") repeat-x left top;
+  background: -webkit-gradient(linear, center top, center bottom, color-stop(30%, #273451),to(#000B1A));
+  background: -webkit-linear-gradient(top,#273451 30%,#000B1A );
+  background: -moz-linear-gradient(top,#273451 30%,#000B1A );
+  background: -ms-linear-gradient(top,#273451 30%,#000B1A );
+  background: -o-linear-gradient(top,#273451 30%,#000B1A );
+  background: linear-gradient(to bottom,#273451 30%,#000B1A );
+}
+
+.footer-inner-container {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.footer-inner-column {
+  
+}
+
+.gold-color {
+  color: #D3BB69;
+}
+
+.footer-title {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: 300; 
+  font-size: 24px;
+  padding-bottom: 20px;
+}
+
+.inner-footer-title {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: 700; 
+  font-size: 18px;
+}
+
+.after-title:after {
+  position: absolute;
+  width: 100%;
+  border-bottom-style: solid;
+  border-bottom-color: #D3BB69;
+  border-bottom-width: thin;
+}
+
+.inner-footer-content {
+  padding-top: 10px;
+}
+
+.border-9 img {
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
+  border-bottom-right-radius: 9px;
+  border-bottom-left-radius: 9px;
+}
+
+.inner-footer-title-smaller-font {
+  font-size: 15px;
+}
+
+.smaller-font {
+  font-size: 20px;
 }
