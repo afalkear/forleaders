@@ -185,6 +185,9 @@ img.center {
   border:0px;
 }
 
+.dropdown:hover .dropdown-menu {
+    display: block;
+ }
 
 .dropdown-submenu{position:relative;}
 .dropdown-submenu>.dropdown-menu{
