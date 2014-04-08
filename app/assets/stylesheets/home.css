@@ -61,19 +61,19 @@ img.center {
 }
 
 .header-main-row {
-  min-height: 113px;
+  min-height: 136px;
 }
 
 .image-row {
- min-height: 113px;
+ min-height: 136px;
 }
 
 .image-row a {
-  line-height: 113px;
+  line-height: 136px;
 }
 
 .image-row img {
- padding-top: 5px;
+ padding-top: 10px;
 }
 
 .teaching-phrase {
