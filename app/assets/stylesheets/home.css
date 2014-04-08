@@ -205,7 +205,8 @@ img.center {
 }
 
 .you-emphasis {
-  font-weight: 700;
+  /*font-weight: 700;*/
+  font-size: 40px;
 }
 
 .carousel-control .glyphicon {
