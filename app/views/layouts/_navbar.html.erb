@@ -16,17 +16,65 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="navbar-collapse">
       <ul class="nav navbar-nav">
-        <li class="<%= 'active' if controller_name == 'methodologie' %>">
-          <%= link_to 'MÉTHODOLOGIE', '#' %>
+        <li class="<%= 'active' if controller_name == 'methodologie' %> dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+            QUEM SOMOS?<b class="caret"></b>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Método DeRose</a></li>
+            <li><a href="#">Nossos Consultores</a></li>
+            <li><a href="#">O Método Pelo Mundo</a></li>
+          </ul>
         </li>
-        <li class="<%= 'active' if controller_name == 'programmes' %>">
-          <%= link_to 'PROGRAMMES', '#' %>
+        <li class="<%= 'active' if controller_name == 'programmes' %> dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+            PROGRAMAS<b class="caret"></b>
+          </a>
+          <ul class="dropdown-menu">
+            <li class="dropdown-submenu">
+              <a tabindex="-1" href="#">Para individuais</a>
+              <ul class="dropdown-menu">
+                <li><a tabindex="-1" href="#">Personal Teaching</a></li>
+                <li><a tabindex="-1" href="#">Consultoria</a></li>
+                <li><a tabindex="-1" href="#">Treinamento</a></li>
+                <li><a tabindex="-1" href="#">Investimentos</a></li>
+              </ul>
+            </li>
+            <li class="dropdown-submenu">
+              <a tabindex="-1" href="#">Para empresas</a>
+              <ul class="dropdown-menu">
+                <li><a tabindex="-1" href="#">Small Group Teaching</a></li>
+                <li><a tabindex="-1" href="#">Treinamento</a></li>
+                <li><a tabindex="-1" href="#">Palestra</a></li>
+                <li><a tabindex="-1" href="#">Workshop</a></li>
+                <li><a tabindex="-1" href="#">Investimentos</a></li>
+              </ul>
+            </li>
+          </ul>
         </li>
         <li class="<%= 'active' if controller_name == 'reconnaissances' %>">
-          <%= link_to 'RECONNAISSANCES', '#' %>
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+            DEPOIMENTOS<b class="caret"></b>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Líderes</a></li>
+            <li><a href="#">Empresas</a></li>
+            <li><a href="#">Instituçoes</a></li>
+          </ul>
         </li>
         <li class="<%= 'active' if controller_name == 'articles' %>">
-          <%= link_to 'ARTICLES', '#' %>
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+            ARTIGOS<b class="caret"></b>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Liderança</a></li>
+            <li><a href="#">Alta Produtividade</a></li>
+            <li><a href="#">Relaçoēs Humanas</a></li>
+            <li><a href="#">Qualidade de vida</a></li>
+            <li><a href="#">Boa Forma</a></li>
+            <li><a href="#">Administração do Stress</a></li>
+            <li><a href="#">Concentraçao e Foco</a></li>
+          </ul>
         </li>
         <li class="<%= 'active' if controller_name == 'contact' %>">
           <%= link_to 'CONTACT', '#' %>
