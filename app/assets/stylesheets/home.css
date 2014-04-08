@@ -47,7 +47,7 @@ img.center {
 /* HEADER */
 
 .header-container {
-  min-height: 113px;
+  min-height: 136px;
   background: #273451 url("../images/u4774-grad.png") repeat-x left top;
   background: -webkit-gradient(linear, center top, center bottom, from(#000B1A),color-stop(80%, #273451));
   background: -webkit-linear-gradient(top,#000B1A ,#273451 80%);
@@ -78,18 +78,18 @@ img.center {
 
 .teaching-phrase {
   font-family: 'Open Sans', sans-serif;
-  font-weight: 700;
-  font-size: 20px;
+  font-weight: 300;
+  font-size: 25px;
   letter-spacing: 2px;
   color: #D3BB69;
-  min-height: 83px;
-  line-height: 83px;
+  min-height: 45px;
+  line-height: 45px;
   position: relative;
   width: 100%;
 }
 .countries-header {
-  min-height: 20px;
-  line-height: 20px;
+  min-height: 45px;
+  line-height: 45px;
   color: white;
   font-family: 'Open Sans Condensed', sans-serif;
   font-weight: 700;
@@ -99,6 +99,12 @@ img.center {
   position: absolute;
   top: 10px;
   right: 0px;
+}
+
+/* LANGUAGES */
+
+.languages-row {
+  padding-top: 10px;
 }
 
 /* NAVBAR */
@@ -480,3 +486,5 @@ img.center {
 .smaller-font {
   font-size: 20px;
 }
+
+
