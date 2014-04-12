@@ -170,6 +170,11 @@ img.center {
   color: #D3BB69;
 }
 
+.nav>li>a:focus {
+  background-color: #001737 !important;
+  color: #D3BB69;
+}
+
 .navbar-nav > li > a {
   padding-top: 7px;
   padding-bottom: 7px;
