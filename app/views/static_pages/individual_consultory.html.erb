@@ -2,3 +2,17 @@
 <%= render 'individual_consultory_header' %>
 <%= render 'individual_consultory_body' %>
 <%= render 'individual_consultory_footer' %>
+<script type="text/javascript">
+  $(function() {
+    // Javascript to enable link to tab
+    var url = document.location.toString();
+    if (url.match('#')) {
+      $('.nav-pills a[href=#'+url.split('#')[1]+']').tab('show') ;
+    }
+
+    // Change hash for page-reload
+    $('a[data-toggle="tab"]').on('show.bs.tab', function (e) {
+      window.location.hash = e.target.hash;
+    });
+  });
+</script>
