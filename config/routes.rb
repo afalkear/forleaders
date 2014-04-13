@@ -7,6 +7,7 @@ Forleaders::Application.routes.draw do
 
   resources :static_pages
   get 'individual_consultory', to:'static_pages#individual_consultory'
+  get 'group_consultory', to:'static_pages#group_consultory'
   get 'the_method', to:'static_pages#the_method'
 
   # Example of regular route:

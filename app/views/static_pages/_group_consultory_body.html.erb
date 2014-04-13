@@ -1,0 +1,72 @@
+<div class="container individual-consultory-container">
+  <div class="row">
+    <div class="col-md-1"></div>
+    <div class="col-md-10">
+    <div class="row">
+      <hr />
+      <ul class="nav nav-pills" id="individual-pills">
+        <li class="active">
+          <a href="#personal" data-toggle="tab" data-target=".personal, #personal-header">PERSONAL TEACHING</a>
+          <p>2 vêzes 1h per semana</p>
+        </li>
+        <li>
+          <a href="#training" data-toggle="tab" data-target=".training, #training-header">TREINAMENTO</a>
+          <p>15 minutos por día</p>
+        </li>
+        <li>
+          <a href="#consultory" data-toggle="tab" data-target=".consultory, #consultory-header">CONSULTORIAS</a>
+          <p>3 até 6 mêses</p>
+        </li>
+        <li>
+          <a href="#intensive" data-toggle="tab" data-target=".intensive, #intensive-header">INTENSIVE TEACHING</a>
+          <p>2 días</p>
+        </li>
+      </ul>
+      <hr />
+      <div class="container">
+        <div class="row">
+          <div class="col-md-7">
+            <div class="tab-content">
+             <div id="personal" class="tab-pane active personal">
+               <%= render 'individual_consultory_personal' %>
+             </div>
+             <div id="training" class="tab-pane training">
+               <%= render 'individual_consultory_training' %>
+             </div>
+             <div id="consultory" class="tab-pane consultory">
+               <%= render 'individual_consultory_consultory' %>
+             </div>
+             <div id="intensive" class="tab-pane intensive">
+               <%= render 'individual_consultory_intensive' %>
+             </div>
+            </div>  
+          </div>
+          <div class="col-md-5 individual-sidebar">
+            <hr/>
+            <div class="row individual-presentation-video">
+              <h2>VIDEO OF PRESENTATION</h2>
+              <iframe width="384" height="226" src="http://www.youtube.com/embed/oZaHt81lME&list=PLXPALav6LoAXYZ96B2sFAiFXtPaQJvB1H?autoplay=0&loop=0&showinfo=0&theme=dark&color=white&controls=1&modestbranding=0&start=0&fs=1&iv_load_policy=1" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <hr/>
+            <div class="row individual-facts">
+              <h2>FACTS ABOUT...</h2>
+              <div id="empty-space">
+                
+              </div>
+            </div>
+            <hr/>
+            <div class="row individual-newsletter">
+              <h2>SUBSCRIBE TO OUR NEWSLETTER</h2>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Your email to receive</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                <button type="submit" class="btn btn-default pull-right">Send</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+</div>
