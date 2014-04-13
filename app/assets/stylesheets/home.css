@@ -318,6 +318,8 @@ img.center {
 .programme-container {
   min-height: 225px;
   padding-top: 20px;
+  overflow: hidden;
+  padding-bottom: 30px;
 }
 
 .subprogramme-container {
@@ -379,7 +381,6 @@ img.center {
 .with-left-border {
   border-left-style: solid;
   border-color: #D5D5D5;
-  padding-bottom: 50px;
 }
 
 .programme-box {
@@ -444,7 +445,7 @@ img.center {
   color: #273451;
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
-  padding-bottom: 50px;
+  padding-bottom: 20px;
 }
 
 /* PARTNERS */
@@ -470,17 +471,23 @@ img.center {
   width: 100%;
 }
 
-.partners-title {
-  font-family: 'Open Sans', sans-serif;
-  color: #273451;
-  font-size: 18px;
-  letter-spacing: 3px;
-  font-weight: 700; 
-  border-bottom: #273451;
-  border-bottom-style: solid;
-  border-bottom-width: thin;
+.partners-title-container {
   padding-bottom: 5px;
   padding-top: 15px;
+  font-family: 'Open Sans', sans-serif;
+  color: #273451;
+}
+
+.partners-title {
+  font-size: 20px;
+  letter-spacing: 2px;
+  font-weight: 700; 
+}
+
+.partners-subtitle {
+  font-size: 16px;
+  letter-spacing: 1px;
+  font-weight: 400; 
 }
 
 .partners-image {
