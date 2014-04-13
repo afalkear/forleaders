@@ -1,0 +1,35 @@
+.the-method-title {
+  padding-top: 30px;
+  line-height: 26px;
+  color: #273451;
+  font-size: 22px;
+  letter-spacing: 1px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+}
+
+.the-method-subtitle {
+  padding-bottom: 20px;
+  line-height: 19px;
+  color: #4B4C85;
+  font-size: 16px;
+  letter-spacing: 1px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+}
+
+.the-method-text-container {
+  line-height: 21px;
+  font-size: 16px;
+  text-align: justify;
+}
+
+.the-method-title.gold-color {
+  color: #D3BB69;
+  padding-top: 20px;
+}
+
+.the-method-banner {
+  min-height: 263px;
+  background: #FFFFFF url("edgardo_mdr.jpg") repeat left top;
+}

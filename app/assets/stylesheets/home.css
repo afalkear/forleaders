@@ -207,6 +207,11 @@ img.center {
   color: #AE9029;
  }
 
+ .dropdown > ul > li > a.gold-title {
+  color: #AE9029;
+  font-size: 13px;
+ }
+
  .dropdown > ul > li > a{
   color: white;
   font-family: 'Open Sans', sans-serif;
