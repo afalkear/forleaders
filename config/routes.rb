@@ -7,6 +7,7 @@ Forleaders::Application.routes.draw do
 
   resources :static_pages
   get 'individual_consultory', to:'static_pages#individual_consultory'
+  get 'the_method', to:'static_pages#the_method'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

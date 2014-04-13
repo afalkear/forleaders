@@ -5,6 +5,9 @@ class StaticPagesController < ApplicationController
   def individual_consultory
   end
 
+  def the_method
+  end
+
   def help
   end
 
