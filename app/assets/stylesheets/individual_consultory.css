@@ -1,0 +1,107 @@
+.individual-consultory-title {
+  line-height: 29px;
+  color: #D3BB69;
+  font-size: 24px;
+  letter-spacing: 2px;
+  font-family: font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+}
+
+.individual-consultory-container {
+  padding-top: 30px;
+}
+
+.individual-consultory-subtitle {
+  font-size: 18px;
+  line-height: 23px;
+  color: #E9E6E6;
+  font-family: font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  padding-top: 10px;
+}
+
+.individual-consultory-container hr {
+  background: #D5D5D5; 
+  border: 0; 
+  height: 1px;  
+  margin: 0px;
+}
+
+#individual-pills > li > a {
+  color: #B6B5B5;
+  font-family: font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  text-align: justify;
+  letter-spacing: 1px;
+}
+
+#individual-pills > li > a:hover {
+  background-color: gray;
+}
+
+#individual-pills > li.active > a:hover {
+  background-color: gray;
+}
+
+#individual-pills > li.active > a {
+  background-color: white;
+  color: #273451;
+  font-weight: 700;
+}
+
+#individual-pills > li > p {
+  text-align: center;
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 300;
+  font-family: font-family: 'Open Sans', sans-serif;
+}
+
+.tab-content > .active > .container > .row > h1 {
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 1px;
+  font-family: font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+} 
+
+.tab-content > .active > .container > .row > h2 {
+  font-family: font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+  line-height: 19px;
+  font-weight: 700;
+}
+
+.tab-content > .active > .container > .row > p {
+  margin: 0px;
+  text-align: justify;
+}
+
+.individual-sidebar {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 50px;
+  padding-right: 0px;
+  float: right;
+}
+.individual-sidebar hr {
+  background: #D5D5D5; 
+  border: 0; 
+  height: 1px;  
+  margin: 0px; 
+}
+
+.individual-sidebar > div > h2 {
+  font-family: font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+  line-height: 19px;
+  font-weight: 700;
+}
+
+.individual-sidebar > .row {
+  margin: 0px;
+}
+
+#empty-space {
+  min-height: 200px;
+}
