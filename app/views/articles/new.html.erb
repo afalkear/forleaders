@@ -1,0 +1,14 @@
+<h1>New article</h1>
+<%= form_for @article, url: {action: 'create'}, html: {class: "nifty_form"} do |f| %>
+  <h2>title</h2>
+  <%= f.text_field :title %>
+  <h2>author</h2>
+  <%= f.text_field :author %>
+  <h2>image_url</h2>
+  <%= f.text_field :image_url %>
+  <h2>category</h2>
+  <%= f.collection_select :category_id, Category.all, :id, :name, include_blank: true %>
+  <h2>content</h2>
+  <%= f.text_area :content, size: "60x12" %>
+  <%= f.submit "Create" %>
+<% end %>
