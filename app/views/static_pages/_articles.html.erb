@@ -41,7 +41,28 @@
             </ul>
           </div>
         </div>
-        <div class="row articles-container"></div>
+        <div class="row articles-container">
+          <div class="col-md-4">
+            <%= render 'single_article', article: @articles[0] %>
+          </div>
+          <div class="col-md-4">
+            <%= render 'single_article', article: @articles[1] %>
+          </div>
+          <div class="col-md-4">
+            <%= render 'single_article', article: @articles[2] %>
+          </div>
+        </div>
+        <div class="row articles-container">
+          <div class="col-md-4">
+            <%= render 'single_article', article: @articles[0] %>
+          </div>
+          <div class="col-md-4">
+            <%= render 'single_article', article: @articles[1] %>
+          </div>
+          <div class="col-md-4">
+            <%= render 'single_article', article: @articles[2] %>
+          </div>
+        </div>
         <div class="row more-articles">
           <a href="#">
             <span class="glyphicon glyphicon-plus-sign"></span>
