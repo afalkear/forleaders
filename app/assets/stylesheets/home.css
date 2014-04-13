@@ -367,12 +367,12 @@ img.center {
   padding-top: 20px;
 }
 
-.more-programme .glyphicon {
+.glyphicon-plus-sign {
   font-size: 30px;
   color: #D3BB69;
 }
 
-.more-programme .glyphicon:hover {
+.glyphicon-plus-sign:hover {
   font-size: 30px;
   color: #AE9029;
   cursor: pointer;
@@ -659,4 +659,165 @@ img.center {
 .follow-logos > a > img {
   max-height: 40px;
   max-width: 40px;
+}
+
+/* ARTICLES */
+
+.articles-title-container {
+  font-family: 'Open Sans', sans-serif;
+  color: #273451;
+  padding-top: 20px;
+}
+.articles-title {
+  font-size: 20px;
+  letter-spacing: 2px;
+  font-weight: 700; 
+}
+
+.articles-subtitle {
+  font-size: 16px;
+  letter-spacing: 1px;
+  font-weight: 400;  
+}
+
+.articles-line {
+  height: 38px;
+  border-color: #000000;
+  background-color: #001737;
+}
+
+.more-articles {
+  text-align: center;
+}
+
+.articles-selector {
+  text-align: center;
+}
+
+.articles-selector-container-item {
+  border-color: #273451;
+  border-style: solid;
+  border-width: thin;
+}
+
+#article-selector-title {
+  background-color: white;
+}
+
+#article-selector-title > li > a {
+  color: #001737;
+  font-size: 16px;
+  letter-spacing: 2px;
+}
+
+#article-selector-title > li > a:hover {
+  background-color: #999999;
+  color: #001737;
+}
+
+#articles-selector-items {
+  background-color: white;
+  margin: 0px;
+  padding: 0px; 
+  width: 100%;
+  text-align: center;
+}
+
+#articles-selector-items > li {
+  border-color: #273451;
+  border-style: solid;
+  border-width: thin;
+  /*padding: 5px;*/
+}
+
+#articles-selector-items > li > a {
+  color: #001737;
+  font-size: 16px;
+  letter-spacing: 2px;
+}
+
+#articles-selector-items > li > a:hover {
+  color: #001737;
+  font-size: 16px;
+  letter-spacing: 2px;
+}
+
+#articles-selector-leadership {
+  background-color: white;
+}
+
+#articles-selector-leadership > a {
+  background-color: white;
+}
+
+#articles-selector-leadership:hover {
+  background-color: #F7931E;
+}
+
+#articles-selector-leadership > a:hover {
+  background-color: #F7931E;
+}
+
+#articles-selector-focus {
+  background-color: white;
+}
+
+#articles-selector-focus > a {
+  background-color: white;
+}
+
+#articles-selector-focus:hover {
+  background-color: #29ABE2;
+}
+
+#articles-selector-focus > a:hover {
+  background-color: #29ABE2;
+}
+
+#articles-selector-high-performance {
+  background-color: white;
+}
+
+#articles-selector-high-performance > a {
+  background-color: white;
+}
+
+#articles-selector-high-performance:hover {
+  background-color: #29ABE2;
+}
+
+#articles-selector-high-performance > a:hover {
+  background-color: #29ABE2;
+}
+
+#articles-selector-quality-of-life {
+  background-color: white;
+}
+
+#articles-selector-quality-of-life > a {
+  background-color: white;
+}
+
+#articles-selector-quality-of-life:hover {
+  background-color: #29ABE2;
+}
+
+#articles-selector-quality-of-life > a:hover {
+  background-color: #29ABE2;
+}
+
+#articles-selector-human-relationships {
+  background-color: white;
+}
+
+#articles-selector-human-relationships > a {
+  background-color: white;
+}
+
+#articles-selector-human-relationships:hover {
+  background-color: #D4145A;
+}
+
+#articles-selector-human-relationships > a:hover {
+  background-color: #D4145A;
 }
