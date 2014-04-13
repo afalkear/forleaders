@@ -105,3 +105,37 @@
 #empty-space {
   min-height: 200px;
 }
+
+.individual-footer-container {
+  border-style: none;
+  border-color: transparent;
+  background: #FFFFFF url("blizzard.jpg") repeat left top;
+}
+
+.individual-footer-thumb-info-container {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.individual-footer-image-container {
+  overflow: hidden;
+}
+
+.individual-footer-image-container > img {
+  position: relative;
+  right: 50%;
+}
+
+.individual-footer-text-container > h2 {
+  font-family: font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+  line-height: 19px;
+  font-weight: 700; 
+  margin: 0px; 
+  min-height: 45px;
+}
+
+.individual-footer-text-container > p {
+  color: #7F7F7F; 
+  text-align: justify;
+}
