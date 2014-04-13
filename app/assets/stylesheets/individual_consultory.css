@@ -1,0 +1,21 @@
+.individual-consultory-title {
+  line-height: 29px;
+  color: #D3BB69;
+  font-size: 24px;
+  letter-spacing: 2px;
+  font-family: font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+}
+
+.individual-consultory-container {
+  padding-top: 30px;
+}
+
+.individual-consultory-subtitle {
+  font-size: 18px;
+  line-height: 23px;
+  color: #E9E6E6;
+  font-family: font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  padding-top: 10px;
+}
