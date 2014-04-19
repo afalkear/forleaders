@@ -11,14 +11,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140413135057) do
+ActiveRecord::Schema.define(version: 20140419204914) do
 
   create_table "articles", force: true do |t|
     t.string   "title"
     t.string   "author"
     t.text     "content"
     t.integer  "tag_id"
-    t.integer  "category_id"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "image_url"
@@ -31,7 +30,6 @@ ActiveRecord::Schema.define(version: 20140413135057) do
 
   create_table "categories", force: true do |t|
     t.string   "name"
-    t.integer  "article_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
