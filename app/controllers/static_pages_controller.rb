@@ -1,6 +1,8 @@
 class StaticPagesController < ApplicationController
   def home
     @articles = Article.all
+    @articles_number = 6
+    @articles_columns = 3
   end
 
   def individual_consultory
