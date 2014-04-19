@@ -24,8 +24,8 @@ ActiveRecord::Schema.define(version: 20140419204914) do
   end
 
   create_table "articles_categories", force: true do |t|
-    t.integer "articles_id"
-    t.integer "categories_id"
+    t.integer "article_id"
+    t.integer "category_id"
   end
 
   create_table "categories", force: true do |t|
