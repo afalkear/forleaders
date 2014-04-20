@@ -1,0 +1,149 @@
+.our-consultors-container {
+  color: black;
+  text-align: justify;
+}
+
+.our-consultors-header-container {
+  font-family: Arial;
+  font-size: 15px;
+  color: black;
+  background-image: url('consultants_header.jpg');
+  background-size: 100%;
+  background-position: 0% 45%;
+  min-height: 263px;
+}
+
+.our-consultors-header-title {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  color: rgb(211, 187, 105);
+  letter-spacing: 2px;
+  padding-top: 12%;
+}
+
+.our-consultors-header-subtitle {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  color: white;
+  padding-top: 2%;
+  text-align: left;
+}
+
+.our-consultors-info-container {
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+
+.our-consultors-titles {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  color: rgb(39, 52, 81);
+  letter-spacing: 1px;
+  padding-bottom: 2%;
+}
+
+.our-consultors-number {
+  font-family: 'Open Sans', sans-serif;
+  line-height: 72px;
+  font-weight: 700;
+  font-size: 60px;
+  color: rgb(39, 52, 81);
+  letter-spacing: 1px;
+  text-align: center; 
+  padding-top: 14%;
+}
+
+.our-consultors-consultors {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+  color: rgb(39, 52, 81);
+  letter-spacing: 1px; 
+  text-align: center;
+}
+
+.our-consultors-bio-title {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  color: black;
+  padding-top: 20px;
+}
+
+.our-consultors-bio-subtitle {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 24px;
+  color: black;
+  padding-top: 10px;
+}
+
+.our-consultors-line {
+  height: 4px;
+  border-color: #000000;
+  background-color: #AE9029;
+  margin-top: 5px;
+}
+
+.our-consultors-bio-info {
+  padding-top: 5%;
+  font-family: Arial;
+  text-align: left;
+}
+
+.our-consultors-middle-banner {
+  min-height: 312px;
+  background-image: url('consultants_banner.jpg');
+  background-size: 100%;
+  /*background-position: 0% 45%;*/
+}
+
+.our-consultors-photo {
+  height: 430px;
+}
+
+.our-consultors-photo > img {
+  height: 100%;
+}
+
+.our-consultors-bio {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.our-consultors-programs-link {
+  color: white;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 1px;
+  padding: 50px;
+}
+
+.our-consultors-programs-link > a {
+  color: white;
+  text-decoration: none;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #D3BB69;
+  background-color: #001737;
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -khtml-border-radius: 15px;
+  border-radius: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.our-consultors-programs-link > a:hover {
+  color: rgb(211, 187, 105);
+}
