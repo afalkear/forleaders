@@ -21,3 +21,7 @@
 
 en:
   hello: "Hello world"
+  helpers:
+    labels:
+      article:
+        title: "Title"
