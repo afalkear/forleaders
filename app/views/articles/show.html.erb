@@ -1,2 +1,16 @@
-<h1>New Article!</h1>
-<%= @article.inspect %>
+<div class="container">
+  <h1>New Article!</h1>
+  <h2>This is how it will look</h2>
+  <h3>Title</h3>
+  <%= @article.title %>
+  <h4>Subtitle</h4>
+  <%= @article.subtitle %>
+  <h4>Author</h4>
+  <%= @article.author %>
+  <h4>Image</h4>
+  <%= image_tag @article.image_url %>
+  <h4>Category (just one for now)</h4>
+  <%= @article.categories.first.name %>
+  <h4>Content</h4>
+  <%= @article.content %>
+</div>

@@ -3,6 +3,7 @@ class ArticlesController < ApplicationController
   end
 
   def show
+    @article = Article.find(params[:id])
   end
 
   def new
@@ -10,12 +11,7 @@ class ArticlesController < ApplicationController
   end
 
   def create
-    @article = Article.new
-    @article.title = params[:article][:title]
-    @article.author = params[:article][:author]
-    @article.image_url = params[:article][:image_url]
-    @article.category_id = params[:article][:category_id]
-    @article.content = params[:article][:content]
+    @article = Article.new(article_params)
     
     if @article.save
       redirect_to article_path(@article.id)
@@ -33,6 +29,6 @@ class ArticlesController < ApplicationController
 
   private
     def article_params
-      params.permit(:title, :author, :content, :tag_id, :category_id, :image_url)
+      params.require(:article).permit(:title, :author, :content, :tag_id, :category_tokens, :image_url)
     end
 end
