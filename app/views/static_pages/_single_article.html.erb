@@ -1,0 +1,18 @@
+<div class="container">
+  <div class="row home-article-thumb">
+    <%= image_tag article.image_url %>
+    <div><%= article.categories.first.name %></div>
+  </div>
+  <div class="row home-article-title">
+    <%= article.title %>
+  </div>
+  <div class="row home-article-author">
+    <%= article.author %>
+  </div>
+  <div class="row home-article-content">
+    <%= article.content %>
+  </div>
+  <div class="row home-article-read-more">
+    <%= link_to "READ MORE >>", article_path(article.id) %>
+  </div>
+</div>
