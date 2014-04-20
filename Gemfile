@@ -31,6 +31,7 @@ gem 'less-rails-bootstrap'
 
 # use carrierwave with dropbox to store files
 gem 'carrierwave-dropbox'
+gem 'mini_magick'
 
 group :development do
   gem 'git-pivotal-tracker-integration'

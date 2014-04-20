@@ -8,7 +8,7 @@
   <h4>Author</h4>
   <%= @article.author %>
   <h4>Image</h4>
-  <%= image_tag @article.image_url %>
+  <%= image_tag @article.article_image.url if @article.article_image? %>
   <h4>Category (just one for now)</h4>
   <%= @article.categories.first.name %>
   <h4>Content</h4>
