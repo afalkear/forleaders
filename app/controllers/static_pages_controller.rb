@@ -14,9 +14,10 @@ class StaticPagesController < ApplicationController
   def the_method
   end
 
-  def help
+  def our_consultors
   end
 
+  
   def about
   end
 
