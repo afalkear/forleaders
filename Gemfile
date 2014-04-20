@@ -29,6 +29,9 @@ gem 'jbuilder', '~> 1.2'
 # use twitter bootstrap
 gem 'less-rails-bootstrap'
 
+# use carrierwave with dropbox to store files
+gem 'carrierwave-dropbox'
+
 group :development do
   gem 'git-pivotal-tracker-integration'
 end
