@@ -41,7 +41,19 @@
             </ul>
           </div>
         </div>
-        <div class="row articles-container"></div>
+        
+        <% @articles.count.times do |article_number| %>
+          <% if article_number % @articles_columns %>
+            <div class="row articles-container">
+          <% end %>
+          <div class="col-md-4">
+            <%= render 'single_article', article: @articles[article_number] %>
+          </div>
+          <% if article_number % @articles_columns %>
+            </div>
+          <% end %>
+        <% end %>
+    
         <div class="row more-articles">
           <a href="#">
             <span class="glyphicon glyphicon-plus-sign"></span>
