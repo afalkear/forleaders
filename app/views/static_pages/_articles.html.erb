@@ -6,15 +6,15 @@
     <div class="col-md-1"></div>
     <div class="col-md-10">
         <div class="row articles-title-container">
-          <div class="col-md-4">
-            <div class="articles-title">
+          <div class="col-md-6">
+            <div class="home-section-title">
               NOSSOS ARTIGOS
             </div>
-            <div class="articles-subtitle">
-              CHECK OUT OUR TIPS FOR A SMARTER LIVING
+            <div class="home-section-subtitle">
+              TEXTOS RÁPIDOS E DINÂMICOS PARA POTENCIALIZAR SEU APRENDIZADO
             </div>
           </div>
-          <div class="col-md-3 col-md-offset-5 articles-selector-container">
+          <div class="col-md-3 col-md-offset-3 articles-selector-container">
             <ul class="nav" id="article-selector-title">
               <li class="dropdown articles-selector-container-item">
                 <a class="dropdown-toggle articles-selector" data-toggle="dropdown" href="#">
@@ -42,16 +42,8 @@
           </div>
         </div>
         
-        <% @articles.count.times do |article_number| %>
-          <% if article_number % @articles_columns %>
-            <div class="row articles-container">
-          <% end %>
-          <div class="col-md-4">
-            <%= render 'single_article', article: @articles[article_number] %>
-          </div>
-          <% if article_number % @articles_columns %>
-            </div>
-          <% end %>
+        <% @articles_rows.times do |article_row_number| %>
+          <%= render 'article_container', articles: @articles, columns: @articles_columns, first_article_number: article_row_number*@articles_columns  %>
         <% end %>
     
         <div class="row more-articles">
