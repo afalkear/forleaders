@@ -1,0 +1,5 @@
+<div class="row articles-container">
+  <% columns.times do |column| %>
+    <%= render 'single_article', article: articles[first_article_number + column] %>
+  <% end %>
+</div>
