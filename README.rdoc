@@ -1,3 +1,5 @@
+https://www.codeship.io/projects/dc947a90-af13-0131-44d2-26d5a80979cb/status
+
 == README
 
 This README would normally document whatever steps are necessary to get the
