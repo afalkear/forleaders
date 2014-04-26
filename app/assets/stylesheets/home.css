@@ -167,7 +167,7 @@ img.center {
 }
 
 .navbar-title-smallcaps {
-  font-size: 85%;
+  font-size: 80%;
 }
 
 .nav>li>a:hover {
@@ -275,6 +275,31 @@ img.center {
   letter-spacing: 1px; 
   font-size: 16px;  
 }
+
+.page-title-container {
+  background-size: 100%;
+  min-height: 263px;
+}
+
+.page-title {
+  line-height: 29px;
+  color: #D3BB69;
+  font-size: 22px;
+  letter-spacing: 1px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  padding-top: 5%;
+}
+
+.page-subtitle {
+  font-size: 18px;
+  line-height: 23px;
+  color: #E9E6E6;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  padding-top: 1%;
+}
+
 
 /* SLIDESHOW */
 
