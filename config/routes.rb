@@ -10,6 +10,7 @@ Forleaders::Application.routes.draw do
   get 'group_consultory', to:'static_pages#group_consultory'
   get 'the_method', to:'static_pages#the_method'
   get 'our_consultors', to: 'static_pages#our_consultors'
+  get 'derose_method', to: 'static_pages#derose_method'
 
   resources :articles
   resources :categories

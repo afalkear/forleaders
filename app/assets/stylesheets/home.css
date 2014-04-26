@@ -6,6 +6,7 @@ body {
   /* Margin bottom by footer height */
   /*margin-bottom: 60px;*/
 }
+
 #footer {
   position: absolute;
   bottom: 0;
@@ -260,15 +261,15 @@ img.center {
 
 .home-section-title {
   color: #273451;
-  font-family: 'Leto', 'Open Sans', sans-serif;
-  font-size: 22px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
   letter-spacing: 1px;
   font-weight: 600;
 }
 
 .home-section-subtitle {
-  color: #273451;
-  font-family: 'Leto', 'Open Sans', sans-serif;
+  color: #4B4C85;
+  font-family: 'Open Sans', sans-serif;
   /*font-size: 20px;*/
   font-weight: 400;
   letter-spacing: 1px; 

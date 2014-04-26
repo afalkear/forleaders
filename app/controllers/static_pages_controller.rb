@@ -18,6 +18,8 @@ class StaticPagesController < ApplicationController
   def our_consultors
   end
 
+  def derose_method
+  end
   
   def about
   end
