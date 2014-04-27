@@ -3,7 +3,7 @@ class StaticPagesController < ApplicationController
     @articles = Article.all
     @articles_number = 6
     @articles_columns = 3
-    @articles_rows = 2
+    @articles_rows =  @articles.count > 2 ? 2 : 0
   end
 
   def individual_consultory
