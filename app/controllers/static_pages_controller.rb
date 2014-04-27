@@ -35,11 +35,23 @@ class StaticPagesController < ApplicationController
       redirect_to apply_url, notice: "Please fill all required fields."
     end
   end
-  
-  def about
-  end
 
   def contact
+    @contact_message = ContactMessage.new
+  end
+
+  def contact_message
+    @contact_message = ContactMessage.new(params[:contact_message])
+
+    if @contact_message.valid?
+      ContactMailer.new_contact_form(@contact_message).deliver
+      redirect_to contact_url, notice: "Message sent. Thank you for contacting us."
+    else
+      redirect_to contact_url, notice: "Please fill all required fields."
+    end
+  end
+  
+  def about
   end
 
   def news
