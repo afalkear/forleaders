@@ -1,0 +1,17 @@
+.apply-header {
+  background-image: url('apply_header.jpg');
+  background-position: 0% 45%;
+}
+
+.apply-button {
+  padding-bottom: 0;
+}
+
+
+.apply-form {
+  padding-top: 30px;
+}
+
+#new_apply_message > .form-group > .control-label {
+  text-align: left;
+}

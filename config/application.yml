@@ -3,3 +3,6 @@ APP_SECRET: 5pjbtvmds0qj8me
 ACCESS_TOKEN: to1txv83y2ku1j4r
 ACCESS_TOKEN_SECRET: kwntityxyqp5igm
 USER_ID: 1827912
+mail_domain: "uni-yoga.com.br"
+mail_username: "alex.falke@uni-yoga.com.br"
+mail_password: "deutsche_alex_f4lk3!"
