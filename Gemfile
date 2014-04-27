@@ -3,8 +3,6 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.3'
 
-
-
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
 
@@ -32,6 +30,9 @@ gem 'less-rails-bootstrap'
 # use carrierwave with dropbox to store files
 gem 'carrierwave-dropbox'
 gem 'mini_magick'
+
+# databaseless models with
+gem 'active_attr'
 
 group :development do
   gem 'git-pivotal-tracker-integration'

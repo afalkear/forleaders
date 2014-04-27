@@ -1,3 +1,5 @@
+# encoding: utf-8
+
 # Files in the config/locales directory are used for internationalization
 # and are automatically loaded by Rails. If you want to use locales other
 # than English, add the necessary files in this directory.
@@ -22,6 +24,18 @@
 en:
   hello: "Hello world"
   helpers:
-    labels:
+    label:
       article:
         title: "Title"
+      apply_message:
+        civility: "Civilidade"
+        first_name: "Nome"
+        last_name: "Sobrenome"
+        email: "Email"
+        birthdate: "Data de nascimento"
+        company: "Empresa"
+        position: "Cargo"
+        years_of_experience: "Anos de experiencia"
+        work_phone: "Work phone"
+        city: "Cidade"
+        country: "País"

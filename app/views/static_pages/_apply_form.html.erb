@@ -1,0 +1,87 @@
+<div class="container new-apply-form-container">
+  <div class="row">
+    <%= form_for @apply_message, url: apply_message_url, html: {class: "form-horizontal", role: 'form'} do |f| %>
+      <% if @apply_message.errors.any? %>
+        <div class="error_messages">
+          <h2><%= pluralize(@apply_message.errors.count, "error") %> prohibited this message from being saved:</h2>
+          <ul>
+          <% @apply_message.errors.full_messages.each do |msg| %>
+            <li><%= msg %></li>
+          <% end %>
+          </ul>
+        </div>
+      <% end %>
+      <div class="form-group">
+        <%= label(:apply_message, :civility, class: 'col-sm-4 control-label') %>
+        <div class="col-sm-8">
+          <%= f.text_field :civility, class: 'form-control', id: 'apply_civility', placeholder: "Civilidade" %>
+        </div>
+      </div>
+      <div class="form-group">
+        <%= label(:apply_message, :first_name, class: 'col-sm-4 control-label') %>
+        <div class="col-sm-8">
+          <%= f.text_field :first_name, class: 'form-control', id: 'apply_first_name', placeholder: "Nome" %>
+        </div>
+      </div>
+      <div class="form-group">
+        <%= label(:apply_message, :last_name, class: 'col-sm-4 control-label') %>
+        <div class="col-sm-8">
+          <%= f.text_field :last_name, class: 'form-control', id: 'apply_last_name', placeholder: "Sobrenome" %>
+        </div>
+      </div>
+      <div class="form-group">
+        <%= label(:apply_message, :email, class: 'col-sm-4 control-label') %>
+        <div class="col-sm-8">
+          <%= f.text_field :email, class: 'form-control', id: 'apply_email', placeholder: "Email" %>
+        </div>
+      </div>
+      <div class="form-group">
+        <%= label(:apply_message, :birthdate, class: 'col-sm-4 control-label') %>
+        <div class="col-sm-8">
+          <%= f.date_field :birthdate, class: 'form-control', id: 'apply_birthdate' %>
+        </div>
+      </div>
+      <div class="form-group">
+        <%= label(:apply_message, :company, class: 'col-sm-4 control-label') %>
+        <div class="col-sm-8">
+          <%= f.text_field :company, class: 'form-control', id: 'apply_company', placeholder: "Empresa" %>
+        </div>
+      </div>
+      <div class="form-group">
+        <%= label(:apply_message, :position, class: 'col-sm-4 control-label') %>
+        <div class="col-sm-8">
+          <%= f.text_field :position, class: 'form-control', id: 'apply_position', placeholder: "Cargo" %>
+        </div>
+      </div>
+      <div class="form-group">
+        <%= label(:apply_message, :years_of_experience, class: 'col-sm-4 control-label') %>
+        <div class="col-sm-8">
+          <%= f.text_field :years_of_experience, class: 'form-control', id: 'apply_years_of_experience', placeholder: "Anos de experiencia" %>
+        </div>
+      </div>
+      <div class="form-group">
+        <%= label(:apply_message, :work_phone, class: 'col-sm-4 control-label') %>
+        <div class="col-sm-8">
+          <%= f.text_field :work_phone, class: 'form-control', id: 'apply_work_phone', placeholder: "Work phone" %>
+        </div>
+      </div>
+      <div class="form-group">
+        <%= label(:apply_message, :city, class: 'col-sm-4 control-label') %>
+        <div class="col-sm-8">
+          <%= f.text_field :city, class: 'form-control', id: 'apply_city', placeholder: "Cidade" %>
+        </div>
+      </div>
+      <div class="form-group">
+        <%= label(:apply_message, :country, class: 'col-sm-4 control-label') %>
+        <div class="col-sm-8">
+          <%= f.text_field :country, class: 'form-control', id: 'apply_country', placeholder: "Pais" %>
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="col-sm-offset-4 col-sm-8">
+          <%= f.submit "Submit", class: 'btn btn-default' %>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
