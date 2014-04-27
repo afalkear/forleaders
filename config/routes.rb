@@ -11,6 +11,9 @@ Forleaders::Application.routes.draw do
   get 'the_method', to:'static_pages#the_method'
   get 'our_consultors', to: 'static_pages#our_consultors'
   get 'derose_method', to: 'static_pages#derose_method'
+  get 'apply', to: 'static_pages#apply'
+
+  match 'apply_message' => 'static_pages#apply_message', :via => :post
 
   resources :articles
   resources :categories

@@ -1,0 +1,43 @@
+.apply-header {
+  background-image: url('apply_header.jpg');
+  background-position: 0% 45%;
+}
+
+.apply-button {
+  padding-bottom: 0;
+}
+
+
+.apply-form {
+  padding-top: 30px;
+}
+
+#new_apply_message > .form-group > .control-label {
+  text-align: left;
+}
+
+.apply-criteria-title > h1 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  letter-spacing: 1px;
+  font-weight: 400;
+  color: black;
+}
+
+.apply-criteria-body {
+  font-family: 'Open Sans', sans-serif;
+  color: black;
+  font-weight: 400;
+  background-color: #EFEFEF;
+  padding: 10px;
+  min-height: 500px;
+}
+
+.apply-container > hr {
+  background: #273451; 
+  border: 0; 
+  height: 4px;  
+  margin: 0px;
+  margin-left: -15px;
+  margin-right: -15px;
+}
