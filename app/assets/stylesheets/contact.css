@@ -1,0 +1,67 @@
+.contact-header {
+  background-image: url('contact_header.png');
+  background-position: 0% 45%;
+}
+
+.contact-button {
+  padding-bottom: 0;
+}
+
+
+.contact-form {
+  padding-top: 30px;
+}
+
+#new_contact_message > .form-group > .control-label {
+  text-align: left;
+}
+
+.contact-sidebar-title > h1 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  letter-spacing: 1px;
+  font-weight: 400;
+  color: black;
+}
+
+.contact-sidebar-body {
+  font-family: 'Open Sans', sans-serif;
+  color: black;
+  font-weight: 400;
+  background-color: #EFEFEF;
+  padding: 10px;
+  min-height: 750px;
+}
+
+.contact-sidebar-body {
+  font-size: 18px;
+  letter-spacing: 1px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+}
+
+.contact-sidebar-body > h2 {
+  color: #AE9029;
+  font-size: 18px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin-bottom: 0px;
+}
+
+.contact-container > hr {
+  background: #273451; 
+  border: 0; 
+  height: 4px;  
+  margin: 0px;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.new-contact-form-container label {
+  text-transform: uppercase;
+  color: #AE9029;
+  letter-spacing: 2px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+}
