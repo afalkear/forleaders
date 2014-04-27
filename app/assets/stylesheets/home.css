@@ -375,7 +375,35 @@ img.center {
   padding-bottom: 50px;
 }
 
+.page-footer {
+  border-style: none;
+  border-color: transparent;
+  background: #FFFFFF url("blizzard.jpg") repeat left top;
+}
 
+.page-footer-info-container {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.page-footer-text-container {
+  color: #7F7F7F; 
+  line-height: 14px;
+}
+
+.page-footer-image-container {
+  overflow: hidden;
+}
+
+.page-footer-text-container > h2 {
+  font-family: 'Open Sans', sans-serif;
+  color: black;
+  font-size: 15px;
+  line-height: 19px;
+  font-weight: 700; 
+  margin: 0px; 
+  min-height: 45px;
+}
 
 /* SLIDESHOW */
 
