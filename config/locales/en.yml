@@ -39,3 +39,12 @@ en:
         work_phone: "Work phone"
         city: "Cidade"
         country: "País"
+      contact_message:
+        first_name: "Nome"
+        last_name: "Sobrenome"
+        email: "Email"
+        calendar: "Calendario"
+        company: "Empresa"
+        position: "Cargo"
+        phone: "Telefone"
+        observations: "Observaçoes"
