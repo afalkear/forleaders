@@ -50,10 +50,7 @@ class StaticPagesController < ApplicationController
       redirect_to contact_url, notice: "Please fill all required fields."
     end
   end
-  
-  def about
-  end
 
-  def news
+  def net
   end
 end
