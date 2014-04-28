@@ -13,6 +13,7 @@ Forleaders::Application.routes.draw do
   get 'derose_method', to: 'static_pages#derose_method'
   get 'apply', to: 'static_pages#apply'
   get 'contact', to: 'static_pages#contact'
+  get 'net', to: 'static_pages#net'
 
   match 'apply_message' => 'static_pages#apply_message', :via => :post
   match 'contact_message' => 'static_pages#contact_message', :via => :post
