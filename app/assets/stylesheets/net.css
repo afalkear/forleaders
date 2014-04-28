@@ -3,3 +3,39 @@
   background-position: 0% 50%;
   min-height: 400px;
 }
+
+.net-header .page-header-title {
+  line-height: 400px;
+  vertical-align: middle;
+  padding-left: 60px;
+}
+
+.net-data {
+  background-color: #EFEFEF;
+  color: #273451;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.net-data .net-number {
+  font-size: 72px;
+  line-height: 86px;
+}
+
+.net-data .net-info {
+  line-height: 22px;
+  font-size: 18px;
+}
+
+.net-body-info {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  color: black;
+}
+
+.net-body-container {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
