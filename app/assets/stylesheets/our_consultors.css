@@ -4,13 +4,11 @@
 }
 
 .our-consultors-header-container {
-  font-family: Arial;
+  /*font-family: Arial;
   font-size: 15px;
-  color: black;
+  color: black;*/
   background-image: url('consultants_header.jpg');
-  background-size: 100%;
   background-position: 0% 45%;
-  min-height: 263px;
 }
 
 .our-consultors-header-title {
