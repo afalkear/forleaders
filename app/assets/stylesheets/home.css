@@ -301,6 +301,18 @@ img.center {
   text-align: left;
 }
 
+.page-header-subtitle > h2 {
+  text-transform: uppercase;
+  font-size: 16px;
+  color: #E9E6E6;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+}
+
+.page-header-subtitle > p {
+  margin-bottom: 0px;
+}
+
 .page-title {
   color: #273451;
   font-family: 'Open Sans', sans-serif;

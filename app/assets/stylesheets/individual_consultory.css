@@ -11,20 +11,20 @@
   padding-top: 30px;
 }
 
-.individual-consultory-subtitle {
-  font-size: 18px;
+.individual-consultory-title-subtitle {
+  font-size: 16px;
   line-height: 23px;
-  color: #E9E6E6;
+  color: #D3BB69;
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
-  padding-top: 10px;
 }
 
-.individual-consultory-container hr {
+.individual-sidebar > hr {
   background: #D5D5D5; 
   border: 0; 
   height: 1px;  
-  margin: 0px;
+  margin-left: -15px;
+  margin-right: -15px;
 }
 
 #individual-pills > li > a {
@@ -70,11 +70,13 @@
   font-size: 15px;
   line-height: 19px;
   font-weight: 700;
+  color: black;
 }
 
 .tab-content > .active > .container > .row > p {
   margin: 0px;
   text-align: justify;
+  color: black;
 }
 
 .individual-sidebar {
@@ -83,12 +85,6 @@
   padding-left: 50px;
   padding-right: 0px;
   float: right;
-}
-.individual-sidebar hr {
-  background: #D5D5D5; 
-  border: 0; 
-  height: 1px;  
-  margin: 0px; 
 }
 
 .individual-sidebar > div > h2 {
@@ -100,6 +96,97 @@
 
 .individual-sidebar > .row {
   margin: 0px;
+}
+
+.individual-sidebar-title > h1 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  letter-spacing: 1px;
+  font-weight: 400;
+  color: black;
+}
+
+.individual-sidebar-body {
+  font-family: 'Open Sans', sans-serif;
+  color: black;
+  font-weight: 400;
+  background-color: #EFEFEF;
+  padding: 10px;
+}
+
+.individual-sidebar-container > hr {
+  background: #273451; 
+  border: 0; 
+  height: 4px;  
+  margin: 0px;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.individual-consultors-sidebar-list {
+  list-style: none;
+  padding: 0px;
+}
+
+.individual-consultors-button-link {
+  padding-top: 50px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.individual-consultors-button-link > span {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  letter-spacing: 1px;
+  font-weight: 400;
+  padding-top: 4px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #D3BB69;
+  background-color: white;
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -khtml-border-radius: 15px;
+  border-radius: 15px;
+}
+
+.individual-consultors-button-link > span:hover {
+  background-color: #001737;
+}
+
+.individual-consultors-button-link > span:hover > a {
+  color: #D3BB69;
+}
+
+.individual-consultors-button-link > span > a {
+  color: #001737;
+}
+
+.individual-consultors-button-link > span > a:hover {
+  text-decoration: none;
+}
+
+.individual-consultors-sidebar-list li {
+  display: inline;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.individual-consultors-sidebar-list > li > a {
+  text-decoration: none;
+  text-align: center;
+}
+
+.individual-consultors-sidebar-list > table > tbody > tr > td > a > img {
+  max-width: 60px;
+  max-height: 126px;
+}
+
+.individual-consultors-sidebar-list > table {
+  width: 100%;
 }
 
 #empty-space {
