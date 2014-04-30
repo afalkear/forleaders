@@ -4,6 +4,9 @@ class Article < ActiveRecord::Base
 
   mount_uploader :article_image, ArticleImageUploader
 
+  def self.home_articles
+    
+  end
 
   def category_tokens=(tokens)
     self.categories << Category.get_from_tokens(tokens)
