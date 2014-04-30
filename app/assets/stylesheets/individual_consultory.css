@@ -112,6 +112,11 @@
   font-weight: 400;
   background-color: #EFEFEF;
   padding: 10px;
+  line-height: 16px;
+}
+
+.individual-sidebar-body > p {
+  margin-bottom: 0px;
 }
 
 .individual-sidebar-container > hr {
