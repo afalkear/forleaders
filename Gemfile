@@ -34,6 +34,9 @@ gem 'mini_magick'
 # databaseless models with
 gem 'active_attr'
 
+# pagination with kaminari
+gem 'kaminari'
+
 group :development do
   gem 'git-pivotal-tracker-integration'
 end
