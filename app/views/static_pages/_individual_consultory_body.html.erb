@@ -23,20 +23,78 @@
         </li>
       </ul>
       <hr />
-      <div class="container">
-        <div class="row">
+      <!-- PERSONAL -->
+      <div class="container tab-content">
+        <div id="personal-header" class="tab-pane active personal row">
           <div class="col-md-7">
-            <div class="tab-content">
-             <div id="personal" class="tab-pane active personal">
+            <div>
+             <div>
                <%= render 'individual_consultory_personal' %>
              </div>
-             <div id="training" class="tab-pane training">
+            </div>
+          </div>
+          <div class="col-md-5 individual-sidebar">
+            <%= render 'individual_sidebar_criteria' %>
+            <%= render 'individual_sidebar_nestle' %>
+            <%= render 'individual_sidebar_unique_method' %>
+            <div class="container">
+              <div class="row our-consultors-programs-link">
+                <a href="#">
+                  CANDIDATURA
+                </a>
+              </div>
+            </div>  
+          </div>
+        </div>
+      <!-- TRAINING -->
+        <div  id="training" class="tab-pane training row">
+          <div class="col-md-7">
+            <div>
+             <div>
                <%= render 'individual_consultory_training' %>
              </div>
-             <div id="consultory" class="tab-pane consultory">
+            </div>
+            <div class="container">
+              <div class="row our-consultors-programs-link">
+                <a href="#">
+                  CANDIDATURA
+                </a>
+              </div>
+            </div>  
+          </div>
+          <div class="col-md-5 individual-sidebar">
+            <%= render 'individual_sidebar_criteria' %>
+            <%= render 'individual_sidebar_experts' %>
+            <%= render 'individual_sidebar_unique_method' %>
+          </div>
+        </div>
+      <!-- CONSULTORY -->
+        <div  id="consultory" class="tab-pane consultory row">
+          <div class="col-md-7">
+            <div>
+             <div>
                <%= render 'individual_consultory_consultory' %>
              </div>
-             <div id="intensive" class="tab-pane intensive">
+            </div>
+            <div class="container">
+              <div class="row our-consultors-programs-link">
+                <a href="#">
+                  CANDIDATURA
+                </a>
+              </div>
+            </div>  
+          </div>
+          <div class="col-md-5 individual-sidebar">
+            <%= render 'individual_sidebar_criteria' %>
+            <%= render 'individual_sidebar_experts' %>
+            <%= render 'individual_sidebar_unique_method' %>
+          </div>
+        </div>
+      <!-- INTENSIVE -->
+        <div id="intensive" class="tab-pane intensive row">
+          <div class="col-md-7">
+            <div>
+             <div>
                <%= render 'individual_consultory_intensive' %>
              </div>
             </div>
@@ -49,80 +107,9 @@
             </div>  
           </div>
           <div class="col-md-5 individual-sidebar">
-            <hr/>
-            <div class="individual-sidebar-container">
-              <div class="row individual-sidebar-title">
-                <h1>CRITÉRIOS DE SELEÇAO</h1>
-              </div>
-              <hr/>
-              <div class="row individual-sidebar-body">
-                Todos nossos programas tem um numero de vagas limitadas. As candidaturas passam por um rigoroso processo seletivo.
-   
-                Os criterios principais dos programas Personal Teaching e Treinamento são:
-                <p>- Recomandação por alunos do Método DeRose</p>
-                <p>- Cargo e nível de responsabilidade</p>
-                <p>- Percuso profissional que demostre uma boa capacidade de crescimento pessoal</p>
-                <p>- Motivação para entrar no programa</p>
-              </div>
-            </div>
-            <hr/>
-            <div class="row tab-pane consultory individual-sidebar-container">
-              <div class="row individual-sidebar-title">
-                <h1>CONHEÇA OS CONSULTORES EXPERTS</h1>
-              </div>
-              <div class="row">
-                <div class="container">
-                  <div class="row">
-                    <div class="table-responsive individual-consultors-sidebar-list">
-                      <table>
-                        <tr>
-                          <td>
-                            <a href="#">
-                              <%= image_tag 'consultors_rogerio.jpg' %>
-                            </a>
-                          </td>
-                          <td>
-                            <a href="#">
-                              <%= image_tag 'consultors_edu.jpg' %>
-                            </a>
-                            </td>
-                          <td>
-                            <a href="#">
-                              <%= image_tag 'consultors_flavio.jpg' %>
-                            </a>
-                          </td>
-                          <td>
-                            <a href="#">
-                              <%= image_tag 'consultors_gus.jpg' %>
-                            </a>
-                          </td>
-                          <td>
-                            <a href="#">
-                              <%= image_tag 'consultors_luis.jpg' %>
-                            </a>
-                          </td>
-                        </tr>
-                      </table>
-                    </div>
-                  </div>
-                  <div class="row pull-right individual-consultors-button-link">
-                    <span>
-                      <a href="#">VER MAIS DETALHES</a>
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <hr/>
-            <div class="row individual-sidebar-container tab-pane consultory">
-              <div class="row individual-sidebar-title">
-                <h1>O QUE TORNA O NOSSO MÉTODO ÚNICO</h1>
-              </div>
-              <hr/>
-              <div class="row individual-sidebar-body">
-                <p>Os líderes reconhecem o nosso grande difrencial: um knowhow incomparavel para melhorar o ser humano. Os resultados que conseguimos no aumento da performance e da qualidade de vida são muito expresivos devido a qualidade superlativa das ferramentas que ensinamos. Bastam disciplina e constância na aplicação das nossas técnicas e dos nossos conceitos para colher frutos positvos na vida profissional e pessoal.</p>
-              </div>
-            </div>
+            <%= render 'individual_sidebar_criteria' %>
+            <%= render 'individual_sidebar_experts' %>
+            <%= render 'individual_sidebar_unique_method' %>
           </div>
         </div>
       </div>
