@@ -121,6 +121,7 @@ img.center {
 
 #my-affix {
   background-color: white;
+  margin-bottom: 0px;
   /*border-width: 0px;*/
 }
 
@@ -162,7 +163,7 @@ img.center {
   font-family: 'Open Sans', sans-serif;
   letter-spacing: 3px;
   color: #273451;
-  text-align: center;
+  text-align: left;
   font-weight: 700;
 }
 
@@ -201,6 +202,10 @@ img.center {
 
  .dropdown > ul {
   background-color: #273451;
+  min-height: 180px;
+  min-width: 450px;
+  padding-top: 20px;
+  text-align: left;
  }
 
 
@@ -213,7 +218,7 @@ img.center {
   font-size: 13px;
  }
 
- .dropdown > ul > li > a{
+ .dropdown > ul > li > a {
   color: white;
   font-family: 'Open Sans', sans-serif;
   letter-spacing: 2px;
@@ -224,6 +229,35 @@ img.center {
  .dropdown > ul > li > a:hover {
   background-color: #273451;
   color: #AE9029;
+ }
+
+ .dropdown > ul > li > div > ul > li > a.gold-title {
+  color: #AE9029;
+  font-size: 13px;
+ }
+
+ .dropdown > ul > li > div > ul > li {
+  color: #AE9029;
+ }
+
+ .dropdown > ul > li > div > ul > li > a.gold-title {
+  color: #AE9029;
+  font-size: 13px;
+ }
+
+ .dropdown > ul > li > div > ul > li > a{
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  letter-spacing: 2px;
+  font-weight: 400;
+  font-size: 12px;
+  padding: 3px 20px;
+ }
+
+ .dropdown > ul > li > div > ul > li > a:hover {
+  background-color: #273451;
+  color: #AE9029;
+  text-decoration: none;
  }
 
 .dropdown-submenu{position:relative;}
