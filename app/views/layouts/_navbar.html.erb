@@ -22,8 +22,8 @@
           </a>
           <ul class="dropdown-menu">
             <li><a href="the_method">O MÉTODO DeR<span class="navbar-title-smallcaps">OSE</span></a></li>
-            <li><a href="#">NOSSOS CONSULTORES</a></li>
-            <li><a href="#">O MÉTODO PELO MUNDO</a></li>
+            <li><a href="our_consultors">NOSSOS CONSULTORES</a></li>
+            <li><a href="net">O MÉTODO PELO MUNDO</a></li>
           </ul>
         </li>
         <li class="<%= 'active' if controller_name == 'programmes' %> dropdown">
@@ -99,7 +99,7 @@
           </ul>
         </li>
         <li class="<%= 'active' if controller_name == 'contact' %>">
-          <%= link_to 'CONTACT', '#' %>
+          <%= link_to 'CONTACT', contact_url %>
         </li>
       </ul>
     </div><!-- /.navbar-collapse -->
