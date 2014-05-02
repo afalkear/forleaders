@@ -110,6 +110,10 @@ img.center {
 
 /* NAVBAR */
 
+.navbar {
+  background: #FFFFFF url("blizzard.jpg") repeat left top;
+}
+
 .navbar .navbar-nav {
   display: inline-block;
   float: none;
