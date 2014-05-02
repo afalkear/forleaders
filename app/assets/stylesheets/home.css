@@ -423,6 +423,11 @@ img.center {
   padding-bottom: 50px;
 }
 
+.sidebar-facts > img {
+  width: 320px;
+  height: 320px;
+}
+
 .page-footer {
   border-style: none;
   border-color: transparent;
