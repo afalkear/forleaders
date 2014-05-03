@@ -584,7 +584,7 @@ img.center {
   border-left-style: solid;
   border-color: #B6B5B5;
   border-width: thin;
-  min-height: 250px;
+  min-height: 260px;
   padding-top: 20px;
 }
 
@@ -592,7 +592,7 @@ img.center {
   border-right-style: solid;
   border-color: #B6B5B5;
   border-width: thin;
-  min-height: 250px;
+  min-height: 260px;
   padding-top: 20px;
 }
 
@@ -709,6 +709,10 @@ img.center {
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   padding-bottom: 20px;
+}
+
+.programme-show-with-plus {
+  display: none;
 }
 
 /* PARTNERS */
@@ -985,6 +989,7 @@ img.center {
   padding: 0px; 
   width: 100%;
   text-align: center;
+  min-width: 0px;
 }
 
 #articles-selector-items > li {
