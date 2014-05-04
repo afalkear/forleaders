@@ -6,19 +6,19 @@
       <hr />
       <ul class="nav nav-pills" id="individual-pills">
         <li class="active">
-          <a href="#personal" data-toggle="tab" data-target=".personal, #personal-header">PERSONAL TEACHING</a>
+          <a href="#personal" id="individual-personal-link" data-toggle="tab" data-target=".personal, #personal-header">PERSONAL TEACHING</a>
           <p>2 vêzes 1h per semana</p>
         </li>
         <li>
-          <a href="#training" data-toggle="tab" data-target=".training, #training-header">TREINAMENTO</a>
+          <a href="#training" id="individual-training-link" data-toggle="tab" data-target=".training, #training-header">TREINAMENTO</a>
           <p>15 minutos por día</p>
         </li>
         <li>
-          <a href="#consultory" data-toggle="tab" data-target=".consultory, #consultory-header">CONSULTORIAS</a>
+          <a href="#consultory" id="individual-consultory-link" data-toggle="tab" data-target=".consultory, #consultory-header">CONSULTORIAS</a>
           <p>3 até 6 mêses</p>
         </li>
         <li>
-          <a href="#intensive" data-toggle="tab" data-target=".intensive, #intensive-header">INTENSIVE TEACHING</a>
+          <a href="#intensive" id="individual-intensive-link" data-toggle="tab" data-target=".intensive, #intensive-header">INTENSIVE TEACHING</a>
           <p>2 días</p>
         </li>
       </ul>
@@ -39,7 +39,7 @@
             <%= render 'individual_sidebar_unique_method' %>
             <div class="container">
               <div class="row our-consultors-programs-link">
-                <a href="#">
+                <a href="apply">
                   CANDIDATURA
                 </a>
               </div>
@@ -54,18 +54,19 @@
                <%= render 'individual_consultory_training' %>
              </div>
             </div>
+          </div>
+          <div class="col-md-5 individual-sidebar">
+            <%= render 'individual_sidebar_criteria' %>
+            <%= render 'individual_sidebar_unique_method' %>
+            <hr/>
+            <%= render 'mailchimp_form' %>
             <div class="container">
               <div class="row our-consultors-programs-link">
-                <a href="#">
+                <a href="apply">
                   CANDIDATURA
                 </a>
               </div>
             </div>  
-          </div>
-          <div class="col-md-5 individual-sidebar">
-            <%= render 'individual_sidebar_criteria' %>
-            <%= render 'individual_sidebar_experts' %>
-            <%= render 'individual_sidebar_unique_method' %>
           </div>
         </div>
       <!-- CONSULTORY -->
@@ -78,7 +79,7 @@
             </div>
             <div class="container">
               <div class="row our-consultors-programs-link">
-                <a href="#">
+                <a href="apply">
                   CANDIDATURA
                 </a>
               </div>
@@ -100,7 +101,7 @@
             </div>
             <div class="container">
               <div class="row our-consultors-programs-link">
-                <a href="#">
+                <a href="apply">
                   CANDIDATURA
                 </a>
               </div>
