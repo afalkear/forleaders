@@ -1,3 +1,23 @@
+.individual-with-personal-background-header {
+   background-image: url('individual_personal_header.jpg');
+  background-position: 0% 45%;
+}
+
+.individual-with-training-background-header {
+   background-image: url('individual_training_header.png');
+  background-position: 0% 45%;
+}
+
+.individual-with-consultory-background-header {
+   background-image: url('consultants_header.jpg');
+  background-position: 0% 45%;
+}
+
+.individual-with-intensive-background-header {
+   background-image: url('consultants_header.jpg');
+  background-position: 0% 45%;
+}
+
 .individual-consultory-title {
   line-height: 29px;
   color: #D3BB69;
@@ -55,6 +75,10 @@
   line-height: 14px;
   font-weight: 300;
   font-family: 'Open Sans', sans-serif;
+}
+
+.tab-content {
+  padding-bottom: 50px;
 }
 
 .tab-content > .active > div > div > div > .container > .row > h1 {
@@ -117,6 +141,10 @@
 
 .individual-sidebar-body > p {
   margin-bottom: 0px;
+}
+
+.individual-sidebar-container {
+  padding-bottom: 30px;
 }
 
 .individual-sidebar-container > hr {
