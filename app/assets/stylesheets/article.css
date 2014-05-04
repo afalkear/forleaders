@@ -57,3 +57,83 @@
   font-size: 25px;
   font-weight: 300;
 }
+
+/* MAIN CONTAINER */
+
+.single-article-container {
+  background: url('articles_background.jpg') no-repeat left center;
+  background-size: cover !important;
+
+}
+
+.articles-categories {
+  padding-left: 0px;
+}
+
+.articles-categories > ul { 
+  display: table;
+  width: 100%;
+  background-color: #E8950E;
+  padding-left: 0px;
+}
+
+.articles-categories > ul > li { 
+  display: table-cell;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-right-style: solid;
+  border-color: #E8950E;
+  
+}
+
+.articles-categories > ul > li:last-child { 
+  border: 0px;
+}
+
+.articles-categories > ul > li:hover { 
+  background-color: #000B1A;
+}
+
+.articles-categories > ul > li > a {
+  display: block;
+  text-align: center;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  letter-spacing: 3px;
+  font-weight: 700;
+}
+
+.articles-categories > ul > li > a:hover {
+  color: #D3BB69;
+  text-decoration: none;
+}
+
+.article-info-container {
+  padding-left: 0px;
+}
+
+.articles-category-leadership {
+  background-color: transparent;
+}
+
+.articles-category-high-performance {
+  background-color: #C1272D;
+}
+
+.articles-category-focus {
+  background-color: #1D86CD;
+}
+
+.articles-category-intuition {
+  background-color: #732E9A;
+}
+
+.articles-category-quality-of-life {
+  background-color: #2C9C89;
+}
+
+.articles-category-human-relationships {
+  background-color: #D4145A;
+}

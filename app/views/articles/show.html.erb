@@ -1,5 +1,26 @@
-<div class="container">
-  <h1>New Article!</h1>
+<div class="single-article-container container">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 articles-categories">
+            <%= render 'articles_categories' %>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-7 article-info-container">
+            asdasdasd
+          </div>
+          <div class="col-md-5">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<h1>New Article!</h1>
   <h2>This is how it will look</h2>
   <h3>Title</h3>
   <%= @article.title %>
@@ -13,4 +34,3 @@
   <%= @article.categories.first.name %>
   <h4>Content</h4>
   <%= @article.content %>
-</div>
