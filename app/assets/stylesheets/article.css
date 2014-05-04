@@ -18,3 +18,42 @@
   -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
   box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
 }
+
+/* HEADER */
+
+.articles-header-container {
+  min-height: 135px;
+  background: #FFFFFF url("blizzard.jpg") repeat left top;
+}
+
+.articles-header-container > .row {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.articles-go-to-homepage {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+  letter-spacing: 1px;
+  font-weight: 400;
+  text-align: right;
+}
+
+.articles-go-to-homepage > div > a {
+  text-decoration: none;
+  color: #D3BB69;
+  font-weight: 600;
+}
+
+.articles-go-to-homepage > div > div > .languages-row {
+  padding-top: 0px;
+}
+
+.articles-main-title {
+  padding-right: 15px;
+  padding-top: 20px;
+  font-family: 'Open Sans', sans-serif;
+  color: #D3BB69;
+  font-size: 25px;
+  font-weight: 300;
+}
