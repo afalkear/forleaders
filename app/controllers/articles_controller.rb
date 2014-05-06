@@ -4,6 +4,8 @@ class ArticlesController < ApplicationController
 
   def show
     @article = Article.find(params[:id])
+    @related_articles = Article.page(params[:page]).per(3)
+    @latest_articles = Article.page(params[:page]).per(3).order('created_at DESC')
   end
 
   def new
