@@ -1,4 +1,4 @@
-<% title @article.title %>
+<% title @article.title.capitalize %>
 
 <div class="single-article-container container">
   <div class="row">
@@ -60,10 +60,14 @@
                     <% 3.times do |i| %>
                       <div class="col-md-4">
                         <div>
-                          <%= image_tag @related_articles[i].article_image.url %>
+                          <%= link_to article_path(@related_articles[i].id) do %>
+                            <%= image_tag @related_articles[i].article_image.url %>
+                        <% end %>  
                         </div>
                         <div class="related-article-title">
-                          <%= @related_articles[i].title %>
+                          <%= link_to article_path(@related_articles[i].id) do %>
+                            <%= @related_articles[i].title %>
+                          <% end %>
                         </div>
                       </div>
                     <% end %>
@@ -74,31 +78,46 @@
             </div>
           </div>
           <div class="col-md-4 article-sidebar">
-            <div class="content latest-articles">
+            <div class="container latest-articles">
               <h2>ULTIMOS ARTIGOS</h2>
               <% 3.times do |i| %>
                 <div class="row">
-                  <%= image_tag @latest_articles[i].article_image.url %>
-                  <div class="related-article-title">
-                    <%= @latest_articles[i].title %>
+                  <div class="col-md-5">
+                    <%= link_to article_path(@latest_articles[i].id) do %>
+                      <%= image_tag @latest_articles[i].article_image.url %>
+                    <% end %>
+                  </div>
+                  <div class="col-md-7 latest-article-title-container">
+                    <div class="latest-article-title">
+                      <%= link_to article_path(@latest_articles[i].id) do %>
+                        <%= @latest_articles[i].title %>
+                      <% end %>
+                    </div>
                   </div>
                 </div>
               <% end %>
             </div>
-            <div class="content articles-follow-us">
+            <hr/>
+            <div class="container articles-follow-us">
               <h2>FOLLOW US ON FACEBOOK</h2>
               
             </div>
-            <div class="content">
-              <h2>NOSSA NEWSLETTER</h2>
-              <%= render 'static_pages/mailchimp_form' %>
-            </div>
-            <div class="content article-sidebar-author-container">
+            <hr/>
+            <div class="container article-sidebar-newsletter">
               <div class="row">
-                <h2>O AUTOR</h2>
-                <%= image_tag "#{@article.author.downcase}.jpg" %>
-                <div>
+                <%= render 'static_pages/mailchimp_form' %>
+              </div>
+            </div>
+            <hr/>
+            <div class="container article-sidebar-author-container">
+              <h2>O AUTOR</h2>
+              <div class="row">
+                <div class="col-md-6">
+                  <%= image_tag "#{@article.author.downcase}.jpg" %>
+                </div>
+                <div class="col-md-6 article-sidebar-author-name">
                   <h3><%= @article.author %></h3>
+                  
                 </div>
               </div>
             </div>
