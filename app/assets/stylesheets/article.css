@@ -22,13 +22,18 @@
 /* HEADER */
 
 .articles-header-container {
-  min-height: 135px;
+  /*min-height: 135px;*/
   background: #FFFFFF url("blizzard.jpg") repeat left top;
 }
 
 .articles-header-container > .row {
   padding-top: 10px;
   padding-bottom: 10px;
+}
+
+.articles-main-logo > a > img {
+  width: 120px;
+  height: 90px;
 }
 
 .articles-go-to-homepage {
@@ -63,11 +68,16 @@
 .single-article-container {
   background: url('articles_background.jpg') no-repeat left center;
   background-size: cover !important;
+  padding-bottom: 50px;
+}
 
+.single-article-container > .row {
+  padding-bottom: 20px;
 }
 
 .articles-categories {
   padding-left: 0px;
+  padding-right: 0px;
 }
 
 .articles-categories > ul { 
@@ -79,13 +89,8 @@
 
 .articles-categories > ul > li { 
   display: table-cell;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 5px;
-  padding-right: 5px;
   border-right-style: solid;
   border-color: #E8950E;
-  
 }
 
 .articles-categories > ul > li:last-child { 
@@ -103,6 +108,14 @@
   font-family: 'Open Sans', sans-serif;
   letter-spacing: 3px;
   font-weight: 700;
+  text-transform: uppercase;
+  font-size: 13px;
+  height: 100%;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 3px;
+  padding-right: 3px;
 }
 
 .articles-categories > ul > li > a:hover {
@@ -110,15 +123,72 @@
   text-decoration: none;
 }
 
-.article-info-container {
+.articles-categories > ul > li:hover > a {
+  color: #D3BB69;
+  text-decoration: none;
+}
+
+.main-article-container {
   padding-left: 0px;
+}
+
+.article-info-container {
+  color: black;
+  background-color: white;
+  border-style: none;
+  border-color: transparent;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -khtml-border-radius: 10px;
+  border-radius: 10px;
+  padding-bottom: 20px;
+}
+
+.article-info-container > h1 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 28px;
+  line-height: 34px;
+  font-weight: 600;
+}
+
+.article-info-container > div > h2 {
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.article-info-container > div > p {
+  font-size: 13px;
+  line-height: 19px;
+}
+
+.article-info-container > hr {
+  height: 1px;
+  background: #B6B5B5; 
+  border: 0; 
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+
+.article-sidebar {
+  background-color: #EFEFEF;
+  border-style: none;
+  border-color: transparent;
+  background-color: #EFEFEF;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -khtml-border-radius: 10px;
+  border-radius: 10px;
+}
+
+.articles-categories-container {
+  padding-bottom: 20px;
 }
 
 .articles-category-leadership {
   background-color: transparent;
 }
 
-.articles-category-high-performance {
+.articles-category-high_performance {
   background-color: #C1272D;
 }
 
@@ -130,10 +200,90 @@
   background-color: #732E9A;
 }
 
-.articles-category-quality-of-life {
+.articles-category-quality_of_life {
   background-color: #2C9C89;
 }
 
-.articles-category-human-relationships {
+.articles-category-human_relationships {
   background-color: #D4145A;
+}
+
+.article-author-photo {
+  padding-left: 0px;
+}
+
+.article-metadata {
+  padding-left: 0px;
+}
+
+.article-metadata > .container {
+  display: table-cell;
+  height: 58px;
+  vertical-align: bottom;
+}
+
+.article-author-photo > img {
+  height: 58px;
+}
+
+.article-author {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  padding-left: 0px;
+  padding-right: 20px;
+  display: inline-block;
+}
+
+.article-category {
+  text-transform: uppercase;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  display: inline-block;
+}
+
+.article-square {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+}
+
+.article-tag {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 11px;
+  font-weight: 400;
+  color: #7F7F7F; 
+}
+
+.article-content {
+  padding-bottom: 20px;
+}
+
+.related-articles > h2 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.related-articles img {
+  height: 105px;
+  width: 100%;
+  border: 1px solid black;
+  border-radius: 8px;
+}
+
+.related-article-title {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 19px;
+  padding-top: 10px;
+}
+
+.latest-articles img {
+  width: 100px;
 }
