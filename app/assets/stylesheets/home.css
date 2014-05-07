@@ -495,6 +495,12 @@ img.center {
   max-height: 400px !important;
 }
 
+.carousel-inner > .item > img {
+  width: 110%;
+  max-width: 110%;
+  margin-left: -80px;
+} 
+
 .carousel-inner .item {
   max-height: 400px !important; 
 }
