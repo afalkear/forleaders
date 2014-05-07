@@ -114,6 +114,15 @@ img.center {
 
 /* NAVBAR */
 
+#navbar-collapse {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.affix > .container-fluid > #navbar-collapse > ul {
+  margin-left: -80px;
+}
+
 .navbar {
   background: #FFFFFF url("blizzard.jpg") repeat left top;
 }
@@ -130,6 +139,7 @@ img.center {
 #my-affix {
   background-color: white;
   margin-bottom: 0px;
+  border-radius: 0;
   /*border-width: 0px;*/
 }
 
@@ -144,7 +154,7 @@ img.center {
 
 .affix > .container-fluid > .navbar-header img{
   height: 35px;
-  padding-top: 0px;
+  padding-top: 5px;
   padding-bottom: 0px;
   padding-left: 40px;
 }
