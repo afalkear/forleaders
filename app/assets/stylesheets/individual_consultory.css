@@ -103,7 +103,7 @@
 
 .tab-content > .active div > div > div > .container > .row > p {
   margin: 0px;
-  text-align: justify;
+  /*text-align: justify;*/
   color: black;
 }
 
@@ -275,7 +275,7 @@
 
 .individual-footer-text-container > p {
   color: #7F7F7F; 
-  text-align: justify;
+  /*text-align: justify;*/
 }
 
 .individual-tab-navigation {
