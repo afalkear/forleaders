@@ -1,6 +1,5 @@
 .our-consultors-container {
   color: black;
-  text-align: justify;
 }
 
 .our-consultors-header-container {
@@ -122,7 +121,8 @@
   font-size: 16px;
   line-height: 19px;
   letter-spacing: 1px;
-  padding: 50px;
+  padding-top: 50px;
+  padding-bottom: 10px;
 }
 
 .our-consultors-programs-link > a {
@@ -144,4 +144,8 @@
 
 .our-consultors-programs-link > a:hover {
   color: rgb(211, 187, 105);
+}
+
+.our-consultors-text > p {
+  margin-bottom: 0px;
 }
