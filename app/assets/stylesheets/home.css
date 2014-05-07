@@ -1153,7 +1153,7 @@ img.center {
 .home-article-thumb > .home-article-category {
   position: absolute;
   top: 0px;
-  right: 0px;
+  right: 15px;
   background: rgba(0,0,0,0.5);
   color: white;
   padding-right: 5px;
@@ -1211,4 +1211,13 @@ img.center {
 
 .home-article-read-more > a{
   color: #D3BB69;
+}
+
+.modal-body {
+  text-align: center;
+  background-color: rgba(255,255,255,0.5);
+}
+
+.modal-content {
+  background-color: rgba(255,255,255,0.5);
 }

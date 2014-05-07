@@ -35,3 +35,31 @@ ready = ->
 
 $(document).ready(ready)
 $(document).on('page:load', ready)
+$(document).on 'page:fetch', ->
+  PageSpinner.spin()
+
+@PageSpinner =
+  spin: (ms=500)->
+    @spinner = setTimeout( (=> @add_spinner()), ms)
+    $(document).on 'page:change', =>
+      @remove_spinner()
+  spinner_html: '
+    <div class="modal fade" id="page-spinner">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body">
+            <i class="fa fa-refresh fa-spin fa-5x"></i>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+  '
+  spinner: null
+  add_spinner: ->
+    $('body').append(@spinner_html)
+    $('body div#page-spinner').modal()
+  remove_spinner: ->
+    clearTimeout(@spinner)
+    #$('div#page-spinner').modal('hide')
+    #$('div#page-spinner').on 'hidden', ->
+      #$(this).remove()
