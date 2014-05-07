@@ -1,5 +1,7 @@
 class ArticlesController < ApplicationController
   def index
+    @featured_articles = Article.page(params[:page]).per(4)
+    @latest_articles = Article.page(params[:page]).per(3).order('created_at DESC')
   end
 
   def show
