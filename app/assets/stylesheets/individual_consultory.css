@@ -32,7 +32,7 @@
 }
 
 .individual-consultory-title-subtitle {
-  font-size: 16px;
+  font-size: 18px;
   line-height: 23px;
   color: #D3BB69;
   font-family: 'Open Sans', sans-serif;
@@ -53,6 +53,8 @@
   font-weight: 400;
   text-align: justify;
   letter-spacing: 1px;
+  padding-bottom: 5px;
+  padding-top: 5px;
 }
 
 #individual-pills > li > a:hover {
@@ -75,6 +77,7 @@
   line-height: 14px;
   font-weight: 300;
   font-family: 'Open Sans', sans-serif;
+  margin-bottom: 5px;
 }
 
 .tab-content {
@@ -91,10 +94,11 @@
 
 .tab-content > .active div > div > div > .container > .row > h2 {
   font-family: 'Open Sans', sans-serif;
-  font-size: 15px;
-  line-height: 19px;
+  font-size: 16px;
+  line-height: 21px;
   font-weight: 700;
   color: black;
+  letter-spacing: 1px;
 }
 
 .tab-content > .active div > div > div > .container > .row > p {
@@ -106,8 +110,8 @@
 .individual-sidebar {
   padding-top: 20px;
   padding-bottom: 20px;
-  padding-left: 50px;
-  padding-right: 0px;
+  padding-right: 30px;
+  padding-left: 80px;
   float: right;
 }
 
@@ -124,9 +128,9 @@
 
 .individual-sidebar-title > h1 {
   font-family: 'Open Sans', sans-serif;
-  font-size: 16px;
-  letter-spacing: 1px;
-  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 0px;
+  font-weight: 700;
   color: black;
 }
 
@@ -135,7 +139,7 @@
   color: black;
   font-weight: 400;
   background-color: #EFEFEF;
-  padding: 10px;
+  padding: 20px;
   line-height: 16px;
 }
 
@@ -272,4 +276,14 @@
 .individual-footer-text-container > p {
   color: #7F7F7F; 
   text-align: justify;
+}
+
+.individual-tab-navigation {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.individual-tab-navigation > hr {
+  margin-bottom: 0px;
+  margin-top: 0px;
 }
