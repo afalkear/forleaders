@@ -1,0 +1,108 @@
+<% title "artigos" %>
+<div class="single-article-container container">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <div class="container">
+        <div class="row articles-categories-container">
+          <div class="col-md-12 articles-categories">
+            <%= render 'articles_categories' %>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-8 main-article-container">
+            <%= render 'featured_article', article: @featured_articles[0] %>
+            <% 3.times do |i| %>
+              <%= render 'secondary_articles', article: @featured_articles[1+i] %>
+            <% end %>
+          </div>
+          <div class="col-md-4 article-sidebar">
+            <div class="container latest-articles">
+              <h2>ULTIMOS ARTIGOS</h2>
+              <% 3.times do |i| %>
+                <div class="row">
+                  <div class="col-md-5">
+                    <%= link_to article_path(@latest_articles[i].id) do %>
+                      <%= image_tag @latest_articles[i].article_image.url %>
+                    <% end %>
+                  </div>
+                  <div class="col-md-7 latest-article-title-container">
+                    <div class="latest-article-title">
+                      <%= link_to article_path(@latest_articles[i].id) do %>
+                        <%= @latest_articles[i].title %>
+                      <% end %>
+                    </div>
+                  </div>
+                </div>
+              <% end %>
+            </div>
+            <hr/>
+            <div class="container articles-follow-us">
+              <h2>FOLLOW US ON FACEBOOK</h2>
+              
+            </div>
+            <hr/>
+            <div class="container article-sidebar-newsletter">
+              <div class="row">
+                <%= render 'static_pages/mailchimp_form' %>
+              </div>
+            </div>
+            <hr/>
+            <div class="container">
+            <h2>NOSSOS AUTORES</h2>
+              <div class="row articles-authors-mini-container">
+                <div class="col-md-3 articles-authors-mini-photo">
+                  <%= image_tag "derose.jpg" %>
+                </div>
+                <div class="col-md-9 articles-authors-mini-info">
+                  <h3>DeRose</h3>
+                  <p>Presidente Método DeROSE Mundo</p>
+                </div>
+              </div>
+              <div class="row articles-authors-mini-container">
+                <div class="col-md-3 articles-authors-mini-photo">
+                  <%= image_tag "edgardo caramella.jpg" %>
+                </div>
+                <div class="col-md-9 articles-authors-mini-info">
+                  <h3>Edgardo Caramella</h3>
+                  <p>Presidente Método DeROSE Argentina</p>
+                </div>
+              </div>
+              <div class="row articles-authors-mini-container">
+                <div class="col-md-3 articles-authors-mini-photo">
+                  <%= image_tag "joris marengo.jpg" %>
+                </div>
+                <div class="col-md-9 articles-authors-mini-info">
+                  <h3>Joris Marengo</h3>
+                </div>
+              </div>
+              <div class="row articles-authors-mini-container">
+                <div class="col-md-3 articles-authors-mini-photo">
+                  <%= image_tag "yael barcesat.jpg" %>
+                </div>
+                <div class="col-md-9 articles-authors-mini-info">
+                  <h3>Yael Barcesat</h3>
+                </div>
+              </div>
+              <div class="row articles-authors-mini-container">
+                <div class="col-md-3 articles-authors-mini-photo">
+                  <%= image_tag "carlo mea.jpg" %>
+                </div>
+                <div class="col-md-9 articles-authors-mini-info">
+                  <h3>Carlo Mea</h3>
+                </div>
+              </div>
+              <div class="row articles-authors-mini-container">
+                <div class="col-md-3 articles-authors-mini-photo">
+                  <%= image_tag "gustavo marson.jpg" %>
+                </div>
+                <div class="col-md-9 articles-authors-mini-info">
+                  <h3>Gustavo Marson</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
