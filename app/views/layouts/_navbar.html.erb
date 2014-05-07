@@ -32,12 +32,12 @@
             P<span class="navbar-title-smallcaps">ROGRAMAS</span><b class="caret"></b>
           </a>
           <ul class="dropdown-menu">
-            <li><a href="individual_consultory"> PARA INDIVIDUOS </a></li>      
+            <li class="navbar-non-clickable">PARA INDIVIDUOS</li>      
             <li><a tabindex="-1" href="individual_consultory#personal">Personal Teaching</a></li>
             <li><a tabindex="-1" href="individual_consultory#consultory">Consultoria</a></li>
             <li><a tabindex="-1" href="individual_consultory#training">Treinamento</a></li>
             <li><a tabindex="-1" href="individual_consultory">Investimentos</a></li>
-            <li><a href="group_consultory"> PARA EMPRESAS </a></li>
+            <li class="navbar-non-clickable">PARA EMPRESAS</li>
             <li><a tabindex="-1" href="group_consultory">Small Group Teaching</a></li>
             <li><a tabindex="-1" href="group_consultory#training">Treinamento</a></li>
             <li><a tabindex="-1" href="group_consultory#talks">Palestra</a></li>
@@ -101,21 +101,23 @@
             <li><a href="#">Instituçoes</a></li>
           </ul>
         </li>
-        <li class="<%= 'active' if controller_name == 'articles' %> dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-            A<span class="navbar-title-smallcaps">RTIGOS</span><b class="caret"></b>
+        <li class="<%= 'active' if controller_name == 'articles' %> ">
+          <a href="articles">
+            A<span class="navbar-title-smallcaps">RTIGOS</span><!-- b class="caret"></b -->
           </a>
-          <ul class="dropdown-menu">
-            <li><a href="#">LIDERANÇA</a></li>
-            <li><a href="#">ALTA PRODUTIVIDADE</a></li>
-            <li><a href="#">RELAÇOÊS HUMANAS</a></li>
-            <li><a href="#">QUALIDADE DE VIDA</a></li>
-            <li><a href="#">ADMINISTRAÇÂO DO STRESS</a></li>
-            <li><a href="#">FOCO</a></li>
-          </ul>
+          <!-- ul class="dropdown-menu">
+            <li><a href="#">Liderança</a></li>
+            <li><a href="#">Alta Produtividade</a></li>
+            <li><a href="#">Foco</a></li>
+            <li><a href="#">Intuição Aplicada</a></li>
+            <li><a href="#">Relação Interpessoal</a></li>
+            <li><a href="#">Qualidade de vida</a></li>
+          </ul -->
         </li>
         <li class="<%= 'active' if controller_name == 'contact' %>">
-          <%= link_to 'CONTACT', contact_url %>
+          <%= link_to contact_url do %>
+            C<span class="navbar-title-smallcaps">ONTACTO</span>
+          <% end %>
         </li>
       </ul>
     </div><!-- /.navbar-collapse -->
