@@ -689,7 +689,7 @@ img.center {
 
 .programme-subheader {
   font-family: 'Open Sans Condensed', sans-serif;
-  font-size: 13px;
+  font-size: 17px;
   font-weight: 600;
   text-align: center;
 }
@@ -699,13 +699,12 @@ img.center {
   font-weight: 600;
   text-align: center;
   padding-bottom: 20px;
-  font-size: 12px;
+  font-size: 13px;
 }
 
 .programme-text {
   font-family: 'Open Sans Condensed', sans-serif;
   padding-top: 5px;
-  font-size: small;
   padding-left: 15px;
   padding-right: 15px;
   font-weight: 300;
@@ -1163,6 +1162,10 @@ img.center {
   font-family: 'Open Sans', sans-serif;
   font-weight: 600;
   font-size: 22px;
+}
+
+.home-article-category > .article_square {
+  margin-bottom: 2px;
 }
 
 .home-article-thumb > .home-article-category {
