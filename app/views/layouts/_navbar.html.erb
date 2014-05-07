@@ -26,11 +26,25 @@
             <li><a href="net">O MÉTODO PELO MUNDO</a></li>
           </ul>
         </li>
+        
         <li class="<%= 'active' if controller_name == 'programmes' %> dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">
             PROGRAMAS<b class="caret"></b>
           </a>
           <ul class="dropdown-menu">
+            <li><a href="individual_consultory" class="gold-title"> PARA INDIVIDUOS </a></li>      
+            <li><a tabindex="-1" href="individual_consultory#personal">Personal Teaching</a></li>
+            <li><a tabindex="-1" href="individual_consultory#consultory">Consultoria</a></li>
+            <li><a tabindex="-1" href="individual_consultory#training">Treinamento</a></li>
+            <li><a tabindex="-1" href="individual_consultory">Investimentos</a></li>
+            <li><a href="group_consultory" class="gold-title"> PARA EMPRESAS </a></li>
+            <li><a tabindex="-1" href="group_consultory">Small Group Teaching</a></li>
+            <li><a tabindex="-1" href="group_consultory#training">Treinamento</a></li>
+            <li><a tabindex="-1" href="group_consultory#talks">Palestra</a></li>
+            <li><a tabindex="-1" href="group_consultory#workshop">Workshop</a></li>
+            
+          </ul>
+          <!-- ul class="dropdown-menu">
             <li>
               <div class="row">
                 <ul class="list-unstyled col-md-6">
@@ -49,7 +63,7 @@
                 </ul>
               </div>
             </li>
-          </ul>
+          </ul -->
         </li>
         <% if false %>
           <li class="<%= 'active' if controller_name == 'programmes' %> dropdown">
