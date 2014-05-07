@@ -501,8 +501,8 @@ ul.dropdown-menu {
 }
 
 .padding-topbottom-50 {
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 #flash_notice {
@@ -727,6 +727,7 @@ ul.dropdown-menu {
   padding-left: 15px;
   padding-right: 15px;
   font-weight: 300;
+  font-size: 16px;
 }
 
 .programme-text > ul {
