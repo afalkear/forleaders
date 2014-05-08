@@ -9,7 +9,7 @@
         <span class="icon-bar"></span>
       </button>
       <%= link_to root_path do %>
-        <%= image_tag 'lis_logo.jpg', class: 'navbar-brand' %>
+        <%= image_tag 'lis_logo.png', class: 'navbar-brand' %>
       <% end %>
     </div>
 
@@ -114,10 +114,13 @@
             <li><a href="#">Qualidade de vida</a></li>
           </ul -->
         </li>
-        <li class="<%= 'active' if controller_name == 'contact' %>">
-          <%= link_to contact_url do %>
-            C<span class="navbar-title-smallcaps">ONTACTO</span>
-          <% end %>
+        <li class="<%= 'active' if controller_name == 'contact' %> dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+            C<span class="navbar-title-smallcaps">ONTATO</span><b class="caret"></b>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="contact">Falar conosco / Candidatura</a></li>
+          </ul>
         </li>
       </ul>
     </div><!-- /.navbar-collapse -->
