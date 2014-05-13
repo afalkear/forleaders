@@ -39,11 +39,11 @@ ready = ->
 
   $('#individual-small-group-training-link').click ->
     $('#individual-header-container').removeClass ("individual-with-small-group-teaching-background-header individual-with-talks-background-header individual-with-workshop-background-header")
-    $('#individual-header-container').addClass "individual-with-training-background-header"
+    $('#individual-header-container').addClass "individual-with-small-group-training-background-header"
 
   $('#individual-workshop-link').click ->
     $('#individual-header-container').removeClass ("individual-with-small-group-teaching-background-header individual-with-talks-background-header individual-with-small-group-training-background-header")
-    $('#individual-header-container').addClass "individual-with-consultory-background-header"
+    $('#individual-header-container').addClass "individual-with-workshop-background-header"
 
   $('#individual-talks-link').click ->
     $('#individual-header-container').removeClass ("individual-with-small-group-teaching-background-header individual-with-small-group-training-background-header individual-with-workshop-background-header")
