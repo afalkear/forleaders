@@ -6,6 +6,7 @@ ready = ->
 
   url = document.location.toString()
   if url.match('#') 
+    $('#individual-header-container').addClass 'individual-with-'+url.split('#')[1]+'-background-header'
     $('.nav-pills a[href=#'+url.split('#')[1]+']').tab('show') ;
     $('a[data-toggle="tab"]').on 'show.bs.tab',  (e) ->
         window.location.hash = e.target.hash
@@ -47,7 +48,7 @@ ready = ->
 
   $('#individual-talks-link').click ->
     $('#individual-header-container').removeClass ("individual-with-small-group-teaching-background-header individual-with-small-group-training-background-header individual-with-workshop-background-header")
-    $('#individual-header-container').addClass "individual-with-intensive-background-header"
+    $('#individual-header-container').addClass "individual-with-talks-background-header"
 
 $(document).ready(ready)
 $(document).on('page:load', ready)

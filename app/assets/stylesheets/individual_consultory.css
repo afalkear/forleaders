@@ -1,3 +1,7 @@
+#individual-header-container {
+  max-height: 275px;
+}
+
 .individual-with-personal-background-header {
   background-image: url('individual_personal_header.jpg');
   background-position: 0% 45%;
@@ -30,6 +34,11 @@
 
 .individual-with-workshop-background-header {
    background-image: url('workshop_header.jpg');
+  background-position: 0% 60%;
+}
+
+.individual-with-talks-background-header {
+   background-image: url('talks_header.jpg');
   background-position: 0% 60%;
 }
 
@@ -369,4 +378,9 @@
 .individual-tab-navigation > hr {
   margin-bottom: 0px;
   margin-top: 0px;
+}
+
+.page-header-subtitle.talks {
+  font-size: 14px;
+  line-height: 18px;
 }
