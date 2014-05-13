@@ -15,7 +15,7 @@
         </div>
         <%= link_to article.categories.first.name.upcase+ ' >', category_path(article.categories.first.id)  %>
       </div>
-      <% if article.hover_frase? %>
+      <% if article.hover_frase.blank? %>
         <div class="home-article-hover-frase">
           <%= article.hover_frase %>
         </div>
