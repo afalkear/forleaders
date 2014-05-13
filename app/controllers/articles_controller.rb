@@ -8,6 +8,17 @@ class ArticlesController < ApplicationController
     @article = Article.find(params[:id])
     @related_articles = Article.page(params[:page]).per(3)
     @latest_articles = Article.page(params[:page]).per(3).order('created_at DESC')
+    youtube_url = @article.video_url
+    youtube_id = nil
+    if !youtube_url.nil?
+      if youtube_url[/youtu\.be\/([^\?]*)/]
+        youtube_id = $1
+      else
+        youtube_url[/^.*((v\/)|(embed\/)|(watch\?))\??v?=?([^\&\?]*).*/]
+        youtube_id = $5
+      end
+    end
+    @youtube_id = youtube_id
   end
 
   def new
@@ -43,7 +54,9 @@ class ArticlesController < ApplicationController
         :article_image, 
         :remote_article_image_url, 
         :subtitle,
-        :hover_frase
+        :hover_frase,
+        :excerpt,
+        :video_url
         )
     end
 end
