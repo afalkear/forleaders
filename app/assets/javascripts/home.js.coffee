@@ -33,6 +33,22 @@ ready = ->
     $('#individual-header-container').removeClass ("individual-with-personal-background-header individual-with-training-background-header individual-with-consultory-background-header")
     $('#individual-header-container').addClass "individual-with-intensive-background-header"
 
+  $('#individual-small-group-teaching-link').click ->
+    $('#individual-header-container').removeClass ("individual-with-small-group-training-background-header individual-with-talks-background-header individual-with-workshop-background-header")
+    $('#individual-header-container').addClass "individual-with-small-group-teaching-background-header"
+
+  $('#individual-small-group-training-link').click ->
+    $('#individual-header-container').removeClass ("individual-with-small-group-teaching-background-header individual-with-talks-background-header individual-with-workshop-background-header")
+    $('#individual-header-container').addClass "individual-with-training-background-header"
+
+  $('#individual-workshop-link').click ->
+    $('#individual-header-container').removeClass ("individual-with-small-group-teaching-background-header individual-with-talks-background-header individual-with-small-group-training-background-header")
+    $('#individual-header-container').addClass "individual-with-consultory-background-header"
+
+  $('#individual-talks-link').click ->
+    $('#individual-header-container').removeClass ("individual-with-small-group-teaching-background-header individual-with-small-group-training-background-header individual-with-workshop-background-header")
+    $('#individual-header-container').addClass "individual-with-intensive-background-header"
+
 $(document).ready(ready)
 $(document).on('page:load', ready)
 $(document).on 'page:fetch', ->
