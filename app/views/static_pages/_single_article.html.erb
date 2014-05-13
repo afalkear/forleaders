@@ -4,7 +4,7 @@
       <% if article.article_image? %>
         <%= image_tag article.article_image.url %>
       <% else %>
-        <% if !article.video_url.nil? %>
+        <% if !article.video_url.blank? %>
           <%= raw youtube_embed article.video_url, "100%", "175px" %>
         <% end %>
       <% end %>

@@ -53,7 +53,7 @@
                   <hr/>
                   <div class="container">
                     <div class="row article-content">
-                      <% if !@article.video_url.nil? %>
+                      <% if !@article.video_url.blank? %>
                         <%= raw youtube_embed @article.video_url, "100%", "100%" %>
                       <% end %>
                       <p><%= @article.content %></p>
