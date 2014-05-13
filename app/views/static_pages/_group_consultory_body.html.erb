@@ -2,67 +2,99 @@
   <div class="row">
     <div class="col-md-1"></div>
     <div class="col-md-10">
-    <div class="row">
+    <div class="row individual-tab-navigation">
       <hr />
       <ul class="nav nav-pills" id="individual-pills">
         <li class="active">
-          <a href="#personal" data-toggle="tab" data-target=".personal, #personal-header">PERSONAL TEACHING</a>
+          <a href="#small-group-teaching" id="individual-small-group-teaching-link" data-toggle="tab" data-target=".small-group-teaching, #small-group-teaching-header">SMALL GROUP TEACHING</a>
           <p>2 vêzes 1h per semana</p>
         </li>
         <li>
-          <a href="#training" data-toggle="tab" data-target=".training, #training-header">TREINAMENTO</a>
+          <a href="#small-group-training" id="individual-small-group-training-link" data-toggle="tab" data-target=".small-group-training, #small-group-training-header">TREINAMENTO</a>
           <p>15 minutos por día</p>
         </li>
         <li>
-          <a href="#consultory" data-toggle="tab" data-target=".consultory, #consultory-header">CONSULTORIAS</a>
-          <p>3 até 6 mêses</p>
+          <a href="#workshop" id="individual-workshop-link" data-toggle="tab" data-target=".workshop, #workshop-header">WORKSHOP</a>
+          <p>4, 8 ou 16 horas</p>
         </li>
         <li>
-          <a href="#intensive" data-toggle="tab" data-target=".intensive, #intensive-header">INTENSIVE TEACHING</a>
-          <p>2 días</p>
+          <a href="#talks" id="individual-talks-link" data-toggle="tab" data-target=".talks, #talks-header">PALESTRA</a>
+          <p>1, 2 ou 4 horas</p>
         </li>
       </ul>
       <hr />
-      <div class="container">
-        <div class="row">
+      <!-- small-group-teaching -->
+      <div class="container tab-content">
+        <div id="small-group-teaching-header" class="tab-pane active small-group-teaching row">
           <div class="col-md-7">
-            <div class="tab-content">
-             <div id="personal" class="tab-pane active personal">
-               <%= render 'individual_consultory_personal' %>
+            <div>
+             <div>
+               <%= render 'individual_consultory_small_group_teaching' %>
              </div>
-             <div id="training" class="tab-pane training">
-               <%= render 'individual_consultory_training' %>
+            </div>
+          </div>
+          <div class="col-md-5 individual-sidebar">
+            <%= render 'individual_sidebar_criteria' %>
+            <%= render 'individual_sidebar_unique_method' %>
+          </div>
+        </div>
+      <!-- TRAINING -->
+        <div  id="small-group-training" class="tab-pane small-group-training row">
+          <div class="col-md-7">
+            <div>
+             <div>
+               <%= render 'individual_consultory_small_group_training' %>
              </div>
-             <div id="consultory" class="tab-pane consultory">
-               <%= render 'individual_consultory_consultory' %>
+            </div>
+          </div>
+          <div class="col-md-5 individual-sidebar">
+            <%= render 'individual_sidebar_criteria' %>
+            <%= render 'individual_sidebar_nestle' %>
+            <%= render 'individual_sidebar_unique_method' %>
+          </div>
+        </div>
+      <!-- WORKSHOP -->
+        <div  id="workshop" class="tab-pane workshop row">
+          <div class="col-md-7">
+            <div>
+             <div>
+               <%= render 'individual_consultory_workshop' %>
              </div>
-             <div id="intensive" class="tab-pane intensive">
-               <%= render 'individual_consultory_intensive' %>
+            </div>
+            <!-- div class="container">
+              <div class="row our-consultors-programs-link">
+                <a href="apply">
+                  CANDIDATURA
+                </a>
+              </div>
+            </div -->  
+          </div>
+          <div class="col-md-5 individual-sidebar">
+            <%= render 'individual_sidebar_criteria' %>
+            <%= render 'individual_sidebar_experts' %>
+            <%= render 'individual_sidebar_unique_method' %>
+          </div>
+        </div>
+      <!-- TALKS -->
+        <div id="talks" class="tab-pane talks row">
+          <div class="col-md-7">
+            <div>
+             <div>
+               <%= render 'individual_consultory_talks' %>
              </div>
+            </div>
+            <div class="container">
+              <div class="row our-consultors-programs-link">
+                <a href="apply">
+                  CANDIDATURA
+                </a>
+              </div>
             </div>  
           </div>
           <div class="col-md-5 individual-sidebar">
-            <hr/>
-            <div class="row individual-presentation-video">
-              <h2>VIDEO OF PRESENTATION</h2>
-              <iframe width="384" height="226" src="http://www.youtube.com/embed/oZaHt81lME&list=PLXPALav6LoAXYZ96B2sFAiFXtPaQJvB1H?autoplay=0&loop=0&showinfo=0&theme=dark&color=white&controls=1&modestbranding=0&start=0&fs=1&iv_load_policy=1" frameborder="0" allowfullscreen></iframe>
-            </div>
-            <hr/>
-            <div class="row individual-facts">
-              <h2>FACTS ABOUT...</h2>
-              <div id="empty-space">
-                
-              </div>
-            </div>
-            <hr/>
-            <div class="row individual-newsletter">
-              <h2>SUBSCRIBE TO OUR NEWSLETTER</h2>
-              <div class="form-group">
-                <label for="exampleInputEmail1">Your email to receive</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
-                <button type="submit" class="btn btn-default pull-right">Send</button>
-              </div>
-            </div>
+            <%= render 'individual_sidebar_criteria' %>
+            <%= render 'individual_sidebar_experts' %>
+            <%= render 'individual_sidebar_unique_method' %>
           </div>
         </div>
       </div>
