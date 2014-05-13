@@ -645,6 +645,21 @@ ul.dropdown-menu {
   cursor: pointer;
 }
 
+.glyphicon-minus-sign {
+  font-size: 30px;
+  color: #D3BB69;
+}
+
+.glyphicon-minus-sign:hover {
+  font-size: 30px;
+  color: #AE9029;
+  cursor: pointer;
+}
+
+.programme-minus {
+  display: none;
+}
+
 .with-left-border {
   border-left-style: solid;
   border-color: #D5D5D5;

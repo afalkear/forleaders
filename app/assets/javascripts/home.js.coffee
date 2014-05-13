@@ -16,7 +16,14 @@ ready = ->
   $('.programme-plus').click (event) ->
     event.preventDefault()
     $('.programme-plus').hide()
+    $('.programme-minus').show()
     $('.programme-show-with-plus').show()
+
+  $('.programme-minus').click (event) ->
+    event.preventDefault()
+    $('.programme-plus').show()
+    $('.programme-minus').hide()
+    $('.programme-show-with-plus').hide()
 
   $('#individual-personal-link').click ->
     $('#individual-header-container').removeClass ("individual-with-training-background-header individual-with-intensive-background-header individual-with-consultory-background-header")
