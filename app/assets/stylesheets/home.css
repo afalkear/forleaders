@@ -1151,13 +1151,13 @@ ul.dropdown-menu {
   background-color: black;
 }
 
-.home-article-thumb > img {
+.home-article-thumb > a > img {
   z-index: 1;
   width: 100%;
   height: 175px;
 }
 
-.home-article-thumb:hover > img {
+.home-article-thumb:hover > a > img {
   opacity: 0.4;
   /*z-index: 1;
   filter: url(filters.svg#grayscale); 
@@ -1208,18 +1208,26 @@ ul.dropdown-menu {
   text-decoration: none;
 }
 
-.home-article-title {
+.home-article-title a {
   font-family: 'Open Sans', sans-serif;
   font-weight: 600;
   font-size: 22px;
   color: #273451;
 }
 
-.home-article-subtitle {
+.home-article-title a:hover {
+  text-decoration: none;
+}
+
+.home-article-subtitle a{
   font-family: 'Open Sans', sans-serif;
   font-weight: 600;
   font-size: 22px;
   color: #273451;
+}
+
+.home-article-subtitle a:hover {
+  text-decoration: none;
 }
 
 .home-article-author {
