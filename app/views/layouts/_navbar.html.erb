@@ -16,7 +16,7 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="navbar-collapse">
       <ul class="nav navbar-nav">
-        <li class="<%= 'active' if controller_name == 'methodologie' %> dropdown">
+        <li class="<%= 'active' if controller?('static_pages') && action?("derose_method", "our_consultors", "net") %> dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">
             DeR<span class="navbar-title-smallcaps">OSE</span>  F<span class="navbar-title-smallcaps">OR</span> L<span class="navbar-title-smallcaps">EADERS</span> <b class="caret"></b>
           </a>
@@ -27,7 +27,7 @@
           </ul>
         </li>
         
-        <li class="<%= 'active' if controller_name == 'programmes' %> dropdown">
+        <li class="<%= 'active' if controller?('static_pages') && action?("individual_consultory", "group_consultory") %> dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">
             P<span class="navbar-title-smallcaps">ROGRAMAS</span><b class="caret"></b>
           </a>
@@ -91,16 +91,16 @@
               </li>
             <% end %>
         </li>
-        <li class="<%= 'active' if controller_name == 'reconnaissances' %> dropdown">
+        <li class="<%= 'active' if controller?('static_pages') && action?("enterprise_testimony", "institution_testimony") %> dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">
             D<span class="navbar-title-smallcaps">EPOIMENTOS</span><b class="caret"></b>
           </a>
           <ul class="dropdown-menu">
             <li><a href="#">Empresas</a></li>
-            <li><a href="#">Instituçoês</a></li>
+            <li><a href="#">Instituções</a></li>
           </ul>
         </li>
-        <li class="<%= 'active' if controller_name == 'articles' %> ">
+        <li class="<%= 'active' if controller?('static_pages') && action?("articles") %> dropdown">
           <a href="articles">
             A<span class="navbar-title-smallcaps">RTIGOS</span><!-- b class="caret"></b -->
           </a>
@@ -113,7 +113,7 @@
             <li><a href="#">Qualidade de vida</a></li>
           </ul -->
         </li>
-        <li class="<%= 'active' if controller_name == 'contact' %> dropdown">
+        <li class="<%= 'active' if controller?('static_pages') && action?("contact") %> dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">
             C<span class="navbar-title-smallcaps">ONTATO</span><b class="caret"></b>
           </a>

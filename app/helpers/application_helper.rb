@@ -17,4 +17,20 @@ module ApplicationHelper
     %Q{<iframe title="YouTube video player" width="#{width}" height="#{height}" src="http://www.youtube.com/embed/#{ youtube_id }?modestbranding=1&autohide=1&controls=2&showinfo=0&rel=0" frameborder="0" allowfullscreen>
     </iframe>}
   end
+
+  def controller?(*controller)
+    controller.include?(params[:controller])
+  end
+
+  def action?(*action)
+    action.include?(params[:action])
+  end
+
+  def nav_link(link_text, link_path)
+    class_name = current_page?(link_path) ? 'current' : nil
+
+    content_tag(:li, :class => class_name) do
+      link_to (raw link_text), link_path
+    end
+  end
 end

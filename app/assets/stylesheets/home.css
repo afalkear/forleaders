@@ -124,6 +124,14 @@ img.center {
   padding-bottom: 12px;
 }
 
+.navbar-nav > li.active {
+  background-color: #001737;
+}
+
+.navbar-nav > li.active > a {
+  color: #D3BB69;
+}
+
 ul.dropdown-menu {
   background: #FFFFFF url("blizzard.jpg") repeat left top;
 }
