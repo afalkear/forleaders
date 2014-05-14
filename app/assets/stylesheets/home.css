@@ -607,7 +607,7 @@ ul.dropdown-menu {
 }
 
 .subprogramme-container {
-  padding-right: 50px;
+  /*padding-right: 50px;*/
 }
 
 .programme-title {
@@ -811,6 +811,10 @@ ul.dropdown-menu {
 
 .partners-container table {
   width: 100%;
+}
+
+.table-responsive > table > tbody > tr > td {
+  text-align: center;
 }
 
 .partners-title-container {
@@ -1047,6 +1051,7 @@ ul.dropdown-menu {
 
 .more-articles {
   text-align: center;
+  padding-bottom: 30px;
 }
 
 .articles-selector {
