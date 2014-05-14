@@ -572,6 +572,10 @@ ul.dropdown-menu {
   font-size: 48px;
 }
 
+.you-know-phrase {
+  line-height: 50px;
+}
+
 .carousel-control .glyphicon {
   font-size: 60px;
 }
