@@ -6,7 +6,8 @@ ready = ->
 
   url = document.location.toString()
   if url.match('#') 
-    $('#individual-header-container').addClass 'individual-with-'+url.split('#')[1]+'-background-header'
+    $('#individual-header-container').removeClass()
+    $('#individual-header-container').addClass 'individual-with-'+url.split('#')[1]+'-background-header container individual-consultory-container page-title-container'
     $('.nav-pills a[href=#'+url.split('#')[1]+']').tab('show') ;
     $('a[data-toggle="tab"]').on 'show.bs.tab',  (e) ->
         window.location.hash = e.target.hash
