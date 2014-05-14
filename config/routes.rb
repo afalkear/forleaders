@@ -14,6 +14,8 @@ Forleaders::Application.routes.draw do
   get 'apply', to: 'static_pages#apply'
   get 'contact', to: 'static_pages#contact'
   get 'net', to: 'static_pages#net'
+  get 'enterprise_testimonials', to: 'static_pages#enterprise_testimonials'
+  get 'institution_testimonials', to: 'static_pages#institution_testimonials'
 
   match 'apply_message' => 'static_pages#apply_message', :via => :post
   match 'contact_message' => 'static_pages#contact_message', :via => :post

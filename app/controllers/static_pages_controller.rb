@@ -21,6 +21,12 @@ class StaticPagesController < ApplicationController
   def derose_method
   end
 
+  def institution_testimonials
+  end
+
+  def enterprise_testimonials
+  end
+
   def apply
     @apply_message = ApplyMessage.new
   end
