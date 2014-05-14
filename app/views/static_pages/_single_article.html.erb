@@ -27,7 +27,9 @@
       <% end %>
     </div>
     <div class="row home-article-subtitle">
-      <%= article.subtitle %>
+      <%= link_to article_path(article.id) do %>
+        <%= article.subtitle %>
+      <% end %>
     </div>
     <div class="row home-article-author">
       <%= article.author %>
