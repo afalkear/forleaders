@@ -113,12 +113,13 @@
             <li><a href="#">Qualidade de vida</a></li>
           </ul -->
         </li>
-        <li class="<%= 'active' if controller?('static_pages') && action?("contact") %> dropdown">
+        <li class="<%= 'active' if controller?('static_pages') && action?("contact", "apply") %> dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">
             C<span class="navbar-title-smallcaps">ONTATO</span><b class="caret"></b>
           </a>
           <ul class="dropdown-menu">
-            <li><a href="contact">Falar conosco / Candidatura</a></li>
+            <li><a href="contact">Falar conosco</a></li>
+            <li><a href="apply">Candidatura</a></li>
           </ul>
         </li>
       </ul>
