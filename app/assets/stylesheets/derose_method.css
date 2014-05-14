@@ -2,3 +2,11 @@
   background-image: url('derose_method_header.jpg');
   background-position: 0% 45%;
 }
+
+.page-footer-image-container.right > img {
+  margin-left: -90px;
+}
+
+.page-footer-image-container.left > img {
+  margin-left: -80px;
+}

@@ -489,6 +489,11 @@ ul.dropdown-menu {
 
 .page-footer-image-container {
   overflow: hidden;
+  width: 140px;
+}
+
+.page-footer-image-container > img {
+  height: 185px;
 }
 
 .page-footer-text-container > h2 {
@@ -510,6 +515,10 @@ ul.dropdown-menu {
 .padding-topbottom-50 {
   padding-top: 20px;
   padding-bottom: 20px;
+}
+
+.more-bottom-padding-100 {
+  padding-bottom: 100px;
 }
 
 #flash_notice {

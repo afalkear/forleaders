@@ -1,4 +1,4 @@
-<div class="container individual-consultory-container padding-topbottom-50">
+<div class="container individual-consultory-container padding-topbottom-50 more-bottom-padding-100">
   <div class="row">
     <div class="col-md-1"></div>
     <div class="col-md-10">
@@ -8,97 +8,40 @@
           <div class="col-md-7">
             <div class="container">
               <div class="row page-title">
-                NOSSA PROPOSTA DE ALTA PERFORMANCE
-              </div>
-              <div class="row page-subtitle">
-                SAIBA MAIS SOBRE NOSSA ATUÇÃO
+                O QUE É O MÉTODO DeROSE
               </div>
               <div class="row page-main-body">
-                O Método DeRose é uma urdidura de técnicas e conceitos, edificando uma proposta de reeducação comportamental em prol da boa qualidade de vida, boas maneiras, boas relações humanas, boa cultura, boa alimentação, boa forma, bom ambiente e bons ideais.
-                Algumas das nossas ferramentas técnicas são a reeducação respiratória, a administração do stress, as técnicas orgânicas que promovem a vitalidade e a energia, procedimentos para o aprimoramento da descontração emocional e da concentração mental.
-                <br><br>
-                O Método DeRose é uma proposta de boas coisas:
-                <ul>
-                  <li>
-                    boa qualidade de vida;  
-                  </li>
-                  <li>
-                    boas maneiras;
-                  </li>
-                  <li>
-                    boas relações humanas;
-                  </li>
-                  <li>
-                    boa cultura;
-                  </li>
-                  <li>
-                    boa alimentação;  
-                  </li>
-                  <li>
-                    boa forma;
-                  </li>
-                  <li>
-                    bom ambiente;
-                  </li>
-                  <li>
-                    bons ideais;
-                  </li>
-                </ul>
-                E ainda, técnicas de:
-                <ul>
-                  <li>
-                    reeducação respiratória;
-                  </li>
-                  <li>
-                    administração do stress;
-                  </li>
-                  <li>
-                    tônus muscular;
-                  </li>
-                  <li>
-                    flexibilidade;
-                  </li>
-                  <li>
-                    concentração e meditação;
-                  </li>
-                  <li>
-                    e muitas outras.
-                  </li>
-                </ul>
-
+                <p>O Método DeROSE é uma urdidura de técnicas e conceitos, edificando uma proposta de reeducação comportamental em prol da boa qualidade de vida, boas maneiras, boas relações humanas, boa cultura, boa alimentação, boa forma, bom ambiente e bons ideais.</p>
+                <p>Algumas das nossas ferramentas técnicas são a reeducação respiratória, a administração do stress, as técnicas orgânicas que promovem a vitalidade e a energia, procedimentos para o aprimoramento da descontração emocional e da concentração mental.</p>
+                
                 <h5>O MÉTODO DEROSE FOR LEADERS</h5>
                 O Método DeROSE é de grande valia para os líderes que buscam ferramentas eficientes para se aprimorar, aumentando o seu desempenho pessoal e profissional.
                 Montamos com cada líder um programa sob medida incluido aulas de Personal Teaching, Treinamentos e Consultorias. Definimos juntos os seus objetivos e ensinamos as ferramentas mais adequadas para que ele possa progredir de forma efetiva e duradoura.
 
                 <h5>O QUE TORNA O NOSSO MÉTODO TÃO DIFERENTE</h5>
-                Os líderes reconhecem o nosso grande difrencial: um knowhow incomparavel para melhorar o ser humano. Os resultados que conseguimos no aumento da performance e da qualidade de vida são muito expresivos devido a qualidade superlativa das ferramentas que ensinamos. Bastam disciplina e constância na aplicação das nossas técnicas e dos nossos conceitos para colher frutos positvos na vida profissional e pessoal.
+                <p>Os líderes reconhecem o nosso grande difrencial: um knowhow incomparavel para melhorar o ser humano. Os resultados que conseguimos no aumento da performance e da qualidade de vida são muito expresivos devido a qualidade superlativa das ferramentas que ensinamos. Bastam disciplina e constância na aplicação das nossas técnicas e dos nossos conceitos para colher frutos positvos na vida profissional e pessoal.</p>
+
+                <h5>UMA PROPOSTA DE BOAS COISAS:</h5>
+                <%= link_to "/assets/derose_method_characteristics.jpg", class: 'image-link'  do %>
+                  <%= image_tag 'derose_method_characteristics.jpg' %>
+                <% end %>
+
               </div>
             </div>
           </div>
           <div class="col-md-5 individual-sidebar">
             <hr/>
-            <div class="row sidebar-presentation-video">
-              <h2>VIDEO OF PRESENTATION</h2>
-              <iframe width="384" height="226" src="http://www.youtube.com/embed/oZaHt81lME&list=PLXPALav6LoAXYZ96B2sFAiFXtPaQJvB1H?autoplay=0&loop=0&showinfo=0&theme=dark&color=white&controls=1&modestbranding=0&start=0&fs=1&iv_load_policy=1" frameborder="0" allowfullscreen></iframe>
-            </div>
-            <hr/>
-            <div class="row individual-facts">
-              <h2>FACTS ABOUT...</h2>
-              <div class="sidebar-facts">
-                <%= link_to "/assets/facts.jpg", class: 'image-link'  do %>
-                  <%= image_tag 'facts.jpg' %>
-                <% end %>
+            <div class="individual-sidebar-container">
+              <div class="row individual-sidebar-title">
+                <h1>VIDEO: INSPIRE SUA ESSÊNCIA</h1>
               </div>
+              <%= raw youtube_embed "https://www.youtube.com/watch?v=t2KhPPyqhm8","384px", "226px" %>
             </div>
+            <%= render 'individual_sidebar_nestle' %>
           </div>
         </div>
       </div>
     </div>
     </div>
-  </div>
-  <div class="row page-link-button padding-topbottom-50">
-    <span>
-      <a href="#">VER NOSSOS PROGRAMAS</a>
-    </span>
   </div>
 </div>
