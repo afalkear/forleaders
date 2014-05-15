@@ -163,10 +163,10 @@
 }
 
 .institution-testimonials-single-row-images {
-    display: table;
-    table-layout: fixed;
-    height:100px;
-    padding-bottom: 20px;
+  display: table;
+  table-layout: fixed;
+  height:100px;
+  padding-bottom: 20px;
 }
 
 .institution-testimonials-single-row-images-width-100 {
@@ -179,10 +179,10 @@
 }
 
 .institution-testimonials-single-row-images > div {
-    display: table-cell;
-    height:100px;
-    width: 100%;
-    text-align: center;
+  display: table-cell;
+  height:100px;
+  width: 100%;
+  text-align: center;
 }
 
 .institution-testimonials-single-row-images > div > img {
