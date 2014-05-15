@@ -482,9 +482,41 @@
   border-radius: 5px;
 }
 
-.articles-authors-mini-photo > img {
+.articles-authors-mini-photo {
   width: 68px;
   height: 68px;
+  overflow: hidden;
+  border-color: #000000;
+  position: relative;
+  background-size: cover !important;
+}
+
+.joris {
+  background: #FFFFFF url("joris marengo.jpg") no-repeat center center;
+}
+
+.edgardo {
+ background: #FFFFFF url("edgardo caramella.jpg") no-repeat center center; 
+}
+
+.derose {
+  background: #FFFFFF url("derose.jpg") no-repeat center top;
+}
+
+.carlo {
+  background: #FFFFFF url("carlo mea.jpg") no-repeat center top;
+}
+
+.yael {
+  background: #FFFFFF url("yael barcesat.jpg") no-repeat center top;
+}
+
+.gustavo {
+  background: #FFFFFF url("gustavo marson.jpg") no-repeat left center;
+}
+
+.articles-authors-mini-photo > img {
+  max-height: 100%;
 }
 
 .articles-authors-mini-info > h3 {
