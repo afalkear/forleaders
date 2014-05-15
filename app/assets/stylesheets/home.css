@@ -801,8 +801,8 @@ ul.dropdown-menu {
 }
 
 .partners-images-container {
-  margin-top: 7px;
-  padding-bottom: 20px;
+  margin-top: 20px;
+  /*padding-bottom: 20px;*/
 }
 
 .programme-container {
@@ -826,6 +826,26 @@ ul.dropdown-menu {
   padding-top: 15px;
   font-family: 'Open Sans', sans-serif;
   color: #273451;
+}
+
+.partners-images-row {
+  display: table;
+  table-layout: fixed;
+  height:100px;
+  padding-bottom: 20px;
+  width: 100%;
+}
+
+.partners-images-row > div {
+  display: table-cell;
+  height:100%;
+  width: 100%;
+  text-align: center;
+}
+
+.partners-images-row > div > a > img {
+  max-height: 90px;
+  max-width: 100px;
 }
 
 .partners-title {
@@ -916,6 +936,32 @@ ul.dropdown-menu {
   background:transparent url('visa-hover.png') center no-repeat;
   min-width: 100px;
 }
+
+.partners-image.nestle {
+  background:transparent url('nestle_thumb.png') center no-repeat;
+  min-width: 130px;
+}
+
+.partners-image.coca {
+  background:transparent url('coca_cola.png') center no-repeat;
+  min-width: 130px;
+}
+
+.partners-image.banco-de-chile {
+  background:transparent url('banco_de_chile.png') center no-repeat;
+  min-width: 130px;
+}
+
+.partners-image.johnsons {
+  background:transparent url('johnsons.png') center no-repeat;
+  min-width: 130px;
+}
+
+.partners-image.natura {
+  background:transparent url('natura.jpg') center no-repeat;
+  min-width: 130px;
+}
+
 
 /* FOOTER */
 .footer-container {
