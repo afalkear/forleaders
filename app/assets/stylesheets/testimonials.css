@@ -128,6 +128,8 @@
   font-style: italic;
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
   color: black;
+  padding-right: 80px;
+  min-height: 170px;
 }
 
 .testimonials-footer-person {
