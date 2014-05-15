@@ -844,8 +844,8 @@ ul.dropdown-menu {
 }
 
 .partners-images-row > div > a > img {
-  max-height: 90px;
-  max-width: 100px;
+  /*max-height: 90px;*/
+  max-width: 100%;
 }
 
 .partners-title {
@@ -865,6 +865,15 @@ ul.dropdown-menu {
   padding: 2px;
   height: 86px;
   /*width: 100%;*/
+}
+
+.partners-image {
+  width: 150px;
+  /*height: 100%;*/
+  overflow: hidden;
+  border-color: #000000;
+  position: relative;
+  background-size: contain !important;
 }
 
 .partners-image.google {
@@ -909,12 +918,14 @@ ul.dropdown-menu {
 
 .partners-image.exxon {
   background:transparent url('exxon.png') center no-repeat;
-  min-width: 180px;
+  min-width: 100px;
+  margin-left: -10px;
 }
 
 .partners-image.exxon:hover {
   background:transparent url('exxon-hover.png') center no-repeat;
-  min-width: 180px;
+  min-width: 100px;
+  margin-left: -10px;
 }
 
 .partners-image.petrobras {
@@ -938,28 +949,55 @@ ul.dropdown-menu {
 }
 
 .partners-image.nestle {
-  background:transparent url('nestle_thumb.png') center no-repeat;
-  min-width: 130px;
+  background:transparent url('nestle-thumb.png') center no-repeat;
+  min-width: 100px;
+}
+
+.partners-image.nestle:hover {
+  background:transparent url('nestle-thumb-hover.png') center no-repeat;
+  min-width: 100px;
 }
 
 .partners-image.coca {
   background:transparent url('coca_cola.png') center no-repeat;
-  min-width: 130px;
+  min-width: 100px;
+}
+
+.partners-image.coca:hover {
+  background:transparent url('coca_cola-hover.png') center no-repeat;
+  min-width: 100px;
 }
 
 .partners-image.banco-de-chile {
   background:transparent url('banco_de_chile.png') center no-repeat;
-  min-width: 130px;
+  min-width: 100px;
+}
+
+.partners-image.banco-de-chile:hover {
+  background:transparent url('banco_de_chile-hover.png') center no-repeat;
+  min-width: 100px;
 }
 
 .partners-image.johnsons {
   background:transparent url('johnsons.png') center no-repeat;
-  min-width: 130px;
+  min-width: 100px;
+  margin-left: 10px;
+}
+
+.partners-image.johnsons:hover {
+  background:transparent url('johnsons-hover.png') center no-repeat;
+  min-width: 100px;
+  margin-left: 10px;
 }
 
 .partners-image.natura {
   background:transparent url('natura.jpg') center no-repeat;
-  min-width: 130px;
+  min-width: 100px;
+}
+
+.partners-image.natura:hover {
+  background:transparent url('natura-hover.jpg') center no-repeat;
+  min-width: 100px;
 }
 
 
