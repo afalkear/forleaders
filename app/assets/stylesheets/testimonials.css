@@ -151,3 +151,41 @@
 .last-enterprise-footer-testimonial {
   
 }
+
+.institution-testimonials-header {
+  background-image: url('institution_testimonials_header.png');
+  background-position: 0% 45%;
+}
+
+.institution-testimonials-images-container {
+  background: #FFFFFF url("blizzard.jpg") repeat left top;
+  padding-top: 50px;
+}
+
+.institution-testimonials-single-row-images {
+    display: table;
+    table-layout: fixed;
+    height:100px;
+    padding-bottom: 20px;
+}
+
+.institution-testimonials-single-row-images-width-100 {
+  width: 100%;
+}
+
+.institution-testimonials-single-row-images-width-80 {
+  width: 80%;
+  margin: auto;
+}
+
+.institution-testimonials-single-row-images > div {
+    display: table-cell;
+    height:100px;
+    width: 100%;
+    text-align: center;
+}
+
+.institution-testimonials-single-row-images > div > img {
+  max-height: 90px;
+  max-width: 200px;
+}
