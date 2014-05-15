@@ -1259,15 +1259,14 @@ ul.dropdown-menu {
 }
 
 .home-article-title {
-  padding-top: 10px;
-  padding-bottom: 5px;
+  padding-top: 20px;
 }
 
 .home-article-title a {
   font-family: 'Open Sans', sans-serif;
   font-weight: 600;
   font-size: 22px;
-  line-height: 22px;
+  line-height: 27px;
   color: #273451;
 }
 
@@ -1279,7 +1278,7 @@ ul.dropdown-menu {
   font-family: 'Open Sans', sans-serif;
   font-weight: 600;
   font-size: 22px;
-  line-height: 22px;
+  line-height: 27px;
   color: #273451;
 }
 
@@ -1293,6 +1292,7 @@ ul.dropdown-menu {
   font-size: 18px;
   color: #273451; 
   letter-spacing: 1px;
+  padding-top: 5px;
   padding-bottom: 10px;
 }
 
