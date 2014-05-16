@@ -359,22 +359,22 @@ ul.dropdown-menu {
 }
 
 .page-header-title {
-  line-height: 29px;
+  /*line-height: 29px;*/
   color: #D3BB69;
   font-size: 24px;
-  letter-spacing: 2px;
+  /*letter-spacing: 2px;*/
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
-  padding-top: 40px;
+  padding-top: 24px;
+  padding-bottom: 6px;
 }
 
 .page-header-subtitle {
-  font-size: 16px;
-  line-height: 23px;
+  font-size: 18px;
+  /*line-height: 23px;*/
   color: #E9E6E6;
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
-  padding-top: 10px;
   text-align: left;
 }
 
@@ -393,10 +393,11 @@ ul.dropdown-menu {
 .page-title {
   color: #273451;
   font-family: 'Roboto', sans-serif;
-  font-size: 20px;
-  letter-spacing: 1px;
-  font-weight: 600;
-  padding-top: 20px;
+  font-size: 24px;
+  /*letter-spacing: 1px;*/
+  font-weight: 400;
+  padding-top: 18px;
+  padding-bottom: 12px;
 }
 
 .page-subtitle {
@@ -409,19 +410,24 @@ ul.dropdown-menu {
 
 .page-main-body {
   padding-top: 50px;
-  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-family: 'Roboto', sans-serif;
   text-align: left;
   font-size: 14px;
-  line-height: 20px;
+  /*line-height: 20px;*/
   color: black;
 }
 
+.page-main-body > p {
+  padding-bottom: 6px;
+}
+
 .page-main-body > h5 {
-  font-size: 15px;
-  line-height: 20px;
-  font-weight: bold;
-  padding-top: 30px;
-  margin-bottom: 0px;
+  font-size: 18px;
+  font-family: 'Roboto', sans-serif;
+  /*line-height: 20px;*/
+  font-weight: 700;
+  padding-top: 6px;
+  margin-bottom: 6px;
 }
 
 .page-main-body > ul {
@@ -485,6 +491,8 @@ ul.dropdown-menu {
 .page-footer-text-container {
   color: #7F7F7F; 
   line-height: 14px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300; 
 }
 
 .page-footer-image-container {
@@ -499,9 +507,10 @@ ul.dropdown-menu {
 .page-footer-text-container > h2 {
   font-family: 'Roboto', sans-serif;
   color: black;
-  font-size: 15px;
-  line-height: 19px;
-  font-weight: 700; 
+  font-size: 16px;
+  padding-bottom: 6px;
+  /*line-height: 19px;*/
+  font-weight: 900; 
   margin: 0px; 
   min-height: 45px;
 }
