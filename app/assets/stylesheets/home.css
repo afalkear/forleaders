@@ -490,9 +490,10 @@ ul.dropdown-menu {
 
 .page-footer-text-container {
   color: #7F7F7F; 
-  line-height: 14px;
+  line-height: 15px;
   font-family: 'Roboto', sans-serif;
   font-weight: 300; 
+  font-size: 13px;
 }
 
 .page-footer-image-container {
