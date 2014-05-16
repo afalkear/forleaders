@@ -47,7 +47,7 @@
   color: #D3BB69;
   font-size: 24px;
   letter-spacing: 2px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 400;
 }
 
@@ -59,7 +59,7 @@
   font-size: 18px;
   line-height: 23px;
   color: #D3BB69;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 300;
 }
 
@@ -73,7 +73,7 @@
 
 #individual-pills > li > a {
   color: #B6B5B5;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 400;
   text-align: justify;
   letter-spacing: 1px;
@@ -100,7 +100,7 @@
   font-size: 12px;
   line-height: 14px;
   font-weight: 300;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
   margin-bottom: 5px;
 }
 
@@ -112,12 +112,12 @@
   font-size: 16px;
   line-height: 19px;
   letter-spacing: 1px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 400;
 } 
 
 .tab-content > .active div > div > div > .container > .row > h2 {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 15px;
   line-height: 20px;
   font-weight: 700;
@@ -141,7 +141,7 @@
 }
 
 .individual-sidebar > div > h2 {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 15px;
   line-height: 19px;
   font-weight: 700;
@@ -152,7 +152,7 @@
 }
 
 .individual-sidebar-title > h1 {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 14px;
   letter-spacing: 0px;
   font-weight: 700;
@@ -160,7 +160,7 @@
 }
 
 .individual-sidebar-body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
   color: black;
   font-weight: 400;
   background-color: #EFEFEF;
@@ -204,7 +204,7 @@
 .individual-sidebar-nestle-image > p {
   color: #7F7F7F;
   text-align: right;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 400;
   font-style: italic;
   margin-bottom: 0px;
@@ -230,7 +230,7 @@
   margin-top: 0px;
   margin-bottom: 0px;
   padding-top: 250px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 18px;
   text-align: center;
   line-height: 22px;
@@ -252,14 +252,14 @@
   font-size: 17px;
   line-height: 20px;
   font-weight: 400;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
   margin-bottom: 0px;
 }
 
 #peugeot_testimony_text {
   font-size: 15px;
   line-height: 19px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 400;
   font-style: normal;
 }
@@ -276,7 +276,7 @@
 }
 
 .individual-consultors-button-link > span {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 14px;
   letter-spacing: 1px;
   font-weight: 400;
@@ -359,7 +359,7 @@
 }
 
 .individual-footer-text-container > h2 {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 15px;
   line-height: 19px;
   font-weight: 700; 

@@ -17,7 +17,7 @@
 }
 
 .contact-sidebar-title > h1 {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 16px;
   letter-spacing: 1px;
   font-weight: 400;
@@ -25,7 +25,7 @@
 }
 
 .contact-sidebar-body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
   color: black;
   font-weight: 400;
   background-color: #EFEFEF;
@@ -36,14 +36,14 @@
 .contact-sidebar-body {
   font-size: 18px;
   letter-spacing: 1px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 400;
 }
 
 .contact-sidebar-body > h2 {
   color: #AE9029;
   font-size: 18px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 400;
   letter-spacing: 1px;
   margin-bottom: 0px;
@@ -62,6 +62,6 @@
   text-transform: uppercase;
   color: #AE9029;
   letter-spacing: 2px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 400;
 }
