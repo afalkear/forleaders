@@ -82,7 +82,7 @@ img.center {
 }
 
 .teaching-phrase {
-  font-family:  'Open Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 300;
   font-size: 26px;
   letter-spacing: 2px;
@@ -96,7 +96,7 @@ img.center {
   min-height: 45px;
   line-height: 45px;
   color: white;
-  font-family:  'Open Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 300;
 }
 
@@ -195,7 +195,7 @@ ul.dropdown-menu {
 }
 
 .navbar-nav a{
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
   letter-spacing: 3px;
   color: #273451;
   text-align: left;
@@ -290,7 +290,7 @@ ul.dropdown-menu {
 
  .dropdown > ul > li > div > ul > li > a{
   color: white;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
   letter-spacing: 2px;
   font-weight: 400;
   font-size: 12px;
@@ -338,19 +338,19 @@ ul.dropdown-menu {
 
 .home-section-title {
   color: #273451;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 20px;
-  letter-spacing: 1px;
-  font-weight: 600;
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+  /*letter-spacing: 1px;*/
+  font-weight: 400;
 }
 
 .home-section-subtitle {
   color: #4B4C85;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
   /*font-size: 20px;*/
-  font-weight: 400;
-  letter-spacing: 1px; 
-  font-size: 16px;  
+  font-weight: 300;
+  /*letter-spacing: 1px; */
+  font-size: 18px;  
 }
 
 .page-title-container {
@@ -363,7 +363,7 @@ ul.dropdown-menu {
   color: #D3BB69;
   font-size: 24px;
   letter-spacing: 2px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 400;
   padding-top: 40px;
 }
@@ -372,7 +372,7 @@ ul.dropdown-menu {
   font-size: 16px;
   line-height: 23px;
   color: #E9E6E6;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 300;
   padding-top: 10px;
   text-align: left;
@@ -382,7 +382,7 @@ ul.dropdown-menu {
   text-transform: uppercase;
   font-size: 16px;
   color: #E9E6E6;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 300;
 }
 
@@ -392,7 +392,7 @@ ul.dropdown-menu {
 
 .page-title {
   color: #273451;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 20px;
   letter-spacing: 1px;
   font-weight: 600;
@@ -401,7 +401,7 @@ ul.dropdown-menu {
 
 .page-subtitle {
   color: #4B4C85;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 16px;
   letter-spacing: 1px;
   font-weight: 400;
@@ -435,7 +435,7 @@ ul.dropdown-menu {
 }
 
 .page-link-button > span {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 16px;
   letter-spacing: 1px;
   font-weight: 700;
@@ -497,7 +497,7 @@ ul.dropdown-menu {
 }
 
 .page-footer-text-container > h2 {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
   color: black;
   font-size: 15px;
   line-height: 19px;
@@ -523,7 +523,7 @@ ul.dropdown-menu {
 
 #flash_notice {
   text-align: center;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 700;
 }
 /* SLIDESHOW */
@@ -557,7 +557,7 @@ ul.dropdown-menu {
 
 .carousel-caption a {
   color: white;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
   letter-spacing: 2px;
   font-size: 36px;
   font-weight: 600;
@@ -617,7 +617,7 @@ ul.dropdown-menu {
 .programme-title {
   /*text-align: center;*/
   color: #273451;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 20px;
   letter-spacing: 2px;
   font-weight: 700;
@@ -625,7 +625,7 @@ ul.dropdown-menu {
 
 .programme-subtitle {
   color: #273451;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
   /*font-size: 20px;*/
   font-weight: 400; 
   font-size: 16px;
@@ -637,6 +637,16 @@ ul.dropdown-menu {
   padding-right: 0px;
   /*padding-top: 10px;*/
   top: 10px;
+}
+
+.programme-option > .container {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.programme-option > .container > .container {
+  /*padding-left: 0px;*/
+  padding-right: 0px;
 }
 
 .programme-border-left {
@@ -718,7 +728,7 @@ ul.dropdown-menu {
 }
 
 .programme-header {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
   color: white;
   /*font-size: 18px;*/
   letter-spacing: 1px;
@@ -726,7 +736,7 @@ ul.dropdown-menu {
 }
 
 .programme-header > span {
-  /*font-family: 'Open Sans', sans-serif;*/
+  /*font-family: 'Roboto', sans-serif;*/
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 13px;
@@ -785,7 +795,7 @@ ul.dropdown-menu {
   top: 5px;
   text-align: left;
   color: #273451;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 400;
   padding-bottom: 20px;
 }
@@ -800,7 +810,7 @@ ul.dropdown-menu {
   padding: 0;
 }
 
-.partners-images-container {
+.s-container {
   margin-top: 20px;
   /*padding-bottom: 20px;*/
 }
@@ -822,9 +832,9 @@ ul.dropdown-menu {
 }
 
 .partners-title-container {
-  padding-bottom: 5px;
-  padding-top: 15px;
-  font-family: 'Open Sans', sans-serif;
+  padding-bottom: 24px;
+  padding-top: 24px;
+  font-family: 'Roboto', sans-serif;
   color: #273451;
 }
 
@@ -1118,10 +1128,10 @@ ul.dropdown-menu {
 /* ARTICLES */
 
 .articles-title-container {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
   color: #273451;
-  padding-top: 20px;
-  padding-bottom: 50px;
+  padding-top: 4px;
+  padding-bottom: 24px;
 }
 .articles-title {
   font-size: 20px;
@@ -1312,7 +1322,7 @@ ul.dropdown-menu {
   height: 100%;
   color: lightgrey;
   display: inline;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 600;
   font-size: 22px;
 }
@@ -1343,14 +1353,14 @@ ul.dropdown-menu {
 }
 
 .home-article-title {
-  padding-top: 20px;
+  padding-top: 18px;
 }
 
 .home-article-title a {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 600;
-  font-size: 22px;
-  line-height: 27px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  /*line-height: 27px;*/
   color: #273451;
 }
 
@@ -1359,10 +1369,10 @@ ul.dropdown-menu {
 }
 
 .home-article-subtitle a{
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 600;
-  font-size: 22px;
-  line-height: 27px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  /*line-height: 27px;*/
   color: #273451;
 }
 
@@ -1371,21 +1381,24 @@ ul.dropdown-menu {
 }
 
 .home-article-author {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 100;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
   font-size: 18px;
   color: #273451; 
-  letter-spacing: 1px;
-  padding-top: 5px;
-  padding-bottom: 10px;
+  /*letter-spacing: 1px;*/
+  padding-top: 12px;
+  padding-bottom: 6px;
 }
 
 .home-article-content {
   color: black;
   text-align: left;
-  font-size: 16px;
-  line-height: 19px;
-  font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+  font-size: 14px;
+  /*line-height: 19px;*/
+  font-weight: 400;
+  font-family: 'Roboto', sans-serif;
+  /*padding-top: 6px;*/
+  padding-bottom: 12px;
 }
 
 .articles-container {
@@ -1398,6 +1411,9 @@ ul.dropdown-menu {
 
 .home-article-read-more > a{
   color: #D3BB69;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
 }
 
 .modal-body {

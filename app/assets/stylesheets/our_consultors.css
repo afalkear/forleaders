@@ -11,7 +11,7 @@
 }
 
 .our-consultors-header-title {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 400;
   font-size: 24px;
   color: rgb(211, 187, 105);
@@ -20,7 +20,7 @@
 }
 
 .our-consultors-header-subtitle {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 300;
   font-size: 18px;
   color: white;
@@ -34,7 +34,7 @@
 }
 
 .our-consultors-titles {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 600;
   font-size: 20px;
   color: rgb(39, 52, 81);
@@ -43,7 +43,7 @@
 }
 
 .our-consultors-number {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
   line-height: 72px;
   font-weight: 700;
   font-size: 60px;
@@ -54,7 +54,7 @@
 }
 
 .our-consultors-consultors {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 700;
   font-size: 28px;
   color: rgb(39, 52, 81);
@@ -63,7 +63,7 @@
 }
 
 .our-consultors-bio-title {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
@@ -72,7 +72,7 @@
 }
 
 .our-consultors-bio-subtitle {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 300;
   font-size: 20px;
   line-height: 24px;
@@ -116,7 +116,7 @@
 .our-consultors-programs-link {
   color: white;
   text-align: center;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 19px;
