@@ -27,7 +27,7 @@ class ArticlesController < ApplicationController
 
   def create
     @article = Article.new(article_params)
-    
+
     if @article.save
       redirect_to article_path(@article.id)
     else
@@ -36,7 +36,15 @@ class ArticlesController < ApplicationController
     end
   end
 
+  def edit
+    @article = Article.find(params[:id])
+  end
+
   def update
+    @article = Article.find(params[:id])
+    @article.update_attributes(article_params)
+
+    redirect_to article_path(@article.id)
   end
 
   def destroy
@@ -45,14 +53,14 @@ class ArticlesController < ApplicationController
   private
     def article_params
       params.require(:article).permit(
-        :title, 
-        :author, 
-        :content, 
-        :tag_id, 
-        :category_tokens, 
-        :image_url, 
-        :article_image, 
-        :remote_article_image_url, 
+        :title,
+        :author,
+        :content,
+        :tag_id,
+        :category_tokens,
+        :image_url,
+        :article_image,
+        :remote_article_image_url,
         :subtitle,
         :hover_frase,
         :excerpt,
