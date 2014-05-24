@@ -350,7 +350,7 @@ ul.dropdown-menu {
   /*font-size: 20px;*/
   font-weight: 300;
   /*letter-spacing: 1px; */
-  font-size: 18px;  
+  font-size: 18px;
 }
 
 .page-title-container {
@@ -489,10 +489,10 @@ ul.dropdown-menu {
 }
 
 .page-footer-text-container {
-  color: #7F7F7F; 
+  color: #7F7F7F;
   line-height: 15px;
   font-family: 'Roboto', sans-serif;
-  font-weight: 300; 
+  font-weight: 300;
   font-size: 13px;
 }
 
@@ -511,8 +511,8 @@ ul.dropdown-menu {
   font-size: 16px;
   padding-bottom: 6px;
   /*line-height: 19px;*/
-  font-weight: 900; 
-  margin: 0px; 
+  font-weight: 900;
+  margin: 0px;
   min-height: 45px;
 }
 
@@ -553,10 +553,10 @@ ul.dropdown-menu {
   width: 110%;
   max-width: 110%;
   margin-left: -80px;
-} 
+}
 
 .carousel-inner .item {
-  max-height: 400px !important; 
+  max-height: 400px !important;
 }
 
 .carousel-caption {
@@ -637,7 +637,7 @@ ul.dropdown-menu {
   color: #273451;
   font-family: 'Roboto', sans-serif;
   /*font-size: 20px;*/
-  font-weight: 400; 
+  font-weight: 400;
   font-size: 16px;
 }
 
@@ -770,13 +770,15 @@ ul.dropdown-menu {
   font-family: 'Open Sans Condensed', sans-serif;
   font-size: 17px;
   font-weight: 600;
-  text-align: center;
+  /*text-align: center;*/
+  padding-left: 15px;
 }
 
 .programme-subsubheader {
   font-family: 'Open Sans Condensed', sans-serif;
   font-weight: 600;
-  text-align: center;
+  /*text-align: center;*/
+  padding-left: 15px;
   padding-bottom: 20px;
   font-size: 13px;
 }
@@ -785,7 +787,7 @@ ul.dropdown-menu {
   font-family: 'Open Sans Condensed', sans-serif;
   padding-top: 5px;
   padding-left: 15px;
-  padding-right: 15px;
+  /*padding-right: 15px;*/
   font-weight: 300;
   font-size: 16px;
 }
@@ -808,6 +810,7 @@ ul.dropdown-menu {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   padding-bottom: 20px;
+  margin-right: 0px;
 }
 
 .programme-show-with-plus {
@@ -871,13 +874,13 @@ ul.dropdown-menu {
 .partners-title {
   font-size: 20px;
   letter-spacing: 2px;
-  font-weight: 700; 
+  font-weight: 700;
 }
 
 .partners-subtitle {
   font-size: 16px;
   letter-spacing: 1px;
-  font-weight: 400; 
+  font-weight: 400;
 }
 
 .partners-image {
@@ -1050,7 +1053,7 @@ ul.dropdown-menu {
   font-family: 'Open Sans Condensed', sans-serif;
   font-weight: 300;
   color: #B6B5B5;
-  display: block; 
+  display: block;
 }
 
 .inner-footer-link:hover {
@@ -1060,14 +1063,14 @@ ul.dropdown-menu {
 
 .footer-title {
   font-family: 'Open Sans Condensed', sans-serif;
-  font-weight: 700; 
+  font-weight: 700;
   font-size: 24px;
   padding-bottom: 20px;
 }
 
 .inner-footer-title {
   font-family: 'Open Sans Condensed', sans-serif;
-  font-weight: 700; 
+  font-weight: 700;
   font-size: 18px;
 }
 
@@ -1102,7 +1105,7 @@ ul.dropdown-menu {
   color: #D3BB69;
   font-size: 18px;
   font-family: 'Open Sans Condensed', sans-serif;
-  font-weight: 700; 
+  font-weight: 700;
   text-align: right;
 }
 
@@ -1110,7 +1113,7 @@ ul.dropdown-menu {
   color: #D3BB69;
   font-size: 18px;
   font-family: 'Open Sans Condensed', sans-serif;
-  font-weight: 700; 
+  font-weight: 700;
   text-align: right;
 }
 
@@ -1146,13 +1149,13 @@ ul.dropdown-menu {
 .articles-title {
   font-size: 20px;
   letter-spacing: 2px;
-  font-weight: 700; 
+  font-weight: 700;
 }
 
 .articles-subtitle {
   font-size: 14px;
   letter-spacing: 1px;
-  font-weight: 400;  
+  font-weight: 400;
 }
 
 .articles-line {
@@ -1194,7 +1197,7 @@ ul.dropdown-menu {
 #articles-selector-items {
   background-color: white;
   margin: 0px;
-  padding: 0px; 
+  padding: 0px;
   width: 100%;
   text-align: center;
   min-width: 0px;
@@ -1314,8 +1317,8 @@ ul.dropdown-menu {
 .home-article-thumb:hover > a > img {
   opacity: 0.4;
   /*z-index: 1;
-  filter: url(filters.svg#grayscale); 
-  filter: gray; 
+  filter: url(filters.svg#grayscale);
+  filter: gray;
   -webkit-filter: grayscale(1); */
 }
 
@@ -1394,7 +1397,7 @@ ul.dropdown-menu {
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
   font-size: 18px;
-  color: #273451; 
+  color: #273451;
   /*letter-spacing: 1px;*/
   padding-top: 12px;
   padding-bottom: 6px;
