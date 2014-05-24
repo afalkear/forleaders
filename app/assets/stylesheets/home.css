@@ -737,6 +737,18 @@ ul.dropdown-menu {
   cursor: default;
 }
 
+.hover-gold:hover > a {
+  text-decoration: none;
+}
+
+.hover-gold:hover > a > .programme-subheader {
+  color: #D3BB69;
+}
+
+.hover-gold:hover > a > .programme-subsubheader {
+  color: #D3BB69;
+}
+
 .programme-header {
   font-family: 'Roboto', sans-serif;
   color: white;
@@ -772,6 +784,8 @@ ul.dropdown-menu {
   font-weight: 600;
   /*text-align: center;*/
   padding-left: 15px;
+  color: #273451;
+  text-decoration: none;
 }
 
 .programme-subsubheader {
@@ -781,6 +795,8 @@ ul.dropdown-menu {
   padding-left: 15px;
   padding-bottom: 20px;
   font-size: 13px;
+  color: #273451;
+  text-decoration: none;
 }
 
 .programme-text {

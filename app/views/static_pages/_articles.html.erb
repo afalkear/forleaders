@@ -37,20 +37,20 @@
                     <a href="#">QUALIDADE DE VIDA</a>
                   </li>
                 </ul>
-              </li>            
+              </li>
             </ul>
           </div -->
         </div>
-        
+
         <% @articles_rows.times do |article_row_number| %>
           <%= render 'article_container', articles: @articles, columns: @articles_columns, first_article_number: article_row_number*@articles_columns  %>
         <% end %>
-    
-        <div class="row more-articles">
+
+        <!-- div class="row more-articles">
           <a href="#">
             <span class="glyphicon glyphicon-plus-sign"></span>
           </a>
-        </div>
+        </div -->
     </div>
   </div>
 </div>

@@ -20,12 +20,14 @@
                 <div class="row single-programme-row">
                   <div class="col-md-6 without-padding-left-or-right">
                     <div class="hover-gold">
-                      <div class="programme-subheader">
-                        PERSONAL TEACHING
-                      </div>
-                      <div class="programme-subsubheader">
-                        1h duas vezes/semana
-                      </div>
+                      <%= link_to "individual_consultory?value=$1#personal" do %>
+                        <div class="programme-subheader">
+                          PERSONAL TEACHING
+                        </div>
+                        <div class="programme-subsubheader">
+                          1h duas vezes/semana
+                        </div>
+                      <% end %>
                     </div>
                     <div class="programme-text">
                       <ul>
@@ -43,12 +45,14 @@
                   </div>
                   <div class="col-md-6 without-padding-left-or-right">
                     <div class="hover-gold">
-                      <div class="programme-subheader">
-                        CONSULTORIAS
-                      </div>
-                      <div class="programme-subsubheader">
-                        3 ou 6 meses
-                      </div>
+                      <%= link_to "individual_consultory?value=$1#consultory" do %>
+                        <div class="programme-subheader">
+                          CONSULTORIAS
+                        </div>
+                        <div class="programme-subsubheader">
+                          3 ou 6 meses
+                        </div>
+                      <% end %>
                     </div>
                     <div class="programme-text">
                       <ul>
@@ -77,12 +81,14 @@
                 <div class="row single-programme-row">
                   <div class="col-md-6 without-padding-left-or-right">
                     <div class="hover-gold">
-                      <div class="programme-subheader">
-                        SMALL GROUP TEACHING
-                      </div>
-                      <div class="programme-subsubheader">
-                        1h duas vezes/semana
-                      </div>
+                      <%= link_to "group_consultory" do %>
+                        <div class="programme-subheader">
+                          SMALL GROUP TEACHING
+                        </div>
+                        <div class="programme-subsubheader">
+                          1h duas vezes/semana
+                        </div>
+                      <% end %>
                     </div>
                     <div class="programme-text">
                       <ul>
@@ -100,12 +106,14 @@
                   </div>
                   <div class="col-md-6 without-padding-left-or-right">
                     <div class="hover-gold">
-                      <div class="programme-subheader">
-                        WORKSHOPS
-                      </div>
-                      <div class="programme-subsubheader">
-                        4,8 ou 16 horas
-                      </div>
+                      <%= link_to "group_consultory?value=$6#workshop" do %>
+                        <div class="programme-subheader">
+                          WORKSHOPS
+                        </div>
+                        <div class="programme-subsubheader">
+                          4,8 ou 16 horas
+                        </div>
+                      <% end %>
                     </div>
                     <div class="programme-text">
                       <ul>
@@ -133,12 +141,14 @@
                 <div class="row single-programme-row">
                   <div class="col-md-6 without-padding-left-or-right">
                     <div class="hover-gold">
-                      <div class="programme-subheader">
-                        TREINAMENTO
-                      </div>
-                      <div class="programme-subsubheader">
-                        15 minutos por día
-                      </div>
+                      <%= link_to "individual_consultory?value=$3#training" do %>
+                        <div class="programme-subheader">
+                          TREINAMENTO
+                        </div>
+                        <div class="programme-subsubheader">
+                          15 minutos por día
+                        </div>
+                      <% end %>
                     </div>
                     <div class="programme-text">
                       <ul>
@@ -187,12 +197,14 @@
                   <div class="row single-programme-row">
                     <div class="col-md-6 without-padding-left-or-right">
                       <div class="hover-gold">
-                        <div class="programme-subheader">
-                          SMALL GROUP TRAINING
-                        </div>
-                        <div class="programme-subsubheader">
-                          15 minutos por día
-                        </div>
+                        <%= link_to "group_consultory?value=$4#small-group-training" do %>
+                          <div class="programme-subheader">
+                            SMALL GROUP TRAINING
+                          </div>
+                          <div class="programme-subsubheader">
+                            15 minutos por día
+                          </div>
+                        <% end %>
                       </div>
                       <div class="programme-text">
                         <ul>
@@ -210,12 +222,14 @@
                     </div>
                     <div class="col-md-6 without-padding-left-or-right">
                       <div class="hover-gold">
-                        <div class="programme-subheader">
-                          PALESTRAS
-                        </div>
-                        <div class="programme-subsubheader">
-                          2 ou 4 horas
-                        </div>
+                        <%= link_to "group_consultory?value=$5#talks" do %>
+                          <div class="programme-subheader">
+                            PALESTRAS
+                          </div>
+                          <div class="programme-subsubheader">
+                            2 ou 4 horas
+                          </div>
+                        <% end %>
                       </div>
                       <div class="programme-text">
                         <ul>
