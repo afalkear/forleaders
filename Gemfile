@@ -37,6 +37,9 @@ gem 'active_attr'
 # pagination with kaminari
 gem 'kaminari'
 
+# AWS elastic beanstalk
+gem 'elastic-beanstalk'
+
 group :development do
   gem 'git-pivotal-tracker-integration'
 end
@@ -49,7 +52,7 @@ group :development, :test do
 end
 
 group :production do
-  gem 'pg'
+  gem 'mysql2'
 end
 
 group :doc do
