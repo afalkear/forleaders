@@ -6,33 +6,45 @@
         <div class="row page-footer-info-container">
           <div class="col-md-4">
               <div class="row">
-                <div class="col-md-6 page-footer-image-container left">
-                  <%= image_tag 'static_page_footer_mdr_individual.jpg'%>
+                <div class="page-footer-image-container left">
+                  <a href="individual_consultory">
+                    <%= image_tag 'static_page_footer_mdr_individual.jpg'%>
+                  </a>
                 </div>
-                <div class="col-md-6 page-footer-text-container">
-                  <h2>PROGRAMAS PARA INDIVIDUOS</h2>
+                <div class="page-footer-text-container">
+                  <a href="individual_consultory">
+                    <h2>PROGRAMAS PARA INDIVIDUOS</h2>
+                  </a>
                   <p>Um time forte é formado por indivíduos focados e bem-preparados; os programas para empresas buscam fortalecer não só cada um dos líderes de maneira completa, mas também integrá-los como um time.</p>
                 </div>
               </div>
           </div>
           <div class="col-md-4">
               <div class="row">
-                <div class="col-md-6 page-footer-image-container center">
-                  <%= image_tag 'static_page_footer_enterprise_program.jpg'%>
+                <div class="page-footer-image-container left-30">
+                  <a href="group_consultory">
+                    <%= image_tag 'static_page_footer_enterprise_program.jpg'%>
+                  </a>
                 </div>
-                <div class="col-md-6 page-footer-text-container">
-                  <h2>PROGRAMAS PARA EMPRESAS</h2>
+                <div class="page-footer-text-container">
+                  <a href="group_consultory">
+                    <h2>PROGRAMAS PARA EMPRESAS</h2>
+                  </a>
                   <p>Para desenvolver o potencial das pessoas que você gerencia, é importante que você também esteja em constante aprimoramento; trabalhe sua própria Alta Produtividade com nossos programas para indivíduos.</p>
                 </div>
               </div>
           </div>
           <div class="col-md-4">
               <div class="row">
-                <div class="col-md-6 page-footer-image-container right">
-                  <%= image_tag 'static_page_footer_mdr_in_enterprise.jpg'%>
+                <div class="page-footer-image-container right">
+                  <%= link_to articles_url do %>
+                    <%= image_tag 'static_page_footer_mdr_in_enterprise.jpg'%>
+                  <% end %>
                 </div>
-                <div class="col-md-6 page-footer-text-container">
-                  <h2>M<span class="navbar-title-smallcaps">ÉTODO</span> DeR<span class="navbar-title-smallcaps">OSE</span> NAS EMPRESAS</h2>
+                <div class="page-footer-text-container">
+                  <a href="articles">
+                    <h2>M<span class="navbar-title-smallcaps">ÉTODO</span> DeR<span class="navbar-title-smallcaps">OSE</span> NAS EMPRESAS</h2>
+                  </a>
                   <p>As técnicas e os conceitos do Método DeROSE não trazem apenas resultados na qualidade de vida  – eles também são capazes de gerar riqueza para empresas!</p>
                 </div>
               </div>
