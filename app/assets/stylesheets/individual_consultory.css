@@ -278,7 +278,7 @@
   text-align: center;
 }
 
-.individual-consultors-button-link > span {
+.individual-consultors-button-link > span > a {
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
   letter-spacing: 1px;
@@ -295,18 +295,12 @@
   -webkit-border-radius: 15px;
   -khtml-border-radius: 15px;
   border-radius: 15px;
-}
-
-.individual-consultors-button-link > span:hover {
-  background-color: #001737;
+  color: #001737;
 }
 
 .individual-consultors-button-link > span:hover > a {
   color: #D3BB69;
-}
-
-.individual-consultors-button-link > span > a {
-  color: #001737;
+  background-color: #001737;
 }
 
 .individual-consultors-button-link > span > a:hover {
@@ -314,7 +308,7 @@
 }
 
 #individual-testimony-button-link {
-  padding-top: 0px;
+  padding-top: 10px;
 }
 
 .individual-consultors-sidebar-list li {
