@@ -272,13 +272,21 @@
   font-style: normal;
 }
 
+#experts-button-bottom-0-padding {
+  padding-bottom: 0px;
+}
+
+.experts-container {
+  padding-top: 10px;
+}
+
 .individual-consultors-sidebar-list {
   list-style: none;
   padding: 0px;
 }
 
 .individual-consultors-button-link {
-  padding-top: 50px;
+  padding-top: 30px;
   padding-bottom: 20px;
   text-align: center;
 }
