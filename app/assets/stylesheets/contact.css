@@ -31,6 +31,7 @@
   background-color: #EFEFEF;
   padding: 10px;
   min-height: 750px;
+  padding-left: 30px;
 }
 
 .contact-sidebar-body {
@@ -64,4 +65,8 @@
   letter-spacing: 2px;
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
+}
+
+.new-contact-form-container > .row {
+  padding-right: 30px;
 }
