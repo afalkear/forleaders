@@ -409,7 +409,7 @@ ul.dropdown-menu {
 }
 
 .page-main-body {
-  padding-top: 50px;
+  padding-top: 20px;
   font-family: 'Roboto', sans-serif;
   text-align: left;
   font-size: 14px;
@@ -426,7 +426,7 @@ ul.dropdown-menu {
   font-family: 'Roboto', sans-serif;
   /*line-height: 20px;*/
   font-weight: 700;
-  padding-top: 6px;
+  /*padding-top: 6px;*/
   margin-bottom: 6px;
 }
 
@@ -494,15 +494,23 @@ ul.dropdown-menu {
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
   font-size: 13px;
+  word-wrap: break-word;
+  margin-right: 25px;
+  margin-left: 155px;
 }
 
 .page-footer-image-container {
   overflow: hidden;
   width: 140px;
+  float: left;
 }
 
 .page-footer-image-container > img {
   height: 185px;
+}
+
+.page-footer-text-container > p {
+  margin: 0;
 }
 
 .page-footer-text-container > h2 {

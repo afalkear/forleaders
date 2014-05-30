@@ -10,3 +10,11 @@
 .page-footer-image-container.left > img {
   margin-left: -80px;
 }
+
+.page-footer-image-container.left-30 > img {
+  margin-left: -30px;
+}
+
+#derose-method-subtitle {
+  padding-top: 10px;
+}
