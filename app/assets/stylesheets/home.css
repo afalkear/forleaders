@@ -844,6 +844,10 @@ ul.dropdown-menu {
   /*padding-bottom: 20px;*/
 }
 
+.partners-images-container > div > .container {
+  padding-right: 0px;
+}
+
 .programme-container {
   background: #FFFFFF url("blizzard.jpg") repeat left top;
 }
@@ -880,6 +884,36 @@ ul.dropdown-menu {
   height:100%;
   width: 100%;
   text-align: center;
+}
+
+#partners-first-logo {
+  display: table-cell;
+  height: 100%;
+  text-align: left;
+  width: 80px;
+}
+
+#partners-first-logo > a > .partners-image {
+  width: 80px;
+}
+
+#partners-first-logo > a > .partners-image.coca {
+  min-width: 80px;
+}
+
+#partners-last-logo {
+  display: table-cell;
+  height: 100%;
+  text-align: right;
+  width: 90px;
+}
+
+#partners-last-logo > a > .partners-image {
+  width: 90px;
+}
+
+#partners-last-logo > a > .partners-image.natura {
+  min-width: 90px;
 }
 
 .partners-images-row > div > a > img {
@@ -990,11 +1024,13 @@ ul.dropdown-menu {
 .partners-image.nestle {
   background:transparent url('nestle-thumb.png') center no-repeat;
   min-width: 100px;
+  margin-left: 20px;
 }
 
 .partners-image.nestle:hover {
   background:transparent url('nestle-thumb-hover.png') center no-repeat;
   min-width: 100px;
+  margin-left: 20px;
 }
 
 .partners-image.coca {
@@ -1020,13 +1056,13 @@ ul.dropdown-menu {
 .partners-image.johnsons {
   background:transparent url('johnsons.png') center no-repeat;
   min-width: 100px;
-  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .partners-image.johnsons:hover {
   background:transparent url('johnsons-hover.png') center no-repeat;
   min-width: 100px;
-  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .partners-image.natura {
