@@ -1,7 +1,8 @@
 .net-header {
-  background-image: url('net_header.jpg');
-  background-position: 0% 50%;
-  min-height: 400px;
+  background-image: url('net_header.png');
+  background-size: 100% 670px;
+  background-position: 0% 55%;
+  height: 400px;
 }
 
 .net-header .page-header-title {
@@ -36,6 +37,6 @@
 }
 
 .net-body-container {
-  /*padding-top: 30px;
-  padding-bottom: 30px;*/
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
