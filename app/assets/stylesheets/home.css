@@ -505,7 +505,7 @@ ul.dropdown-menu {
   float: left;
 }
 
-.page-footer-image-container > img {
+.page-footer-image-container > a > img {
   height: 185px;
 }
 
@@ -513,7 +513,7 @@ ul.dropdown-menu {
   margin: 0;
 }
 
-.page-footer-text-container > h2 {
+.page-footer-text-container > a > h2 {
   font-family: 'Roboto', sans-serif;
   color: black;
   font-size: 16px;
@@ -522,6 +522,10 @@ ul.dropdown-menu {
   font-weight: 900;
   margin: 0px;
   min-height: 45px;
+}
+
+.page-footer-text-container > a:hover {
+  text-decoration: none;
 }
 
 .to-bottom {
