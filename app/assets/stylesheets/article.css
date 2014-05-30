@@ -460,6 +460,11 @@
 .article-sidebar-author-container img {
   height: 80px;
   width: 100px;
+  float: left;
+}
+
+.article-sidebar-author-name {
+  margin-left: 120px;
 }
 
 .article-sidebar-author-name > h3 {
@@ -467,6 +472,12 @@
   font-size: 18px;
   font-family: 'Roboto', sans-serif;
   font-weight: 600;
+}
+
+.article-sidebar-author-name > p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
 }
 
 .article-big-image {
