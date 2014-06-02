@@ -53,7 +53,6 @@ end
 
 group :production do
   gem 'mysql2'
-  gem 'pg'
 end
 
 group :doc do
