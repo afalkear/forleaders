@@ -128,7 +128,13 @@
                 </div>
                 <div class="article-sidebar-author-name">
                   <h3><%= @article.author %></h3>
-                  <p>Studioso na área de Qualidade de Vida e Alta Performance há mais de 50 anos, já escreveu mais de 30 livros e é o idealizador do Método DeR<span class="navbar-title-smallcaps">OSE</span></p>
+                  <% if @article.author == "DeRose" %>
+                    <p>Studioso na área de Qualidade de Vida e Alta Performance há mais de 50 anos, já escreveu mais de 30 livros e é o idealizador do Método DeR<span class="navbar-title-smallcaps">OSE</span></p>
+                  <% elsif @article.author == "Edgardo Caramella" %>
+                    <p>Presidente da Federação do Método DeRose na Argentina, com mais de 25 anos de experiência na área dando aulas e formando novos profissionais</p>
+                  <% elsif @article.author == "Carlo Mea" %>
+                    <p>Representante do Método DeRose na Itália, é um dos mais reconhecidos demonstradores das nossas técnicas corporais, trabalhando com empreendedor desde 2002</p>
+                  <%end%>
                 </div>
               </div>
             </div>
