@@ -26,7 +26,27 @@
                   <div class="container">
                     <div class="row">
                       <div class="col-md-2 article-author-photo">
-                        <%= image_tag "#{@article.author.downcase}.jpg" %>
+                        <% if @article.author == "DeRose" %>
+                          <div class="row articles-authors-mini-container">
+                            <div class="articles-authors-mini-photo derose">
+                            </div>
+                          </div>
+                        <% elsif @article.author == "Edgardo Caramella" %>
+                          <div class="articles-authors-mini-photo edgardo">
+                          </div>
+                        <% elsif @article.author == "Carlo Mea" %>
+                          <div class="articles-authors-mini-photo carlo">
+                          </div>
+                        <% elsif @article.author == "Joris Marengo" %>
+                          <div class="articles-authors-mini-photo joris">
+                          </div>
+                        <% elsif @article.author == "Yael Barcesat" %>
+                          <div class="articles-authors-mini-photo yael">
+                          </div>
+                        <% elsif @article.author == "Gustavo Marson" %>
+                          <div class="articles-authors-mini-photo gustavo">
+                          </div>
+                        <%end%>
                       </div>
                       <div class="col-md-10 article-metadata">
                         <div class="container">
