@@ -362,10 +362,10 @@
 
 .article-content > img {
   width: 100%;
-  padding-bottom: 10px;
 }
 
 .article-content > p {
+  padding-top: 10px;
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
   font-weight: 400;
