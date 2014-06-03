@@ -123,20 +123,72 @@
             <hr/>
             <div class="container article-sidebar-author-container">
               <h2>O AUTOR</h2>
-              <div class="row">
-                <div >
-                  <%= image_tag "#{@article.author.downcase}.jpg" %>
-                </div>
-                <div class="article-sidebar-author-name">
-                  <h3><%= @article.author %></h3>
-                  <% if @article.author == "DeRose" %>
-                    <p>Studioso na área de Qualidade de Vida e Alta Performance há mais de 50 anos, já escreveu mais de 30 livros e é o idealizador do Método DeR<span class="navbar-title-smallcaps">OSE</span></p>
-                  <% elsif @article.author == "Edgardo Caramella" %>
-                    <p>Presidente da Federação do Método DeRose na Argentina, com mais de 25 anos de experiência na área dando aulas e formando novos profissionais</p>
-                  <% elsif @article.author == "Carlo Mea" %>
-                    <p>Representante do Método DeRose na Itália, é um dos mais reconhecidos demonstradores das nossas técnicas corporais, trabalhando com empreendedor desde 2002</p>
-                  <%end%>
-                </div>
+              <div>
+                <% if @article.author == "DeRose" %>
+                  <div class="row articles-authors-mini-container">
+                    <div class="col-md-3">
+                      <div class="articles-authors-mini-photo derose">
+                      </div>
+                    </div>
+                    <div class="col-md-9 articles-authors-mini-info">
+                      <h3>DeRose</h3>
+                      <p>Studioso na área de Qualidade de Vida e Alta Performance há mais de 50 anos, já escreveu mais de 30 livros e é o idealizador do Método DeR<span class="navbar-title-smallcaps">OSE</span></p>
+                    </div>
+                  </div>
+                <% elsif @article.author == "Edgardo Caramella" %>
+                  <div class="row articles-authors-mini-container">
+                    <div class="col-md-3">
+                      <div class="articles-authors-mini-photo edgardo">
+                      </div>
+                    </div>
+                    <div class="col-md-9 articles-authors-mini-info">
+                      <h3>Edgardo Caramella</h3>
+                      <p>Presidente da Federação do Método DeRose na Argentina, com mais de 25 anos de experiência na área dando aulas e formando novos profissionais</p>
+                    </div>
+                  </div>
+                <% elsif @article.author == "Carlo Mea" %>
+                  <div class="row articles-authors-mini-container">
+                    <div class="col-md-3">
+                      <div class="articles-authors-mini-photo carlo">
+                      </div>
+                    </div>
+                    <div class="col-md-9 articles-authors-mini-info">
+                      <h3>Carlo Mea</h3>
+                      <p>Representante do Método DeRose na Itália, é um dos mais reconhecidos demonstradores das nossas técnicas corporais, trabalhando com empreendedor desde 2002</p>
+                    </div>
+                  </div>
+                <% elsif @article.author == "Joris Marengo" %>
+                  <div class="row articles-authors-mini-container">
+                    <div class="col-md-3">
+                      <div class="articles-authors-mini-photo joris">
+                        
+                      </div>
+                    </div>
+                    <div class="col-md-9 articles-authors-mini-info">
+                      <h3>Joris Marengo</h3>
+                    </div>
+                  </div>
+                <% elsif @article.author == "Yael Barcesat" %>
+                  <div class="row articles-authors-mini-container">
+                    <div class="col-md-3">
+                      <div class="articles-authors-mini-photo yael">
+                      </div>
+                    </div>
+                    <div class="col-md-9 articles-authors-mini-info">
+                      <h3>Yael Barcesat</h3>
+                    </div>
+                  </div>
+                <% elsif @article.author == "Gustavo Marson" %>
+                  <div class="row articles-authors-mini-container">
+                    <div class="col-md-3">
+                      <div class="articles-authors-mini-photo gustavo">
+                      </div>
+                    </div>
+                    <div class="col-md-9 articles-authors-mini-info">
+                      <h3>Gustavo Marson</h3>
+                    </div>
+                  </div>
+                <%end%>
               </div>
             </div>
           </div>

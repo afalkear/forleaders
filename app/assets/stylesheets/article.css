@@ -459,7 +459,7 @@
 }
 
 .article-sidebar-author-container > div {
-  display: inline-block;
+  /*display: inline-block;*/
 }
 
 .article-sidebar-author-container img {
