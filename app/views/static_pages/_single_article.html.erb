@@ -1,13 +1,13 @@
 <div class="col-md-4">
   <div class="container">
     <div class="row home-article-thumb">
-      <% if article.article_image? %>
-        <%= link_to article_path(article.id) do %>
-          <%= image_tag article.article_image.url %>
-        <% end %>
+      <% if !article.video_url.blank? %>
+        <%= raw youtube_embed article.video_url, "100%", "175px" %>
       <% else %>
-        <% if !article.video_url.blank? %>
-          <%= raw youtube_embed article.video_url, "100%", "175px" %>
+        <% if article.article_image? %>
+          <%= link_to article_path(article.id) do %>
+            <%= image_tag article.article_image.url %>
+          <% end %>
         <% end %>
       <% end %>
       <div class="home-article-category">
