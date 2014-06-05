@@ -66,7 +66,7 @@ $(document).on 'page:fetch', ->
 @PageSpinner =
   spin: (ms=500)->
     @spinner = setTimeout( (=> @add_spinner()), ms)
-    $(document).on 'page:change', =>
+    $(document).on 'page:receive', =>
       @remove_spinner()
   spinner_html: '
     <div class="modal fade" id="page-spinner">
