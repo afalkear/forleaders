@@ -61,13 +61,11 @@ ready = ->
 $(document).ready(ready)
 $(document).on('page:load', ready)
 $(document).on 'page:fetch', ->
-  PageSpinner.spin()
+  PageSpinner.add_spinner()
+$(document).on 'page:receive', ->
+  PageSpinner.remove_spinner()
 
 @PageSpinner =
-  spin: (ms=500)->
-    @spinner = setTimeout( (=> @add_spinner()), ms)
-    $(document).on 'page:receive', =>
-      @remove_spinner()
   spinner_html: '
     <div class="modal fade" id="page-spinner">
       <div class="modal-dialog">
@@ -84,7 +82,6 @@ $(document).on 'page:fetch', ->
     $('body').append(@spinner_html)
     $('body div#page-spinner').modal()
   remove_spinner: ->
-    clearTimeout(@spinner)
-    #$('div#page-spinner').modal('hide')
-    #$('div#page-spinner').on 'hidden', ->
-      #$(this).remove()
+    $('div#page-spinner').modal('hide')
+    $('div#page-spinner').on 'hidden', ->
+      $(this).remove()
