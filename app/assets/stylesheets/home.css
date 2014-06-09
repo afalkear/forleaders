@@ -1374,7 +1374,7 @@ ul.dropdown-menu {
 
 .home-article-thumb > a > img {
   z-index: 1;
-  width: 100%;
+  width: 345px;
   height: 175px;
 }
 
@@ -1392,11 +1392,11 @@ ul.dropdown-menu {
 
 .home-article-thumb:hover > .home-article-hover-frase {
   position: absolute;
-  top: 25%;
-  left: 0;
+  top: 0px;
+  left: 15px;
   text-align: center;
-  width: 100%;
-  height: 100%;
+  width: 345px;
+  height: 175px;
   color: lightgrey;
   display: inline;
   font-family: 'Roboto', sans-serif;
@@ -1404,6 +1404,7 @@ ul.dropdown-menu {
   font-size: 22px;
   padding-right: 15px;
   padding-left: 15px;
+  padding-top: 16%;
 }
 
 .home-article-category > .article_square {
