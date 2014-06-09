@@ -1402,6 +1402,8 @@ ul.dropdown-menu {
   font-family: 'Roboto', sans-serif;
   font-weight: 600;
   font-size: 22px;
+  padding-right: 15px;
+  padding-left: 15px;
 }
 
 .home-article-category > .article_square {
