@@ -1,6 +1,10 @@
 module ApplicationHelper
   def title(page_title)
-    content_for :title, page_title.to_s.capitalize
+    if page_title.to_s == "Método DeRose"
+      content_for :title, "Método DeRose"
+    else
+      content_for :title, page_title.to_s.capitalize
+    end
   end
 
   def mark_required(object, attribute)  

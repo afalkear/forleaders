@@ -351,6 +351,7 @@ ul.dropdown-menu {
   font-weight: 300;
   /*letter-spacing: 1px; */
   font-size: 18px;
+  text-transform: uppercase;
 }
 
 .page-title-container {
