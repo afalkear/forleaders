@@ -43,6 +43,7 @@ gem 'elastic-beanstalk'
 group :development do
   gem 'git-pivotal-tracker-integration'
   gem 'guard-livereload'
+  gem 'newrelic_rpm'
 end
 
 group :development, :test do
