@@ -160,7 +160,7 @@ ul.dropdown-menu {
   /*border-width: 0px;*/
 }
 
-.affix-top > .container-fluid > .navbar-header {
+.affix-top > .container-fluid > .navbar-header  img{
   display: none;
 }
 
