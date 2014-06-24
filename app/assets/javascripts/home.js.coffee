@@ -71,6 +71,8 @@ $(document).on 'page:receive', ->
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-body">
+            <img src="assets/lis_logo.png") alt="lis logo"/>
+            <br>
             <i class="fa fa-refresh fa-spin fa-5x"></i>
           </div>
         </div><!-- /.modal-content -->

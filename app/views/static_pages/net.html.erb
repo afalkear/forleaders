@@ -1,4 +1,6 @@
 <% title "Rede Internacional" %>
-<%= render 'net_header' %>
-<%= render 'net_body' %>
-<%= render 'derose_method_footer' %>
+<% cache do %>
+  <%= render 'net_header' %>
+  <%= render 'net_body' %>
+  <%= render 'derose_method_footer' %>
+<% end %>

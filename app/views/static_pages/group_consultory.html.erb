@@ -1,7 +1,9 @@
 <% title "Programas grupales" %>
-<%= render 'group_consultory_header' %>
-<%= render 'group_consultory_body' %>
-<%= render 'partners' %>
+<% cache do %>
+  <%= render 'group_consultory_header' %>
+  <%= render 'group_consultory_body' %>
+  <%= render 'partners' %>
+<% end %>
 
 <script type="text/javascript">
   $(function() {
