@@ -6,7 +6,7 @@
     <div class="row articles-line"></div>
   </div>
 <% end %>
-<% cache('featured_articles') do %>
+<% cache do %>
   <%= render "articles" %>
 <% end %>
 
