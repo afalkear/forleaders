@@ -5,7 +5,9 @@
   <div class="container">
     <div class="row articles-line"></div>
   </div>
+
   <%= render "articles" %>
+<% cache do %>
   <%= render "partners" %>
 <% end %>
 <%= render "zopim" %>
