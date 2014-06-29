@@ -1,5 +1,5 @@
 <% title "HOME" %>
-<% cache do %>
+<% cache 'up' do %>
   <%= render "slideshow" %>
   <%= render "programmes" %>
   <div class="container">
@@ -7,7 +7,7 @@
   </div>
 <% end %>
   <%= render "articles" %>
-<% cache do %>
+<% cache 'footer' do %>
   <%= render "partners" %>
 <% end %>
 <%= render "zopim" %>
