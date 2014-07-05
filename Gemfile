@@ -40,6 +40,10 @@ gem 'kaminari'
 # AWS elastic beanstalk
 gem 'elastic-beanstalk'
 
+# Authentication
+gem 'devise'
+gem 'cancancan', '~> 1.8'
+
 group :development do
   gem 'git-pivotal-tracker-integration'
   gem 'guard-livereload'

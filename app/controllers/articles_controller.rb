@@ -1,4 +1,6 @@
 class ArticlesController < ApplicationController
+  before_action :authenticate_user!, only: [:new, :create, :edit, :update, :destroy]
+
   def index
     @featured_articles = Article.page(params[:page]).per(4)
     @latest_articles = Article.page(params[:page]).per(3).order('created_at DESC')
