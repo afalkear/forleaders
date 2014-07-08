@@ -44,6 +44,9 @@ gem 'elastic-beanstalk'
 gem 'devise'
 gem 'cancancan', '~> 1.8'
 
+# Translation
+gem 'translation_center', path: "/home/alex/workspace/translation_center"
+
 group :development do
   gem 'git-pivotal-tracker-integration'
   gem 'guard-livereload'
