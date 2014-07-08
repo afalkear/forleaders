@@ -3,11 +3,6 @@ ready = ->
     interval: false
     })
 
-  if window._gaq?
-    _gaq.push ['_trackPageview']
-  else if window.pageTracker?
-    pageTracker._trackPageview()
-
   url = document.location.toString()
   if url.match('#') 
     $('#individual-header-container').removeClass()
