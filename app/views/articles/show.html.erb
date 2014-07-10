@@ -80,7 +80,7 @@
                       <% else %>
                         <%= image_tag @article.article_image if @article.article_image? %>
                       <% end %>
-                      <p><%= @article.content %></p>
+                      <p><%= simple_format @article.content %></p>
                     </div>
                   </div>
                   <hr>
