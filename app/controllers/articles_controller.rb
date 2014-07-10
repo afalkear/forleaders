@@ -1,13 +1,13 @@
 class ArticlesController < ApplicationController
   def index
-    @featured_articles = Article.page(params[:page]).per(4)
-    @latest_articles = Article.page(params[:page]).per(3).order('created_at DESC')
+    @featured_articles = Article.includes(:categories).take(4)
+    @latest_articles = Article.includes(:categories).last(3)
   end
 
   def show
     @article = Article.find(params[:id])
-    @related_articles =  Article.where.not(id: @article.id).take(3) # Article.page(params[:page]).per(3)
-    @latest_articles = Article.where.not(id: @article.id).last(3) #Article.page(params[:page]).per(3).order('created_at DESC')
+    @related_articles =  Article.includes(:categories).where.not(id: @article.id).take(3) # Article.page(params[:page]).per(3)
+    @latest_articles = Article.includes(:categories).where.not(id: @article.id).last(3) #Article.page(params[:page]).per(3).order('created_at DESC')
     youtube_url = @article.video_url
     youtube_id = nil
     if !youtube_url.nil?
