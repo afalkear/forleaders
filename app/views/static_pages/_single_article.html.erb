@@ -7,6 +7,11 @@
         <% if article.article_image? %>
           <%= link_to article_path(article.id) do %>
             <%= image_tag article.article_image.url %>
+            <% if !article.hover_frase.blank? %>
+              <div class="home-article-hover-frase">
+                <%= article.hover_frase %>
+              </div>
+            <% end %>
           <% end %>
         <% end %>
       <% end %>
@@ -15,11 +20,6 @@
         </div>
         <%= link_to t(article.categories.first.name.parameterize.underscore).mb_chars.upcase, category_path(article.categories.first.id)  %>
       </div>
-      <% if !article.hover_frase.blank? %>
-        <div class="home-article-hover-frase">
-          <%= article.hover_frase %>
-        </div>
-      <% end %>
     </div>
     <div class="row home-article-title">
       <%= link_to article_path(article.id) do %>

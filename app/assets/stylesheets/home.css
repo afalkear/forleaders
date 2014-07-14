@@ -1387,11 +1387,11 @@ ul.dropdown-menu {
   -webkit-filter: grayscale(1); */
 }
 
-.home-article-thumb > .home-article-hover-frase {
+.home-article-thumb .home-article-hover-frase {
   display: none;
 }
 
-.home-article-thumb:hover > .home-article-hover-frase {
+.home-article-thumb:hover .home-article-hover-frase {
   position: absolute;
   top: 0px;
   left: 15px;
