@@ -26,6 +26,10 @@ class CategoriesController < ApplicationController
   end
 
   def update
+    # take care of expiring the cache for every article that uses this category
+    # category.articles.each do |article|
+    #   expire_fragment(["v1", @article])
+    # end
   end
 
   def destroy

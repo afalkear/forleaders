@@ -1,5 +1,4 @@
 <% title @article.title.capitalize %>
-
 <div class="single-article-container container">
   <div class="row">
     <div class="col-md-10 col-md-offset-1">
@@ -16,6 +15,7 @@
             <div class="container">
               <div class="row">
                 <div class="col-md-12 article-info-container">
+                <% cache ["v1", @article] do %>
                   <h1>
                     <%= @article.title %>
                     <% if !@article.subtitle.nil? %>
@@ -72,6 +72,7 @@
                       </div>
                     </div>
                   </div>
+                  <% end %>
                   <hr/>
                   <div class="container">
                     <div class="row article-content">
@@ -88,47 +89,50 @@
                     <h2>
                       TEXTOS RELACIONADOS
                     </h2>
-                    <div class="row">
-                    <% 3.times do |i| %>
-                      <div class="col-md-4">
-                        <div>
-                          <%= link_to article_path(@related_articles[i].id) do %>
-                            <%= image_tag @related_articles[i].article_image.url %>
-                        <% end %>
-                        </div>
-                        <div class="related-article-title">
-                          <%= link_to article_path(@related_articles[i].id) do %>
-                            <%= @related_articles[i].title %>
+                    <% cache "#{@article.categories.first.name}-related_articles" do%>
+                      <div class="row">
+                      <% 3.times do |i| %>
+                        <div class="col-md-4">
+                          <div>
+                            <%= link_to article_path(@related_articles[i].id) do %>
+                              <%= image_tag @related_articles[i].article_image.url %>
                           <% end %>
+                          </div>
+                          <div class="related-article-title">
+                            <%= link_to article_path(@related_articles[i].id) do %>
+                              <%= @related_articles[i].title %>
+                            <% end %>
+                          </div>
                         </div>
+                      <% end %>
                       </div>
                     <% end %>
-                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
           <div class="col-md-4 article-sidebar">
-            <div class="container latest-articles">
-              <h2>ULTIMOS ARTIGOS</h2>
-              <% 3.times do |i| %>
-                <div class="row">
-                  <div class="col-md-5">
-                    <%= link_to article_path(@latest_articles[i].id) do %>
-                      <%= image_tag @latest_articles[i].article_image.url %>
-                    <% end %>
-                  </div>
-                  <div class="col-md-7 latest-article-title-container">
-                    <div class="latest-article-title">
+            <% cache "latest_articles" do %>  
+              <div class="container latest-articles">
+                <h2>ULTIMOS ARTIGOS</h2>
+                <% 3.times do |i| %>
+                  <div class="row">
+                    <div class="col-md-5">
                       <%= link_to article_path(@latest_articles[i].id) do %>
-                        <%= @latest_articles[i].title %>
+                        <%= image_tag @latest_articles[i].article_image.url %>
                       <% end %>
                     </div>
+                    <div class="col-md-7 latest-article-title-container">
+                      <div class="latest-article-title">
+                        <%= link_to article_path(@latest_articles[i].id) do %>
+                          <%= @latest_articles[i].title %>
+                        <% end %>
+                      </div>
+                    </div>
                   </div>
-                </div>
-              <% end %>
-            </div>
+                <% end %>
+              </div>
             <hr/>
             <div class="container articles-follow-us">
               <h2>FOLLOW US ON FACEBOOK</h2>
@@ -214,10 +218,10 @@
                 <%end%>
               </div>
             </div>
+          <% end %>
           </div>
         </div>
       </div>
     </div>
   </div>
 </div>
-

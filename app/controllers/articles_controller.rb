@@ -29,6 +29,9 @@ class ArticlesController < ApplicationController
     @article = Article.new(article_params)
 
     if @article.save
+      # expire cache so related and last articles will be reloaded with this new article
+      expire_fragment("latest_articles")
+      expire_fragment("#{@article.categories.first.name}-related_articles")
       redirect_to article_path(@article.id)
     else
       flash[:alert] = "Error"
@@ -42,7 +45,9 @@ class ArticlesController < ApplicationController
 
   def update
     @article = Article.find(params[:id])
+    expire_fragment(["v1", @article])
     @article.update_attributes(article_params)
+    expire_fragment("#{@article.categories.first.name}-related_articles")
 
     redirect_to article_path(@article.id)
   end
