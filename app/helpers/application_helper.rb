@@ -2,6 +2,8 @@ module ApplicationHelper
   def title(page_title)
     if page_title.to_s == "Método DeRose"
       content_for :title, "Método DeRose"
+    elsif page_title.to_s == "DeRose For Leaders"
+      content_for :title, "DeRose For Leaders"
     else
       content_for :title, page_title.to_s.capitalize
     end

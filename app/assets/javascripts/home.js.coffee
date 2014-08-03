@@ -3,7 +3,6 @@ ready = ->
     interval: false
     })
 
-
   url = document.location.toString()
   if url.match('#') 
     $('#individual-header-container').removeClass()
@@ -60,10 +59,11 @@ ready = ->
 
 $(document).ready(ready)
 $(document).on('page:load', ready)
-$(document).on 'page:fetch', ->
-  PageSpinner.add_spinner()
-$(document).on 'page:receive', ->
-  PageSpinner.remove_spinner()
+
+# $(document).on 'page:fetch', ->
+#   PageSpinner.add_spinner()
+# $(document).on 'page:receive', ->
+#   PageSpinner.remove_spinner()
 
 @PageSpinner =
   spinner_html: '

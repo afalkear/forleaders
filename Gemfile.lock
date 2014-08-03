@@ -275,7 +275,6 @@ DEPENDENCIES
   mini_magick
   mysql2
   newrelic_rpm
-  pg
   rails (= 4.0.3)
   rspec-rails (~> 3.0.0.beta)
   sass-rails (~> 4.0.0)

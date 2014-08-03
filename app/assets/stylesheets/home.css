@@ -787,7 +787,7 @@ ul.dropdown-menu {
 }
 
 .without-padding-left-or-right {
-  padding-left: 0px;
+  /*padding-left: 0px;*/
   padding-right: 0px;
 }
 
@@ -1387,11 +1387,11 @@ ul.dropdown-menu {
   -webkit-filter: grayscale(1); */
 }
 
-.home-article-thumb > .home-article-hover-frase {
+.home-article-thumb .home-article-hover-frase {
   display: none;
 }
 
-.home-article-thumb:hover > .home-article-hover-frase {
+.home-article-thumb:hover .home-article-hover-frase {
   position: absolute;
   top: 0px;
   left: 15px;
@@ -1416,6 +1416,7 @@ ul.dropdown-menu {
   position: absolute;
   top: 0px;
   right: 15px;
+  left: 15px;
   background: rgba(0,0,0,0.5);
   color: white;
   padding-right: 5px;
