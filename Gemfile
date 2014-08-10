@@ -40,6 +40,13 @@ gem 'kaminari'
 # AWS elastic beanstalk
 gem 'elastic-beanstalk'
 
+# Internationalization
+# --------------------
+
+# put the locale in the URL as: deroseforleaders.com/en/articles
+gem 'route_translator'
+
+
 group :development do
   gem 'git-pivotal-tracker-integration'
   gem 'guard-livereload'

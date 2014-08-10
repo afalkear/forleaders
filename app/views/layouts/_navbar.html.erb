@@ -18,29 +18,29 @@
       <ul class="nav navbar-nav">
         <li class="<%= 'active' if controller?('static_pages') && action?("derose_method", "our_consultors", "net") %> dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-            DeR<span class="navbar-title-smallcaps">OSE</span>  F<span class="navbar-title-smallcaps">OR</span> L<span class="navbar-title-smallcaps">EADERS</span> <b class="caret"></b>
+            <%= t('static_pages.navbar.derose_for_leaders.title_html') %>
           </a>
           <ul class="dropdown-menu">
-            <li><a href="derose_method">O Método DeR<span class="navbar-title-smallcaps">OSE</span></a></li>
-            <li><a href="our_consultors">Personal Teachers</a></li>
-            <li><a href="net">DeR<span class="navbar-title-smallcaps">OSE</span> All Over the World</a></li>
+            <li><a href="derose_method"><%= t('static_pages.navbar.derose_for_leaders.derose_method_html') %></a></li>
+            <li><a href="our_consultors"><%= t('static_pages.navbar.derose_for_leaders.personal_teachers') %></a></li>
+            <li><a href="net"><%= t('static_pages.navbar.derose_for_leaders.all_over_the_world_html') %></a></li>
           </ul>
         </li>
         
         <li class="<%= 'active' if controller?('static_pages') && action?("individual_consultory", "group_consultory") %> dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-            P<span class="navbar-title-smallcaps">ROGRAMAS</span><b class="caret"></b>
+            <%= t('static_pages.navbar.programs.title_html') %><b class="caret"></b>
           </a>
           <ul class="dropdown-menu" data-no-turbolink>
-            <li class="navbar-non-clickable">PARA INDIVIDUOS</li>      
-            <li><a href="individual_consultory?value=$1#personal">Personal Teaching</a></li>
-            <li><a href="individual_consultory?value=$2#consultory">Consultoria</a></li>
-            <li><a href="individual_consultory?value=$3#training">Treinamento</a></li>
-            <li class="navbar-non-clickable">PARA EMPRESAS</li>
-            <li><a href="group_consultory">Small Group Teaching</a></li>
-            <li><a href="group_consultory?value=$4#small-group-training">Treinamento</a></li>
-            <li><a href="group_consultory?value=$5#talks">Palestra</a></li>
-            <li><a href="group_consultory?value=$6#workshop">Workshop</a></li>
+            <li class="navbar-non-clickable"><%= t('static_pages.navbar.programs.individuals.title') %></li>
+            <li><a href="individual_consultory?value=$1#personal"><%= t('static_pages.navbar.programs.individuals.personal_teaching') %></a></li>
+            <li><a href="individual_consultory?value=$2#consultory"><%= t('static_pages.navbar.programs.individuals.consulting') %></a></li>
+            <li><a href="individual_consultory?value=$3#training"><%= t('static_pages.navbar.programs.individuals.training') %></a></li>
+            <li class="navbar-non-clickable"><%= t('static_pages.navbar.programs.enterprises.title') %></li>
+            <li><a href="group_consultory"><%= t('static_pages.navbar.programs.enterprises.small_group_teaching') %></a></li>
+            <li><a href="group_consultory?value=$4#small-group-training"><%= t('static_pages.navbar.programs.enterprises.training') %></a></li>
+            <li><a href="group_consultory?value=$5#talks"><%= t('static_pages.navbar.programs.enterprises.talks') %></a></li>
+            <li><a href="group_consultory?value=$6#workshop"><%= t('static_pages.navbar.programs.enterprises.workshop') %></a></li>
             
           </ul>
           <!-- ul class="dropdown-menu">
@@ -93,16 +93,16 @@
         </li>
         <li class="<%= 'active' if controller?('static_pages') && action?("enterprise_testimonials", "institution_testimonials") %> dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-            D<span class="navbar-title-smallcaps">EPOIMENTOS</span><b class="caret"></b>
+            <%= t('static_pages.navbar.testimonials.title_html') %><b class="caret"></b>
           </a>
           <ul class="dropdown-menu">
-            <li><a href="enterprise_testimonials">Empresas</a></li>
-            <li><a href="institution_testimonials">Instituções</a></li>
+            <li><a href="enterprise_testimonials"><%= t('static_pages.navbar.testimonials.enterprises') %></a></li>
+            <li><a href="institution_testimonials"><%= t('static_pages.navbar.testimonials.institutions') %></a></li>
           </ul>
         </li>
         <li class="<%= 'active' if controller?('static_pages') && action?("articles") %> dropdown">
           <a href="articles">
-            A<span class="navbar-title-smallcaps">RTIGOS</span><!-- b class="caret"></b -->
+            <%= t('static_pages.navbar.articles.title_html') %><!-- b class="caret"></b -->
           </a>
           <!-- ul class="dropdown-menu">
             <li><a href="#">Liderança</a></li>
@@ -115,10 +115,10 @@
         </li>
         <li class="<%= 'active' if controller?('static_pages') && action?("contact", "apply") %> dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-            C<span class="navbar-title-smallcaps">ONTATO</span><b class="caret"></b>
+            <%= t('static_pages.navbar.contact_type.title_html') %><b class="caret"></b>
           </a>
           <ul class="dropdown-menu">
-            <li><a href="contact">Falar conosco</a></li>
+            <li><a href="contact"><%= t('static_pages.navbar.contact_type.contact') %></a></li>
             <!-- li><a href="apply">Candidatura</a></li -->
           </ul>
         </li>

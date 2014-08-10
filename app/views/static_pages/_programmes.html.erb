@@ -2,17 +2,17 @@
   <div class="row">
     <div class="col-md-3 col-md-offset-1">
       <div class="home-section-title">
-        NOSSOS PROGRAMAS
+        <%= t('static_pages.programs.title') %>
       </div>
       <div class="home-section-subtitle hover-gold">
-        INVISTA EM PROGRAMAS SOB MEDIDA
+        <%= t('static_pages.programs.subtitle') %>
       </div>
     </div>
     <div class="col-md-7 subprogramme-container">
         <div class="row">
           <div class="col-md-6 programme-option">
               <div class="row programme-header hover-gold">
-                <span>PARA INDIVÍDUOS</span>
+                <span><%= t('static_pages.programs.individuals.title') %></span>
               </div>
               <div class="programme-border-left">
                 <div class="row single-programme-row">
@@ -20,23 +20,23 @@
                     <div class="hover-gold">
                       <%= link_to "individual_consultory?value=$1#personal" do %>
                         <div class="programme-subheader">
-                          PERSONAL TEACHING
+                          <%= t('static_pages.programs.individuals.personal_teaching.title') %>
                         </div>
                         <div class="programme-subsubheader">
-                          1h duas vezes por semana
+                          <%= t('static_pages.programs.individuals.personal_teaching.subtitle') %>
                         </div>
                       <% end %>
                     </div>
                     <div class="programme-text">
                       <ul>
                         <li>
-                          &#8226; Aprenda ferramentas para desenvolver o seu potencial
+                          &#8226; <%= t('static_pages.programs.individuals.personal_teaching.first_item') %>
                         </li>
                         <li>
-                          &#8226; Desenvolva Alta Performance em todas as áreas da sua vida
+                          &#8226; <%= t('static_pages.programs.individuals.personal_teaching.second_item') %>
                         </li>
                         <li>
-                          &#8226; Melhore a sua Qualidade de Vida
+                          &#8226; <%= t('static_pages.programs.individuals.personal_teaching.third_item') %>
                         </li>
                       </ul>
                     </div>
@@ -45,23 +45,23 @@
                     <div class="hover-gold">
                       <%= link_to "individual_consultory?value=$1#consultory" do %>
                         <div class="programme-subheader">
-                          CONSULTORIAS
+                          <%= t('static_pages.programs.individuals.consultory.title') %>
                         </div>
                         <div class="programme-subsubheader">
-                          3 a 6 meses
+                          <%= t('static_pages.programs.individuals.consultory.subtitle') %>
                         </div>
                       <% end %>
                     </div>
                     <div class="programme-text">
                       <ul>
                         <li>
-                          &#8226; Alta Produtividade
+                          &#8226; <%= t('static_pages.programs.individuals.consultory.first_item') %>
                         </li>
                         <li>
-                          &#8226; Viver e trabalhar melhor
+                          &#8226; <%= t('static_pages.programs.individuals.consultory.second_item') %>
                         </li>
                         <li>
-                          &#8226; Comportamento, Ética e Resultados
+                          &#8226; <%= t('static_pages.programs.individuals.consultory.third_item') %>
                         </li>
                       </ul>
                     </div>
@@ -71,7 +71,7 @@
           </div>
           <div class="col-md-6 programme-option">
               <div class="row programme-header hover-gold">
-                <span>PARA EMPRESAS</span>
+                <span><%= t('static_pages.programs.enterprise.title') %></span>
               </div>
               <div class="programme-border-left programme-border-right">
                 <div class="row single-programme-row">
@@ -79,23 +79,23 @@
                     <div class="hover-gold">
                       <%= link_to "group_consultory" do %>
                         <div class="programme-subheader">
-                          SMALL GROUP TEACHING
+                          <%= t('static_pages.programs.enterprise.small_group_teaching.title') %>
                         </div>
                         <div class="programme-subsubheader">
-                          1h duas vezes por semana
+                          <%= t('static_pages.programs.enterprise.small_group_teaching.subtitle') %>
                         </div>
                       <% end %>
                     </div>
                     <div class="programme-text">
                       <ul>
                         <li>
-                          &#8226; Reforçar os vínculos entre os líderes
+                          &#8226; <%= t('static_pages.programs.enterprise.small_group_teaching.first_item') %>
                         </li>
                         <li>
-                          &#8226; Desenvolver Alta Performance profissional
+                          &#8226; <%= t('static_pages.programs.enterprise.small_group_teaching.second_item') %>
                         </li>
                         <li>
-                          &#8226; Melhorar a Qualidade de Vida
+                          &#8226; <%= t('static_pages.programs.enterprise.small_group_teaching.third_item') %>
                         </li>
                       </ul>
                     </div>
@@ -104,23 +104,23 @@
                     <div class="hover-gold">
                       <%= link_to "group_consultory?value=$6#workshop" do %>
                         <div class="programme-subheader">
-                          WORKSHOPS
+                          <%= t('static_pages.programs.enterprise.workshop.title') %>
                         </div>
                         <div class="programme-subsubheader">
-                          4, 8 ou 16 horas
+                          <%= t('static_pages.programs.enterprise.workshop.subtitle') %>
                         </div>
                       <% end %>
                     </div>
                     <div class="programme-text">
                       <ul>
                         <li>
-                          &#8226; Administraç&atilde;o de tempo
+                          &#8226; <%= t('static_pages.programs.enterprise.workshop.first_item') %>
                         </li>
                         <li>
-                          &#8226; Administraç&atilde;o dos conflitos
+                          &#8226; <%= t('static_pages.programs.enterprise.workshop.second_item') %>
                         </li>
                         <li>
-                          &#8226; Gest&atilde;o do stress
+                          &#8226; <%= t('static_pages.programs.enterprise.workshop.third_item') %>
                         </li>
                       </ul>
                     </div>
@@ -137,23 +137,23 @@
                     <div class="hover-gold">
                       <%= link_to "individual_consultory?value=$3#training" do %>
                         <div class="programme-subheader">
-                          TREINAMENTO
+                          <%= t('static_pages.programs.individuals.training.title') %>
                         </div>
                         <div class="programme-subsubheader">
-                          15 minutos por dia
+                          <%= t('static_pages.programs.individuals.training.subtitle') %>
                         </div>
                       <% end %>
                     </div>
                     <div class="programme-text">
                       <ul>
                         <li>
-                          &#8226; Favoreça sua Alta Produtividade
+                          &#8226; <%= t('static_pages.programs.individuals.training.first_item') %>
                         </li>
                         <li>
-                          &#8226; Aprimore sua Boa Forma
+                          &#8226; <%= t('static_pages.programs.individuals.training.second_item') %>
                         </li>
                         <li>
-                          &#8226; Desenvolva o seu Bem Estar
+                          &#8226; <%= t('static_pages.programs.individuals.training.third_item') %>
                         </li>
                       </ul>
                     </div>
@@ -191,23 +191,23 @@
                       <div class="hover-gold">
                         <%= link_to "group_consultory?value=$4#small-group-training" do %>
                           <div class="programme-subheader">
-                            SMALL GROUP TRAINING
+                            <%= t('static_pages.programs.enterprise.small_group_training.title') %>
                           </div>
                           <div class="programme-subsubheader">
-                            15 minutos por dia
+                            <%= t('static_pages.programs.enterprise.small_group_training.subtitle') %>
                           </div>
                         <% end %>
                       </div>
                       <div class="programme-text">
                         <ul>
                           <li>
-                            &#8226; Manter a boa forma
+                            &#8226; <%= t('static_pages.programs.enterprise.small_group_training.first_item') %>
                           </li>
                           <li>
-                            &#8226; Proporcionar um momento de bem estar
+                            &#8226; <%= t('static_pages.programs.enterprise.small_group_training.second_item') %>
                           </li>
                           <li>
-                            &#8226; Favorecer a Alta Produtividade
+                            &#8226; <%= t('static_pages.programs.enterprise.small_group_training.third_item') %>
                           </li>
                         </ul>
                       </div>
@@ -216,29 +216,29 @@
                       <div class="hover-gold">
                         <%= link_to "group_consultory?value=$5#talks" do %>
                           <div class="programme-subheader">
-                            PALESTRAS
+                            <%= t('static_pages.programs.enterprise.talks.title') %>
                           </div>
                           <div class="programme-subsubheader">
-                            2 ou 4 horas
+                            <%= t('static_pages.programs.enterprise.talks.subtitle') %>
                           </div>
                         <% end %>
                       </div>
                       <div class="programme-text">
                         <ul>
                           <li>
-                            &#8226; Alta Performance
+                            &#8226; <%= t('static_pages.programs.enterprise.talks.first_item') %>
                           </li>
                           <li>
-                            &#8226; Qualidade de Vida
+                            &#8226; <%= t('static_pages.programs.enterprise.talks.second_item') %>
                           </li>
                           <li>
-                            &#8226; Administraç&atilde;o dos conflitos
+                            &#8226; <%= t('static_pages.programs.enterprise.talks.third_item') %>
                           </li>
                           <li>
-                            &#8226; Gest&atilde;o do stress
+                            &#8226; <%= t('static_pages.programs.enterprise.talks.fourth_item') %>
                           </li>
                           <li>
-                            &#8226; Gestão emocional
+                            &#8226; <%= t('static_pages.programs.enterprise.talks.fifth_item') %>
                           </li>
                         </ul>
                       </div>
@@ -248,35 +248,43 @@
             </div>
           </div>
         </div>
-        <div class="row programme-plus">
-          <div class="col-md-6 programme-option">
-            <div class="row more-programme">
-              <a href="#">
-                <span class="glyphicon glyphicon-plus-sign"></span>
-              </a>
-            </div>
-          </div>
-          <div class="col-md-6 programme-option">
-            <div class="row more-programme">
-              <a href="#">
-                <span class="glyphicon glyphicon-plus-sign"></span>
-              </a>
+        <div class="programme-plus">
+          <div class="col-md-offset-4 col-md-7">
+            <div class="row">
+              <div class="col-md-6 programme-option">
+                <div class="row more-programme">
+                  <a href="#">
+                    <span class="glyphicon glyphicon-plus-sign"></span>
+                  </a>
+                </div>
+              </div>
+              <div class="col-md-6 programme-option">
+                <div class="row more-programme">
+                  <a href="#">
+                    <span class="glyphicon glyphicon-plus-sign"></span>
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <div class="row programme-minus">
-          <div class="col-md-6 programme-option">
-            <div class="row less-programme">
-              <a href="#">
-                <span class="glyphicon glyphicon-minus-sign"></span>
-              </a>
-            </div>
-          </div>
-          <div class="col-md-6 programme-option">
-            <div class="row less-programme">
-              <a href="#">
-                <span class="glyphicon glyphicon-minus-sign"></span>
-              </a>
+        <div class=" programme-minus">
+          <div class="col-md-offset-4 col-md-7">
+            <div class="row">
+              <div class="col-md-6 programme-option">
+                <div class="row less-programme">
+                  <a href="#">
+                    <span class="glyphicon glyphicon-minus-sign"></span>
+                  </a>
+                </div>
+              </div>
+              <div class="col-md-6 programme-option">
+                <div class="row less-programme">
+                  <a href="#">
+                    <span class="glyphicon glyphicon-minus-sign"></span>
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </div>

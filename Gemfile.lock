@@ -180,6 +180,7 @@ GEM
     ref (1.0.5)
     rest-client (1.6.7)
       mime-types (>= 1.16)
+    route_translator (3.2.4)
     rspec-collection_matchers (0.0.2)
       rspec-expectations (>= 2.99.0.beta1)
     rspec-core (3.0.0.beta1)
@@ -262,6 +263,7 @@ DEPENDENCIES
   mysql2
   newrelic_rpm
   rails (= 4.0.3)
+  route_translator
   rspec-rails (~> 3.0.0.beta)
   sass-rails (~> 4.0.0)
   sdoc

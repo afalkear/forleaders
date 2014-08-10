@@ -4,68 +4,68 @@
       <div class="row">
         <div class="col-md-4 gold-color footer-title">
           <div class="row">
-            DeR<span class="navbar-title-smallcaps">OSE</span> F<span class="navbar-title-smallcaps">OR</span> L<span class="navbar-title-smallcaps">EADERS</span>
+            <%= t('static_pages.footer.title_html') %>
           </div>
         </div>
       </div>
       <div class="row">
         <div class="col-md-4 footer-inner-column">
-          <div class="row after-title gold-color inner-footer-title">Quem somos?</div>
+          <div class="row after-title gold-color inner-footer-title"><%= t('static_pages.footer.derose_for_leaders.title') %></div>
           <div class="row inner-footer-content border-9">
-            <a href="derose_method" class="inner-footer-link">O Método DeR<span class="navbar-title-smallcaps">OSE</span></a>
-            <a href="individual_consultory" class="inner-footer-link">Personal Teachers</a>
-            <a href="net" class="inner-footer-link">DeR<span class="navbar-title-smallcaps">OSE</span> All Over The World</a>
+            <a href="derose_method" class="inner-footer-link"><%= t('static_pages.footer.derose_for_leaders.derose_method_html') %></a>
+            <a href="individual_consultory" class="inner-footer-link"><%= t('static_pages.footer.derose_for_leaders.personal_teachers') %></a>
+            <a href="net" class="inner-footer-link"><%= t('static_pages.footer.derose_for_leaders.all_over_the_world_html') %></a>
           </div>
         </div>
         <div class="col-md-4 footer-inner-column">
-          <div class="row after-title gold-color inner-footer-title">Programas para individuais</div>
+          <div class="row after-title gold-color inner-footer-title"><%= t('static_pages.footer.individuals.title') %></div>
           <div class="row inner-footer-content">
-            <a href="individual_consultory" class="inner-footer-link">Personal Teaching</a>
-            <a href="individual_consultory#training" class="inner-footer-link">Treinamento</a>
-            <a href="individual_consultory#consultory" class="inner-footer-link">Consultoria</a>
+            <a href="individual_consultory" class="inner-footer-link"><%= t('static_pages.footer.individuals.personal_teaching') %></a>
+            <a href="individual_consultory#training" class="inner-footer-link"><%= t('static_pages.footer.individuals.training') %></a>
+            <a href="individual_consultory#consultory" class="inner-footer-link"><%= t('static_pages.footer.individuals.consulting') %></a>
           </div>
         </div>
         <div class="col-md-4">
           <div class="row after-title gold-color inner-footer-title footer-inner-column ">
-            Programas para empresas
+            <%= t('static_pages.footer.enterprises.title') %>
           </div>
           <div class="row inner-footer-content">
-            <a href="group_consultory" class="inner-footer-link">Small Group Teaching</a>
-            <a href="group_consultory#training" class="inner-footer-link">Treinamento</a>
-            <a href="group_consultory#talks" class="inner-footer-link">Palestra</a>
-            <a href="group_consultory#workshop" class="inner-footer-link">Workshops</a>
+            <a href="group_consultory" class="inner-footer-link"><%= t('static_pages.footer.enterprises.small_group_teaching') %></a>
+            <a href="group_consultory#training" class="inner-footer-link"><%= t('static_pages.footer.enterprises.training') %></a>
+            <a href="group_consultory#talks" class="inner-footer-link"><%= t('static_pages.footer.enterprises.talks') %></a>
+            <a href="group_consultory#workshop" class="inner-footer-link"><%= t('static_pages.footer.enterprises.workshop') %></a>
           </div>
         </div>
       </div>
       <div class="row">
         <div class="col-md-4 footer-inner-column">
-          <div class="row after-title gold-color inner-footer-title">Artigos</div>
+          <div class="row after-title gold-color inner-footer-title"><%= t('static_pages.footer.articles.title') %></div>
           <div class="row inner-footer-content">
-            <a href="#" class="inner-footer-link">Liderança</a>
-            <a href="#" class="inner-footer-link">Alta Produtividade</a>
-            <a href="#" class="inner-footer-link">Foco</a>
-            <a href="#" class="inner-footer-link">Intuição Aplicada</a>
-            <a href="#" class="inner-footer-link">Relaçoēs Interpessoais</a>
-            <a href="#" class="inner-footer-link">Lifestyle</a>
+            <a href="#" class="inner-footer-link"><%= t('static_pages.footer.articles.leadership') %></a>
+            <a href="#" class="inner-footer-link"><%= t('static_pages.footer.articles.high_performance') %></a>
+            <a href="#" class="inner-footer-link"><%= t('static_pages.footer.articles.focus') %></a>
+            <a href="#" class="inner-footer-link"><%= t('static_pages.footer.articles.intuition') %></a>
+            <a href="#" class="inner-footer-link"><%= t('static_pages.footer.articles.human_relationships') %></a>
+            <a href="#" class="inner-footer-link"><%= t('static_pages.footer.articles.quality_of_life') %></a>
           </div>
         </div>
         <div class="col-md-4 footer-inner-column">
-          <div class="row after-title gold-color inner-footer-title">Depoimentos</div>
+          <div class="row after-title gold-color inner-footer-title"><%= t('static_pages.footer.testimonials.title') %></div>
           <div class="row inner-footer-content">
-            <a href="#" class="inner-footer-link">Empresas</a>
-            <a href="#" class="inner-footer-link">Instituções</a>
+            <a href="#" class="inner-footer-link"><%= t('static_pages.footer.testimonials.enterprises') %></a>
+            <a href="#" class="inner-footer-link"><%= t('static_pages.footer.testimonials.institutions') %></a>
           </div>
         </div>
         <div class="col-md-4 footer-inner-column footer-contact-us">
             <div class="pull-right">
               <div class="follow-title">
-                <%= link_to "Contact Us!", contact_path %>
+                <%= link_to t('static_pages.footer.contact_us'), contact_path %>
               </div>
               <div class="follow-title">
-                <%= link_to "Apply Now!", apply_path %>
+                <%= link_to t('static_pages.footer.testimonials.apply_now'), apply_path %>
               </div>
               <div class="follow-title">
-                Follow us!
+                <%= t('static_pages.footer.testimonials.follow_us') %>
               </div>
               <div class="follow-logos">
                 <a href="" class="footer-logos facebook-logo">
