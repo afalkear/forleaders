@@ -21,9 +21,15 @@
             <%= t('static_pages.navbar.derose_for_leaders.title_html') %>
           </a>
           <ul class="dropdown-menu">
-            <li><a href="derose_method"><%= t('static_pages.navbar.derose_for_leaders.derose_method_html') %></a></li>
-            <li><a href="our_consultors"><%= t('static_pages.navbar.derose_for_leaders.personal_teachers') %></a></li>
-            <li><a href="net"><%= t('static_pages.navbar.derose_for_leaders.all_over_the_world_html') %></a></li>
+            <li>
+              <%= link_to t('static_pages.navbar.derose_for_leaders.derose_method_html'), derose_method_path%>
+            </li>
+            <li>
+              <%= link_to t('static_pages.navbar.derose_for_leaders.personal_teachers'), our_consultors_path%>
+            </a></li>
+            <li>
+              <%= link_to t('static_pages.navbar.derose_for_leaders.all_over_the_world_html'), net_path%>
+            </a></li>
           </ul>
         </li>
         
@@ -33,14 +39,28 @@
           </a>
           <ul class="dropdown-menu" data-no-turbolink>
             <li class="navbar-non-clickable"><%= t('static_pages.navbar.programs.individuals.title') %></li>
-            <li><a href="individual_consultory?value=$1#personal"><%= t('static_pages.navbar.programs.individuals.personal_teaching') %></a></li>
-            <li><a href="individual_consultory?value=$2#consultory"><%= t('static_pages.navbar.programs.individuals.consulting') %></a></li>
-            <li><a href="individual_consultory?value=$3#training"><%= t('static_pages.navbar.programs.individuals.training') %></a></li>
+            <li>
+              <%= link_to t('static_pages.navbar.programs.individuals.personal_teaching'), (individual_consultory_path(:q => "1")+"#personal")%>
+            </li>
+            <li>
+              <%= link_to t('static_pages.navbar.programs.individuals.consulting'), individual_consultory_path(:q => "2")+"#consultory"%>
+            </li>
+            <li>
+              <%= link_to t('static_pages.navbar.programs.individuals.training'), individual_consultory_path(:q => "3")+"#training"%>
+            </li>
             <li class="navbar-non-clickable"><%= t('static_pages.navbar.programs.enterprises.title') %></li>
-            <li><a href="group_consultory"><%= t('static_pages.navbar.programs.enterprises.small_group_teaching') %></a></li>
-            <li><a href="group_consultory?value=$4#small-group-training"><%= t('static_pages.navbar.programs.enterprises.training') %></a></li>
-            <li><a href="group_consultory?value=$5#talks"><%= t('static_pages.navbar.programs.enterprises.talks') %></a></li>
-            <li><a href="group_consultory?value=$6#workshop"><%= t('static_pages.navbar.programs.enterprises.workshop') %></a></li>
+            <li>
+              <%= link_to t('static_pages.navbar.programs.enterprises.small_group_teaching'), group_consultory_path%>
+            </li>
+            <li>
+              <%= link_to t('static_pages.navbar.programs.enterprises.training'), group_consultory_path(:q => "1")+"#small-group-training"%>
+            </li>
+            <li>
+              <%= link_to t('static_pages.navbar.programs.enterprises.talks'), group_consultory_path(:q => "2")+"#talks"%>
+            </li>
+            <li>
+              <%= link_to t('static_pages.navbar.programs.enterprises.workshop'), group_consultory_path(:q => "3")+"#workshop"%>
+            </li>
             
           </ul>
           <!-- ul class="dropdown-menu">
@@ -96,8 +116,12 @@
             <%= t('static_pages.navbar.testimonials.title_html') %><b class="caret"></b>
           </a>
           <ul class="dropdown-menu">
-            <li><a href="enterprise_testimonials"><%= t('static_pages.navbar.testimonials.enterprises') %></a></li>
-            <li><a href="institution_testimonials"><%= t('static_pages.navbar.testimonials.institutions') %></a></li>
+            <li>
+              <%= link_to t('static_pages.navbar.testimonials.enterprises'), enterprise_testimonials_path%>
+            </li>
+            <li>
+              <%= link_to t('static_pages.navbar.testimonials.institutions'), institution_testimonials_path%>
+            </li>
           </ul>
         </li>
         <li class="<%= 'active' if controller?('static_pages') && action?("articles") %> dropdown">
@@ -118,7 +142,9 @@
             <%= t('static_pages.navbar.contact_type.title_html') %><b class="caret"></b>
           </a>
           <ul class="dropdown-menu">
-            <li><a href="contact"><%= t('static_pages.navbar.contact_type.contact') %></a></li>
+            <li>
+              <%= link_to t('static_pages.navbar.contact_type.contact'), contact_path %>
+            </li>
             <!-- li><a href="apply">Candidatura</a></li -->
           </ul>
         </li>

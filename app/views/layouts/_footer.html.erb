@@ -12,17 +12,17 @@
         <div class="col-md-4 footer-inner-column">
           <div class="row after-title gold-color inner-footer-title"><%= t('static_pages.footer.derose_for_leaders.title') %></div>
           <div class="row inner-footer-content border-9">
-            <a href="derose_method" class="inner-footer-link"><%= t('static_pages.footer.derose_for_leaders.derose_method_html') %></a>
-            <a href="individual_consultory" class="inner-footer-link"><%= t('static_pages.footer.derose_for_leaders.personal_teachers') %></a>
-            <a href="net" class="inner-footer-link"><%= t('static_pages.footer.derose_for_leaders.all_over_the_world_html') %></a>
+            <%= link_to t('static_pages.footer.derose_for_leaders.derose_method_html'), derose_method_path, class: "inner-footer-link"%>
+            <%= link_to t('static_pages.footer.derose_for_leaders.personal_teachers'), (individual_consultory_path(:q => "1")+"#personal"), class: "inner-footer-link"%>
+            <%= link_to t('static_pages.footer.derose_for_leaders.all_over_the_world_html'), net_path, class: "inner-footer-link"%>
           </div>
         </div>
         <div class="col-md-4 footer-inner-column">
           <div class="row after-title gold-color inner-footer-title"><%= t('static_pages.footer.individuals.title') %></div>
           <div class="row inner-footer-content">
-            <a href="individual_consultory" class="inner-footer-link"><%= t('static_pages.footer.individuals.personal_teaching') %></a>
-            <a href="individual_consultory#training" class="inner-footer-link"><%= t('static_pages.footer.individuals.training') %></a>
-            <a href="individual_consultory#consultory" class="inner-footer-link"><%= t('static_pages.footer.individuals.consulting') %></a>
+            <%= link_to t('static_pages.footer.individuals.personal_teaching'), (individual_consultory_path(:q => "1")+"#personal"), class: "inner-footer-link"%>
+            <%= link_to t('static_pages.footer.individuals.training'), individual_consultory_path(:q => "3")+"#training", class: "inner-footer-link"%>
+            <%= link_to t('static_pages.footer.individuals.consulting'), individual_consultory_path(:q => "2")+"#consultory", class: "inner-footer-link"%>
           </div>
         </div>
         <div class="col-md-4">
@@ -30,10 +30,10 @@
             <%= t('static_pages.footer.enterprises.title') %>
           </div>
           <div class="row inner-footer-content">
-            <a href="group_consultory" class="inner-footer-link"><%= t('static_pages.footer.enterprises.small_group_teaching') %></a>
-            <a href="group_consultory#training" class="inner-footer-link"><%= t('static_pages.footer.enterprises.training') %></a>
-            <a href="group_consultory#talks" class="inner-footer-link"><%= t('static_pages.footer.enterprises.talks') %></a>
-            <a href="group_consultory#workshop" class="inner-footer-link"><%= t('static_pages.footer.enterprises.workshop') %></a>
+            <%= link_to t('static_pages.footer.enterprises.small_group_teaching'), group_consultory_path, class: "inner-footer-link"%>
+            <%= link_to t('static_pages.footer.enterprises.training'), group_consultory_path(:q => "1")+"#small-group-training", class: "inner-footer-link"%>
+            <%= link_to t('static_pages.footer.enterprises.talks'), group_consultory_path(:q => "2")+"#talks", class: "inner-footer-link"%>
+            <%= link_to t('static_pages.footer.enterprises.workshop'), group_consultory_path(:q => "3")+"#workshop", class: "inner-footer-link"%>
           </div>
         </div>
       </div>
@@ -52,8 +52,8 @@
         <div class="col-md-4 footer-inner-column">
           <div class="row after-title gold-color inner-footer-title"><%= t('static_pages.footer.testimonials.title') %></div>
           <div class="row inner-footer-content">
-            <a href="#" class="inner-footer-link"><%= t('static_pages.footer.testimonials.enterprises') %></a>
-            <a href="#" class="inner-footer-link"><%= t('static_pages.footer.testimonials.institutions') %></a>
+            <%= link_to t('static_pages.footer.testimonials.enterprises'), enterprise_testimonials_path, class: "inner-footer-link"%>
+            <%= link_to t('static_pages.footer.testimonials.institutions'), institution_testimonials_path, class: "inner-footer-link"%>
           </div>
         </div>
         <div class="col-md-4 footer-inner-column footer-contact-us">
