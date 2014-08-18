@@ -1,25 +1,23 @@
 <hr/>
 <div class="individual-sidebar-container container peugeot-container">
   <div class="row individual-sidebar-title">
-    <h1>DEPOIMENTO</h1>
+    <h1><%= t('static_pages.sidebar.peugeot.title') %></h1>
   </div>
   <div class="row individual-sidebar-body" id="peugeot_testimony">
     <div class="col-md-5">
       <div>
         <%= image_tag "erwin_museur.jpg" %>
       </div>
-      <h3>Erwin MUSEUR</h3>
-      <h4>Paris</h4>
-      <p>Design Manager</p>
-      <p>PEUGEOT</p>
-    </div>
+      <%= t('static_pages.sidebar.peugeot.erwin_data_html') %>
+      </div>
     <div class="col-md-7" id="peugeot_testimony_text">
-      “Desde o início gostei muito das aulas pois senti que produziam efeitos positivos muito rápido. Nos primeiros meses aprendi ferramentas muito eficientes para aumentar a minha vitalidade, melhorei a minha capacidade respiratória assim como a flexibilidade e o tônus muscular. Logo mais comecei a treinar as minhas capacidades mentais. O conhecimento teórico transmitido através das conversas agregou muito valor ao meu crescimento pessoal e profissional."
+      <%= t('static_pages.sidebar.peugeot.testimonial') %>
+      
     </div>
   </div>
   <div class="row pull-right individual-consultors-button-link" id="individual-testimony-button-link">
     <span>
-      <a href="enterprise_testimonials">LER MAIS</a>
+      <a href="enterprise_testimonials"><%= t('static_pages.sidebar.peugeot.see_more') %></a>
     </span>
   </div>
 </div>

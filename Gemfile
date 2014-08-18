@@ -44,8 +44,11 @@ gem 'elastic-beanstalk'
 gem 'devise'
 gem 'cancancan', '~> 1.8'
 
-# Translation
-# gem 'translation_center', path: "/home/alex/workspace/translation_center"
+# Internationalization
+# --------------------
+
+# put the locale in the URL as: deroseforleaders.com/en/articles
+gem 'route_translator'
 
 group :development do
   gem 'git-pivotal-tracker-integration'
@@ -62,8 +65,8 @@ end
 
 group :production do
   # mysql 2 for elastic beanstalk
-  gem 'mysql2'
-  # gem 'pg'
+  # gem 'mysql2'
+  gem 'pg'
 end
 
 group :doc do

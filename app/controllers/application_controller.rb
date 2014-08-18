@@ -4,6 +4,7 @@ class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
   after_filter :store_location
   layout :layout_by_resource
+  before_action :set_locale
 
   rescue_from CanCan::AccessDenied do |exception|
     flash[:error] = exception.message
@@ -43,5 +44,8 @@ class ApplicationController < ActionController::Base
     else
       "application"
     end
+  
+  def set_locale
+    I18n.locale = params[:locale] || I18n.default_locale
   end
 end
