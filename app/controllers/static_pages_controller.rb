@@ -1,4 +1,6 @@
 class StaticPagesController < ApplicationController
+  layout "static_pages"
+  
   def home
     @articles = Article.includes(:categories).take(6)
     @articles_number = @articles.count
