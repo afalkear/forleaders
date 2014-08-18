@@ -18,7 +18,7 @@
                 <div class="row single-programme-row">
                   <div class="col-md-6 without-padding-left-or-right">
                     <div class="hover-gold">
-                      <%= link_to "individual_consultory?value=$1#personal" do %>
+                      <%= link_to individual_consultory_path(:value => "0")+"#personal" do %>
                         <div class="programme-subheader">
                           <%= t('static_pages.programs.individuals.personal_teaching.title') %>
                         </div>
@@ -43,7 +43,7 @@
                   </div>
                   <div class="col-md-6 without-padding-left-or-right">
                     <div class="hover-gold">
-                      <%= link_to "individual_consultory?value=$1#consultory" do %>
+                      <%= link_to individual_consultory_path(:value => "1")+"#consultory" do %>
                         <div class="programme-subheader">
                           <%= t('static_pages.programs.individuals.consultory.title') %>
                         </div>
@@ -77,7 +77,7 @@
                 <div class="row single-programme-row">
                   <div class="col-md-6 without-padding-left-or-right">
                     <div class="hover-gold">
-                      <%= link_to "group_consultory" do %>
+                      <%= link_to group_consultory_path do %>
                         <div class="programme-subheader">
                           <%= t('static_pages.programs.enterprise.small_group_teaching.title') %>
                         </div>
@@ -102,7 +102,7 @@
                   </div>
                   <div class="col-md-6 without-padding-left-or-right">
                     <div class="hover-gold">
-                      <%= link_to "group_consultory?value=$6#workshop" do %>
+                      <%= link_to group_consultory_path(:value => "2")+"#workshop" do %>
                         <div class="programme-subheader">
                           <%= t('static_pages.programs.enterprise.workshop.title') %>
                         </div>
@@ -135,7 +135,7 @@
                 <div class="row single-programme-row">
                   <div class="col-md-6 without-padding-left-or-right">
                     <div class="hover-gold">
-                      <%= link_to "individual_consultory?value=$3#training" do %>
+                      <%= link_to individual_consultory_path(:value => "3")+"#training" do %>
                         <div class="programme-subheader">
                           <%= t('static_pages.programs.individuals.training.title') %>
                         </div>
@@ -189,7 +189,7 @@
                   <div class="row single-programme-row">
                     <div class="col-md-6 without-padding-left-or-right">
                       <div class="hover-gold">
-                        <%= link_to "group_consultory?value=$4#small-group-training" do %>
+                        <%= link_to group_consultory_path(:value => "4")+"#small-group-training" do %>
                           <div class="programme-subheader">
                             <%= t('static_pages.programs.enterprise.small_group_training.title') %>
                           </div>
@@ -214,7 +214,7 @@
                     </div>
                     <div class="col-md-6 without-padding-left-or-right">
                       <div class="hover-gold">
-                        <%= link_to "group_consultory?value=$5#talks" do %>
+                        <%= link_to group_consultory_path(:value => "5")+"#talks" do %>
                           <div class="programme-subheader">
                             <%= t('static_pages.programs.enterprise.talks.title') %>
                           </div>
