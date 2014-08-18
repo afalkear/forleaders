@@ -1,14 +1,5 @@
 Forleaders::Application.routes.draw do
-  devise_for :users
-  devise_scope :user do
-    get '/login' => 'devise/sessions#new'
-    get '/logout' => 'devise/sessions#destroy'
-  end
-  # resources :user, :controller => "user"
-  scope "/admin" do
-    resources :users
-  end
-  devise_for :admins
+  
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
@@ -16,6 +7,23 @@ Forleaders::Application.routes.draw do
 
   localized do
     root 'static_pages#home'
+    
+    # resources for users
+    devise_for :users
+    devise_scope :user do
+      get '/login' => 'devise/sessions#new'
+      get '/logout' => 'devise/sessions#destroy'
+    end
+    resources :user, :controller => "user"
+    get 'user_root' => 'users#show', as: :user_root
+    
+    # devise_for :admins
+    #scope "/admin" do
+    #  get 'admin_root' => 'admins#index', as: :admin_root
+    #  resources :users
+    #  resources :admins
+    #end
+
     #resources :static_pages
     get 'individual_consultory', to:'static_pages#individual_consultory'
     get 'group_consultory', to:'static_pages#group_consultory'

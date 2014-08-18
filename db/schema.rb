@@ -11,7 +11,10 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140705012423) do
+ActiveRecord::Schema.define(version: 20140818194244) do
+
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
 
   create_table "admins", force: true do |t|
     t.string   "email"
@@ -33,6 +36,7 @@ ActiveRecord::Schema.define(version: 20140705012423) do
     t.string   "hover_frase"
     t.string   "excerpt"
     t.string   "video_url"
+    t.integer  "user_id"
   end
 
   create_table "articles_categories", force: true do |t|
@@ -79,12 +83,13 @@ ActiveRecord::Schema.define(version: 20140705012423) do
     t.datetime "updated_at"
     t.boolean  "approved",               default: false, null: false
     t.string   "role"
+    t.boolean  "admin",                  default: false
   end
 
-  add_index "users", ["approved"], name: "index_users_on_approved"
-  add_index "users", ["confirmation_token"], name: "index_users_on_confirmation_token", unique: true
-  add_index "users", ["email"], name: "index_users_on_email", unique: true
-  add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
-  add_index "users", ["unlock_token"], name: "index_users_on_unlock_token", unique: true
+  add_index "users", ["approved"], name: "index_users_on_approved", using: :btree
+  add_index "users", ["confirmation_token"], name: "index_users_on_confirmation_token", unique: true, using: :btree
+  add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree
+  add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
+  add_index "users", ["unlock_token"], name: "index_users_on_unlock_token", unique: true, using: :btree
 
 end

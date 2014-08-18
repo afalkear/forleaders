@@ -1,5 +1,6 @@
 class ArticlesController < ApplicationController
-  before_action :authenticate_user!, only: [:new, :create, :edit, :update, :destroy]
+  before_action :authenticate_user!, except: [:index, :show]
+  before_action :owns_article, only: [:edit, :update, :destroy]
 
   def index
     @featured_articles = Article.includes(:categories).take(4)
@@ -28,7 +29,7 @@ class ArticlesController < ApplicationController
   end
 
   def create
-    @article = Article.new(article_params)
+    @article = current_user.articles.new(article_params)
 
     if @article.save
       # expire cache so related and last articles will be reloaded with this new article
@@ -73,5 +74,11 @@ class ArticlesController < ApplicationController
         :excerpt,
         :video_url
         )
+    end
+
+    def owns_article
+      if !user_signed_in? || current_user != Article.find(params[:id]).user_signed_in
+        redirect_to articles_path, error: "You cannot edit an article that is not yours"
+      end
     end
 end

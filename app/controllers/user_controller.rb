@@ -1,5 +1,4 @@
-class UsersController < ApplicationController
-  before_action :authenticate_user!
+class UserController < ApplicationController
   load_and_authorize_resource
   layout "users"
 
@@ -7,7 +6,7 @@ class UsersController < ApplicationController
     if params[:approved] == "false"
       @users = User.find_all_by_approved(false)
     else
-      @users = User.all #.excludes(:id => current_user.id)
+      @users = User.where.not(:id => current_user.id)
     end
   end
 
@@ -24,7 +23,7 @@ class UsersController < ApplicationController
     @user.approved = true
     if @user.save
       flash[:notice] = "Successfully created User." 
-      redirect_to user_root_path
+      render :action => 'index'
     else
       flash[:warning] = @user.errors
       render :action => 'new'
@@ -53,10 +52,10 @@ class UsersController < ApplicationController
       flash[:notice] = "Successfully deleted User."
       redirect_to root_path
     end
-  end 
+  end
 
   private
     def user_params
       params.require(:user).permit(:email, :password)
-    end
+    end 
 end

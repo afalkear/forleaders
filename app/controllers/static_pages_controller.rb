@@ -1,7 +1,7 @@
 class StaticPagesController < ApplicationController
   def home
     @articles = Article.includes(:categories).take(6)
-    @articles_number = 6
+    @articles_number = @articles.count
     @articles_columns = 3
     @articles_rows =  @articles.count > 2 ? 2 : 0
   end
