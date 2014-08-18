@@ -15,6 +15,5 @@
 //= require twitter/bootstrap
 //= require turbolinks
 //= require analytics
-//= require jquery.tokeninput
 //= require jquery.magnific-popup
 //= require_tree .
