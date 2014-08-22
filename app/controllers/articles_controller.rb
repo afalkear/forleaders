@@ -1,6 +1,7 @@
 class ArticlesController < ApplicationController
   before_action :authenticate_user!, except: [:index, :show]
   before_action :owns_article, only: [:edit, :update, :destroy]
+  layout 'articles'
 
   def index
     @featured_articles = Article.includes(:categories).take(4)
