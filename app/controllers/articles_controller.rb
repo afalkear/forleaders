@@ -78,7 +78,7 @@ class ArticlesController < ApplicationController
     end
 
     def owns_article
-      if !user_signed_in? || current_user != Article.find(params[:id]).user_signed_in
+      if !user_signed_in? || current_user != Article.find(params[:id]).user
         redirect_to articles_path, error: "You cannot edit an article that is not yours"
       end
     end
