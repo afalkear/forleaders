@@ -1,16 +1,12 @@
 <div class="col-md-4">
     <div class="home-article-thumb">
-      <% if !article.video_url.blank? %>
-        <%= raw youtube_embed article.video_url, "100%", "175px" %>
-      <% else %>
-        <% if article.article_image? %>
-          <%= link_to article_path(article.id) do %>
-            <%= image_tag article.article_image.url %>
-            <% if !article.hover_frase.blank? %>
-              <div class="home-article-hover-frase">
-                <%= article.hover_frase %>
-              </div>
-            <% end %>
+      <% if article.article_image? %>
+        <%= link_to article_path(article.id) do %>
+          <%= image_tag article.article_image.url %>
+          <% if !article.hover_frase.blank? %>
+            <div class="home-article-hover-frase">
+              <%= article.hover_frase %>
+            </div>
           <% end %>
         <% end %>
       <% end %>
