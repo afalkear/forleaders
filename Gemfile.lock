@@ -1,3 +1,13 @@
+GIT
+  remote: https://github.com/collectiveidea/audited
+  revision: cd7065ef6fb9640a3a4e204477dd38dc0d12e50c
+  specs:
+    audited (4.0.0.rc1)
+      rails-observers (~> 0.1.2)
+    audited-activerecord (4.0.0.rc1)
+      activerecord (~> 4.0)
+      audited (= 4.0.0.rc1)
+
 PATH
   remote: /home/alex/workspace/translation_center
   specs:
@@ -200,6 +210,8 @@ GEM
       bundler (>= 1.3.0, < 2.0)
       railties (= 4.0.3)
       sprockets-rails (~> 2.0.0)
+    rails-observers (0.1.2)
+      activemodel (~> 4.0)
     railties (4.0.3)
       actionpack (= 4.0.3)
       activesupport (= 4.0.3)
@@ -286,6 +298,7 @@ PLATFORMS
 
 DEPENDENCIES
   active_attr
+  audited-activerecord (= 4.0.0.rc1)!
   cancancan (~> 1.8)
   carrierwave-dropbox
   coffee-rails (~> 4.0.0)

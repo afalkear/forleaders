@@ -52,6 +52,7 @@ gem 'route_translator'
 
 # translator center
 gem 'translation_center', path: "/home/alex/workspace/translation_center"
+gem 'audited-activerecord', '4.0.0.rc1', git: 'https://github.com/collectiveidea/audited'
 
 group :development do
   gem 'git-pivotal-tracker-integration'
