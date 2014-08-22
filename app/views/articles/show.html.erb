@@ -77,7 +77,7 @@
                   <div class="container">
                     <div class="row article-content">
                       <% if !@article.video_url.blank? %>
-                        <%= raw youtube_embed @article.video_url, "100%", "100%" %>
+                        <%= raw youtube_embed @article.video_url, "100%", "300px" %>
                       <% else %>
                         <%= image_tag @article.article_image if @article.article_image? %>
                       <% end %>
