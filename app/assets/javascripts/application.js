@@ -16,4 +16,5 @@
 //= require turbolinks
 //= require analytics
 //= require jquery.magnific-popup
+//= require pace
 //= require_tree .

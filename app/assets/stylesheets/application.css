@@ -12,5 +12,6 @@
  *= require twitter/bootstrap
  *= require my-bootstrap
  *= require magnific-popup
+ *= require pace
  *= require_tree .
  */
