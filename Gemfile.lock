@@ -1,15 +1,6 @@
 GIT
-  remote: https://github.com/collectiveidea/audited
-  revision: cd7065ef6fb9640a3a4e204477dd38dc0d12e50c
-  specs:
-    audited (4.0.0.rc1)
-      rails-observers (~> 0.1.2)
-    audited-activerecord (4.0.0.rc1)
-      activerecord (~> 4.0)
-      audited (= 4.0.0.rc1)
-
-PATH
-  remote: /home/alex/workspace/translation_center
+  remote: https://github.com/afalkear/translation_center
+  revision: 8471b4542a5797003af36bdcf38ae957f10b117d
   specs:
     translation_center (1.7.6)
       acts_as_votable
@@ -20,6 +11,16 @@ PATH
       jquery-ui-rails
       rails (~> 4.0)
       ya2yaml
+
+GIT
+  remote: https://github.com/collectiveidea/audited
+  revision: cd7065ef6fb9640a3a4e204477dd38dc0d12e50c
+  specs:
+    audited (4.0.0.rc1)
+      rails-observers (~> 0.1.2)
+    audited-activerecord (4.0.0.rc1)
+      activerecord (~> 4.0)
+      audited (= 4.0.0.rc1)
 
 GEM
   remote: https://rubygems.org/
