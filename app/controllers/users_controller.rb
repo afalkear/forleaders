@@ -23,7 +23,7 @@ class UsersController < ApplicationController
     @user.confirmed_at = Date.today
     @user.approved = true
     if @user.save
-      flash[:notice] = "Successfully created User." 
+      flash[:success] = "Successfully created User." 
       redirect_to user_root_path
     else
       flash[:warning] = @user.errors
@@ -40,7 +40,7 @@ class UsersController < ApplicationController
     params[:user].delete(:password) if params[:user][:password].blank?
     params[:user].delete(:password_confirmation) if params[:user][:password].blank? and params[:user][:password_confirmation].blank?
     if @user.update_attributes(user_params)
-      flash[:notice] = "Successfully updated User."
+      flash[:success] = "Successfully updated User."
       redirect_to root_path
     else
       render :action => 'edit'
@@ -50,7 +50,7 @@ class UsersController < ApplicationController
   def destroy
     @user = User.find(params[:id])
     if @user.destroy
-      flash[:notice] = "Successfully deleted User."
+      flash[:success] = "Successfully deleted User."
       redirect_to root_path
     end
   end 

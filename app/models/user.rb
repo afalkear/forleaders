@@ -5,12 +5,19 @@ class User < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable, :confirmable, :lockable
 
   has_many :articles
+  acts_as_translator
+
+  ROLES = %w[banned author translator moderator admin superadmin]
 
   # after_create :send_admin_mail
 
-  def active_for_authentication? 
-    super && approved? 
-  end 
+  def can_admin_translations?
+    self.role? :moderator
+  end
+
+  def active_for_authentication?
+    super && approved?
+  end
 
   def inactive_message 
     if !approved? 
@@ -32,5 +39,23 @@ class User < ActiveRecord::Base
       recoverable.send_reset_password_instructions
     end
     recoverable
+  end
+
+  def roles=(roles)
+    self.roles_mask = (roles & ROLES).map { |r| 2**ROLES.index(r) }.inject(0, :+)
+  end
+
+  def roles
+    ROLES.reject do |r|
+      ((roles_mask.to_i || 0) & 2**ROLES.index(r)).zero?
+    end
+  end
+
+  def is?(role)
+    roles.include?(role.to_s)
+  end
+
+  def role?(base_role)
+    ROLES.index(base_role.to_s) <= ROLES.index(roles.first)
   end
 end

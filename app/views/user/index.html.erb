@@ -16,6 +16,9 @@
             Aproved?
           </td>
           <td>
+            Roles
+          </td>
+          <td>
             Actions
           </td>
         </tr>
@@ -26,6 +29,11 @@
             </td>
             <td>
               <%= user.approved %>
+            </td>
+            <td>
+              <% for role in user.roles %>
+                <%= role %>
+              <% end %>
             </td>
             <td>
               <%= link_to "Edit", edit_user_path(user) %>

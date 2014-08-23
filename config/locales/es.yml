@@ -1,0 +1,20 @@
+--- 
+es: 
+  devise: 
+    failure: 
+      already_authenticated: "Ya se encuentra logueado"
+      inactive: "Su cuenta no se encuentra activada aún."
+      unauthenticated: "Es necesario loguearse al sistema antes de continuar"
+    mailer: 
+      confirmation_instructions: 
+        subject: "Instrucciones para confirmar"
+    omniauth_callbacks: 
+      success: "Autenticado exitosamente a la cuenta %{kind}"
+    passwords: 
+      no_token: "No puede accedar a esta página sin haber cliqueado en el email de reset de password. Si viene de ahí, por favor asegúrese de que haya ingresaro la URL completa correctamente."
+      updated: "Su contraseña ha sido cambiada exitosamente. Ahora está logueado."
+  static_pages: 
+    articles: 
+      read_more: "LEER MAS >>"
+      subtitle: "CORTOS Y DINAMICOS TEXTOS PARA ESTIMULAR EL APRENDIZAJE"
+      title: "NUESTROS ARTICULOS"

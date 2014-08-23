@@ -51,7 +51,7 @@ gem 'cancancan', '~> 1.8'
 gem 'route_translator'
 
 # translator center
-gem 'translation_center', path: "/home/alex/workspace/translation_center"
+gem 'translation_center', git: 'https://github.com/afalkear/translation_center'
 gem 'audited-activerecord', '4.0.0.rc1', git: 'https://github.com/collectiveidea/audited'
 
 group :development do

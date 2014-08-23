@@ -1,9 +1,12 @@
 <div class="container">
   <div class="row">
     <div class="col-md-12">
-      <h1>Welcome back <small><%= link_to "Settings", edit_user_registration_path %></small> </h1>
-      <h2>My actions</h2>
-      <%= link_to "Create an article", new_article_path %>
+      <h1>User</h1>
+      <ul>
+        <li>
+          Email: <%= @user.email %>
+        </li>
+      </ul>
     </div>
   </div>
 </div>

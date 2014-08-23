@@ -36,9 +36,10 @@ class ArticlesController < ApplicationController
       # expire cache so related and last articles will be reloaded with this new article
       expire_fragment("latest_articles")
       expire_fragment("#{@article.categories.first.name}-related_articles")
+      flash[:success] = "Successfully created article"
       redirect_to article_path(@article.id)
     else
-      flash[:alert] = "Error"
+      flash[:warning] = "Error"
       render action: 'new'
     end
   end
@@ -52,7 +53,7 @@ class ArticlesController < ApplicationController
     expire_fragment(["v1", @article])
     @article.update_attributes(article_params)
     expire_fragment("#{@article.categories.first.name}-related_articles")
-
+    flash[:success] = "Successfully updated article"
     redirect_to article_path(@article.id)
   end
 
