@@ -51,8 +51,8 @@ gem 'cancancan', '~> 1.8'
 gem 'route_translator'
 
 # translator center ** My fork
-gem 'translation_center', git: 'https://github.com/afalkear/translation_center'
-gem 'audited-activerecord', '4.0.0.rc1', git: 'https://github.com/collectiveidea/audited'
+gem 'afalkear_translation_center', '~> 1.7.7'
+gem 'audited-activerecord', '~> 4.0.0.rc1'
 
 group :development do
   gem 'git-pivotal-tracker-integration'
@@ -69,8 +69,8 @@ end
 
 group :production do
   # mysql 2 for elastic beanstalk
-  gem 'mysql2'
-  # gem 'pg'
+  #gem 'mysql2'
+  gem 'pg'
 end
 
 group :doc do
