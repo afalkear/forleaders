@@ -51,7 +51,7 @@ gem 'cancancan', '~> 1.8'
 gem 'route_translator'
 
 # translator center ** My fork
-gem 'afalkear_translation_center', '~> 1.7.7'
+gem 'afalkear_translation_center'
 gem 'audited-activerecord', '~> 4.0.0.rc1'
 
 group :development do

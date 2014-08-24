@@ -289,7 +289,7 @@ PLATFORMS
 
 DEPENDENCIES
   active_attr
-  afalkear_translation_center (~> 1.7.7)
+  afalkear_translation_center
   audited-activerecord (~> 4.0.0.rc1)
   cancancan (~> 1.8)
   carrierwave-dropbox
