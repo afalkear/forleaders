@@ -50,7 +50,7 @@ gem 'cancancan', '~> 1.8'
 # put the locale in the URL as: deroseforleaders.com/en/articles
 gem 'route_translator'
 
-# translator center
+# translator center ** My fork
 gem 'translation_center', git: 'https://github.com/afalkear/translation_center'
 gem 'audited-activerecord', '4.0.0.rc1', git: 'https://github.com/collectiveidea/audited'
 
