@@ -74,7 +74,8 @@ class ArticlesController < ApplicationController
         :subtitle,
         :hover_frase,
         :excerpt,
-        :video_url
+        :video_url,
+        :category_ids => []
         )
     end
 
