@@ -25,7 +25,7 @@ class UserController < ApplicationController
     @user.approved = true
     if @user.save
       flash[:success] = "Successfully created User." 
-      render :action => 'index'
+      redirect_to :action => 'index'
     else
       flash[:warning] = @user.errors
       render :action => 'new'
