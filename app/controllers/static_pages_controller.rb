@@ -2,7 +2,7 @@ class StaticPagesController < ApplicationController
   layout "static_pages"
   
   def home
-    @articles = Article.includes(:categories).take(6)
+    @articles = Article.includes(:categories).page(1).per(6)
     @articles_number = @articles.count
     @articles_columns = 3
     @articles_rows =  @articles.count > 2 ? 2 : 0
