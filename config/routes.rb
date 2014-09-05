@@ -6,8 +6,6 @@ Forleaders::Application.routes.draw do
 
 
   localized do
-    root 'static_pages#home'
-    
     # resources for users
     devise_for :users
     devise_scope :user do
@@ -23,19 +21,23 @@ Forleaders::Application.routes.draw do
     #  resources :users
     #  resources :admins
     #end
+      root 'static_pages#home'
+      
+      # resources users
+      post 'edit_users', to: 'users#update'
 
-    #resources :static_pages
-    get 'individual_consultory', to:'static_pages#individual_consultory'
-    get 'group_consultory', to:'static_pages#group_consultory'
-    get 'the_method', to:'static_pages#the_method'
-    get 'our_consultors', to: 'static_pages#our_consultors'
-    get 'derose_method', to: 'static_pages#derose_method'
-    get 'apply', to: 'static_pages#apply'
-    get 'contact', to: 'static_pages#contact'
-    get 'net', to: 'static_pages#net'
-    get 'enterprise_testimonials', to: 'static_pages#enterprise_testimonials'
-    get 'institution_testimonials', to: 'static_pages#institution_testimonials'
-    resources :articles
+      #resources :static_pages
+      get 'individual_consultory', to:'static_pages#individual_consultory'
+      get 'group_consultory', to:'static_pages#group_consultory'
+      get 'the_method', to:'static_pages#the_method'
+      get 'our_consultors', to: 'static_pages#our_consultors'
+      get 'derose_method', to: 'static_pages#derose_method'
+      get 'apply', to: 'static_pages#apply'
+      get 'contact', to: 'static_pages#contact'
+      get 'net', to: 'static_pages#net'
+      get 'enterprise_testimonials', to: 'static_pages#enterprise_testimonials'
+      get 'institution_testimonials', to: 'static_pages#institution_testimonials'
+      resources :articles
   end
 
   match 'apply_message' => 'static_pages#apply_message', :via => :post

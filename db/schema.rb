@@ -141,6 +141,7 @@ ActiveRecord::Schema.define(version: 20140822191518943294) do
     t.string   "role"
     t.boolean  "admin",                  default: false
     t.integer  "roles_mask"
+    t.string   "debug_translations"
   end
 
   add_index "users", ["approved"], name: "index_users_on_approved", using: :btree

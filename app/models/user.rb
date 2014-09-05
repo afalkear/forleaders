@@ -8,6 +8,7 @@ class User < ActiveRecord::Base
   acts_as_translator
 
   ROLES = %w[banned author translator moderator admin superadmin]
+  DEBUG_TRANSLATIONS = %w(all missing)
 
   # after_create :send_admin_mail
 

@@ -41,7 +41,7 @@ class UsersController < ApplicationController
     params[:user].delete(:password_confirmation) if params[:user][:password].blank? and params[:user][:password_confirmation].blank?
     if @user.update_attributes(user_params)
       flash[:success] = "Successfully updated User."
-      redirect_to root_path
+      redirect_to user_root_path
     else
       render :action => 'edit'
     end
@@ -57,6 +57,6 @@ class UsersController < ApplicationController
 
   private
     def user_params
-      params.require(:user).permit(:email, :password)
+      params.require(:user).permit(:email, :password, :debug_translations)
     end
 end

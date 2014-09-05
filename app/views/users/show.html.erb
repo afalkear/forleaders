@@ -12,6 +12,13 @@
         <%= link_to "Add new article", new_article_path %><br>
       <% end %>
       <% if (current_user.is? "translator") || (current_user.is? "moderator") || (current_user.is? "admin") || (current_user.is? "superadmin") %>
+        <h2>Translations</h2>
+        Debug option: <%= current_user.debug_translations %>
+        <h3>View missing translations in pages</h3>
+          <%= link_to "Set debug_option to see missing translations", edit_users_path(id: current_user.id, user: {debug_translations: "missing"}), method: :post %>
+        <h3>View all translations in pages</h3>
+          <%= link_to "Set debug_option to see all translations", edit_users_path(id: current_user.id, user: {debug_translations: "all"}), method: :post %>
+        <h3>Go to translation center</h3>
         <%= link_to "Go to translation center", translation_center_path %>
       <% end %>
     </div>
