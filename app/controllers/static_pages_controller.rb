@@ -2,6 +2,9 @@ class StaticPagesController < ApplicationController
   layout "static_pages"
   
   def home
+    if user_signed_in? && !current_user.nil? && (current_user.role? "translator") && ((current_user.debug_translations == "missing") || (current_user.debug_translations == "all"))
+      expire_fragment('home')
+    end
     @articles = Article.includes(:categories).page(1).per(6)
     @articles_number = @articles.count
     @articles_columns = 3
@@ -9,27 +12,42 @@ class StaticPagesController < ApplicationController
   end
 
   def individual_consultory
+    if user_signed_in? && !current_user.nil? && (current_user.role? "translator") && ((current_user.debug_translations == "missing") || (current_user.debug_translations == "all"))
+      expire_fragment('individual_consultory')
+    end
   end
 
   def group_consultory
+    if user_signed_in? && !current_user.nil? && (current_user.role? "translator") && ((current_user.debug_translations == "missing") || (current_user.debug_translations == "all"))
+      expire_fragment('group_consultory')
+    end
   end
 
   def the_method
   end
 
   def our_consultors
+    if user_signed_in? && !current_user.nil? && (current_user.role? "translator") && ((current_user.debug_translations == "missing") || (current_user.debug_translations == "all"))
+      expire_fragment('our_consultors')
+    end
   end
 
   def derose_method
-    if user_signed_in? && !current_user.nil? && (current_user.role? "translator") && (current_user.debug_translations == "missing")
+    if user_signed_in? && !current_user.nil? && (current_user.role? "translator") && ((current_user.debug_translations == "missing") || (current_user.debug_translations == "all"))
       expire_fragment('derose_method')
     end
   end
 
   def institution_testimonials
+    if user_signed_in? && !current_user.nil? && (current_user.role? "translator") && ((current_user.debug_translations == "missing") || (current_user.debug_translations == "all"))
+      expire_fragment('institution_testimonials')
+    end
   end
 
   def enterprise_testimonials
+    if user_signed_in? && !current_user.nil? && (current_user.role? "translator") && ((current_user.debug_translations == "missing") || (current_user.debug_translations == "all"))
+      expire_fragment('enterprise_testimonials')
+    end
   end
 
   def apply
@@ -63,5 +81,8 @@ class StaticPagesController < ApplicationController
   end
 
   def net
+    if user_signed_in? && !current_user.nil? && (current_user.role? "translator") && ((current_user.debug_translations == "missing") || (current_user.debug_translations == "all"))
+      expire_fragment('net')
+    end
   end
 end
