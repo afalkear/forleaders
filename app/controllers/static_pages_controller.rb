@@ -33,7 +33,7 @@ class StaticPagesController < ApplicationController
   end
 
   def derose_method
-    if user_signed_in? && !current_user.nil? && (current_user.role? "translator") && ((current_user.debug_translations == "missing") || (current_user.debug_translations == "all"))
+    if user_signed_in? && !current_user.nil? && (current_user.role? "translator") && (!current_user.debug_translations.blank?)
       expire_fragment('derose_method')
     end
   end
