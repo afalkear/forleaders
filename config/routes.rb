@@ -5,15 +5,19 @@ Forleaders::Application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
 
+  devise_for :users
+  devise_scope :user do
+    get '/login' => 'devise/sessions#new'
+    get '/logout' => 'devise/sessions#destroy'
+  end
+  resources :user, :controller => "user"
+  get 'user_root' => 'users#show', as: :user_root
+  resources :users
+  # resources users
+  post 'edit_users', to: 'users#update'
+
   localized do
     # resources for users
-    devise_for :users
-    devise_scope :user do
-      get '/login' => 'devise/sessions#new'
-      get '/logout' => 'devise/sessions#destroy'
-    end
-    resources :user, :controller => "user"
-    get 'user_root' => 'users#show', as: :user_root
     
     # devise_for :admins
     #scope "/admin" do
@@ -23,9 +27,6 @@ Forleaders::Application.routes.draw do
     #end
       root 'static_pages#home'
       
-      # resources users
-      post 'edit_users', to: 'users#update'
-
       #resources :static_pages
       get 'individual_consultory', to:'static_pages#individual_consultory'
       get 'group_consultory', to:'static_pages#group_consultory'

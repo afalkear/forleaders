@@ -13,14 +13,17 @@
       <% end %>
       <% if (current_user.is? "translator") || (current_user.is? "moderator") || (current_user.is? "admin") || (current_user.is? "superadmin") %>
         <h2>Translations</h2>
-        Debug option: <%= current_user.debug_translations %>
-        <h3>Do not view missing translations in pages</h3>
-          <%= link_to "Set debug_option to false to avoid seeing missing translations", edit_users_path(id: current_user.id, user: {debug_translations: ""}), method: :post %>
-        <h3>View missing translations in pages</h3>
-          <%= link_to "Set debug_option to see missing translations", edit_users_path(id: current_user.id, user: {debug_translations: "missing"}), method: :post %>
-        <h3>View all translations in pages</h3>
-          <%= link_to "Set debug_option to see all translations", edit_users_path(id: current_user.id, user: {debug_translations: "all"}), method: :post %>
-        <h3>Go to translation center</h3>
+        <h3>See missing or all translations</h3>
+        Currently I am seeing <%= current_user.debug_translations %> translation information.
+        <p>Change:</p>
+        <%= form_for @user, url: edit_users_path(id: current_user.id), html: {method: "post",class: "form-inline", role: "form", id: "change_debug_translations_form"} do |f| %>
+          <div id="user_debug_translations_change" class="form-group">
+            <%= f.select :debug_translations, User::DEBUG_TRANSLATIONS, selected: @user.debug_translations %>
+          </div>
+          <button type="submit" class="btn btn-default">Change</button>
+        <% end %>
+
+        <h3>Translation Center</h3>
         <%= link_to "Go to translation center", translation_center_path %>
       <% end %>
     </div>
