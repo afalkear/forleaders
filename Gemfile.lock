@@ -29,7 +29,7 @@ GEM
       thread_safe (~> 0.1)
       tzinfo (~> 0.3.37)
     acts_as_votable (0.10.0)
-    afalkear_translation_center (1.8.1)
+    afalkear_translation_center (1.8.2)
       acts_as_votable (= 0.10.0)
       font-awesome-rails (= 4.1.0.0)
       haml (= 4.0.5)
@@ -168,13 +168,13 @@ GEM
     mini_portile (0.5.2)
     minitest (4.7.5)
     multi_json (1.8.4)
+    mysql2 (0.3.16)
     newrelic_rpm (3.6.9.171)
     nokogiri (1.6.1)
       mini_portile (~> 0.5.0)
     nokogiri-happymapper (0.5.8)
       nokogiri (~> 1.5)
     orm_adapter (0.5.0)
-    pg (0.17.1)
     pivotal-tracker (0.5.12)
       builder
       builder
@@ -289,7 +289,7 @@ PLATFORMS
 
 DEPENDENCIES
   active_attr
-  afalkear_translation_center (= 1.8.1)
+  afalkear_translation_center (= 1.8.2)
   audited-activerecord (~> 4.0.0.rc1)
   cancancan (~> 1.8)
   carrierwave-dropbox
@@ -304,8 +304,8 @@ DEPENDENCIES
   kaminari
   less-rails-bootstrap
   mini_magick
+  mysql2
   newrelic_rpm
-  pg
   rails (= 4.0.3)
   route_translator
   rspec-rails (~> 3.0.0.beta)
