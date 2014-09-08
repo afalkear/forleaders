@@ -33,5 +33,10 @@ class Ability
     else
         can :read, :all
     end
+
+    if user.role? "translator"
+        can :manage, User
+    end
+
   end
 end
