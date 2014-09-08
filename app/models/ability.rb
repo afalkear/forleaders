@@ -38,5 +38,9 @@ class Ability
         can :manage, User
     end
 
+    if user.role? "author"
+        can :manage, Article
+    end
+
   end
 end
