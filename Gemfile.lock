@@ -29,7 +29,7 @@ GEM
       thread_safe (~> 0.1)
       tzinfo (~> 0.3.37)
     acts_as_votable (0.10.0)
-    afalkear_translation_center (1.8.3)
+    afalkear_translation_center (1.8.2)
       acts_as_votable (= 0.10.0)
       font-awesome-rails (= 4.1.0.0)
       haml (= 4.0.5)
@@ -289,7 +289,7 @@ PLATFORMS
 
 DEPENDENCIES
   active_attr
-  afalkear_translation_center (= 1.8.3)
+  afalkear_translation_center (= 1.8.2)
   audited-activerecord (~> 4.0.0.rc1)
   cancancan (~> 1.8)
   carrierwave-dropbox
