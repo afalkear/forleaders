@@ -13,11 +13,38 @@ es:
     passwords: 
       no_token: "No puede accedar a esta página sin haber cliqueado en el email de reset de password. Si viene de ahí, por favor asegúrese de que haya ingresaro la URL completa correctamente."
       updated: "Su contraseña ha sido cambiada exitosamente. Ahora está logueado."
+  helpers: 
+    label: 
+      apply_message: 
+        birthdate: "Data de nascimento"
+        city: "Cidade *"
+        civility: Civilidade
+        company: "Empresa *"
+        country: "País *"
+        email: "Email *"
+        first_name: "Nome *"
+        last_name: "Sobrenome *"
+        position: Cargo*
+        work_phone: "Work phone"
+        years_of_experience: "Anos de experiencia"
+      contact_message: 
+        calendar: Calendario
+        company: Empresa
+        email: E-mail
+        first_name: Nombre
+        last_name: Apellido
+        observations: Observaciones
+        phone: Teléfono
+        position: Cargo
   static_pages: 
     articles: 
       read_more: "LEER MAS >>"
       subtitle: "TEXTOS RÁPIDOS Y DINÁMICOS PARA POTENCIAR SU APRENDIZAJE"
       title: "NUESTROS ARTÍCULOS"
+    contact: 
+      countries_html: "<h2>BRASIL</h2> Sao Paulo <br/> Rio de Janeiro <br/> Brasilia<br/> Porto Alegre<br/> <h2>ARGENTINA</h2> Buenos Aires <h2>FRANCE</h2> Paris <h2>UNITED STATES</h2> New York"
+      message: "Our team is happy to answer your questions regarding our programs and our admissions process and assist you with your application."
+      title: CONTACTARNOS
     derose_method: 
       body: 
         main: 
@@ -26,8 +53,8 @@ es:
           fourth_block: 
             title: "UNA PROPUESTA DE BUENAS COSAS:"
           second_block: 
-            content_html: "El Método DeR<span class=\"navbar-title-smallcaps\">OSE</span> es de gran valor para los líderes que buscan herramientas eficientes para perfeccionarse, aumentando su desempeño personal y profesional. Montamos con cada líder un programa a medida que incluye Personal Teaching, Entrenamientos y Consultorías. Definimos juntos sus objetivos y le enseñamos las herramientas más adecuadas para que pueda progresar en forma efectiva y duradera."
-            title: "Método DeR<span class=\"navbar-title-smallcaps\">OSE</span> FOR LEADERS"
+            content_html: "El Método DeR<span class='navbar-title-smallcaps'>OSE</span> es de gran valor para los líderes que buscan herramientas eficientes para perfeccionarse, aumentando su desempeño personal y profesional. Montamos con cada líder un programa a medida que incluye Personal Teaching, Entrenamientos y Consultorías. Definimos juntos sus objetivos y le enseñamos las herramientas más adecuadas para que pueda progresar en forma efectiva y duradera."
+            title: "Método DeR<span class='navbar-title-smallcaps'>OSE</span> FOR LEADERS"
           third_block: 
             content_html: "Los líderes reconocen nuestro gran diferencial: un know how incomparable para mejorar al ser humano. Los resultados que conseguimos en el aumento de la performance y de la calidad de vida son muy significativos debido a la calidad superlativa de las herramientas que enseñamos. Bastan disciplina y constancia en la aplicación de nuestras técnicas y de nuestros conceptos para recoger frutos positivos en la vida profesional y personal."
             title: "QUÉ ES LO QUE TORNA NUESTRO MÉTODO TAN ÚNICO"
@@ -43,12 +70,13 @@ es:
           content_html: "Para desarrollar el potencial de las personas que usted dirige, es importante que usted también esté en constante perfeccionamiento; trabaje su propria Alta Productividad con nuestros programas para individuos."
           title: "PROGRAMAS PARA EMPRESAS"
         third_column: 
-          content_html: "Las técnicas y los conceptos del Método DeR<span class=\"navbar-title-smallcaps\">OSE</span> no producen sólo resultados en la calidad de vida, ¡también son capaces de generar riqueza para empresas!"
-          title_html: "MÉTODO DeR<span class=\"navbar-title-smallcaps\">OSE</span> EN EMPRESAS"
+          content_html: "Las técnicas y los conceptos del Método DeR<span class='navbar-title-smallcaps'>OSE</span> no producen sólo resultados en la calidad de vida, ¡también son capaces de generar riqueza para empresas!"
+          title_html: "MÉTODO DeR<span class='navbar-title-smallcaps'>OSE</span> EN EMPRESAS"
       header: 
         subtitle: "| Alta Productividad | Respiración | Foco | Relaciones Interpersonales | Performance | Administración de conflictos | Gestión del estrés | Fuerza | Resultados |"
-        title_html: "Método DeR<span class=\"navbar-title-smallcaps\">OSE</span>"
+        title_html: "Método DeR<span class='navbar-title-smallcaps'>OSE</span>"
     footer: 
+      apply_now: "Apply Now!"
       articles: 
         focus: Foco
         high_performance: "Alta Productividad"
@@ -59,8 +87,8 @@ es:
         title: Artículos
       contact_us: "Contact us!"
       derose_for_leaders: 
-        all_over_the_world_html: "DeR<span class=\"navbar-title-smallcaps\">OSE</span> All Over The World"
-        derose_method_html: "El Método DeR<span class=\"navbar-title-smallcaps\">OSE</span>"
+        all_over_the_world_html: "DeR<span class='navbar-title-smallcaps'>OSE</span> All Over The World"
+        derose_method_html: "El Método DeR<span class='navbar-title-smallcaps'>OSE</span>"
         personal_teachers: "Personal Teachers"
         title: "¿Quiénes somos?"
       enterprises: 
@@ -69,6 +97,7 @@ es:
         title: "Programas para empresas"
         training: Entrenamiento
         workshop: Workshops
+      follow_us: "Follow us!"
       individuals: 
         consulting: Consultoría
         personal_teaching: "Personal Teaching"
@@ -80,10 +109,86 @@ es:
         follow_us: "Follow us!"
         institutions: Instituciones
         title: Testimonios
-      title_html: "DeR<span class=\"navbar-title-smallcaps\">OSE</span> F<span class=\"navbar-title-smallcaps\">OR</span> L<span class=\"navbar-title-smallcaps\">EADERS</span>"
+      title_html: "DeR<span class='navbar-title-smallcaps'>OSE</span> F<span class='navbar-title-smallcaps'>OR</span> L<span class='navbar-title-smallcaps'>EADERS</span>"
+    group_consultory_body: 
+      candidates: CANDIDATURA
+      pills: 
+        small_group_teaching: 
+          subtitle: "2 veces 1 hora por semana"
+          title: "SMALL GROUP TEACHING"
+        small_group_training: 
+          subtitle: "15 minutos por día"
+          title: ENTRENAMIENTO
+        talks: 
+          subtitle: "1, 2 o 4 horas"
+          title: CONFERENCIA
+        workshops: 
+          subtitle: "4, 8 o 16 horas"
+          title: WORKSHOP
+    group_consultory_header: 
+      small_group_teaching: 
+        expand_subtitle_html: "<p>Desarrollar Alta Performance profesional y personal</p> <p>Mejorar la Calidad de Vida</p> <p>Reforzar los vínculos entre los líderes</p>"
+        subtitle: "2 veces de 1 hora por semana"
+        title: "SMALL GROUP TEACHING"
+      small_group_training: 
+        subtitle: "15 minutos por día"
+      talks: 
+        expand_subtitle_html: ""
+      workshops: 
+        expand_subtitle_html: "<h2>TÓPICOS</h2> <p>Alta productividad</p> <p>Vivir y trabajar mejor</p> <p>Comportamiento, ética y resultados</p> <p>Liderazgo sabio</p>"
     header: 
       countries_html: "Paris - London - New York - Roma - Barcelona - Buenos Aires - Lisboa - Porto - Rio - São Paulo"
       teaching_phrase: "TEACHING TOP LEADERS SINCE 1960"
+    individual_consultory_body: 
+      first_meeting: "FIRST MEETING"
+      pills: 
+        consulting: 
+          subtitle: "1 hora por semana"
+          title: CONSULTORÍAS
+        personal: 
+          subtitle: "1 hora dos veces por semana"
+          title: "PERSONAL TEACHING"
+        training: 
+          title: ENTRENAMIENTO
+    individual_consultory_header: 
+      consulting: 
+        subtitle: "3 a 6 meses"
+      intensive: 
+        subtitle: "2 días"
+        title: "INTENSIVE TEACHING"
+      personal: 
+        expand_subtitle_html: "<p>Aprenda herramientas para desenvolver su potencial</p> <p>Desenvuelva Alta Performance en todas las áreas de su vida</p> <p>Mejore su Calidad de Vida</p>"
+        subtitle: "1 hora dos veces por semana"
+        title: "PERSONAL TEACHING PROGRAM"
+      training: 
+        subtitle: "15 minutos por día"
+    navbar: 
+      articles: 
+        title_html: "A<span class='navbar-title-smallcaps'>RTÍCULOS</span>"
+      contact_type: 
+        contact: "Entre en contacto con nosotros"
+        title_html: "C<span class='navbar-title-smallcaps'>ONTACTO</span>"
+      derose_for_leaders: 
+        all_over_the_world_html: "DeR<span class='navbar-title-smallcaps'>OSE</span> All Over the World"
+        derose_method_html: "Método DeR<span class='navbar-title-smallcaps'>OSE</span>"
+        personal_teachers: "Personal Teachers"
+        title_html: "DeR<span class='navbar-title-smallcaps'>OSE</span>  F<span class='navbar-title-smallcaps'>OR</span> L<span class='navbar-title-smallcaps'>EADERS</span> <b class='caret'></b>"
+      programs: 
+        enterprises: 
+          small_group_teaching: "Small Group Teaching"
+          talks: Conferencias
+          title: "PARA EMPRESAS"
+          training: Entrenamiento
+          workshop: Workshop
+        individuals: 
+          consulting: Consultoría
+          personal_teaching: "Personal Teaching"
+          title: "PARA INDIVIDUOS"
+        title_html: "P<span class='navbar-title-smallcaps'>ROGRAMAS</span>"
+      testimonials: 
+        enterprises: Empresas
+        institutions: Instituciones
+        title_html: "T<span class='navbar-title-smallcaps'>ESTIMONIOS</span>"
     net: 
       body: 
         content_html: "Disponemos de Personal Teachers que pueden administrar sesiones particulares en cualquier ciudad de Brasil y en cualquier parte del mundo, incluso acompañando al alumno en sus viajes de negocios o de paseo. Nuestros profesionales actúan en prácticamente todo el Brasil y también Argentina, Chile, Portugal, España, Francia, Inglaterra, Escocia, Italia, Luxemburgo y Estados Unidos (incluido Hawai). El contratante puede elegir la lengua que desea para sus clases: portugués, español, francés, inglés, italiano, alemán, holandés, finlandés, hebreo, árabe y catalán."
@@ -92,6 +197,7 @@ es:
           consultors: consultores
           countries: países
           establishments: establecimientos
+        see_our_programs: "VER NUESTROS PROGRAMAS"
       header: 
         title: "ALL OVER THE WORLD"
     our_consultors: 
@@ -161,5 +267,35 @@ es:
       nestle: 
         content: "Investigación de la  Prof. Rosana Ortega"
         title: "MI BIENESTAR ESTÁ EN NESTLÉ"
+      our_criteria: 
+        content_html: "Todos nuestros programas tienen un número de vacantes limitadas. Las solicitudes pasan por un riguroso proceso selectivo. <br><br> Los criterios principales de los programas Personal Teaching y Entrenamiento son: <p>- Recomendación de alumnos del Método DeR<span class='navbar-title-smallcaps'>OSE</span>;</p> <p>- Cargo y nivel de responsabilidad;</p> <p>- Currículum profesional que demuestre una buena capacidad de crecimiento personal;</p><p>- Motivación para entrar en el programa.</p>"
+        title: "CRITERIOS DE SELECCIÓN"
+      peugeot: 
+        erwin_data_html: "<h3>Erwin MUSEUR</h3> <h4>Paris</h4> <p>Design Manager</p> <p>PEUGEOT</p> "
+        see_more: "LEER MÁS"
+        testimonial: "“Desde el comienzo me gustaron mucho las clases pues sentí que producían efectos positivos muy rápido. En los primeros meses aprendí herramientas muy eficientes para aumentar mi vitalidad, mejoré mi capacidad respiratoria así como la flexibilidad y el tono muscular. Al poco tiempo comencé a entrenar mis capacidades mentales. El conocimiento teórico transmitido a través de conversaciones agregó mucho valor a mi crecimiento personal y profesional.”"
+        title: RECOMENDACIÓN
+      unique_method: 
+        content: "Los líderes reconocen nuestro gran diferencial: un know how incomparable para mejorar al ser humano. Los resultados que conseguimos en el aumento de la performance y la calidad de vida son muy significativos debido a la calidad superlativa de las herramientas que enseñamos. Bastan disciplina y constancia en la aplicación de nuestras técnicas y conceptos para recoger frutos positivos para la vida profesional y personal."
+        title: "LO QUE TORNA ÚNICO A NUESTRO MÉTODO"
     slideshow: 
       first_phrase_html: "YOU KNOW HOW YOUR BUSINESS WORKS <br> WE KNOW HOW YOU WORK"
+    testimonials: 
+      enterprise: 
+        erwin: 
+          content_html: "Desde el principio me gustaron mucho las clases pues sentí que producían efectos positivos muy rápido. En los primeros meses aprendí herramientas muy eficientes para aumentar mi vitalidad, mejoré mi capacidad respiratoria así como la flexibilidad y el tono muscular. Luego comencé a entrenar mis capacidades mentales. El conocimiento teórico transmitido a través de las conversaciones agregó mucho valor a mi crecimiento personal y profesional.<br><br> Con el Método DeR<span class='navbar-title-smallcaps'>OSE</span> desarrollé más conocimiento de mí mismo y de mi potencial. Me siento mejor en la actividad diaria, más sereno y más preparado para enfrentar desafíos.<br><br> Como profesional sentí una mejora significativa en la priorización de mis tareas, en la administración de conflictos, en la gestión del estrés y en mi capacidad de liderar. Eso resultó en una progresión muy significativa en mi carrera, pues mis colegas y superiores advirtieron cuánto había progresado y me confiaron nuevas responsabilidades y cargos de liderazgo."
+        first_quote: 
+          content_html: "“Mi bienestar mejoró sensiblemente desde que comencé a practicar el Método DeR<span class='navbar-title-smallcaps'>OSE</span>.”"
+          info_html: "<h2>Renata Ribeiro</h2> Consumer Insight Head at Nestlé Brazil"
+        judith: 
+          content_html: "Practico el Método DeR<span class='navbar-title-smallcaps'>OSE</span> desde hace poco tiempo, y me hace feliz decir que estoy maravillada por las técnicas, por la cultura y por el estilo de vida que se enseñan en esta metodología. De inmediato noté que me estaba sintiendo más relajada, por más que las técnicas fuesen muy intensas e incluso difíciles para una iniciante como yo. ¡Ahora esos ejercicios son parte de mi vida! El Método DeR<span class='navbar-title-smallcaps'>OSE</span> es  impresionante y ayuda a mejorar todos los aspectos de la vida. Estoy realmente satisfecha por haber encontrado este estilo de vida, descubierto este método y el incentivo a todos los que buscan perfeccionamiento general, tanto físico como peronal."
+        miguel: 
+          content_html: "Bueno, antes de practicar, ya tenía  noción de la interrelación de los cuerpos emocional, mental y físico. Conocía los reflejos que el cuerpo emocional imprime en el cuerpo físico, tanto benéficos como perjudiciales. Pero poco sabía de los reflejos que el cuerpo físico imprime a los cuerpos mental y emocional. Entonces noté que las posiciones de equilibrio físico me ayudaron en el equilibrio emocional. <br/><br/> Pude utilizar el control de la respiración para calmarme o para  energizarme. La conciencia corporal adquirida me ayudó a  identificar mejor las causas de los desequilibrios físicos y a evitarlos. Además hay muchos otros beneficios menores que en conjunto mejoraron mi calidad de vida."
+          info_html: "<h2>Miguel <br> DAL'NEGRO CARVALHO</h2> <h3>Curitiba, <br> BRASIL</h3> <h4>Analista<br> Departamento de <br> Organización del Sistema <br> Financeiro<br> BANCO DO BRASIL</h4>"
+        second_quote: 
+          content_html: "“Considero que el Programa del Método DeR<span class='navbar-title-smallcaps'>OSE</span> en nuestra empresa está muy bien conducido.”"
+          info_html: "<h2>Nanci Yamada</h2> Especialista Desenvolvimiento y R&S, Nestle Brazil"
+        title: "DECLARACIONES DE ALUMNOS"
+      institutions: 
+        content_html: "El Comendador DeR<span class='navbar-title-smallcaps'>OSE</span> es apoyado por un significativo número de instituciones culturales, académicas, humanitarias, militares y gubernamentales que reconocen el valor de su obra. Sin embargo él siempre declara: “Acepto estos homenajes porque no son para engrandecer el ego de una persona sino que sirven como manifestaciones del respeto que brinda la sociedad al trabajo de todos los profesionales de esta área. Por eso quiero compartir con usted el mérito de este reconocimiento.”"
+        header_html: "RECONOCIMIENTOS <br> DEL MÉTODO DeROSE"
