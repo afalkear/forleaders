@@ -1,2 +1,294 @@
---- 
-fr: {}
+---
+fr:
+  static_pages:
+    articles:
+      read_more: "LIRE LA SUITE"
+      subtitle: "TEXTES COURTS ET DYNAMIQUES POUR ALLER PLUS LOIN"
+      title: "NOS ARTICLES"
+    contact:
+      message: "Nos équipes sont là pour répondre à vos questions sur nos programmes, notre processus d'admission et vous accompagner pour réaliser votre candidature."
+      title: CONTACTEZ-NOUS
+    derose_method:
+      body:
+        main:
+          first_block:
+            content_html: "La Méthode DeROSE permet d'améliorer la qualité de vie et d’atteindre d’excellents niveaux de performance.  Nos professeurs enseignent comment mieux respirer, se maintenir en bonne forme grâce à des techniques corporelles et améliorer ses capacités de concentration. Des thèmes variés sont également abordés tels que les habitudes de vie, la gestion du stress, la résolution des conflits, la productivité ou encore l'alimentation. Vous apprendrez ainsi à devenir plus performant dans le domaine professionnel, le sport ou la vie quotidienne."
+          fourth_block:
+            title: "UNE MÉTHODOLOGIE DE GRANDE QUALITÉ"
+          second_block:
+            content_html: "La Méthode DeROSE propose une boite à outil extrêmement efficace pour les dirigeants en quète d'excellence au niveau personnel et professionnel. Nos Personal Teachers définissent avec chaque leader des objectifs précis afin de lui offrir un programme de développement personnel sur mesure."
+            title: "LA MÉTHODE DeROSE POUR LES CADRES ET LES DIRIGEANTS"
+          third_block:
+            content_html:"Les cadres dirigeants reconnaissent notre grand différenciel: un savoir faire incomparable pour développer le potentiel de chaque individu. Grace à la qualité de nos outils techniques et conceptuels nous sommes en mesure d'offrir des résultats très expressifs en terme de qualité de vie et de productivité."
+            title: "CE QUI REND NOTRE MÉTHODE UNIQUE"
+        sidebar:
+          video:
+            title:
+              VIDÉO: "INSPIREZ VOTRE ESSENCE"
+        title: "QU'EST-CE QUE LA MÉTHODE DeROSE"
+      footer:
+        first_column:
+          content_html: "Afin de développer le potentiel de vos équipes, vous devez vous-même vous même être un modèle de productivité et de réussite. Nos programmes sont construits sur mesure pour vous permettre d'atteindre vos objectifs."
+          title: "PROGRAMMES POUR LES INDIVIDUS"
+        second_column:
+          content_html: "Une équipe à succès est formée d'individus compétents qui savent travailler ensemble. Nous offrons des outils pour développer les compétences de chacun tout en construisant une équipe de travail solide."
+          title: "MÉTHODE DeROSE - SOURCE DE RICHESSE"
+        third_column:
+          content_html: "La Méthode est devenue une véritable source de richesses pour les cadres dirigeants et leur entreprise. Découvrez comment."
+          title_html: "PROGRAMMES POUR LES ENTREPRISES"
+      header:
+        title_html: "La Méthode DeROSE"
+    footer:
+      apply_now: "Déposez une candidature"
+      articles:
+        focus: Concentration
+        high_performance: "Haute Productivité"
+        human_relationships: "Relations Interpersonnelles"
+        intuition: "Intuition Appliquée"
+        leadership: Leadership
+        quality_of_life: Lifestyle
+        title: Articles
+      contact_us: Contactez-nous
+      derose_for_leaders:
+        all_over_the_world_html: "DeROSE dans le monde entier"
+        derose_method_html: "La Méthode DeROSE"
+        personal_teachers: "Personal Teachers"
+        title: "Qui sommes nous ?"
+      enterprises:
+        small_group_teaching: "SMALL GROUP TEACHING"
+        talks: Conférences
+        title: "Programmes pour entreprises"
+        training: TRAINING
+        workshop: Formations
+      follow_us: Suivez-nous
+      individuals:
+        consulting: Consultings
+        personal_teaching: "PERSONAL TEACHING"
+        title: "Programmes pour les individus"
+      testimonials:
+        apply_now: "Déposez une candidature"
+        enterprises: Entreprises
+        follow_us: Suivez-nous
+        institutions: Institutions
+        title: Témoignages
+      title_html: "DeROSE FOR LEADERS"
+    group_consultory_body:
+      pills:
+        small_group_teaching:
+          subtitle: "Deux cours d'une heure par semaine"
+          title: "SMALL GROUP TEACHING"
+        small_group_training:
+          subtitle: "Quinze minutes par jour"
+          title: TRAINING
+        talks:
+          subtitle: "Une ou deux heures"
+          title: CONFÉRENCES
+        workshops:
+          subtitle: "Quatre, huit ou seize heures"
+          title: FORMATIONS
+    group_consultory_header:
+      small_group_teaching:
+        expand_subtitle_html: "Développement des performances Amélioration de la qualité de vie Renforcement des liens au sein de l'équipe"
+        subtitle: "Deux cours d'une heure par semaine"
+        title: "SMALL GROUP TEACHING"
+      small_group_training:
+        expand_subtitle_html: "Haute productivité Meilleure qualité de vie Amélioration du bien-être"
+        subtitle: "Quinze minutes par jour"
+        title: "SMALL GROUP TRAINING"
+      talks:
+        expand_subtitle_html: "."
+        subtitle: "Une ou deux heures"
+        title: CONFÉRENCES
+      workshops:
+        expand_subtitle_html: "THÈMES Haute productivité Travailler et vivre mieux"
+        subtitle: "Quatre, huit ou seize heures"
+        title: CONFÉRENCES
+    header:
+      countries_html: "Paris • London • New York • Roma • Barcelona • Buenos Aires • Lisboa • Porto • Rio • São Paulo"
+      teaching_phrase: "TEACHING TOP LEADERS SINCE 1960"
+    individual_consultory_body:
+      first_meeting: "PREMIÈRE RENCONTRE"
+      pills:
+        consulting:
+          subtitle: "Une heure par semaine"
+          title: CONSULTING
+        personal:
+          subtitle: "Deux cours d'une heure par semaine"
+          title: "PERSONAL TEACHING"
+        training:
+          subtitle: "Quinze minutes par jour"
+          title: Training
+    individual_consultory_header:
+      consulting:
+        expand_subtitle_html: "THÈMES Haute Productivité Travailler et vivre mieux Comportement, éthique et résultats Leadership intelligent"
+        subtitle: "Trois à six mois"
+        title: CONSULTING
+      intensive:
+        expand_subtitle_html: "."
+        subtitle: "deux jours"
+        title: "INTENSIVE TEACHING"
+      personal:
+        expand_subtitle_html: "Développement de votre potenciel Excellents niveaux de performance Amélioration de la qualité de vie"
+        subtitle: "Deux cours d'une heure par semaine"
+        title: "PERSONAL TEACHING PROGRAM"
+      training:
+        expand_subtitle_html: "Haute productivité Développement de la qualité de vie Amélioration du bien-être"
+        subtitle: "Quinze minutes par jour"
+        title: TRAINING
+    navbar:
+      articles:
+        title_html: ARTICLES
+      contact_type:
+        contact: Entr
+        title_html: CONTACT
+      derose_for_leaders:
+        all_over_the_world_html: "DeRose dans le monde entier"
+        derose_method_html: "La Méthode DeRose"
+        personal_teachers: "Personal Teachers"
+        title_html: "DeROSE FOR LEADERS"
+      programs:
+        enterprises:
+          small_group_teaching: "Small Group Teaching"
+          talks: Conférences
+          title: "POUR LES ENTREPRISES"
+          training: "Small Group Training"
+          workshop: Formations
+        individuals:
+          consulting: Consulting
+          personal_teaching: "Personal teaching"
+          title: "POUR LES INDIVIDUS"
+          training: Training
+        title_html: PROGRAMMES
+      testimonials:
+        enterprises: Entreprises
+        institutions: Institutions
+        title_html: TÉMOIGNAGES
+    net:
+      body:
+        content_html: "Nous disposons de plusieurs centaines de Personal Teachers à travers le monde. Vous pouvez ainsi bénéficier de nos prestations en France, en Angletterre, en Ecosse, en Italie, en Espagne, au Portugal, aux Etats-Unis, au Brésil, en Argentine et au Chilie. Nos programmes sont proposés en français, anglais, portugais, espagnol, italien et allemand."
+        numbers:
+          businesses: "Entreprises partenaires"
+          consultors: Consultants
+          countries: Pays
+          establishments: Etablissements
+        see_our_programs: "DÉCOUVREZ NOS PROGRAMMES"
+      header:
+        title: "DANS LE MONDE ENTIER"
+    our_consultors:
+      body:
+        consultors:
+          edu:
+            content_html: "Eduardo Cirilo enseigne la Méthode DeRose depuis 1999 et dirige son propre établissement à Porto depuis 2004. Il est aujourd'hui spécialiste du développement de la capacité respiratoire et de la gestion du stress."
+            title: "Eduardo CIRILO"
+          flavio:
+            content_html: "Flávio MOREIRA possède plus de vingt ans d'expérience comme professeur et conférencier. Il est à l'origine de la création de deux établissements de la Méthode DeRose à São Paulo. Il s'est spécialisé dans le développement des performances et donne des conférences en Amérique latine et en Europe depuis plusieurs années."
+            title: "Flávio MOREIRA"
+          gus:
+            content_html: "Ingénieur de formation, Gustavo Oliveira possède également un Master en Managment de l'école ESPM de São Paulo. Il est aujourd'hui spécialiste de la qualité de vie et de l'efficacité au travail, des questions de motivation et de concentration."
+            title: "Gustavo OLIVEIRA"
+          luis:
+            content_html: "Professeur de la Méthode DeRose depuis 1988, Luís Lopes a fondé le premier établissement certifié au Portugal. Il anime des ateliers et des conférences depuis 1990. Son domaine d'expertise de prédilection est la gestion émotionnelle."
+            title: "Luís LOPES"
+          rogerio:
+            content_html: "Diplomé de l'Université PUC au Brésil et l'Université Lusófona au Portugal, Rogerio Brant est spécialisé dans la préparation physique et mentale à travers les techniques de la Méthode DeRose. Il réalise, depuis de nombreuses années, des conférences en Amérique du Sud et en Europe."
+            title: "Rogério BRANT"
+        first_block:
+          content_html: "Nous disposons de plusieurs centaines de Personal Teachers dans le monde entier. Ils ont tous suivi une formation initiale de 4 ans puis sont réévalués chaque année. Cela nous permet de garantir leur excellence professionnelle. Nous offrons ainsi des conférences, des formations ainsi que des programmes de cours particuliers sur de nombreux thèmes comme les relations interpersonnelles, la résolution des conflits, la gestion du stress, la productivité et l'efficacité au travail, entre autres. Nos programmes sont proposés en français, anglais, portugais, espagnol, italien et allemand."
+          personal_teachers: "personal teachers"
+          title: "NOS INTERVENANTS"
+        second_block:
+          content_html: "Au sein de notre groupe de plusieurs centaines de Personal Teachers certains sont devenus de grands spécialistes de part leur expérience et l'excellence de leurs eneignement. Nous vous proposons ainsi une équipe de consultants Experts qui possèdent tous plus de 15 ans dans la formation de leaders et réalisent des conférences au niveau international. Nos programmes de consultings, ainsi que les conférences et les ateliers sont données exclusivement par ce groupe de consultants considérés les meilleurs dans leur domaine d'expertise."
+          title: "CONSULTANTS EXPERTS"
+      footer:
+        see_our_programs: "DÉCOUVREZ NOS PROGRAMMES"
+      header:
+        title: "PERSONAL TEACHERS"
+    partners:
+      subtitle: "ILS NOUS FONT CONFIANCE"
+      title: "NOS PARTENAIRES"
+    programs:
+      enterprise:
+        small_group_teaching:
+          first_item: "Renforcement des liens au sein de l'équipe"
+          second_item: "Développement des performances"
+          subtitle: "Deux cours d'une heure par semaine"
+          third_item: "Amélioration de la qualité de vie"
+          title: "SMALL GROUP TEACHING"
+        small_group_training:
+          first_item: "Développement de la qualité de vie"
+          second_item: "Amélioration du bien-être"
+          subtitle: "Quinze minutes par jour"
+          third_item: "Haute productivité"
+          title: "SMALL GROUP TRAINING"
+        talks:
+          fifth_item: "Gestion des émotions"
+          first_item: "Haute Performance"
+          fourth_item: "Gestion du stress"
+          second_item: "Qualité de vie"
+          subtitle: "Une ou deux heures"
+          third_item: "Résolution des conflits"
+          title: CONFÉRENCES
+        title: "POUR LES ENTREPRISES"
+        workshop:
+          first_item: "Gestion du temps"
+          second_item: "Résolution des conflits"
+          subtitle: "Une à deux journées"
+          third_item: "Gestion du stress"
+          title: FORMATIONS
+      individuals:
+        consultory:
+          first_item: "Haute Productivité"
+          second_item: "Travailler et vivre mieux"
+          subtitle: "Une heure par semaine"
+          third_item: "Comportement, éthique et résultats"
+          title: CONSULTING
+        personal_teaching:
+          first_item: "Développement de votre potentiel"
+          second_item: "Excellents niveaux de performance"
+          subtitle: "Deux cours d'une heure par semaine"
+          third_item: "Amélioration de la qualité de vie"
+          title: "PERSONAL TEACHING"
+        title: "POUR LES INDIVIDUS"
+        training:
+          first_item: "Haute productivité"
+          second_item: "Développement de la qualité de vie"
+          subtitle: "Quinze minutes par jour"
+          third_item: "Amélioration du bien-être"
+          title: TRAINING
+      subtitle: "Découvrez des programmes sur mésure"
+      title: "NOS PROGRAMMES"
+    sidebar:
+      experts:
+        see_more: "EN SAVOIR PLUS"
+        title: "DÉCOUVREZ NOS CONSULTANTS EXPERTS"
+      nestle:
+        content:
+          Enquête: "Prof. Rosana Ortega"
+        title: "MON NIVEAU DE BIEN ÊTRE EST"
+      our_criteria:
+        content_html:
+          ? "CRITÈRES DE SELECTION Tous nos programmes ont un nombre de places limité. Les candidatures passent par un processus rigoureux de sélection.   Voici les principaux critères"
+          : "Être recommandé par un élève de la Méthode DeRose Détenir un haut niveau hierarchique et de grandes responsabilités Avoir un parcours professionnel qui montre une bonne capacité d'évolution personnelle Motivation pour intégrer ce programme"
+        title: "CRITÈRES D'ADMISSION"
+      peugeot:
+        erwin_data_html: "Erwin MUSEUR Paris  Design Manager  PEUGEOT"
+        see_more: "LIRE LA SUITE"
+        testimonial: "|- J'ai             beaucoup             apprécié             les             cours             et             en             ai             ressenti             très             vite             les             effets             positifs.             Les             premiers cours aident             essentiellement             à             préparer             le             physique             (exercices             respiratoires,             d'assouplissement,             de             force...)             puis par la suite             le             travail             mental             est renforcé.             Les enseignements théoriques transmis à travers les conversations sont d'une grande valeur et ont pleinement contribué à ma croissance personnelle et professionnelle."
+        title: Témoignages
+      unique_method:
+        content: "Les cadres dirigeants reconnaissent notre grand différenciel: un savoir faire incomparable pour développer le potentiel de chaque individu. Grace à la qualité de nos outils techniques et conceptuels nous sommes en mesure d'offrir des résultats très expressifs en terme de qualité de vie et de productivité."
+        title: "CE QUI REND NOTRE MÉTHODE UNIQUE"
+    testimonials:
+      enterprise:
+        first_quote:
+          content_html: "Je me sens beaucoup mieux depuis que je pratique la Méthode DeRose"
+          info_html: "Renata Ribeiro Consumer Insight Head at Nestlé Brazil"
+        judith:
+          content_html: "Je pratique la Méthode DeRose depuis peu et je suis très heureuse d'avoir découvert une approche si complète. J'apprends ainsi de nouveaux outils pratiques et théorique d'une grande valeur. Je me suis très rapidement sentie mieux au quotidien. Cette méthode est vraiment étonnante car elle permet de s'améliorer dans tous les aspects de la vie. Pour faire court, je suis vraiment contente d'avoir eu la chance de trouver cette métodologie et j'encourage tous ceux qui cherchent à se développer au niveau physique mais aussi dans la vie à la découvrir."
+        second_quote:
+          content_html: "Je trouve que le Programme de la Méthode DeRose est très bien organisé dans notre entreprise."
+          info_html: "Nanci Yamada Development Specialist and R&amp;S at Nestle Brazil"
+        title: TÉMOIGNAGES
+      institutions:
+        content_html: "La Professeur DeRose a reçu des reconnaissances de nombreuses institutions culturelles et académiques mais aussi humanitaires, militaires et gouvernementales qui rendent hommage au sérieux et à la qualité de son travail."
+        header_html: "RECONNAISSANCES DE LA MÉTHODE DeROSE"
