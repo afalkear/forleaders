@@ -576,3 +576,7 @@
 .articles-authors-mini-container {
   padding-bottom: 10px;
 }
+
+.select2 {
+  width: 100%;
+}
