@@ -87,7 +87,7 @@
                   <hr>
                   <div class="container related-articles">
                     <h2>
-                      TEXTOS RELACIONADOS
+                      <%= t("articles.show.related_texts", default: "TEXTOS RELACIONADOS") %>
                     </h2>
                     <% cache "#{@article.categories.first.name}-related_articles" do%>
                       <div class="row">
