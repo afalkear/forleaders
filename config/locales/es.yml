@@ -16,5 +16,150 @@ es:
   static_pages: 
     articles: 
       read_more: "LEER MAS >>"
-      subtitle: "CORTOS Y DINAMICOS TEXTOS PARA ESTIMULAR EL APRENDIZAJE"
-      title: "NUESTROS ARTICULOS"
+      subtitle: "TEXTOS RÁPIDOS Y DINÁMICOS PARA POTENCIAR SU APRENDIZAJE"
+      title: "NUESTROS ARTÍCULOS"
+    derose_method: 
+      body: 
+        main: 
+          first_block: 
+            content_html: "El Método DeROSE es un entramado de técnicas y conceptos que construyen una propuesta de reeducación comportamental en pro de la buena calidad de vida, buenas maneras, buenas relaciones humanas, buena cultura, buena alimentación, buena forma, buen ambiente y buenos ideales. <br/> <br/> Algunas de nuestras herramientas técnicas son la reeducación respiratoria, la administración del estrés, las técnicas orgánicas que promueven la vitalidad y la energía, procedimientos para perfeccionar la descontracción emocional y la concentración mental."
+          fourth_block: 
+            title: "UNA PROPUESTA DE BUENAS COSAS:"
+          second_block: 
+            content_html: "El Método DeR<span class=\"navbar-title-smallcaps\">OSE</span> es de gran valor para los líderes que buscan herramientas eficientes para perfeccionarse, aumentando su desempeño personal y profesional. Montamos con cada líder un programa a medida que incluye Personal Teaching, Entrenamientos y Consultorías. Definimos juntos sus objetivos y le enseñamos las herramientas más adecuadas para que pueda progresar en forma efectiva y duradera."
+            title: "Método DeR<span class=\"navbar-title-smallcaps\">OSE</span> FOR LEADERS"
+          third_block: 
+            content_html: "Los líderes reconocen nuestro gran diferencial: un know how incomparable para mejorar al ser humano. Los resultados que conseguimos en el aumento de la performance y de la calidad de vida son muy significativos debido a la calidad superlativa de las herramientas que enseñamos. Bastan disciplina y constancia en la aplicación de nuestras técnicas y de nuestros conceptos para recoger frutos positivos en la vida profesional y personal."
+            title: "QUÉ ES LO QUE TORNA NUESTRO MÉTODO TAN ÚNICO"
+        sidebar: 
+          video: 
+            title: "VIDEO: INSPIRE SU ESENCIA"
+        title: "QUÉ ES EL MÉTODO DeROSE"
+      footer: 
+        first_column: 
+          content_html: "Un equipo fuerte está formado por individuos enfocados y bien preparados; los programas para empresas no sólo fortalecen a cada uno de los líderes de manera completa, sino también los integran como un equipo."
+          title: "PROGRAMAS PARA INDIVIDUOS"
+        second_column: 
+          content_html: "Para desarrollar el potencial de las personas que usted dirige, es importante que usted también esté en constante perfeccionamiento; trabaje su propria Alta Productividad con nuestros programas para individuos."
+          title: "PROGRAMAS PARA EMPRESAS"
+        third_column: 
+          content_html: "Las técnicas y los conceptos del Método DeR<span class=\"navbar-title-smallcaps\">OSE</span> no producen sólo resultados en la calidad de vida, ¡también son capaces de generar riqueza para empresas!"
+          title_html: "MÉTODO DeR<span class=\"navbar-title-smallcaps\">OSE</span> EN EMPRESAS"
+      header: 
+        subtitle: "| Alta Productividad | Respiración | Foco | Relaciones Interpersonales | Performance | Administración de conflictos | Gestión del estrés | Fuerza | Resultados |"
+        title_html: "Método DeR<span class=\"navbar-title-smallcaps\">OSE</span>"
+    footer: 
+      articles: 
+        focus: Foco
+        high_performance: "Alta Productividad"
+        human_relationships: "Relaciones Interpersonales"
+        intuition: "Intuición Aplicada"
+        leadership: Liderazgo
+        quality_of_life: Lifestyle
+        title: Artículos
+      contact_us: "Contact us!"
+      derose_for_leaders: 
+        all_over_the_world_html: "DeR<span class=\"navbar-title-smallcaps\">OSE</span> All Over The World"
+        derose_method_html: "El Método DeR<span class=\"navbar-title-smallcaps\">OSE</span>"
+        personal_teachers: "Personal Teachers"
+        title: "¿Quiénes somos?"
+      enterprises: 
+        small_group_teaching: "Small Group Teaching"
+        talks: Conferencia
+        title: "Programas para empresas"
+        training: Entrenamiento
+        workshop: Workshops
+      individuals: 
+        consulting: Consultoría
+        personal_teaching: "Personal Teaching"
+        title: "Programas para individuales"
+        training: Entrenamiento
+      testimonials: 
+        apply_now: "Apply Now!"
+        enterprises: Empresas
+        follow_us: "Follow us!"
+        institutions: Instituciones
+        title: Testimonios
+      title_html: "DeR<span class=\"navbar-title-smallcaps\">OSE</span> F<span class=\"navbar-title-smallcaps\">OR</span> L<span class=\"navbar-title-smallcaps\">EADERS</span>"
+    header: 
+      countries_html: "Paris - London - New York - Roma - Barcelona - Buenos Aires - Lisboa - Porto - Rio - São Paulo"
+      teaching_phrase: "TEACHING TOP LEADERS SINCE 1960"
+    net: 
+      body: 
+        content_html: "Disponemos de Personal Teachers que pueden administrar sesiones particulares en cualquier ciudad de Brasil y en cualquier parte del mundo, incluso acompañando al alumno en sus viajes de negocios o de paseo. Nuestros profesionales actúan en prácticamente todo el Brasil y también Argentina, Chile, Portugal, España, Francia, Inglaterra, Escocia, Italia, Luxemburgo y Estados Unidos (incluido Hawai). El contratante puede elegir la lengua que desea para sus clases: portugués, español, francés, inglés, italiano, alemán, holandés, finlandés, hebreo, árabe y catalán."
+        numbers: 
+          businesses: "empresas con las que trabajamos"
+          consultors: consultores
+          countries: países
+          establishments: establecimientos
+      header: 
+        title: "ALL OVER THE WORLD"
+    our_consultors: 
+      body: 
+        consultors: 
+          edu: 
+            content_html: "Emprendedor del Método DeR<span class='navbar-title-smallcaps'>OSE</span> desde 1999, dirige su propia escuela en la ciudad de Porto, en Portugal, desde 2004. Se dedica a la formación de profesionales de la red, y también se ha especializado en la enseñanza de técnicas y conceptos para profesionales, empresarios y estudiantes, principalmente en técnicas respiratorias y administración del estrés."
+            title: "Eduardo CIRILO"
+          flavio: 
+            content_html: "Fundador de dos emprendimientos del Método DeR<span class='navbar-title-smallcaps'>OSE</span> en la ciudad de São Paulo, posee casi 20 años como profesor de la red. Ha dictado diversos cursos prácticos y teóricos en Brasil y en diversos países de Europa. Se especializa en técnicas de Alta Performance."
+            title: "Flávio MOREIRA"
+          gus: 
+            content_html: "Docente del Método DeR<span class='navbar-title-smallcaps'>OSE</span>, es también licenciado en Ingeniería Mecánica por la Unicamp y tiene posgrado en Administración y Marketing por la ESPM. Dicta cursos orientados hacia calidad de vida, desarrollo corporal, mentalización, meditación y motivación."
+            title: "Gustavo OLIVEIRA"
+          luis: 
+            content_html: "Involucrado con el trabajo en el Método DeR<span class='navbar-title-smallcaps'>OSE</span> desde 1988, Luís Lopes fue fundador de la primera escuela certificada de la red en Portugal. Dicta cursos desde 1990. Es especialista en el área de Reprogramación Emocional y Técnicas de Purificación Orgánicas. Se ha especializado en adaptar el Método DeR<span class='navbar-title-smallcaps'>OSE</span> para profesionales y empresas."
+            title: "Luís LOPES"
+          rogerio: 
+            content_html: "Formado por la Pontificia Universidad Católica de Paraná (PUC-PR) y por la Universidad Lusófona, de Lisboa, se especializó en las técnicas orgánicas del Método DeR<span class='navbar-title-smallcaps'>OSE</span>. Dicta cursos en varias ciudades de Brasil, América del Sur y Europa."
+            title: "Rogério BRANT"
+        first_block: 
+          content_html: "Disponemos de cientos de Personal Teachers por todo el mundo. La calidad de la formación de cada uno de ellos es foco constante dentro del Método DeR<span class='navbar-title-smallcaps'>OSE</span>: se preparan durante 4 años como mínimo y son revalidados anualmente para que mantengan un alto nivel de excelencia. Damos conferencias, workshops y entrenamientos sobre temas como buenas relaciones humanas, administración de conflictos, gestión del estrés, alta productividad, foco y otros. El contratante puede elegir la lengua que desea para su programa: portugués, inglés, francés, español, italiano y alemán."
+          personal_teachers: "personal teachers"
+          title: "NUESTROS PROFESIONALES"
+        second_block: 
+          content_html: "Dentro de nuestro grupo de cientos de profesionales esparcidos por todo el globo, hay una selección de algunos especialistas con más tiempo de enseñanza del Método DeR<span class='navbar-title-smallcaps'>OSE</span>: los Consultores Experts.Todos ellos poseen más de 15 años de experiencia y han estado presentes en eventos internacionales por las Américas y Europa (dando charlas en Brasil, Argentina, Portugal, Francia y  Estados Unidos). Los programas como consultorías y conferencias están a cargo exclusivamente de los Consultores Experts que son considerados los mejores en sus respectivas áreas de especialización."
+          title: "CONSULTORES EXPERTS"
+      footer: 
+        see_our_programs: "VER NUESTROS PROGRAMAS"
+      header: 
+        title: "PERSONAL TEACHERS"
+    partners: 
+      subtitle: "SEE WHO TRUST US"
+      title: "QUIÉNES TRABAJAN CON NOSOTROS"
+    programs: 
+      enterprise: 
+        small_group_teaching: 
+          first_item: "Reforzar los vínculos entre los líderes"
+          second_item: "Desarrollar Alta Performance profesional"
+          subtitle: "1 hora dos veces por semana"
+          third_item: "Mejorar la Calidad de Vida"
+          title: "SMALL GROUP TEACHING"
+        title: "PARA EMPRESAS"
+        workshop: 
+          first_item: "Administración de tiempo"
+          second_item: "Administración de conflictos"
+          subtitle: "4, 8 o 16 horas"
+          third_item: "Gestión del estrés"
+          title: WORKSHOPS
+      individuals: 
+        consultory: 
+          first_item: "Alta Productividad"
+          second_item: "Vivir y trabajar mejor"
+          subtitle: "1 hora por semana"
+          third_item: "Comportamiento, Ética y Resultados"
+          title: CONSULTORÍAS
+        personal_teaching: 
+          first_item: "Desarrolle su potencial"
+          second_item: "Alcance Alta Performance en todas las áreas de su vida"
+          subtitle: "1 hora dos veces por semana"
+          third_item: "Mejore su Calidad de Vida"
+          title: "PERSONAL TEACHING"
+        title: "PARA INDIVIDUOS"
+      subtitle: "INVIERTA EN PROGRAMAS A MEDIDA"
+      title: "NUESTROS PROGRAMAS"
+    sidebar: 
+      nestle: 
+        content: "Investigación de la  Prof. Rosana Ortega"
+        title: "MI BIENESTAR ESTÁ EN NESTLÉ"
+    slideshow: 
+      first_phrase_html: "YOU KNOW HOW YOUR BUSINESS WORKS <br> WE KNOW HOW YOU WORK"
