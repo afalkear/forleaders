@@ -10,6 +10,8 @@
  *
  *= require_self
  *= require twitter/bootstrap
+ *= require select2
+ *= require select2-bootstrap
  *= require my-bootstrap
  *= require magnific-popup
  *= require translation_center/inspector

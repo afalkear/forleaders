@@ -50,6 +50,9 @@ gem 'cancancan', '~> 1.8'
 # put the locale in the URL as: deroseforleaders.com/en/articles
 gem 'route_translator'
 
+# select jQuery plugin
+gem "select2-rails"
+
 # translator center ** My translation center fork
 gem 'afalkear_translation_center', '1.8.2'
 gem 'audited-activerecord', '~> 4.0.0.rc1'
