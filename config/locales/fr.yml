@@ -19,7 +19,7 @@ fr:
             content_html: "La Méthode DeROSE propose une boite à outil extrêmement efficace pour les dirigeants en quète d'excellence au niveau personnel et professionnel. Nos Personal Teachers définissent avec chaque leader des objectifs précis afin de lui offrir un programme de développement personnel sur mesure."
             title: "LA MÉTHODE DeROSE POUR LES CADRES ET LES DIRIGEANTS"
           third_block:
-            content_html:"Les cadres dirigeants reconnaissent notre grand différenciel: un savoir faire incomparable pour développer le potentiel de chaque individu. Grace à la qualité de nos outils techniques et conceptuels nous sommes en mesure d'offrir des résultats très expressifs en terme de qualité de vie et de productivité."
+            content_html: "Les cadres dirigeants reconnaissent notre grand différenciel: un savoir faire incomparable pour développer le potentiel de chaque individu. Grace à la qualité de nos outils techniques et conceptuels nous sommes en mesure d'offrir des résultats très expressifs en terme de qualité de vie et de productivité."
             title: "CE QUI REND NOTRE MÉTHODE UNIQUE"
         sidebar:
           video:
@@ -266,14 +266,12 @@ fr:
           Enquête: "Prof. Rosana Ortega"
         title: "MON NIVEAU DE BIEN ÊTRE EST"
       our_criteria:
-        content_html:
-          ? "CRITÈRES DE SELECTION Tous nos programmes ont un nombre de places limité. Les candidatures passent par un processus rigoureux de sélection.   Voici les principaux critères"
-          : "Être recommandé par un élève de la Méthode DeRose Détenir un haut niveau hierarchique et de grandes responsabilités Avoir un parcours professionnel qui montre une bonne capacité d'évolution personnelle Motivation pour intégrer ce programme"
+        content_html:"CRITÈRES DE SELECTION Tous nos programmes ont un nombre de places limité. Les candidatures passent par un processus rigoureux de sélection. Voici les principaux critères: Être recommandé par un élève de la Méthode DeRose Détenir un haut niveau hierarchique et de grandes responsabilités Avoir un parcours professionnel qui montre une bonne capacité d'évolution personnelle Motivation pour intégrer ce programme"
         title: "CRITÈRES D'ADMISSION"
       peugeot:
         erwin_data_html: "Erwin MUSEUR Paris  Design Manager  PEUGEOT"
         see_more: "LIRE LA SUITE"
-        testimonial: "|- J'ai             beaucoup             apprécié             les             cours             et             en             ai             ressenti             très             vite             les             effets             positifs.             Les             premiers cours aident             essentiellement             à             préparer             le             physique             (exercices             respiratoires,             d'assouplissement,             de             force...)             puis par la suite             le             travail             mental             est renforcé.             Les enseignements théoriques transmis à travers les conversations sont d'une grande valeur et ont pleinement contribué à ma croissance personnelle et professionnelle."
+        testimonial: "| J'ai beaucoup  les cours  et en ai ressenti  vite les effets  positifs. Les premiers cours aident  essentiellement  le  physique  (exercices  respiratoires, d'assouplissement, de  force...) puis par la suite  le  travail  mental  est renforcé.  Les enseignements théoriques transmis à travers les conversations sont d'une grande valeur et ont pleinement contribué à ma croissance personnelle et professionnelle."
         title: Témoignages
       unique_method:
         content: "Les cadres dirigeants reconnaissent notre grand différenciel: un savoir faire incomparable pour développer le potentiel de chaque individu. Grace à la qualité de nos outils techniques et conceptuels nous sommes en mesure d'offrir des résultats très expressifs en terme de qualité de vie et de productivité."

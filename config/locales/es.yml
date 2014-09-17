@@ -131,11 +131,17 @@ es:
         subtitle: "2 veces de 1 hora por semana"
         title: "SMALL GROUP TEACHING"
       small_group_training: 
+        expand_subtitle_html: "<p>Favorecer la Alta Productividad</p> <p>Perfeccionar la Buena Forma</p> <p>Desarrollar Bienestar</p>"
         subtitle: "15 minutos por día"
+        title: "SMALL GROUP TRAINING"
       talks: 
         expand_subtitle_html: ""
+        subtitle: "1, 2 o 4 horas"
+        title: CONFERENCIAS
       workshops: 
         expand_subtitle_html: "<h2>TÓPICOS</h2> <p>Alta productividad</p> <p>Vivir y trabajar mejor</p> <p>Comportamiento, ética y resultados</p> <p>Liderazgo sabio</p>"
+        subtitle: "4, 8 o 16 horas"
+        title: WORKSHOPS
     header: 
       countries_html: "Paris - London - New York - Roma - Barcelona - Buenos Aires - Lisboa - Porto - Rio - São Paulo"
       teaching_phrase: "TEACHING TOP LEADERS SINCE 1960"
@@ -149,11 +155,15 @@ es:
           subtitle: "1 hora dos veces por semana"
           title: "PERSONAL TEACHING"
         training: 
+          subtitle: "15 minutos por día"
           title: ENTRENAMIENTO
     individual_consultory_header: 
       consulting: 
+        expand_subtitle_html: "<h2>TÓPICOS</h2> <p>Alta productividad</p> <p>Vivir y trabajar mejor</p> <p>Comportamiento, ética y resultados</p> <p>Liderazgo sabio</p>"
         subtitle: "3 a 6 meses"
+        title: "CONSULTING PROGRAM"
       intensive: 
+        expand_subtitle_html: ""
         subtitle: "2 días"
         title: "INTENSIVE TEACHING"
       personal: 
@@ -161,7 +171,9 @@ es:
         subtitle: "1 hora dos veces por semana"
         title: "PERSONAL TEACHING PROGRAM"
       training: 
+        expand_subtitle_html: "<p>Favorecer la Alta Productividad</p> <p>Perfeccionar la Buena Forma</p> <p>Desarrollar Bienestar</p>"
         subtitle: "15 minutos por día"
+        title: ENTRENAMIENTO
     navbar: 
       articles: 
         title_html: "A<span class='navbar-title-smallcaps'>RTÍCULOS</span>"
@@ -184,6 +196,7 @@ es:
           consulting: Consultoría
           personal_teaching: "Personal Teaching"
           title: "PARA INDIVIDUOS"
+          training: Entrenamiento
         title_html: "P<span class='navbar-title-smallcaps'>ROGRAMAS</span>"
       testimonials: 
         enterprises: Empresas
@@ -240,6 +253,19 @@ es:
           subtitle: "1 hora dos veces por semana"
           third_item: "Mejorar la Calidad de Vida"
           title: "SMALL GROUP TEACHING"
+        small_group_training: 
+          first_item: "Perfeccionar la Buena Forma"
+          second_item: "Desarrollar Bienestar"
+          subtitle: "15 minutos por día"
+          third_item: "Favorezca su Alta Productividad"
+          title: "SMALL GROUP TRAINING"
+        talks: 
+          fifth_item: "Manejo de emociones"
+          first_item: "Alta productividad"
+          second_item: "Calidad de Vida"
+          subtitle: "2 o 4 horas"
+          third_item: "Manejo de conflictos"
+          title: CONFERENCIAS
         title: "PARA EMPRESAS"
         workshop: 
           first_item: "Administración de tiempo"
@@ -261,9 +287,18 @@ es:
           third_item: "Mejore su Calidad de Vida"
           title: "PERSONAL TEACHING"
         title: "PARA INDIVIDUOS"
+        training: 
+          first_item: "Favorezca su Alta Productividad"
+          second_item: "Perfeccione su Buena Forma"
+          subtitle: "15 minutos por día"
+          third_item: "Desenvuelva su Bienestar"
+          title: ENTRENAMIENTO
       subtitle: "INVIERTA EN PROGRAMAS A MEDIDA"
       title: "NUESTROS PROGRAMAS"
     sidebar: 
+      experts: 
+        see_more: "VER MÁS DETALLES"
+        title: "CONOZCA A LOS CONSULTORES EXPERTS"
       nestle: 
         content: "Investigación de la  Prof. Rosana Ortega"
         title: "MI BIENESTAR ESTÁ EN NESTLÉ"
@@ -280,6 +315,7 @@ es:
         title: "LO QUE TORNA ÚNICO A NUESTRO MÉTODO"
     slideshow: 
       first_phrase_html: "YOU KNOW HOW YOUR BUSINESS WORKS <br> WE KNOW HOW YOU WORK"
+      second_phrase_html: "YOU HAVE THE GOALS <br> WE HAVE THE TOOLS"
     testimonials: 
       enterprise: 
         erwin: 
