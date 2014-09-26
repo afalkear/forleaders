@@ -27,15 +27,25 @@ class ArticlesController < ApplicationController
 
   def new
     @article = Article.new
+    @article_language = params[:article_language] ? ArticleLanguage.find(params[:article_language]) : nil
+    @original_article = @article_language.nil? ? nil : @article_language.articles.first
   end
 
   def create
+    article_language = params[:article][:article_language] ? ArticleLanguage.find(params[:article][:article_language]) : ArticleLanguage.create
     @article = current_user.articles.new(article_params)
 
     if @article.save
       # expire cache so related and last articles will be reloaded with this new article
       expire_fragment("latest_articles")
       expire_fragment("#{@article.categories.first.name}-related_articles")
+      
+      article_language.articles << @article
+      if !params[:article][:article_image] && @article.article_language.articles.count > 1
+        @article.article_image_url = @article.article_language.articles.first.article_image
+        @article.save
+      end
+
       flash[:success] = "Successfully created article"
       redirect_to article_path(@article.id)
     else
@@ -75,6 +85,7 @@ class ArticlesController < ApplicationController
         :hover_frase,
         :excerpt,
         :video_url,
+        :lang,
         :category_ids => []
         )
     end

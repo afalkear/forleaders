@@ -1,30 +1,40 @@
 <%= render 'users/navbar' %>
 <div class="container new-article-container">
   <h1>New article</h1>
-  <div class="col-md-4">
+  <div class="col-md-6">
     <%= form_for :article, url: {action: 'create'}, html: {multipart: true, class: "form-horizontal", role: 'form'} do |f| %>
+      <% if @article_language %>
+        <h4>This is a translation from article: </h4>
+        <%= link_to @original_article do %> 
+          <h5><%= @original_article.title %><small>[<%= @original_article.lang %>]</small></h5>
+        <% end %>
+        <%= f.hidden_field :article_language, value: @article_language.id %>
+      <% else %>
+        <h2></h2>
+        <h4>This is a new article, not a translation from another one</h4>
+      <% end %>
       <div class="form-group">
         <%= label(:article, :title, class: 'col-sm-2 control-label') %>
         <div class="col-sm-10">
-          <%= f.text_field :title, class: 'form-control', id: 'article_title', placeholder: "Set your title here" %>
+          <%= f.text_field :title, class: 'form-control', id: 'article_title', placeholder: "Set your title here", value: @original_article.title if @original_article %>
         </div>
       </div>
       <div class="form-group">
         <%= label(:article, :subtitle, class: 'col-sm-2 control-label') %>
         <div class="col-sm-10">
-          <%= f.text_field :subtitle, class: 'form-control', id: 'article_subtitle', placeholder: "Set your subtitle here" %>
+          <%= f.text_field :subtitle, class: 'form-control', id: 'article_subtitle', placeholder: "Set your subtitle here", value: @original_article.subtitle if @original_article %>
         </div>
       </div>
       <div class="form-group">
         <%= label(:article, :excerpt, class: 'col-sm-2 control-label') %>
         <div class="col-sm-10">
-          <%= f.text_field :excerpt, class: 'form-control', id: 'article_excerpt', placeholder: "Set your excerpt here" %>
+          <%= f.text_field :excerpt, class: 'form-control', id: 'article_excerpt', placeholder: "Set your excerpt here", value: @original_article.excerpt if @original_article %>
         </div>
       </div>
       <div class="form-group">
         <%= label(:article, :author, class: 'col-sm-2 control-label') %>
         <div class="col-sm-10">
-          <%= f.text_field :author, class: 'form-control', id: 'article_author', placeholder: "Set the article author here" %>
+          <%= f.text_field :author, class: 'form-control', id: 'article_author', placeholder: "Set the article author here", value: @original_article.author if @original_article %>
         </div>
       </div>
       <div class="form-group">
@@ -39,35 +49,44 @@
         <div class="col-sm-10">
           <%= f.text_field :remote_article_image_url, class: 'form-control', id: 'remote_article_image_url', placeholder: "Set the image url here" %>
         </div>
+        <div class="col-sm-10 edit-article-image">
+          <% if @original_article %>
+            <% if @original_article.article_image? %>
+              <%= image_tag @original_article.article_image_url %>
+            <% else %>
+              Original article does not have an image
+            <% end %>
+          <% end %>
+        </div>
       </div>
       <div class="form-group">
         <%= label(:article, :video_url, class: 'col-sm-2 control-label') %>
         <div class="col-sm-10">
-          <%= f.text_field :video_url, class: 'form-control', id: 'article_video_url', placeholder: "Set the link to the video" %>
+          <%= f.text_field :video_url, class: 'form-control', id: 'article_video_url', placeholder: "Set the link to the video", value: @original_article.video_url if @original_article %>
         </div>
       </div>
       <div class="form-group">
         <%= label(:article, :hover_frase, class: 'col-sm-2 control-label') %>
         <div class="col-sm-10">
-          <%= f.text_field :hover_frase, class: 'form-control', id: 'article_hover_frase', placeholder: "Set the image hover frase" %>
+          <%= f.text_field :hover_frase, class: 'form-control', id: 'article_hover_frase', placeholder: "Set the image hover frase", value: @original_article.hover_frase if @original_article %>
         </div>
       </div>
       <div class="form-group">
         <%= label(:article, :lang, class: 'col-sm-2 control-label') %>
         <div class="col-sm-10">
-          <%= f.select :lang, TranslationCenter::TranslationKey.langs_stats.keys, {class: "select2"} %>
+          <%= f.select :lang, TranslationCenter::TranslationKey.langs_stats.keys.reject {|l| @original_article.nil? ? nil : @article_language.translated_languages.include?(l.to_s)}, {}, {class: "select2"} %>
         </div>
       </div>
       <div class="form-group">
         <%= label(:article, :category, class: 'col-sm-2 control-label') %>
         <div class="col-sm-10">
-          <%= f.collection_select :category_ids, Category.all, :id, :name, {}, {class: "select2", :multiple => true} %>
+          <%= f.collection_select :category_ids, Category.all, :id, :name, {selected: @original_article.nil? ? nil : @original_article.categories.map(&:id) }, {class: "select2", :multiple => true} %>
         </div>
       </div>
       <div class="form-group">
         <%= label(:article, :content, class: 'col-sm-2 control-label') %>
         <div class="col-sm-10">
-          <%= f.text_area :content, class: 'form-control', id: 'article_content', placeholder: "Set the article content here", size: "60x12" %>
+          <%= f.text_area :content, class: 'form-control', id: 'article_content', placeholder: "Set the article content here", size: "60x12", value: @original_article.content if @original_article %>
         </div>
       </div>
       <div class="form-group">
