@@ -31,9 +31,9 @@ pt:
       subtitle: "TEXTOS RÁPIDOS PARA POTENCIALIZAR SEU APRENDIZADO ×"
       title: "NOSSOS ARTIGOS"
     contact: 
-      countries_html: "<h2>BRASIL</h2> Sao Paulo <br/> Rio de Janeiro <br/> Brasilia<br/> Porto Alegre<br/> <h2>ARGENTINA</h2> Buenos Aires <h2>FRANCE</h2> Paris <h2>UNITED STATES</h2> New York"
-      message: "Our team is happy to answer your questions regarding our programs and our admissions process and assist you with your application."
-      title: "NOS CONTATAR"
+      countries_html: "<h2>BRASIL</h2> São Paulo <br> Rio de Janeiro <br> Brasília<br> Florianópolis<br> <h2>ARGENTINA</h2> Buenos Aires <h2>FRANCE</h2>Paris <h2>UNITED STATES</h2>New York"
+      message: "Estaremos felizes em poder esclarecer questões relativas aos nossos programas e ao processo de admissão."
+      title: CONTACTE-NOS
     derose_method: 
       body: 
         main: 
@@ -98,10 +98,10 @@ pt:
         title: Depoimentos
       title_html: "DeR<span class=\"navbar-title-smallcaps\">OSE</span> F<span class=\"navbar-title-smallcaps\">OR</span> L<span class=\"navbar-title-smallcaps\">EADERS</span>"
     group_consultory_body: 
-      candidates: CANDIDATURA
+      candidates: CONTACTE-NOS
       pills: 
         small_group_teaching: 
-          subtitle: "2 vezes 1h per semana"
+          subtitle: "1h duas vezes por semana"
           title: "SMALL GROUP TEACHING"
         small_group_training: 
           subtitle: "15 minutos por día"
@@ -114,12 +114,12 @@ pt:
           title: WORKSHOP
     group_consultory_header: 
       small_group_teaching: 
-        expand_subtitle_html: "<p>Desenvolver Alta Performance profissional e pessoal</p> <p>Melhorar a Qualidade de Vida</p> <p>Reforçar os vinculos entre os líderes</p>"
-        subtitle: "2 vezes de 1 hora por semana"
+        expand_subtitle_html: "<p>Desenvolver Alta Performance</p> <p>Aumentar a fluidez na comunicação</p> <p>Melhorar a Qualidade de Vida</p> <p>Reforçar os vinculos entre os líderes</p>"
+        subtitle: "1h duas vezes por semana"
         title: "SMALL GROUP TEACHING"
       small_group_training: 
-        expand_subtitle_html: "<p>Favorecer a Alta Produtividade</p> <p>Aprimorar a Boa Forma</p> <p>Desenvolver o Bem Estar</p>"
-        subtitle: "15 minutos por día"
+        expand_subtitle_html: "<p>Desenvolver Alta Performance</p> <p>Aumentar a fluidez na comunicação</p> <p>Melhorar a Qualidade de Vida</p> <p>Reforçar os vinculos entre os líderes</p>"
+        subtitle: "15 minutos por dia"
         title: "SMALL GROUP TRAINING"
       talks: 
         subtitle: "1, 2 ou 4 horas"
@@ -145,9 +145,9 @@ pt:
           title: TREINAMENTO
     individual_consultory_header: 
       consulting: 
-        expand_subtitle_html: "<h2>Temas</h2> <p>Alta produtividade</p> <p>Viver e trabalhar melhor</p> <p>Comportamento, ética e resultados</p> <p>Liderança sábia</p>"
+        expand_subtitle_html: "<p>Bom relacionamento</p> <p>Administração de conflitos</p> <p>Gestão do tempo</p> <p>Comportamento</p> <p>Liderança sábia</p>"
         subtitle: "3 a 6 meses"
-        title: "CONSULTING PROGRAM"
+        title: CONSULTORIA
       intensive: 
         subtitle: "2 dias"
         title: "INTENSIVE TEACHING"
@@ -156,7 +156,7 @@ pt:
         subtitle: "1 hora duas vezes por semana"
         title: "PERSONAL TEACHING"
       training: 
-        expand_subtitle_html: "<p>Favoreça sua Alta Produtividade</p> <p>Aprimore sua Boa Forma</p> <p>Desenvolva o seu Bem Estar</p>"
+        expand_subtitle_html: "<p>Alta Performance</p> <p>Boa Forma</p> <p>Administração emocional</p> <p>Concentração</p>"
         subtitle: "15 minutos por dia"
         title: TREINAMENTO
     navbar: 
@@ -289,15 +289,15 @@ pt:
         content: "Pesquisa Profa. Rosana Ortega"
         title: "O MEU BEM-ESTAR ESTÁ NA NESTLÉ"
       our_criteria: 
-        content_html: "Todos os nossos programas tem um número de vagas limitadas. As candidaturas passam por um rigoroso processo seletivo. <br><br> Os critérios principais para os programas são: <p>- Recomendação por alunos do Método DeR<span class='navbar-title-smallcaps'>OSE</span>;</p> <p>- Alto cargo e nível de responsabilidade;</p> <p>- Percurso profissional que demonstre uma boa capacidade de crescimento pessoal;</p><p>- Motivação para entrar no programa.</p>"
-        title: "CRITÉRIOS DE SELEÇAO"
+        content_html: "Todos nossos programas tem um número de vagas limitado. As candidaturas passam por um rigoroso processo seletivo.  <br><br> Os principais critérios para admissão são: <p>- Indicação por alguém que já tenha aderido ao serviço;</p> <p>- Elevado nível de responsabilidade;</p> <p>- Percurso profissional que demonstre uma boa capacidade de crescimento pessoal;</p> <p>- Alinhamento de valores pessoais com os que são cultivados no Método DeR<span class='navbar-title-smallcaps'>OSE</span>.</p>"
+        title: "CRITÉRIOS DE SELEÇÃO"
       peugeot: 
         erwin_data_html: "<h3>Erwin MUSEUR</h3> <h4>Paris</h4> <p>Design Manager</p> <p>PEUGEOT</p> "
         see_more: "LER MAIS"
         testimonial: "\"Desde o início gostei muito das aulas pois senti que produziam efeitos positivos muito rápido. Nos primeiros meses aprendi ferramentas muito eficientes para aumentar a minha vitalidade, melhorei a minha capacidade respiratória assim como a flexibilidade e o tônus muscular. Logo mais comecei a treinar as minhas capacidades mentais. O conhecimento teórico transmitido através das conversas agregou muito valor ao meu crescimento pessoal e profissional.\""
         title: DEPOIMENTO
       unique_method: 
-        content: "Os líderes reconhecem o nosso grande difrencial: um know-how incomparável para melhorar o ser humano. Os resultados que conseguimos no aumento da performance e da qualidade de vida são muito expressivos devido à qualidade superlativa das ferramentas que ensinamos. Bastam disciplina e constância na aplicação das nossas técnicas e dos nossos conceitos para colher frutos positivos na vida profissional e pessoal."
+        content: "Os líderes reconhecem o nosso grande difrencial: um know-how incomparável para melhorar o ser humano. Os resultados que conseguimos no aumento da performance e da qualidade de vida são muito expressivos devido à qualidade superlativa das ferramentas que ensinamos. Bastam disciplina e constância na aplicação das nossas técnicas e dos nossos conceitos para resultados expressivos na vida profissional e pessoal."
         title: "O QUE TORNA O NOSSO MÉTODO ÚNICO"
     slideshow: 
       first_phrase_html: "PARA O CRESCIMENTO CONSTANTE DA SUA EMPRESA <br> INIVISTA EM UMA METODOLOGIA QUE LEVARÁ VOCÊ ALÉM"
@@ -306,19 +306,19 @@ pt:
     testimonials: 
       enterprise: 
         erwin: 
-          content_html: "<p>Desde o inicio gostei muito das aulas pois senti que produziam efeitos positivos muito rápido. Nos primeiros meses aprendi ferramentas muito eficientes para aumentar a minha vitalidade, melhorei a minha capacidade respiratória assim com a flexibilidade e tônus muscular. Logo mais comecei a treinar as minhas capacidades mentais. O conhecimento teórico transmitido através das conversas agregou muito valor no meu crescimento pessoal e profissional.</p> <p>Com o  Método DeR<span class=\"navbar-title-smallcaps\">OSE</span> desenvolvi mais conhecimento de mi mesmo e do meu potencial. Eu me sinto melhor no dia-a-dia, mais sereno e mais preparado para enfrentar os desafios.</p> <p>Como profissional eu senti uma melhoria significativa na priorização das minhas tarefas, na administração de conflitos, na gestão do estresse e na minha capacidade de liderar. Isso resultou numa progressão muito expressiva na minha carreira pois meus colegas e superiores perceberam o quanto eu tinha progredido e me confiaram novas responsabilidades e cargos de liderança.</p>"
+          content_html: "<p>Desde o início gostei das aulas pois senti que produziam efeitos positivos muito rápido. Nos primeiros meses aprendi ferramentas eficazes para aumentar a minha vitalidade, melhorei a minha capacidade respiratória, a flexibilidade e o tônus muscular. Logo mais comecei a treinar as minhas capacidades mentais. O conhecimento teórico transmitido através das conversas também agregou muito valor no meu crescimento pessoal e profissional.</p> <p>Com o Método DeR<span class='navbar-title-smallcaps'>OSE</span> desenvolvi mais conhecimento de mim mesmo e do meu potencial. Eu me sinto melhor no dia a dia, mais sereno e mais preparado para enfrentar os desafios.</p> <p>Como profissional eu senti uma melhoria significativa na priorização das minhas tarefas, na administração de conflitos, na gestão do stress e na capacidade de liderar. Isso resultou numa progressão muito expressiva na minha carreira pois meus colegas e superiores perceberam o quanto eu tinha progredido e me confiaram novas responsabilidades e cargos de responsabilidade.</p>"
         first_quote: 
           content_html: "“Meu bem-estar melhorou sensivelmente desde que comecei a praticar o Método DeR<span class=\"navbar-title-smallcaps\">OSE</span>.”"
           info_html: "<h2>Renata Ribeiro</h2> Consumer Insight Head at Nestlé Brazil"
         judith: 
-          content_html: "<p>Pratico o Método DeR<span class=\"navbar-title-smallcaps\">OSE</span> por um curto período de tempo, e estou feliz em dizer que estou maravilhada pelas técnicas, pela cultura e pelo estilo de vida ensinados nesta metodologia. De imediato, percebi que estava me sentindo mais relaxada, por mais que as técnicas fossem muito intensas e até mesmo difíceis para uma iniciante como eu. Agora esses exercícios fazem parte da minha vida! O Método DeR<span class=\"navbar-title-smallcaps\">OSE</span> é mesmo impressionante, e ajuda a melhorar todos os aspectos da vida. Estou realmente satisfeita por ter encontrado esse estilo de vida, descoberto esse método e o incentivo a todos que buscam aprimoramento geral, tanto físico quanto pessoal.</p>"
+          content_html: "<p>Pratico o Método DeR<span class='navbar-title-smallcaps'>OSE</span> por um curto período de tempo, e estou feliz em dizer que estou maravilhada pelas técnicas, pela cultura e pelo estilo de vida ensinados nesta metodologia. De imediato, percebi que estava me sentindo mais estável, por mais que as técnicas fossem muito intensas e até mesmo difíceis para uma iniciante como eu. Agora esses exercícios fazem parte do meu cotidiano! O Método DeR<span class='navbar-title-smallcaps'>OSE</span> é mesmo impressionante, e ajuda a melhorar todos os aspectos da vida. Estou realmente satisfeita por ter encontrado essa cultura, descoberto esse Método e o incentivo a todos que buscam aprimoramento geral.</p>"
         miguel: 
-          content_html: "<p>Bem, antes de praticar, já tinha a noção da inter-relação dos corpos emocional, mental e físico. Conhecia os reflexos que o corpo emocional imprimia no corpo físico, tanto benéficos quanto maléficos. Mas pouco sabia dos reflexos que o corpo físico imprimia aos corpos mental e emocional. Então percebi que as posições de equilíbrio físico me ajudaram no equilíbrio emocional.</p> <p>Pude utilizar o controle da respiração para me acalmar ou para me energizar. A consciência corporal adquirida me ajudou a melhor identificar as causas dos desequilíbrios físicos e a evitá-los. Além destes, há muitos outros benefícios menores que no conjunto melhoraram minha qualidade de vida.</p>"
+          content_html: "<p>Bem, antes de praticar, já tinha a noção da interrelação dos corpos emocional, mental e físico. Conhecia os reflexos que o corpo emocional imprimia no corpo físico, tanto benéficos quanto maléficos. Mas pouco sabia dos reflexos que o corpo físico imprimia aos corpos mental e emocional. Então percebi que as posições de equilíbrio físico me ajudaram na estabilidade emocional.</p> <p>Pude utilizar o controle da respiração para me estabilizar ou para me energizar. A consciência corporal adquirida me ajudou a melhor identificar as causas dos desequilíbrios físicos e a evitá-los. Além destes, há muitos outros fatores que no conjunto melhoraram minha qualidade de vida.</p>"
           info_html: "<h2>Miguel <br> DAL'NEGRO CARVALHO</h2> <h3>Curitiba, <br> BRASIL</h3> <h4>Analista<br> Departamento de <br> Organização do Sistema <br> Financeiro<br> BANCO DO BRASIL</h4>"
         second_quote: 
           content_html: "“Acho que o Programa do Método DeR<span class=\"navbar-title-smallcaps\">OSE</span> na nossa empresa está muito bem conduzido.”"
           info_html: "<h2>Nanci Yamada</h2> Especialista Desenvolvimento e R&S at Nestle Brazil"
         title: "DEPOIMENTOS DE ALUNOS"
       institutions: 
-        content_html: "<p>O Comendador DeR<span class=\"navbar-title-smallcaps\">OSE</span> é apoiado por um expressivo número de instituições culturais, acadêmicas, humanitárias, militares e governamentais que reconhecem o valor da sua obra. Contudo, ele sempre declara: “Aceito essas homenagens porque elas não são para engrandecer o ego de uma pessoa, mas servem como manifestações do respeito que a sociedade presta ao trabalho de todos os profissionais desta área. Assim, sendo, quero dividir com você o mérito deste reconhecimento.”</p>"
+        content_html: "<p>O Comendador DeR<span class='navbar-title-smallcaps'>OSE</span> é apoiado por um expressivo número de instituições culturais, acadêmicas, humanitárias, militares e governamentais que reconhecem o valor da sua obra. Contudo, ele sempre declara: “Aceito essas homenagens porque elas não são para engrandecer o ego de uma pessoa, mas servem como manifestações do respeito que a sociedade presta ao trabalho de todos os profissionais desta área. Assim sendo, quero dividir com você o mérito deste reconhecimento.”</p>"
         header_html: "RECONHECIMENTOS <br> DO MÉTODO DeROSE"
