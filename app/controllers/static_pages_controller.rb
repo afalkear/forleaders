@@ -5,7 +5,8 @@ class StaticPagesController < ApplicationController
     if user_signed_in? && !current_user.nil? && (current_user.role? "translator") && ((current_user.debug_translations == "missing") || (current_user.debug_translations == "all"))
       expire_fragment('home')
     end
-    @articles = Article.includes(:categories).where(lang: params[:locale]).page(1).per(6)
+    lang = params[:locale] ? params[:locale] : I18n.locale
+    @articles = Article.includes(:categories).where(lang: lang).page(1).per(6)
     @articles_number = @articles.count
     @articles_columns = 3
     @articles_rows =  @articles.count > 3 ? 2 : 1

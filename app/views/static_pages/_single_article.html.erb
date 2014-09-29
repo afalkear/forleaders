@@ -13,7 +13,7 @@
       <div class="home-article-category">
         <div class="article-square articles-category-<%= article.categories.first.name.parameterize.underscore %>">
         </div>
-        <%= link_to t(article.categories.first.name.parameterize.underscore).mb_chars.upcase, category_path(article.categories.first.id)  %>
+        <%= link_to t("static_pages.categories.#{article.categories.first.name.parameterize.underscore}").mb_chars.upcase, category_path(article.categories.first.id)  %>
       </div>
     </div>
     <div class="home-article-title">
@@ -33,6 +33,6 @@
       <%= article.excerpt %>
     </div>
     <div class="home-article-read-more">
-      <%= link_to t('read_more'), article_path(article.id) %>
+      <%= link_to t('static_pages.articles.read_more'), article_path(article.id) %>
     </div>
 </div>
