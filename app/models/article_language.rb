@@ -8,4 +8,8 @@ class ArticleLanguage < ActiveRecord::Base
     end
     response
   end
+
+  def missing_languages
+    TranslationCenter::TranslationKey.langs_stats.keys.reject {|l| self.translated_languages.include?(l.to_s)}
+  end
 end

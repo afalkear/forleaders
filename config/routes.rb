@@ -16,6 +16,10 @@ Forleaders::Application.routes.draw do
   # resources users
   post 'edit_users', to: 'users#update'
 
+  # dashboard v1
+  get 'dashboard', :controller => "dashboard"
+  get 'dashboard/articles', to: 'dashboard#articles'
+
   localized do
     # resources for users
     

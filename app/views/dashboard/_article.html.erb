@@ -1,0 +1,32 @@
+<div class="row">
+  <div class="col-md-5">
+    <%= image_tag article.article_image, width: "100%" %>
+  </div>
+  <div class="col-md-7">
+    <div class="row">
+      <div class="col-md-12">
+        <h2><%= article.title %></h2>
+        <h3><%= article.subtitle %></h3>
+        <p><%= article.excerpt %></p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <h2>Languages</h2>
+        <% article.article_language.articles.each do |art| %>
+          <%= link_to article_path(art.id), class: "btn btn-default" do %>
+            <%= art.lang %>
+          <% end %>
+        <% end %>
+        <% if article.article_language.missing_languages.count != 0 %>
+          <h2>Translate to:</h2>
+          <% article.article_language.missing_languages.each do |lang| %>
+            <%= link_to new_article_path(article_language: article.article_language.id, lang: lang), class: "btn btn-default" do %>
+              <%= lang %>
+            <% end %>
+          <% end %>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
