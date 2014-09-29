@@ -23,6 +23,12 @@ ActiveRecord::Schema.define(version: 20140822191518943294) do
     t.datetime "updated_at"
   end
 
+  create_table "article_languages", force: true do |t|
+    t.integer  "article_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "articles", force: true do |t|
     t.string   "title"
     t.string   "author"
@@ -37,6 +43,8 @@ ActiveRecord::Schema.define(version: 20140822191518943294) do
     t.string   "excerpt"
     t.string   "video_url"
     t.integer  "user_id"
+    t.string   "lang"
+    t.integer  "article_language_id"
   end
 
   create_table "articles_categories", force: true do |t|
