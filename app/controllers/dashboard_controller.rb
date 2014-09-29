@@ -7,6 +7,10 @@ class DashboardController < ApplicationController
     @root_articles = ArticleLanguage.joins(:articles).uniq.order('created_at DESC').page(params[:page]).per(6)
   end
 
+  def index
+    @user = current_user
+  end
+
   private
 
   def can_use_dashboard

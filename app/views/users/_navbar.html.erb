@@ -14,6 +14,11 @@
 
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="user-data">
+        <ul class="nav navbar-nav navbar-left">
+          <li>
+            <%= link_to "My dashboard", dashboard_path %>
+          </li>
+        </ul>
         <ul class="nav navbar-nav navbar-right">
           <li>
             <%= link_to current_user do %>

@@ -42,11 +42,7 @@ class UsersController < ApplicationController
     params[:user].delete(:password_confirmation) if params[:user][:password].blank? and params[:user][:password_confirmation].blank?
     if @user.update_attributes(user_params)
       flash[:success] = "Successfully updated User."
-      if current_user.admin?
-        redirect_to user_index_path
-      else
-        redirect_to user_root_path
-      end
+      redirect_to user_root_path
     else
       render :action => 'edit'
     end

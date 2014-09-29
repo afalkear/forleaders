@@ -11,13 +11,13 @@ Forleaders::Application.routes.draw do
     get '/logout' => 'devise/sessions#destroy'
   end
   resources :user, :controller => "user"
-  get 'user_root' => 'users#show', as: :user_root
+  get 'user_root' => 'dashboard#index', as: :user_root
   resources :users
   # resources users
   post 'edit_users', to: 'users#update'
 
   # dashboard v1
-  get 'dashboard', :controller => "dashboard"
+  get 'dashboard', to: 'dashboard#index'
   get 'dashboard/articles', to: 'dashboard#articles'
 
   localized do
