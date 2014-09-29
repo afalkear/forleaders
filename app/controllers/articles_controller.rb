@@ -32,7 +32,6 @@ class ArticlesController < ApplicationController
   end
 
   def create
-    article_language = params[:article][:article_language] ? ArticleLanguage.find(params[:article][:article_language]) : ArticleLanguage.create
     @article = current_user.articles.new(article_params)
 
     if @article.save
@@ -40,6 +39,7 @@ class ArticlesController < ApplicationController
       expire_fragment("latest_articles")
       expire_fragment("#{@article.categories.first.name}-related_articles")
       
+      article_language = params[:article][:article_language] ? ArticleLanguage.find(params[:article][:article_language]) : ArticleLanguage.create
       article_language.articles << @article
       if !params[:article][:article_image] && @article.article_language.articles.count > 1
         @article.article_image_url = @article.article_language.articles.first.article_image
