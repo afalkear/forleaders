@@ -72,8 +72,8 @@ end
 
 group :production do
   # mysql 2 for elastic beanstalk
-  gem 'mysql2'
-  # gem 'pg'
+  # gem 'mysql2'
+  gem 'pg'
 end
 
 group :doc do
