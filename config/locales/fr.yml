@@ -5,6 +5,12 @@ fr:
       read_more: "LIRE LA SUITE"
       subtitle: "TEXTES COURTS ET DYNAMIQUES POUR ALLER PLUS LOIN"
       title: "NOS ARTICLES"
+    categories: 
+      focus: Concentration
+      high_performance: "Haute Productivité"
+      human_relationships: "Relations Interpersonnelles"
+      leadership: Leadership
+      quality_of_life: Lifestyle
     contact: 
       message: "Nos équipes sont là pour répondre à vos questions sur nos programmes, notre processus d'admission et vous accompagner pour réaliser votre candidature."
       title: CONTACTEZ-NOUS
@@ -140,7 +146,7 @@ fr:
       articles: 
         title_html: ARTICLES
       contact_type: 
-        contact: Entr
+        contact: Contactez-nous
         title_html: CONTACT
       derose_for_leaders: 
         all_over_the_world_html: "DeRose dans le monde entier"
@@ -272,7 +278,7 @@ fr:
         erwin_data_html: "Erwin MUSEUR Paris  Design Manager  PEUGEOT"
         see_more: "LIRE LA SUITE"
         testimonial: |-
-            J'ai beaucoup apprécié les cours et en ai ressenti             très vite les effets positifs. Les premiers cours aident essentiellement à préparer le physique (exercices respiratoires, d'assouplissement, de force...) puis par la suite le travail mental est renforcé. Les enseignements théoriques transmis à travers les conversations sont d'une grande valeur et ont pleinement contribués à ma croissance personnelle et professionnelle.
+            J'ai             beaucoup             apprécié             les             cours             et             en             ai             ressenti             très             vite             les             effets             positifs.             Les             premiers cours aident             essentiellement             à             préparer             le             physique             (exercices             respiratoires,             d'assouplissement,             de             force...)             puis par la suite             le             travail             mental             est renforcé.             Les enseignements théoriques transmis à travers les conversations sont d'une grande valeur et ont pleinement contribué à ma croissance personnelle et professionnelle.
         title: Témoignages
       unique_method: 
         content: "Les cadres dirigeants reconnaissent notre grand différenciel: un savoir faire incomparable pour développer le potentiel de chaque individu. Grace à la qualité de nos outils techniques et conceptuels nous sommes en mesure d'offrir des résultats très expressifs en terme de qualité de vie et de productivité."
