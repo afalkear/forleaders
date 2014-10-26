@@ -49,7 +49,7 @@ class ArticlesController < ApplicationController
       flash[:success] = "Successfully created article"
       redirect_to article_path(@article.id)
     else
-      flash[:warning] = "Error"
+      flash[:warning] = "Error: #{@article.errors}"
       render action: 'new'
     end
   end

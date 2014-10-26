@@ -79,7 +79,7 @@
                       <% if !@article.video_url.blank? %>
                         <%= raw youtube_embed @article.video_url, "100%", "300px" %>
                       <% else %>
-                        <%= image_tag @article.article_image if @article.article_image? %>
+                        <%= image_tag @article.image.url if @article.image? %>
                       <% end %>
                       <p><%= simple_format @article.content %></p>
                     </div>
@@ -95,7 +95,7 @@
                         <div class="col-md-4">
                           <div>
                             <%= link_to article_path(@related_articles[i].id) do %>
-                              <%= image_tag @related_articles[i].article_image.url %>
+                              <%= image_tag @related_articles[i].image.url %>
                           <% end %>
                           </div>
                           <div class="related-article-title">
@@ -120,7 +120,7 @@
                   <div class="row">
                     <div class="col-md-5">
                       <%= link_to article_path(@latest_articles[i].id) do %>
-                        <%= image_tag @latest_articles[i].article_image.url %>
+                        <%= image_tag @latest_articles[i].image.url %>
                       <% end %>
                     </div>
                     <div class="col-md-7 latest-article-title-container">

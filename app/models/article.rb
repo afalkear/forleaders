@@ -19,4 +19,25 @@ class Article < ActiveRecord::Base
   def self.touch
     update_all(updated_at: Time.now)
   end
+
+  def image?
+    return !self.image.nil?
+  end
+
+  def image
+    if self.article_image.nil? || self.article_image.url.nil?
+      original_article_image
+    else
+      self.article_image
+    end
+  end
+
+  def original_article_image
+    image = nil
+    original = self.article_language
+    if !original.nil?
+      image = original.articles.first.article_image
+    end
+    return image
+  end
 end
