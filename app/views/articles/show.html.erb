@@ -15,7 +15,6 @@
             <div class="container">
               <div class="row">
                 <div class="col-md-12 article-info-container">
-                <% cache ["v1", @article] do %>
                   <h1>
                     <%= @article.title %>
                     <% if !@article.subtitle.nil? %>
@@ -72,7 +71,6 @@
                       </div>
                     </div>
                   </div>
-                  <% end %>
                   <hr/>
                   <div class="container">
                     <div class="row article-content">
@@ -113,7 +111,6 @@
             </div>
           </div>
           <div class="col-md-4 article-sidebar">
-            <% cache "latest_articles" do %>  
               <div class="container latest-articles">
                 <h2>ULTIMOS ARTIGOS</h2>
                 <% 3.times do |i| %>
@@ -218,7 +215,6 @@
                 <%end%>
               </div>
             </div>
-          <% end %>
           </div>
         </div>
       </div>
