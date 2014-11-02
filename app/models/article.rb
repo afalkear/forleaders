@@ -44,6 +44,10 @@ class Article < ActiveRecord::Base
   end
 
   def set_status
+    if self.publish_at.nil?
+      self.publish_at = Date.today
+    end
+
     if self.publish_at.to_date == Date.current
       self.status = "published"
     else
