@@ -4,14 +4,14 @@ class ArticlesController < ApplicationController
   layout 'articles'
 
   def index
-    @featured_articles = Article.includes(:categories).take(4)
-    @latest_articles = Article.includes(:categories).last(3)
+    @featured_articles = Article.includes(:categories).where("publish_at <= ?", DateTime.now).take(4)
+    @latest_articles = Article.includes(:categories).where("publish_at <= ?", DateTime.now).last(3)
   end
 
   def show
     @article = Article.find(params[:id])
-    @related_articles =  Article.includes(:categories).where.not(id: @article.id).take(3) # Article.page(params[:page]).per(3)
-    @latest_articles = Article.includes(:categories).where.not(id: @article.id).last(3) #Article.page(params[:page]).per(3).order('created_at DESC')
+    @related_articles =  Article.includes(:categories).where("publish_at <= ?", DateTime.now).where.not(id: @article.id).take(3) # Article.page(params[:page]).per(3)
+    @latest_articles = Article.includes(:categories).where("publish_at <= ?", DateTime.now).where.not(id: @article.id).last(3) #Article.page(params[:page]).per(3).order('created_at DESC')
     youtube_url = @article.video_url
     youtube_id = nil
     if !youtube_url.nil?
@@ -33,11 +33,13 @@ class ArticlesController < ApplicationController
 
   def create
     @article = current_user.articles.new(article_params)
-
+    
+    
     if @article.save
       # expire cache so related and last articles will be reloaded with this new article
       expire_fragment("latest_articles")
       expire_fragment("#{@article.categories.first.name}-related_articles")
+
       
       article_language = params[:article][:article_language] ? ArticleLanguage.find(params[:article][:article_language]) : ArticleLanguage.create
       article_language.articles << @article
@@ -60,8 +62,12 @@ class ArticlesController < ApplicationController
 
   def update
     @article = Article.find(params[:id])
+
+    
     expire_fragment(["v1", @article])
+    
     @article.update_attributes(article_params)
+
     expire_fragment("#{@article.categories.first.name}-related_articles")
     flash[:success] = "Successfully updated article"
     redirect_to article_path(@article.id)
@@ -86,6 +92,8 @@ class ArticlesController < ApplicationController
         :excerpt,
         :video_url,
         :lang,
+        :status,
+        :publish_at,
         :category_ids => []
         )
     end
