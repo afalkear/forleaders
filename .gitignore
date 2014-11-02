@@ -16,6 +16,7 @@
 /tmp
 /config/application.yml
 .elasticbeanstalk/
+.ebextensions/
 aprobacion/
 cambios/
 production
