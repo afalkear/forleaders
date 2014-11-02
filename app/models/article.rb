@@ -3,13 +3,15 @@ class Article < ActiveRecord::Base
   has_and_belongs_to_many :tags
   belongs_to :article_language
   belongs_to :user
+  before_save :set_status
+
+  VALID_STATUSES = %w(draft published)
 
   attr_reader :category_tokens, :article_image_cache
 
   mount_uploader :article_image, ArticleImageUploader
 
   def self.home_articles
-    
   end
 
   def category_tokens=(tokens)
@@ -39,5 +41,13 @@ class Article < ActiveRecord::Base
       image = original.articles.first.article_image
     end
     return image
+  end
+
+  def set_status
+    if self.publish_at.to_date == Date.current
+      self.status = "published"
+    else
+      self.status = "draft"
+    end
   end
 end
