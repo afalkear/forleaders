@@ -45,6 +45,8 @@ ActiveRecord::Schema.define(version: 20140822191518943294) do
     t.integer  "user_id"
     t.string   "lang"
     t.integer  "article_language_id"
+    t.string   "status"
+    t.datetime "publish_at"
   end
 
   create_table "articles_categories", force: true do |t|
