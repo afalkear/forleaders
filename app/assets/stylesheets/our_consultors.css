@@ -65,7 +65,7 @@
 .our-consultors-bio-title {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
-  font-size: 22px;
+  font-size: 21px;
   line-height: 26px;
   color: black;
   padding-top: 20px;
@@ -101,11 +101,13 @@
 }
 
 .our-consultors-photo {
-  height: 430px;
+  height: 400px;
+  width: 190px;
+  overflow: hidden;
 }
 
 .our-consultors-photo > img {
-  height: 100%;
+  width: 100%;
 }
 
 .our-consultors-bio {
@@ -153,4 +155,8 @@
 .our-consultors-padding-topbottom-50 {
   padding-top: 50px;
   padding-bottom: 50px;
+}
+
+.consultors-row {
+  padding-bottom: 20px;
 }
