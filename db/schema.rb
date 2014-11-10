@@ -82,6 +82,15 @@ ActiveRecord::Schema.define(version: 20140822191518943294) do
   add_index "audits", ["request_uuid"], name: "index_audits_on_request_uuid", using: :btree
   add_index "audits", ["user_id", "user_type"], name: "user_index", using: :btree
 
+  create_table "authors", force: true do |t|
+    t.string   "first_name"
+    t.string   "last_name"
+    t.text     "bio"
+    t.date     "birthdate"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "categories", force: true do |t|
     t.string   "name"
     t.datetime "created_at"
