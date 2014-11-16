@@ -64,6 +64,7 @@ group :development do
   gem 'git-pivotal-tracker-integration'
   gem 'guard-livereload'
   gem 'newrelic_rpm'
+  gem 'pghero'
 end
 
 group :development, :test do
@@ -71,6 +72,10 @@ group :development, :test do
   gem 'figaro'
   # Use sqlite3 as the database for Active Record
   gem 'sqlite3'
+end
+
+group :staging do
+  gem 'pg'
 end
 
 group :production do
