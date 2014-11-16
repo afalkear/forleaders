@@ -48,6 +48,9 @@ Forleaders::Application.routes.draw do
   match 'apply_message' => 'static_pages#apply_message', :via => :post
   match 'contact_message' => 'static_pages#contact_message', :via => :post
   mount TranslationCenter::Engine => "/translation_center"
+  authenticate :user, lambda {|user| user.admin? } do
+    mount PgHero::Engine, at: "pghero"
+  end
 
   resources :categories
 
