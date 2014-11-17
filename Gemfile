@@ -78,7 +78,7 @@ group :development, :test do
 end
 
 group :staging, :production do
-  gem 'newrelic_rpm'
+  gem 'newrelic_rpm', '~> 3.7 '
 end
 
 group :production do
