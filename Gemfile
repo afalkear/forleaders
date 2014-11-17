@@ -81,6 +81,10 @@ group :staging, :production do
   gem 'newrelic_rpm', '~> 3.7 '
 end
 
+group :staging do
+  gem 'puma'
+end
+
 group :production do
   # mysql 2 for elastic beanstalk
   gem 'mysql2'
