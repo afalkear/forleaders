@@ -64,7 +64,11 @@ group :development do
   gem 'git-pivotal-tracker-integration'
   gem 'guard-livereload'
   gem 'newrelic_rpm'
+end
+
+group :development, :staging do
   gem 'pghero'
+  gem 'pg'
 end
 
 group :development, :test do
@@ -74,14 +78,10 @@ group :development, :test do
   gem 'sqlite3'
 end
 
-group :staging do
-  gem 'pg'
-end
 
 group :production do
   # mysql 2 for elastic beanstalk
-  # gem 'mysql2'
-  gem 'pg'
+  gem 'mysql2'
 end
 
 group :doc do
