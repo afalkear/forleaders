@@ -63,7 +63,6 @@ gem 'audited-activerecord', '~> 4.0.0.rc1'
 group :development do
   gem 'git-pivotal-tracker-integration'
   gem 'guard-livereload'
-  gem 'newrelic_rpm'
 end
 
 group :development, :staging do
@@ -78,6 +77,9 @@ group :development, :test do
   gem 'sqlite3'
 end
 
+group :staging, :production do
+  gem 'newrelic_rpm'
+end
 
 group :production do
   # mysql 2 for elastic beanstalk
