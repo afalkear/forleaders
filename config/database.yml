@@ -13,6 +13,16 @@ development:
   username: postgres
   password: 1234
 
+staging:
+  adapter: postgresql
+  encoding: UTF8
+  database: forleaders_development
+  host: localhost
+  pool: 5
+  timeout: 5000
+  username: postgres
+  password: 1234
+
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
 # Do not set this db to the same as development or production.

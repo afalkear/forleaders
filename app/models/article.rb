@@ -9,7 +9,7 @@ class Article < ActiveRecord::Base
 
   attr_reader :category_tokens, :article_image_cache
 
-  mount_uploader :article_image, ArticleImageUploader
+  mount_uploader :article_image, ImageUploader
 
   def self.home_articles
   end

@@ -60,6 +60,23 @@ production:
 
   <<: *common_atts
 
+staging:
+  enabled: true # default false
+
+  # Keys inspector allowed values:
+  # "missing" to inspect only untranslated keys
+  # "all" to enable inspector for translated and untranslated keys
+  # "off" to turn off keys inspector
+  inspector: 'missing' # default missing
+
+  # I18n.translate source
+  i18n_source: 'yaml' # can be db or yaml; default is yaml
+
+  # when a new key is added to db, the value of the key is added as the default translation in English
+  save_default_translation: false 
+
+  <<: *common_atts
+
 test:
   enabled: false # default false
 
