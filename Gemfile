@@ -68,6 +68,7 @@ end
 group :development, :staging do
   gem 'pghero'
   gem 'pg'
+  gem 'puma'
 end
 
 group :development, :test do
@@ -82,7 +83,7 @@ group :staging, :production do
 end
 
 group :staging do
-  gem 'puma'
+  
 end
 
 group :production do
