@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.0.3'
+gem 'rails', '4.0.5'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
@@ -63,7 +63,11 @@ gem 'audited-activerecord', '~> 4.0.0.rc1'
 group :development do
   gem 'git-pivotal-tracker-integration'
   gem 'guard-livereload'
-  gem 'newrelic_rpm'
+end
+
+group :development, :staging do
+  gem 'pg'
+  gem 'puma'
 end
 
 group :development, :test do
@@ -73,10 +77,17 @@ group :development, :test do
   gem 'sqlite3'
 end
 
+group :staging, :production do
+  gem 'newrelic_rpm', '~> 3.7 '
+end
+
+group :staging do
+  
+end
+
 group :production do
   # mysql 2 for elastic beanstalk
-  # gem 'mysql2'
-  gem 'pg'
+  gem 'mysql2'
 end
 
 group :doc do

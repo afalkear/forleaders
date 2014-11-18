@@ -9,9 +9,13 @@ class Article < ActiveRecord::Base
 
   attr_reader :category_tokens, :article_image_cache
 
-  mount_uploader :article_image, ArticleImageUploader
+  mount_uploader :article_image, ImageUploader
 
   def self.home_articles
+  end
+
+  def category
+    self.categories.count == 0 ? "" : self.categories.first.name
   end
 
   def category_tokens=(tokens)

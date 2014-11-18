@@ -2,7 +2,7 @@
     <div class="home-article-thumb">
       <% if article.image %>
         <%= link_to article_path(article.id) do %>
-          <%= image_tag article.image.url %>
+          <%= image_tag "ajax-loader.gif", class: "lazyload", data: {src: article.image.url} %>
           <% if !article.hover_frase.blank? %>
             <div class="home-article-hover-frase">
               <%= article.hover_frase %>

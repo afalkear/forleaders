@@ -53,6 +53,26 @@ class ApplicationController < ActionController::Base
   end
   
   def set_locale
-    I18n.locale = params[:locale] || I18n.default_locale
+    if params[:locale]
+      I18n.locale = params[:locale]
+    else
+      I18n.locale = extract_locale_from_accept_language_header
+    end
+  end
+
+  def extract_locale_from_accept_language_header
+    return I18n.default_locale if request.env['HTTP_ACCEPT_LANGUAGE'].blank?
+    case request.env['HTTP_ACCEPT_LANGUAGE'].scan(/^[a-z]{2}/).first
+      when 'en'
+        'en'
+      when 'fr'
+        'fr'
+      when 'es'
+        'es'
+      when 'pt'
+        'pt'
+      else
+        I18n.default_locale
+    end
   end
 end

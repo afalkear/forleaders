@@ -6,7 +6,7 @@ class StaticPagesController < ApplicationController
       expire_fragment('home')
     end
     lang = params[:locale] ? params[:locale] : I18n.locale
-    @articles = Article.includes(:categories).where(lang: lang).where("publish_at <= ?", DateTime.now).page(1).per(6)
+    @articles = Article.includes(:categories).where("lang = ? AND publish_at <= ?", lang, DateTime.now).page(1).per(6)
     @articles_number = @articles.count
     @articles_columns = 3
     @articles_rows =  @articles.count > 3 ? 2 : 1

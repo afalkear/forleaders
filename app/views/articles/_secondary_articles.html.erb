@@ -1,50 +1,52 @@
-<div class="container">
-  <div class="row article-info-container secondary-article-container">
-    <div class="col-md-5">
-      <div class="row article-medium-image">
-        <div class="col-md-12">
-          <%= link_to article_path(article.id) do %>
-            <%= image_tag article.image.url %>
-          <% end %> 
+<% if !article.nil? %>
+  <div class="container">
+    <div class="row article-info-container secondary-article-container">
+      <div class="col-md-5">
+        <div class="row article-medium-image">
+          <div class="col-md-12">
+            <%= link_to article_path(article.id) do %>
+              <%= image_tag article.image.url %>
+            <% end %> 
+          </div>
         </div>
       </div>
-    </div>
-    <div class="col-md-7">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12 secondary-article-info-container">
-            <h1>
-              <%= link_to article_path(article.id) do %>
-                <%= article.title %>
-              <% end %> 
-            </h1>
-            <div class="container">
-              <div class="row">
-                <div class="col-md-12 featured-article-metadata">
-                  <div class="container">
-                    <div class="row">
-                      <div class="article-author">
-                        <%= article.author %>
-                      </div>
-                      <div class="article-square articles-category-<%= article.categories.first.name.parameterize.underscore %>">
-                        
-                      </div>
-                      <div class="article-category">
-                        <%= t("#{article.categories.first.name.parameterize.underscore}") %>
+      <div class="col-md-7">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 secondary-article-info-container">
+              <h1>
+                <%= link_to article_path(article.id) do %>
+                  <%= article.title %>
+                <% end %> 
+              </h1>
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-12 featured-article-metadata">
+                    <div class="container">
+                      <div class="row">
+                        <div class="article-author">
+                          <%= article.author %>
+                        </div>
+                        <div class="article-square articles-category-<%= article.categories.first.name.parameterize.underscore %>">
+                          
+                        </div>
+                        <div class="article-category">
+                          <%= t("static_pages.categories."+"#{article.categories.first.name.parameterize.underscore}") %>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="container">
-              <div class="row article-big-preview">
-                <p><%= article.excerpt  %></p>
+              <div class="container">
+                <div class="row article-big-preview">
+                  <p><%= article.excerpt  %></p>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </div>  
+        </div>  
+      </div>
     </div>
   </div>
-</div>
+<% end %>

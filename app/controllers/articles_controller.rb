@@ -4,13 +4,17 @@ class ArticlesController < ApplicationController
   layout 'articles'
 
   def index
-    @featured_articles = Article.includes(:categories).where("publish_at <= ?", DateTime.now).take(4)
-    @latest_articles = Article.includes(:categories).where("publish_at <= ?", DateTime.now).last(3)
+    category = params[:category].present? ? params[:category] : ""
+    
+    puts ""
+    puts "category: #{category}"
+    @featured_articles = Article.includes(:categories).where("categories.name LIKE ? AND lang = ? AND publish_at <= ?", "%#{category}%", params[:locale], DateTime.now).references(:categories).take(4)
+    @latest_articles = Article.includes(:categories).where("publish_at <= ? AND lang = ?", DateTime.now, params[:locale]).last(3)
   end
 
   def show
     @article = Article.find(params[:id])
-    @related_articles =  Article.includes(:categories).where("publish_at <= ?", DateTime.now).where.not(id: @article.id).take(3) # Article.page(params[:page]).per(3)
+    @related_articles =  Article.includes(:categories).where("categories.name LIKE ? AND lang = ? AND publish_at <= ?", "%#{@article.category}%", params[:locale], DateTime.now).references(:categories).where.not(id: @article.id).take(3) # Article.page(params[:page]).per(3)
     @latest_articles = Article.includes(:categories).where("publish_at <= ?", DateTime.now).where.not(id: @article.id).last(3) #Article.page(params[:page]).per(3).order('created_at DESC')
     youtube_url = @article.video_url
     youtube_id = nil

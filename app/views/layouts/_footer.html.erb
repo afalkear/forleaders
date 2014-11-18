@@ -41,12 +41,12 @@
         <div class="col-md-4 footer-inner-column">
           <div class="row after-title gold-color inner-footer-title"><%= t('static_pages.footer.articles.title') %></div>
           <div class="row inner-footer-content">
-            <a href="#" class="inner-footer-link"><%= t('static_pages.footer.articles.leadership') %></a>
-            <a href="#" class="inner-footer-link"><%= t('static_pages.footer.articles.high_performance') %></a>
-            <a href="#" class="inner-footer-link"><%= t('static_pages.footer.articles.focus') %></a>
-            <a href="#" class="inner-footer-link"><%= t('static_pages.footer.articles.intuition') %></a>
-            <a href="#" class="inner-footer-link"><%= t('static_pages.footer.articles.human_relationships') %></a>
-            <a href="#" class="inner-footer-link"><%= t('static_pages.footer.articles.quality_of_life') %></a>
+            <%= link_to t('static_pages.footer.articles.leadership'), articles_url(category: "leadership"), class: "inner-footer-link" %>
+            <%= link_to t('static_pages.footer.articles.high_performance'), articles_url(category: "high performance"), class: "inner-footer-link" %>
+            <%= link_to t('static_pages.footer.articles.focus'), articles_url(category: "focus"), class: "inner-footer-link" %>
+            <%= link_to t('static_pages.footer.articles.intuition'), articles_url(category: "intuition"), class: "inner-footer-link" %>
+            <%= link_to t('static_pages.footer.articles.human_relationships'), articles_url(category: "human relationships"), class: "inner-footer-link" %>
+            <%= link_to t('static_pages.footer.articles.quality_of_life'), articles_url(category: "quality of life"), class: "inner-footer-link" %>
           </div>
         </div>
         <div class="col-md-4 footer-inner-column">
@@ -62,10 +62,10 @@
                 <%= link_to t('static_pages.footer.contact_us'), contact_path %>
               </div>
               <div class="follow-title">
-                <%= link_to t('static_pages.footer.testimonials.apply_now'), apply_path %>
+                <%= link_to t('static_pages.footer.apply_now'), apply_path %>
               </div>
               <div class="follow-title">
-                <%= t('static_pages.footer.testimonials.follow_us') %>
+                <%= t('static_pages.footer.follow_us') %>
               </div>
               <div class="follow-logos">
                 <a href="" class="footer-logos facebook-logo">

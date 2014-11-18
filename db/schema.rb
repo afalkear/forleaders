@@ -24,7 +24,6 @@ ActiveRecord::Schema.define(version: 20140822191518943294) do
   end
 
   create_table "article_languages", force: true do |t|
-    t.integer  "article_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
