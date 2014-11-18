@@ -1372,12 +1372,15 @@ ul.dropdown-menu {
 
 .home-article-thumb {
   background-color: black;
+  height: 175px;
+  width: 345px;
+  overflow: hidden;
 }
 
 .home-article-thumb > a > img {
   z-index: 1;
   width: 345px;
-  height: 175px;
+  min-height: 175px;
 }
 
 .home-article-thumb:hover > a > img {
@@ -1416,12 +1419,12 @@ ul.dropdown-menu {
 .home-article-thumb > .home-article-category {
   position: absolute;
   top: 0px;
-  right: 15px;
   left: 15px;
   background: rgba(0,0,0,0.5);
   color: white;
   padding-right: 5px;
   padding-left: 5px;
+  width: 345px;
 }
 
 .home-article-thumb > .home-article-category > a {
