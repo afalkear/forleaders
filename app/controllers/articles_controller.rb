@@ -4,13 +4,15 @@ class ArticlesController < ApplicationController
   layout 'articles'
 
   def index
-    @featured_articles = Article.includes(:categories).where("publish_at <= ?", DateTime.now).take(4)
+    category = params[:category].present? ? params[:category] : ""
+      
+    @featured_articles = Article.includes(:categories).where("categories.name LIKE ? AND publish_at <= ?", category, DateTime.now).references(:categories).take(4)
     @latest_articles = Article.includes(:categories).where("publish_at <= ?", DateTime.now).last(3)
   end
 
   def show
     @article = Article.find(params[:id])
-    @related_articles =  Article.includes(:categories).where("publish_at <= ?", DateTime.now).where.not(id: @article.id).take(3) # Article.page(params[:page]).per(3)
+    @related_articles =  Article.includes(:categories).where("categories.name LIKE ? AND publish_at <= ?", @article.category, DateTime.now).references(:categories).where.not(id: @article.id).take(3) # Article.page(params[:page]).per(3)
     @latest_articles = Article.includes(:categories).where("publish_at <= ?", DateTime.now).where.not(id: @article.id).last(3) #Article.page(params[:page]).per(3).order('created_at DESC')
     youtube_url = @article.video_url
     youtube_id = nil

@@ -14,6 +14,10 @@ class Article < ActiveRecord::Base
   def self.home_articles
   end
 
+  def category
+    self.categories.count == 0 ? "" : self.categories.first.name
+  end
+
   def category_tokens=(tokens)
     self.categories << Category.get_from_tokens(tokens)
   end

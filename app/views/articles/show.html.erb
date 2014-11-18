@@ -91,16 +91,18 @@
                       <div class="row">
                       <% 3.times do |i| %>
                         <div class="col-md-4">
-                          <div>
-                            <%= link_to article_path(@related_articles[i].id) do %>
-                              <%= image_tag @related_articles[i].image.url %>
-                          <% end %>
-                          </div>
-                          <div class="related-article-title">
-                            <%= link_to article_path(@related_articles[i].id) do %>
-                              <%= @related_articles[i].title %>
+                          <% if @related_articles.count > i %>
+                            <div>
+                              <%= link_to article_path(@related_articles[i].id) do %>
+                                <%= image_tag @related_articles[i].image.url %>
                             <% end %>
-                          </div>
+                            </div>
+                            <div class="related-article-title">
+                              <%= link_to article_path(@related_articles[i].id) do %>
+                                <%= @related_articles[i].title %>
+                              <% end %>
+                            </div>
+                          <% end %>
                         </div>
                       <% end %>
                       </div>
