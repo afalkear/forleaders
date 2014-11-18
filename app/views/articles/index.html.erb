@@ -21,20 +21,22 @@
             <div class="container latest-articles">
               <h2>ULTIMOS ARTIGOS</h2>
               <% 3.times do |i| %>
-                <div class="row">
-                  <div class="col-md-5">
-                    <%= link_to article_path(@latest_articles[i].id) do %>
-                      <%= image_tag @latest_articles[i].image.url %>
-                    <% end %>
-                  </div>
-                  <div class="col-md-7 latest-article-title-container">
-                    <div class="latest-article-title">
+                <% if @latest_articles.count > i %> 
+                  <div class="row">
+                    <div class="col-md-5">
                       <%= link_to article_path(@latest_articles[i].id) do %>
-                        <%= @latest_articles[i].title %>
+                        <%= image_tag @latest_articles[i].image.url %>
                       <% end %>
                     </div>
+                    <div class="col-md-7 latest-article-title-container">
+                      <div class="latest-article-title">
+                        <%= link_to article_path(@latest_articles[i].id) do %>
+                          <%= @latest_articles[i].title %>
+                        <% end %>
+                      </div>
+                    </div>
                   </div>
-                </div>
+                <% end %>
               <% end %>
             </div>
             <hr/>
