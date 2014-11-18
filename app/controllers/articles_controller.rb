@@ -4,7 +4,9 @@ class ArticlesController < ApplicationController
   layout 'articles'
 
   def index
-    @featured_articles = Article.includes(:categories).where("publish_at <= ?", DateTime.now).take(4)
+    category = params[:category].present? ? params[:category] : ""
+      
+    @featured_articles = Article.includes(:categories).where("categories.name LIKE ? AND publish_at <= ?", category, DateTime.now).references(:categories).take(4)
     @latest_articles = Article.includes(:categories).where("publish_at <= ?", DateTime.now).last(3)
   end
 
