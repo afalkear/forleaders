@@ -13,12 +13,18 @@ Forleaders::Application.routes.draw do
   resources :user, :controller => "user"
   get 'user_root' => 'dashboard#index', as: :user_root
   resources :users
+  
   # resources users
   post 'edit_users', to: 'users#update'
+
+  # resources authors
+  resources :authors, except: [:index, :show]
 
   # dashboard v1
   get 'dashboard', to: 'dashboard#index'
   get 'dashboard/articles', to: 'dashboard#articles'
+  get 'dashboard/authors', to: 'dashboard#authors'
+
 
   localized do
     # resources for users
@@ -42,6 +48,8 @@ Forleaders::Application.routes.draw do
       get 'net', to: 'static_pages#net'
       get 'enterprise_testimonials', to: 'static_pages#enterprise_testimonials'
       get 'institution_testimonials', to: 'static_pages#institution_testimonials'
+      get 'authors/:id' => 'authors#show'
+      get 'authors' => 'authors#index'
       resources :articles
   end
 
