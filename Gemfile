@@ -66,7 +66,6 @@ group :development do
 end
 
 group :development, :staging do
-  #gem 'pghero'
   #gem 'pg'
   #gem 'puma'
 end
