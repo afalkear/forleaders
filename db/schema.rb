@@ -15,6 +15,7 @@ ActiveRecord::Schema.define(version: 20140822191518943294) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+  enable_extension "pg_stat_statements"
 
   create_table "admins", force: true do |t|
     t.string   "email"
@@ -88,6 +89,7 @@ ActiveRecord::Schema.define(version: 20140822191518943294) do
     t.date     "birthdate"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "avatar"
   end
 
   create_table "categories", force: true do |t|

@@ -1,0 +1,60 @@
+<% title "Authors" %>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <h1>Authors</h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      <a href="#" id="new-author-button" class="btn btn-default">New author</a>
+      <%= form_for :author, url: {action: 'create'}, html: {multipart: true, class: "form-horizontal", role: 'form', id: "new-author-form"} do |f| %>
+        <div class="form-group">
+          <%= label(:author, :first_name, class: 'col-sm-2 control-label') %>
+          <div class="col-sm-10">
+            <%= f.text_field :first_name, class: 'form-control', id: 'author_first_name', placeholder: "First name" %>
+          </div>
+        </div>
+        <div class="form-group">
+          <%= label(:author, :last_name, class: 'col-sm-2 control-label') %>
+          <div class="col-sm-10">
+            <%= f.text_field :last_name, class: 'form-control', id: 'author_last_name', placeholder: "Last name" %>
+          </div>
+        </div>
+        <div class="form-group">
+          <%= label(:author, :bio, class: 'col-sm-2 control-label') %>
+          <div class="col-sm-10">
+            <%= f.text_area :bio, class: 'form-control', id: 'author_bio', placeholder: "Biography" %>
+          </div>
+        </div>
+        <div class="form-group">
+          <%= label(:author, :avatar, class: 'col-sm-2 control-label') %>
+          <div class="col-sm-10">
+            <%= f.file_field :avatar, class: 'form-control', id: 'author_avatar', placeholder: "Set the image url here" %>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="col-sm-offset-2 col-sm-10">
+            <%= f.submit "Create", class: 'btn btn-default' %>
+            <a href="#" class="btn btn-danger" id="cancel-new-author-button">Cancel</a>
+          </div>
+        </div>
+      <% end %>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <%= paginate @authors %>  
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-7">
+      <%= render @authors %>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <%= paginate @authors %>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,12 @@
+#new-author-form {
+  display: none;
+}
+
+.author-container {
+  max-height: 300px;
+  overflow: hidden;
+}
+
+.author-image-container {
+  text-align: right;
+}

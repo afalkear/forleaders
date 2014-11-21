@@ -40,6 +40,7 @@ class Ability
 
     if user.role? "author"
         can :manage, Article
+        can :manage, Author
     end
 
   end
