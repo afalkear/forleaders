@@ -1,56 +1,54 @@
-<div class="container padding-topbottom-50">
-  <div class="row">
-    <div class="col-md-1"></div>
-    <div class="col-md-10">
-        <div class="row articles-title-container">
-          <div class="col-md-6">
-            <div class="home-section-title">
-              <%= t('static_pages.articles.title') %>
-            </div>
-            <div class="home-section-subtitle">
-              <%= t('static_pages.articles.subtitle') %>
-            </div>
+<div class="row padding-topbottom-50">
+  <div class="col-md-1"></div>
+  <div class="col-md-10">
+      <div class="row articles-title-container">
+        <div class="col-md-6">
+          <div class="home-section-title">
+            <%= t('static_pages.articles.title') %>
           </div>
-          <!-- div class="col-md-3 col-md-offset-3 articles-selector-container">
-            <ul class="nav" id="article-selector-title">
-              <li class="dropdown articles-selector-container-item">
-                <a class="dropdown-toggle articles-selector" data-toggle="dropdown" href="#">
-                  CATEGORIAS
-                </a>
-                <ul class="dropdown-menu" id="articles-selector-items">
-                  <li class="articles-category-leadership">
-                    <a href="#">LIDERANÇA</a>
-                  </li>
-                  <li class="articles-category-high_performance">
-                    <a href="#">ALTA PRODUTIVIDADE</a>
-                  </li>
-                  <li class="articles-category-focus">
-                    <a href="#">FOCO</a>
-                  </li>
-                  <li class="articles-category-intuition">
-                    <a href="#">INTUIÇão aplicada</a>
-                  </li>
-                  <li class="articles-category-human_relationships">
-                    <a href="#">Relação interpessoal</a>
-                  </li>
-                  <li class="articles-category-quality_of_life">
-                    <a href="#">QUALIDADE DE VIDA</a>
-                  </li>
-                </ul>
-              </li>
-            </ul>
-          </div -->
+          <div class="home-section-subtitle">
+            <%= t('static_pages.articles.subtitle') %>
+          </div>
         </div>
-
-        <% @articles_rows.times do |article_row_number| %>
-          <%= render 'article_container', articles: @articles, columns: @articles_columns, first_article_number: article_row_number*@articles_columns  %>
-        <% end %>
-
-        <!-- div class="row more-articles">
-          <a href="#">
-            <span class="glyphicon glyphicon-plus-sign"></span>
-          </a>
+        <!-- div class="col-md-3 col-md-offset-3 articles-selector-container">
+          <ul class="nav" id="article-selector-title">
+            <li class="dropdown articles-selector-container-item">
+              <a class="dropdown-toggle articles-selector" data-toggle="dropdown" href="#">
+                CATEGORIAS
+              </a>
+              <ul class="dropdown-menu" id="articles-selector-items">
+                <li class="articles-category-leadership">
+                  <a href="#">LIDERANÇA</a>
+                </li>
+                <li class="articles-category-high_performance">
+                  <a href="#">ALTA PRODUTIVIDADE</a>
+                </li>
+                <li class="articles-category-focus">
+                  <a href="#">FOCO</a>
+                </li>
+                <li class="articles-category-intuition">
+                  <a href="#">INTUIÇão aplicada</a>
+                </li>
+                <li class="articles-category-human_relationships">
+                  <a href="#">Relação interpessoal</a>
+                </li>
+                <li class="articles-category-quality_of_life">
+                  <a href="#">QUALIDADE DE VIDA</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
         </div -->
-    </div>
+      </div>
+
+      <% @articles_rows.times do |article_row_number| %>
+        <%= render 'article_container', articles: @articles, columns: @articles_columns, first_article_number: article_row_number*@articles_columns  %>
+      <% end %>
+
+      <!-- div class="row more-articles">
+        <a href="#">
+          <span class="glyphicon glyphicon-plus-sign"></span>
+        </a>
+      </div -->
   </div>
 </div>
