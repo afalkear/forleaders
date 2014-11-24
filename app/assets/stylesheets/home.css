@@ -576,9 +576,9 @@ ul.dropdown-menu {
 }
 
 .carousel-inner > .item > img {
-  width: 110%;
+  /*width: 110%;
   max-width: 110%;
-  margin-left: -80px;
+  margin-left: -80px;*/
 }
 
 .carousel-inner .item {
@@ -608,9 +608,9 @@ ul.dropdown-menu {
   font-size: 48px;
 }
 
-.you-know-phrase {
+/*.you-know-phrase {
   line-height: 50px;
-}
+}*/
 
 .carousel-control .glyphicon {
   font-size: 60px;
