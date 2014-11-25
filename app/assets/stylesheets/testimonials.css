@@ -154,7 +154,9 @@
 
 .institution-testimonials-header {
   background-image: url('institution_testimonials_header.png');
-  background-position: 0% 45%;
+background-position: 100% 0%;
+  background-repeat: no-repeat;
+  background-color: #273451;
 }
 
 .institution-testimonials-images-container {

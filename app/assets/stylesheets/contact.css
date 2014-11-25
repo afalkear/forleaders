@@ -1,3 +1,8 @@
+.contact-page-title-container {
+  background-size: 100% auto;
+  min-height: 263px;
+}
+
 .contact-header {
   background-image: url('contact_header.png');
   background-position: 0% 50%;

@@ -7,7 +7,9 @@
   font-size: 15px;
   color: black;*/
   background-image: url('consultants_header2.jpg');
-  background-position: 0% 45%;
+  background-position: 100% 0%;
+  background-repeat: no-repeat;
+  background-color: #273451;
 }
 
 .our-consultors-header-title {

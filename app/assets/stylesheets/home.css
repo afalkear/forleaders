@@ -368,8 +368,13 @@ ul.dropdown-menu {
 }
 
 .page-title-container {
-  background-size: 100%;
+  background-size: auto 100%;
   min-height: 263px;
+}
+
+.page-title-background {
+  min-height: 263px;
+  background: none repeat scroll 0% 0% rgba(39, 52, 81, 0.8);
 }
 
 .page-header-title {
