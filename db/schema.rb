@@ -31,7 +31,6 @@ ActiveRecord::Schema.define(version: 20140822191518943294) do
 
   create_table "articles", force: true do |t|
     t.string   "title"
-    t.string   "author"
     t.text     "content"
     t.integer  "tag_id"
     t.datetime "created_at"
@@ -47,6 +46,7 @@ ActiveRecord::Schema.define(version: 20140822191518943294) do
     t.integer  "article_language_id"
     t.string   "status"
     t.datetime "publish_at"
+    t.integer  "author_id"
   end
 
   create_table "articles_categories", force: true do |t|

@@ -1,5 +1,5 @@
 class AuthorsController < ApplicationController
-  before_action :authenticate_user!, except: [:index, :show]
+  before_action :authenticate_user!
 
   def index
     @authors = Author.page(params[:page]).per(6)

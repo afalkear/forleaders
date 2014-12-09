@@ -2,7 +2,6 @@
 <div class="single-article-container container">
   <div class="row">
     <div class="col-md-10 col-md-offset-1">
-      <div class="container">
         <div class="row articles-categories-container">
           <div id="article-affix">
             <div class="col-md-12 articles-categories">
@@ -25,33 +24,14 @@
                   <div class="container">
                     <div class="row">
                       <div class="col-md-2 article-author-photo">
-                        <% if @article.author == "DeRose" %>
-                          <div class="row articles-authors-mini-container">
-                            <div class="articles-authors-mini-photo derose">
-                            </div>
-                          </div>
-                        <% elsif @article.author == "Edgardo Caramella" %>
-                          <div class="articles-authors-mini-photo edgardo">
-                          </div>
-                        <% elsif @article.author == "Carlo Mea" %>
-                          <div class="articles-authors-mini-photo carlo">
-                          </div>
-                        <% elsif @article.author == "Joris Marengo" %>
-                          <div class="articles-authors-mini-photo joris">
-                          </div>
-                        <% elsif @article.author == "Yael Barcesat" %>
-                          <div class="articles-authors-mini-photo yael">
-                          </div>
-                        <% elsif @article.author == "Gustavo Marson" %>
-                          <div class="articles-authors-mini-photo gustavo">
-                          </div>
-                        <%end%>
+                        <div class="articles-authors-mini-photo <%= @article.author.first_name.try :downcase %><%= @article.author.last_name.downcase %>">
+                        </div>
                       </div>
                       <div class="col-md-10 article-metadata">
                         <div class="container">
                           <div class="row">
                             <div class="article-author">
-                              <%= @article.author %>
+                              <%= @article.author.name %>
                             </div>
                             <div class="article-square articles-category-<%= @article.categories.first.name.parameterize.underscore %>">
 
@@ -112,8 +92,8 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4 article-sidebar">
-              <div class="container latest-articles">
+          <div class="col-md-4">
+              <div class="container article-sidebar latest-articles">
                 <h2>ULTIMOS ARTIGOS</h2>
                 <% 3.times do |i| %>
                   <div class="row">
@@ -149,79 +129,11 @@
             <div class="container article-sidebar-author-container">
               <h2>O AUTOR</h2>
               <div>
-                <% if @article.author == "DeRose" %>
-                  <div class="row articles-authors-mini-container">
-                    <div class="col-md-3">
-                      <div class="articles-authors-mini-photo derose">
-                      </div>
-                    </div>
-                    <div class="col-md-9 articles-authors-mini-info">
-                      <h3>DeRose</h3>
-                      <p>Estudioso na área de Qualidade de Vida e Alta Performance há mais de 50 anos, já escreveu mais de 30 livros e é o idealizador do M<span class='navbar-title-smallcaps'>ÉTODO</span> DeR<span class='navbar-title-smallcaps'>OSE</span></p>
-                    </div>
-                  </div>
-                <% elsif @article.author == "Edgardo Caramella" %>
-                  <div class="row articles-authors-mini-container">
-                    <div class="col-md-3">
-                      <div class="articles-authors-mini-photo edgardo">
-                      </div>
-                    </div>
-                    <div class="col-md-9 articles-authors-mini-info">
-                      <h3>Edgardo Caramella</h3>
-                      <p>Presidente da Federação do M<span class='navbar-title-smallcaps'>ÉTODO</span> DeR<span class='navbar-title-smallcaps'>OSE</span> na Argentina, com mais de 25 anos de experiência na área dando aulas e formando novos profissionais</p>
-                    </div>
-                  </div>
-                <% elsif @article.author == "Carlo Mea" %>
-                  <div class="row articles-authors-mini-container">
-                    <div class="col-md-3">
-                      <div class="articles-authors-mini-photo carlo">
-                      </div>
-                    </div>
-                    <div class="col-md-9 articles-authors-mini-info">
-                      <h3>Carlo Mea</h3>
-                      <p>Representante do M<span class='navbar-title-smallcaps'>ÉTODO</span> DeR<span class='navbar-title-smallcaps'>OSE</span> na Itália, é um dos mais reconhecidos demonstradores das nossas técnicas corporais, trabalhando com empreendedor desde 2002</p>
-                    </div>
-                  </div>
-                <% elsif @article.author == "Joris Marengo" %>
-                  <div class="row articles-authors-mini-container">
-                    <div class="col-md-3">
-                      <div class="articles-authors-mini-photo joris">
-                        
-                      </div>
-                    </div>
-                    <div class="col-md-9 articles-authors-mini-info">
-                      <h3>Joris Marengo</h3>
-                    </div>
-                  </div>
-                <% elsif @article.author == "Yael Barcesat" %>
-                  <div class="row articles-authors-mini-container">
-                    <div class="col-md-3">
-                      <div class="articles-authors-mini-photo yael">
-                      </div>
-                    </div>
-                    <div class="col-md-9 articles-authors-mini-info">
-                      <h3>Yael Barcesat</h3>
-                      <p>
-                        Autora de livros sobre vocalização de sons e formação de novos profissionais, é também demonstradora das técnicas do M<span class='navbar-title-smallcaps'>ÉTODO</span> DeR<span class='navbar-title-smallcaps'>OSE</span>
-                      </p>
-                    </div>
-                  </div>
-                <% elsif @article.author == "Gustavo Marson" %>
-                  <div class="row articles-authors-mini-container">
-                    <div class="col-md-3">
-                      <div class="articles-authors-mini-photo gustavo">
-                      </div>
-                    </div>
-                    <div class="col-md-9 articles-authors-mini-info">
-                      <h3>Gustavo Marson</h3>
-                    </div>
-                  </div>
-                <%end%>
+                <%= render "authors/author", author: @article.author %>
               </div>
             </div>
           </div>
         </div>
-      </div>
     </div>
   </div>
 </div>

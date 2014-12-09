@@ -1,13 +1,10 @@
-<div class="row author-container">
-  <div class="col-md-5 author-image-container">
-    <%= image_tag author.avatar %>
-  </div>
-  <div class="col-md-7">
-    <div class="row">
-      <div class="col-md-12">
-        <h2><%= author.first_name %> <%= author.last_name %></h2>
-        <p><%= author.bio %></p>
-      </div>
+<div class="row articles-authors-mini-container">
+  <div class="col-md-3">
+    <div class="articles-authors-mini-photo <%= author.first_name.try :downcase %><%= author.last_name.downcase %>">
     </div>
+  </div>
+  <div class="col-md-9 articles-authors-mini-info">
+    <h3><%= author.first_name %> <%= author.last_name %></h3>
+    <p><%= simple_format t("author.#{author.first_name}#{author.last_name}.bio") %></p>
   </div>
 </div>

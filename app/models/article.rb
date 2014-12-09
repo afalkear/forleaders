@@ -4,6 +4,7 @@ class Article < ActiveRecord::Base
   belongs_to :article_language
   belongs_to :user
   before_save :set_status
+  belongs_to :author
 
   VALID_STATUSES = %w(draft published)
 

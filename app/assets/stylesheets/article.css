@@ -75,11 +75,6 @@
   padding-bottom: 20px;
 }
 
-.articles-categories {
-  padding-left: 0px;
-  padding-right: 0px;
-}
-
 .articles-categories > ul { 
   display: table;
   width: 100%;
@@ -129,7 +124,7 @@
 }
 
 .main-article-container {
-  padding-left: 0px;
+  /*padding-left: 0px;*/
   /*margin-right: 20px;*/
 }
 
@@ -243,6 +238,7 @@
   color: black;
   /*margin-left: -25px;*/
   padding-bottom: 20px;
+  margin-left: -15px;
 }
 
 #article-affix.affix {
@@ -528,11 +524,11 @@
   background-size: cover !important;
 }
 
-.joris {
+.jorismarengo {
   background: #FFFFFF url("joris marengo.jpg") no-repeat center center;
 }
 
-.edgardo {
+.edgardocaramella {
  background: #FFFFFF url("edgardo caramella.jpg") no-repeat center center; 
 }
 
@@ -540,15 +536,15 @@
   background: #FFFFFF url("derose.jpg") no-repeat center top;
 }
 
-.carlo {
+.carlomea {
   background: #FFFFFF url("carlo mea.jpg") no-repeat center top;
 }
 
-.yael {
+.yaelbarcesat {
   background: #FFFFFF url("yael barcesat.jpg") no-repeat center top;
 }
 
-.gustavo {
+.gustavomarson {
   background: #FFFFFF url("gustavo marson.jpg") no-repeat left center;
 }
 
