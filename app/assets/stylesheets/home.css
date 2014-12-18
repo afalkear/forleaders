@@ -168,7 +168,7 @@ ul.dropdown-menu {
 
 #my-affix {
   background-color: white;
-  margin-bottom: 0px;
+  /*margin-bottom: 0px;*/
   border-radius: 0;
   /*border-width: 0px;*/
 }
@@ -205,6 +205,7 @@ ul.dropdown-menu {
     border-bottom: black;
     border-bottom-style: solid;
     border-bottom-width: thin;
+    max-height: 35px;
 }
 
 .navbar-nav a{
