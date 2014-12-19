@@ -112,6 +112,7 @@ en:
           first_item: Promote your high productivity
           second_item: Improve your physical fitness
           third_item: Develop your well being
+          third_item: ""
       enterprise:
         title: FOR BUSINESSES
         small_group_teaching:

@@ -149,21 +149,41 @@ ul.dropdown-menu {
   background: #FFFFFF url("blizzard.jpg") repeat left top;
 }
 
-.affix > .container-fluid > #navbar-collapse > ul {
+/*.affix > .container-fluid > #navbar-collapse > ul {
   margin-left: -60px;
-}
+}*/
 
 .navbar {
   background: #FFFFFF url("blizzard.jpg") repeat left top;
 }
 
-.navbar .navbar-nav {
+/*.navbar .navbar-nav {
   display: inline-block;
   float: none;
 }
 
 .navbar .navbar-collapse {
   text-align: center;
+}*/
+/*@media (min-width: 768px){
+  .navbar-nav{
+        margin: 0 auto;
+        display: table;
+        table-layout: fixed;
+        float:none;
+    }
+}*/
+
+@media (min-width: 768px) {
+    .navbar .navbar-nav {
+        display: inline-block;
+        float: none;
+        vertical-align: top;
+    }
+
+    .navbar .navbar-collapse {
+        text-align: center;
+    }
 }
 
 #my-affix {
@@ -205,7 +225,7 @@ ul.dropdown-menu {
     border-bottom: black;
     border-bottom-style: solid;
     border-bottom-width: thin;
-    max-height: 35px;
+    /*max-height: 35px;*/
 }
 
 .navbar-nav a{
@@ -238,7 +258,6 @@ ul.dropdown-menu {
 .navbar {
   margin-bottom: 0px;
   min-height: 0px;
-  margin-bottom: -5px;
 }
 
 .navbar:not(.affix){
