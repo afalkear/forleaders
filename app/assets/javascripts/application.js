@@ -16,6 +16,8 @@
 //= require twitter/bootstrap
 //= require select2
 //= require analytics
+//= require wysihtml-toolbar
+//= require parser_rules/advanced_unwrap
 //= require jquery.magnific-popup
 //= require lazysizes.min
 //= require translation_center/inspector

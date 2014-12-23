@@ -15,6 +15,7 @@
  *= require bootstrap-datepicker
  *= require my-bootstrap
  *= require magnific-popup
+ *= require wysihtml
  *= require translation_center/inspector
  *= require_tree .
  */

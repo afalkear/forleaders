@@ -30,6 +30,9 @@ gem 'jbuilder', '~> 1.2'
 # use twitter bootstrap
 gem 'less-rails-bootstrap'
 
+# wysiwyg editor for articles content
+gem 'wysihtml-rails'
+
 # use carrierwave with dropbox to store files
 gem 'carrierwave-dropbox'
 gem 'mini_magick'
