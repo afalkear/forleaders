@@ -1,8 +1,7 @@
 <div class="row padding-topbottom-50">
-  <div class="col-md-1"></div>
-  <div class="col-md-10">
+  <div class="col-md-10 col-sm-12 col-md-offset-1">
       <div class="row articles-title-container">
-        <div class="col-md-6">
+        <div class="col-md-6 col-sm-6">
           <div class="home-section-title">
             <%= t('static_pages.articles.title') %>
           </div>
@@ -41,9 +40,11 @@
         </div -->
       </div>
 
-      <% @articles_rows.times do |article_row_number| %>
-        <%= render 'article_container', articles: @articles, columns: @articles_columns, first_article_number: article_row_number*@articles_columns  %>
-      <% end %>
+      <div class="row articles-container">
+        <% @articles.each do |article| %>
+          <%= render 'single_article', article: article %>
+        <% end %>
+      </div>
 
       <!-- div class="row more-articles">
         <a href="#">
