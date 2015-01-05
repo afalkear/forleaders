@@ -1,5 +1,14 @@
 --- 
 fr: 
+  helpers: 
+    label: 
+      contact_message: 
+        company: Entreprise
+        first_name: Prénom
+        last_name: Nom
+        observations: Message
+        phone: Téléphone
+        position: Poste
   static_pages: 
     articles: 
       read_more: "LIRE LA SUITE"
@@ -12,6 +21,7 @@ fr:
       leadership: Leadership
       quality_of_life: Lifestyle
     contact: 
+      countries_html: "<h2>FRANCE</h2><h4>Paris</h4>8 rue Balzac, Paris 8ème<br>jonathan.sardas@methodederose.org<br>+(33) 06 71 88 81 08<h2>ETATS UNIS</h2><h4>New York</h4>55 Murray Street, New York, NY 10007<br>john.chisenhall@derosemethod.org<br>+(1) 917-727-0233<h2>ESPAGNE</h2><h4>Barcelona</h4> Carrer de la Diputación, 286<br>mariana.chiavini@metododerose.org<br>+(34) 672 193 352<h2>BRESIL</h2><h4>São Paulo</h4>Av. Paulista, 726, 17° andar<br>patricia.taurizano@metododerose.org<br>+(55 11) 99875-9954 <h4>Rio de Janeiro</h4> rafaella.coelho@metododerose.org<br>+(55 21) 98888-5954<h4>Brasília<h4>andre.bouchardet@metododerose.org<br>+(55 61) 9656-4747<h2>ARGENTINE</h2><h4>Buenos Aires</h4>República Árabe Siria 3088, Buenos Aires<br>lucia.lopez@metododerose.org<br>+(54) 11 4801-8522"
       message: "Nos équipes sont là pour répondre à vos questions sur nos programmes, notre processus d'admission et vous accompagner pour réaliser votre candidature."
       title: CONTACTEZ-NOUS
     derose_method: 
@@ -124,7 +134,7 @@ fr:
           title: "PERSONAL TEACHING"
         training: 
           subtitle: "Quinze minutes par jour"
-          title: Training
+          title: TRAINING
     individual_consultory_header: 
       consulting: 
         expand_subtitle_html: "THÈMES Haute Productivité Travailler et vivre mieux Comportement, éthique et résultats Leadership intelligent"
@@ -278,14 +288,15 @@ fr:
         erwin_data_html: "Erwin MUSEUR Paris  Design Manager  PEUGEOT"
         see_more: "LIRE LA SUITE"
         testimonial: |-
-            J'ai             beaucoup             apprécié             les             cours             et             en             ai             ressenti             très             vite             les             effets             positifs.             Les             premiers cours aident             essentiellement             à             préparer             le             physique             (exercices             respiratoires,             d'assouplissement,             de             force...)             puis par la suite             le             travail             mental             est renforcé.             Les enseignements théoriques transmis à travers les conversations sont d'une grande valeur et ont pleinement contribué à ma croissance personnelle et professionnelle.
-        title: Témoignages
+            J'ai beaucoup apprécié les cours et en ai ressenti très vite les effets positifs.             Les             premiers cours aident             essentiellement             à             préparer             le             physique             (exercices             respiratoires,             d'assouplissement,             de             force...)             puis par la suite             le             travail             mental             est renforcé.             Les enseignements théoriques transmis à travers les conversations sont d'une grande valeur et ont pleinement contribué à ma croissance personnelle et professionnelle.
+        title: TÉMOIGNAGES
       unique_method: 
         content: "Les cadres dirigeants reconnaissent notre grand différenciel: un savoir faire incomparable pour développer le potentiel de chaque individu. Grace à la qualité de nos outils techniques et conceptuels nous sommes en mesure d'offrir des résultats très expressifs en terme de qualité de vie et de productivité."
         title: "CE QUI REND NOTRE MÉTHODE UNIQUE"
     slideshow: 
-      first_phrase_html: "VOUS SAVEZ COMMENT VOTRE BUSINESS FONCTIONNE <br> NOUS SAVONS COMMENT VOUS FONCTIONNEZ"
-      second_phrase_html: "VOUS AVEZ DES OBJECTIFS <br> NOUS AVONS LES OUTILS"
+      first_phrase_html: "VOUS AVEZ DES OBJECTIFS <br> NOUS AVONS LES OUTILS"
+      second_phrase_html: "UNE MÉTHODE UNIQUE <br> POUR TRAVAILLER MIEUX"
+      third_phrase_html: "Dans le monde des affaires, le capital humain est ce qui compte le plus."
     testimonials: 
       enterprise: 
         erwin: 
