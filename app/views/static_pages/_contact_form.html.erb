@@ -20,6 +20,10 @@
           <%= f.text_field :last_name, class: 'form-control', id: 'contact_last_name', placeholder: "Sobrenome" %>
       </div>
       <div class="form-group">
+        <%= label(:contact_message, :phone) %>
+          <%= f.text_field :phone, class: 'form-control', id: 'contact_phone', placeholder: "Telefone" %>
+      </div>
+      <div class="form-group">
         <%= label(:contact_message, :email) %>
           <%= f.text_field :email, class: 'form-control', id: 'contact_email', placeholder: "Email" %>
       </div>
@@ -36,10 +40,6 @@
       <div class="form-group">
         <%= label(:contact_message, :position) %>
           <%= f.text_field :position, class: 'form-control', id: 'contact_position', placeholder: "Cargo" %>
-      </div>
-      <div class="form-group">
-        <%= label(:contact_message, :phone) %>
-          <%= f.text_field :phone, class: 'form-control', id: 'contact_phone', placeholder: "Telefone" %>
       </div>
       <div class="form-group">
         <%= label(:contact_message, :observations) %>
