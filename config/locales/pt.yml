@@ -37,7 +37,7 @@ pt:
       leadership: Liderança
       quality_of_life: Lifestyle
     contact: 
-      countries_html: "<h2>BRASIL</h2> São Paulo <br> Rio de Janeiro <br> Brasília<br> Florianópolis<br> <h2>ARGENTINA</h2> Buenos Aires <h2>FRANCE</h2>Paris <h2>UNITED STATES</h2>New York"
+      countries_html: "<h2>BRASIL</h2><h4>São Paulo</h4>Av. Paulista, 726, 17° andar<br>patricia.taurizano@metododerose.org<br>+(55 11) 99875-9954 <h4>Rio de Janeiro</h4> rafaella.coelho@metododerose.org<br>+(55 21) 98888-5954<h4>Brasília<h4>andre.bouchardet@metododerose.org<br>+(55 61) 9656-4747<h2>UNITED STATES</h2><h4>New York</h4>55 Murray Street, New York, NY 10007<br>john.chisenhall@derosemethod.org<br>+(1) 917-727-0233<h2>FRANCE</h2><h4>Paris</h4>8 rue Balzac, Paris 8ème<br>jonathan.sardas@methodederose.org<br>+(33) 06 71 88 81 08<h2>ESPAÑA</h2><h4>Barcelona</h4> Carrer de la Diputación, 286<br>mariana.chiavini@metododerose.org<br>+(34) 672 193 352<h2>ARGENTINA</h2><h4>Buenos Aires</h4>República Árabe Siria 3088, Buenos Aires<br>lucia.lopez@metododerose.org<br>+(54) 11 4801-8522"
       message: "Estaremos felizes em poder esclarecer questões relativas aos nossos programas e ao processo de admissão"
       title: CONTATE-NOS
     derose_method: 
@@ -156,6 +156,7 @@ pt:
         subtitle: "3 a 6 meses"
         title: CONSULTORIA
       intensive: 
+        expand_subtitle_html: ""
         subtitle: "2 dias"
         title: "INTENSIVE TEACHING"
       personal: 
@@ -208,6 +209,12 @@ pt:
     our_consultors: 
       body: 
         consultors: 
+          charles: 
+            content_html: "Diretor do Office (órgão administrativo da Rede DeR<span class='navbar-title-smallcaps'>OSE</span>), Membro do Conselho Administrativo do M<span class='navbar-title-smallcaps'>ÉTODO</span> DeR<span class='navbar-title-smallcaps'>OSE</span>, o professor Charles Maciel é um dos primeiros docentes e principais palestrantes das nossas técnicas e conceitos. Administração de tempo é uma de suas especialidades, especialmente na organização de tarefas proposta pelo GTD (getting things done)."
+            title: "Charles MACIEL"
+          edgardo: 
+            content_html: "Um dos precursores da difusão do M<span class='navbar-title-smallcaps'>ÉTODO</span> DeR<span class='navbar-title-smallcaps'>OSE</span> em Buenos Aires, Edgardo Caramella tem mais de 25 de magistério na instituição. Ministra cursos sobre as técnicas e conceitos desta Cultura no Brasil, Portugal, Espanha e França, além de diversas cidades pela Argentina. Introduziu e coordena o programa M<span class='navbar-title-smallcaps'>ÉTODO</span> DeR<span class='navbar-title-smallcaps'>OSE</span> para Empresas neste país."
+            title: "Edgardo CARAMELLA"
           edu: 
             content_html: "Empreendedor do M<span class='navbar-title-smallcaps'>ÉTODO</span> DeR<span class='navbar-title-smallcaps'>OSE</span> desde 1999, dirige sua própria escola na cidade de Porto, em Portugal, desde 2004. Dedica-se à formação de profissionais da rede, e também especializou-se no ensino de técnicas e conceitos para profissionais, empresários e estudantes, principalmente em técnicas respiratórias e administração do stress."
             title: "Eduardo CIRILO"
@@ -217,27 +224,21 @@ pt:
           gus: 
             content_html: "Docente do M<span class='navbar-title-smallcaps'>ÉTODO</span> DeR<span class='navbar-title-smallcaps'>OSE</span>, é também bacharel em Engenharia Mecânica pela Unicamp e pós-graduado em Administração e Marketing pela ESPM. Ministra cursos voltados para qualidade de vida, desenvolvimento corporal, mentalização, meditação e motivação."
             title: "Gustavo OLIVEIRA"
+          joris: 
+            content_html: "Professor e praticante do M<span class='navbar-title-smallcaps'>ÉTODO</span> DeR<span class='navbar-title-smallcaps'>OSE</span> desde 1976, é também escritor de extensas obras sobre a parte técnica desta Cultura, sendo presidente da Federação do Estado de Santa Catarina. Trabalha com empresários na aplicação efetiva dos conceitos do M<span class='navbar-title-smallcaps'>ÉTODO</span> DeR<span class='navbar-title-smallcaps'>OSE</span> para aumento da produtividade, da qualidade dos serviços prestados e também do valor das empresas."
+            title: "Joris MARENGO"
           luis: 
             content_html: "Envolvido com o trabalho no M<span class='navbar-title-smallcaps'>ÉTODO</span> DeR<span class='navbar-title-smallcaps'>OSE</span> desde 1988, Luís Lopes foi fundador da primeira escola certificada da rede em Portugal. Ministra cursos desde 1990. É especialista na área de Reprogramação Emocional e Técnicas de Purificação Orgânicas. É especializado em adaptar o M<span class='navbar-title-smallcaps'>ÉTODO</span> DeR<span class='navbar-title-smallcaps'>OSE</span> para profissionais e empresas."
             title: "Luís LOPES"
           rogerio: 
             content_html: "Formado pela Pontifícia Universidade Católica do Paraná (PUC-PR) e pela Universidade Lusófona, de Lisboa, se especializou nas técnicas orgânicas do M<span class='navbar-title-smallcaps'>ÉTODO</span> DeR<span class='navbar-title-smallcaps'>OSE</span>. Ministra cursos em várias cidades do Brasil, América do Sul e Europa."
             title: "Rogério BRANT"
-          edgardo:
-            content_html: "Um dos precursores da difusão do M<span class='navbar-title-smallcaps'>ÉTODO</span> DeR<span class='navbar-title-smallcaps'>OSE</span> em Buenos Aires, Edgardo Caramella tem mais de 25 de magistério na instituição. Ministra cursos sobre as técnicas e conceitos desta Cultura no Brasil, Portugal, Espanha e França, além de diversas cidades pela Argentina. Introduziu e coordena o programa M<span class='navbar-title-smallcaps'>ÉTODO</span> DeR<span class='navbar-title-smallcaps'>OSE</span> para Empresas neste país."
-            title: "Edgardo CARAMELLA"
-          joris:
-            content_html: "Professor e praticante do M<span class='navbar-title-smallcaps'>ÉTODO</span> DeR<span class='navbar-title-smallcaps'>OSE</span> desde 1976, é também escritor de extensas obras sobre a parte técnica desta Cultura, sendo presidente da Federação do Estado de Santa Catarina. Trabalha com empresários na aplicação efetiva dos conceitos do M<span class='navbar-title-smallcaps'>ÉTODO</span> DeR<span class='navbar-title-smallcaps'>OSE</span> para aumento da produtividade, da qualidade dos serviços prestados e também do valor das empresas."
-            title: "Joris MARENGO"
-          yael:
-            content_html: "Demonstradora das técnicas do M<span class='navbar-title-smallcaps'>ÉTODO</span> DeR<span class='navbar-title-smallcaps'>OSE</span> em nível profissional, é também diretora de uma das unidades de ensino da rede DeR<span class='navbar-title-smallcaps'>OSE</span> em Buenos Aires. Como ministrante, tem especialização em temas como formação profissional e vocalização de sons e ultrassons."
-            title: "Yael BARCESAT"
-          charles:
-            content_html: "Diretor do Office (órgão administrativo da Rede DeR<span class='navbar-title-smallcaps'>OSE</span>), Membro do Conselho Administrativo do M<span class='navbar-title-smallcaps'>ÉTODO</span> DeR<span class='navbar-title-smallcaps'>OSE</span>, o professor Charles Maciel é um dos primeiros docentes e principais palestrantes das nossas técnicas e conceitos. Administração de tempo é uma de suas especialidades, especialmente na organização de tarefas proposta pelo GTD (getting things done)."
-            title: "Charles MACIEL"
-          rosana:
+          rosana: 
             content_html: "Pratica o Método desde 1988, formou-se em 1995. Ela integra o Conselho Administrativo do M<span class='navbar-title-smallcaps'>ÉTODO</span> DeR<span class='navbar-title-smallcaps'>OSE</span> e ministra desde 2001 cursos em eventos na Europa, Estados Unidos e América Latina. Ela introduziu o M<span class='navbar-title-smallcaps'>ÉTODO</span> DeR<span class='navbar-title-smallcaps'>OSE</span> nas empresas a partir de 1997, neste mesmo ano fundou sua escola em São Paulo. "
             title: "Rosana ORTEGA"
+          yael: 
+            content_html: "Demonstradora das técnicas do M<span class='navbar-title-smallcaps'>ÉTODO</span> DeR<span class='navbar-title-smallcaps'>OSE</span> em nível profissional, é também diretora de uma das unidades de ensino da rede DeR<span class='navbar-title-smallcaps'>OSE</span> em Buenos Aires. Como ministrante, tem especialização em temas como formação profissional e vocalização de sons e ultrassons."
+            title: "Yael BARCESAT"
         first_block: 
           content_html: "Dispomos de centenas de <i>Personal Teachers</i> por todo o mundo. A qualidade da formação de cada um deles é foco constante dentro do M<span class='navbar-title-smallcaps'>ÉTODO</span> DeR<span class='navbar-title-smallcaps'>OSE</span>: eles são preparados por, no mínimo, 4 anos e são anualmente reavaliados para que mantenham o alto nível de excelência. Nós ministramos palestras, <i>workshops</i> e treinamentos sobre temas como boas relações humanas, administração de conflitos, gestão de stress, alta produtividade, foco e outros temas. O contratante pode escolher a língua em que deseja que seu programa seja ministrado: português, inglês, francês, espanhol, italiano e alemão."
           personal_teachers: "personal teachers"
@@ -264,7 +265,7 @@ pt:
           first_item: "Desenvolver Alta Performance"
           second_item: "Aumentar a fluidez na comunicação"
           subtitle: "15 minutos por dia"
-          third_item: "• Reforçar os vinculos entre os líderes"
+          third_item: "Reforçar os vinculos entre os líderes"
           title: "SMALL GROUP TRAINING"
         talks: 
           fifth_item: "Gestão emocional"
@@ -291,7 +292,7 @@ pt:
           title: CONSULTORIA
         personal_teaching: 
           first_item: "Desenvolva o seu potencial"
-          second_item: "Atinga Alta Performance em todas as áreas da sua vida"
+          second_item: "Atinja Alta Performance em todas as áreas da sua vida"
           subtitle: "1h duas vezes por semana"
           third_item: "Maior Qualidade de Vida"
           title: "PERSONAL TEACHING"
