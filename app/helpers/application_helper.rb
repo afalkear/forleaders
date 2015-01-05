@@ -9,6 +9,12 @@ module ApplicationHelper
     end
   end
 
+  def locale_logo
+    available_locales = %w(es pt fr en)
+    image = (available_locales.include? I18n.locale.to_s.downcase) ? "logo_mdl_#{I18n.locale.to_s.downcase}.png" : "logo_mdl.png"
+    image_tag image, class: "center"
+  end
+
   def mark_required(object, attribute)  
     "*" if object.class.validators_on(attribute).map(&:class).include? ActiveModel::Validations::PresenceValidator  
   end 
