@@ -100,23 +100,37 @@ img.center {
 
 
 .teaching-phrase {
+  text-align: right;
+  color: #D3BB69;
+  min-height: 45px;
+  /*line-height: 45px;*/
+  position: relative;
+  width: 100%;
+}
+
+.teaching-phrase-location {
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
   font-size: 26px;
   letter-spacing: 2px;
-  text-align: right;
-  color: #D3BB69;
-  min-height: 45px;
-  line-height: 45px;
-  position: relative;
-  width: 100%;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
 }
+
 .countries-header {
   min-height: 45px;
   line-height: 45px;
+  position: relative;
+}
+
+.countries-list {
   color: white;
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
+  position: absolute;
+  bottom: 0px;
+  right: 0px; 
 }
 
 /* LANGUAGES */

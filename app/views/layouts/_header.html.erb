@@ -8,20 +8,17 @@
       </div>
       <div class="col-md-7 header-text-row">
         <% render "layouts/languages" %>
-        <div class="col-md-12">
-          <div class="row pull-right teaching-phrase">
-            <span class="teaching-phrase-location">
-              <%= t('static_pages.header.teaching_phrase') %>
-            </span>
-          </div>
+        <div class="teaching-phrase">
+          <span class="teaching-phrase-location">
+            <%= t('static_pages.header.teaching_phrase') %>
+          </span>
         </div>
-        <div class="col-md-12">
-          <div class="row pull-right countries-header">
+
+        <div class="countries-header">
+          <span class="countries-list">
             <%= raw t('static_pages.header.countries_html') %>
-          </div>
+          </span>
         </div>
-      </div>
-      <div class="col-md-1">
       </div>
     </div>
   </div>
