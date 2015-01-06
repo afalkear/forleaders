@@ -25,6 +25,7 @@ pt:
         observations: OBSERVAÇÕES
         phone: Telefone
         position: Cargo
+        submit: Submit
   static_pages: 
     articles: 
       read_more: "LER MAIS >>"
@@ -275,7 +276,7 @@ pt:
           subtitle: "2 ou 4 horas"
           third_item: "Gestão do tempo"
           title: PALESTRAS
-        title: "PARA EMPRESAS"
+        title: "PARA SUA EMPRESA"
         workshop: 
           first_item: "Bom relacionamento"
           fourth_item: "Liderança sábia"
@@ -292,11 +293,11 @@ pt:
           title: CONSULTORIA
         personal_teaching: 
           first_item: "Desenvolva o seu potencial"
-          second_item: "Atinja Alta Performance em todas as áreas da sua vida"
+          second_item: "Obtenha Alto Desempenho em todas as áreas da sua vida"
           subtitle: "1h duas vezes por semana"
-          third_item: "Maior Qualidade de Vida"
+          third_item: "Desfrute de Maior Qualidade de vida"
           title: "PERSONAL TEACHING"
-        title: "PARA INDIVÍDUOS"
+        title: "PARA VOCÊ"
         training: 
           first_item: "Alta Performance"
           fourth_item: Concentração
@@ -311,13 +312,13 @@ pt:
         see_more: "VER MAIS DETALHES"
         title: "CONHEÇA OS CONSULTORES EXPERTS"
       group_criteria: 
-        content_html: "Todos nossos programas tem um número de vagas limitado. As candidaturas passam por um rigoroso processo seletivo. <br><br> Os principais critérios para admissão são: <p>- Indicação;</p> <p>- Grupo de pessoas com grandes responsabilidades;</p> <p>- Alinhamento de valores da empresa com os que são cultivados no M<span class='navbar-title-smallcaps'>ÉTODO</span> DeR<span class='navbar-title-smallcaps'>OSE</span>.</p>"
+        content_html: "Todos nossos programas tem um número de vagas limitado. As candidaturas passam por um rigoroso processo seletivo. <br><br> Os principais critérios para admissão são: <p>Indicação</p> <p>Grupo de pessoas com grandes responsabilidades</p> <p>Alinhamento de valores da empresa com os que são cultivados no M<span class='navbar-title-smallcaps'>ÉTODO</span> DeR<span class='navbar-title-smallcaps'>OSE</span>.</p>"
         title: "CRITÉRIOS DE SELEÇÃO"
       nestle: 
         content: "Pesquisa Profa. Rosana Ortega"
         title: "O MEU BEM-ESTAR ESTÁ NA NESTLÉ"
       our_criteria: 
-        content_html: "Todos nossos programas tem um número de vagas limitado. As candidaturas passam por um rigoroso processo seletivo. <br><br> Os principais critérios para admissão são: <p>- Indicação;</p> <p>- Percurso profissional que demonstre uma boa capacidade de crescimento pessoal;</p> <p>- Alinhamento de valores da empresa com os que são cultivados no M<span class='navbar-title-smallcaps'>ÉTODO</span> DeR<span class='navbar-title-smallcaps'>OSE</span>.</p>"
+        content_html: "Todos nossos programas tem um número de vagas limitado. As candidaturas passam por um rigoroso processo seletivo. <br><br> Os principais critérios para admissão são: <p>Indicação</p> <p>Percurso profissional que demonstre uma boa capacidade de crescimento pessoal</p> <p>Alinhamento de valores da empresa com os que são cultivados no M<span class='navbar-title-smallcaps'>ÉTODO</span> DeR<span class='navbar-title-smallcaps'>OSE</span>.</p>"
         title: "CRITÉRIOS DE SELEÇÃO"
       peugeot: 
         erwin_data_html: "<h3>Erwin MUSEUR</h3> <h4>Paris</h4> <p>Design Manager</p> <p>PEUGEOT</p> "
@@ -328,7 +329,7 @@ pt:
         content: "Os líderes reconhecem o nosso grande difrencial: um know-how incomparável para melhorar o ser humano. Os resultados que conseguimos no aumento da performance e da qualidade de vida são muito expressivos devido à qualidade superlativa das ferramentas que ensinamos. Bastam disciplina e constância na aplicação das nossas técnicas e dos nossos conceitos para sentir um aprimoramento bem consolidado na vida profissional e pessoal."
         title: "O QUE TORNA O NOSSO MÉTODO ÚNICO"
     slideshow: 
-      first_phrase_html: "VOCÊ <br> MAIS RÁPIDO, MAIS FORTE, MAIS ASSERTIVO"
+      first_phrase_html: "VOCÊ <br> MAIS RÁPIDO, MAIS FORTE,<br> MAIS ASSERTIVO"
       second_phrase_html: "VOCÊ TEM AS METAS <br> NÓS TEMOS AS FERRAMENTAS"
       third_phrase_html: "IN THE BUSINESS WORLD,<br> HUMAN BEING IS WHAT REALLY MATTERS"
     testimonials: 
