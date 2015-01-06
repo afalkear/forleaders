@@ -9,6 +9,7 @@ fr:
         observations: Message
         phone: Téléphone
         position: Poste
+        submit: Envoyer
   static_pages: 
     articles: 
       read_more: "LIRE LA SUITE"
