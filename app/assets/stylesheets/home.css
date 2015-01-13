@@ -115,7 +115,7 @@ img.center {
   letter-spacing: 2px;
   position: absolute;
   bottom: -8px;
-  right: 0px;
+  right: 15px;
 }
 
 .countries-header {
@@ -126,6 +126,7 @@ img.center {
   color: white;
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
+  text-align: right;
 }
 
 /*.countries-list {
