@@ -1,355 +1,668 @@
-# encoding: utf-8
-
-# Files in the config/locales directory are used for internationalization
-# and are automatically loaded by Rails. If you want to use locales other
-# than English, add the necessary files in this directory.
-#
-# To use the locales, use `I18n.t`:
-#
-#     I18n.t 'hello'
-#
-# In views, this is aliased to just `t`:
-#
-#     <%= t('hello') %>
-#
-# To use a different locale, set it with `I18n.locale`:
-#
-#     I18n.locale = :es
-#
-# This would use the information in config/locales/es.yml.
-#
-# To learn more, please read the Rails Internationalization guide
-# available at http://guides.rubyonrails.org/i18n.html.
-
-en:
-  helpers:
-    label:
-      article:
-        title: "Title"
-      apply_message:
-        civility: "Civilidade"
+--- 
+en: 
+  activerecord: 
+    errors: 
+      messages: 
+        record_invalid: "Validation failed: %{errors}"
+        restrict_dependent_destroy: 
+          many: "Cannot delete record because dependent %{record} exist"
+          one: "Cannot delete record because a dependent %{record} exists"
+  date: 
+    abbr_day_names: 
+      - Sun
+      - Mon
+      - Tue
+      - Wed
+      - Thu
+      - Fri
+      - Sat
+    abbr_month_names: 
+      - ~
+      - Jan
+      - Feb
+      - Mar
+      - Apr
+      - May
+      - Jun
+      - Jul
+      - Aug
+      - Sep
+      - Oct
+      - Nov
+      - Dec
+    day_names: 
+      - Sunday
+      - Monday
+      - Tuesday
+      - Wednesday
+      - Thursday
+      - Friday
+      - Saturday
+    formats: 
+      default: "%Y-%m-%d"
+      long: "%B %d, %Y"
+      short: "%b %d"
+    month_names: 
+      - ~
+      - January
+      - February
+      - March
+      - April
+      - May
+      - June
+      - July
+      - August
+      - September
+      - October
+      - November
+      - December
+    order: 
+      - year
+      - month
+      - day
+  datetime: 
+    distance_in_words: 
+      about_x_hours: 
+        one: "about 1 hour"
+        other: "about %{count} hours"
+      about_x_months: 
+        one: "about 1 month"
+        other: "about %{count} months"
+      about_x_years: 
+        one: "about 1 year"
+        other: "about %{count} years"
+      almost_x_years: 
+        one: "almost 1 year"
+        other: "almost %{count} years"
+      half_a_minute: "half a minute"
+      less_than_x_minutes: 
+        one: "less than a minute"
+        other: "less than %{count} minutes"
+      less_than_x_seconds: 
+        one: "less than 1 second"
+        other: "less than %{count} seconds"
+      over_x_years: 
+        one: "over 1 year"
+        other: "over %{count} years"
+      x_days: 
+        one: "1 day"
+        other: "%{count} days"
+      x_minutes: 
+        one: "1 minute"
+        other: "%{count} minutes"
+      x_months: 
+        one: "1 month"
+        other: "%{count} months"
+      x_seconds: 
+        one: "1 second"
+        other: "%{count} seconds"
+    prompts: 
+      day: Day
+      hour: Hour
+      minute: Minute
+      month: Month
+      second: Seconds
+      year: Year
+  devise: 
+    confirmations: 
+      confirmed: "Your account was successfully confirmed."
+      send_instructions: "You will receive an email with instructions about how to confirm your account in a few minutes."
+      send_paranoid_instructions: "If your email address exists in our database, you will receive an email with instructions about how to confirm your account in a few minutes."
+    failure: 
+      already_authenticated: "You are already signed in."
+      inactive: "Your account is not activated yet."
+      invalid: "Invalid email or password."
+      last_attempt: "You have one more attempt before your account will be locked."
+      locked: "Your account is locked."
+      not_approved: "Your account has not been approved by your administrator yet."
+      not_found_in_database: "Invalid email or password."
+      timeout: "Your session expired. Please sign in again to continue."
+      unauthenticated: "You need to sign in or sign up before continuing."
+      unconfirmed: "You have to confirm your account before continuing."
+      user: 
+        unauthenticated: Unauthenticated
+    mailer: 
+      confirmation_instructions: 
+        subject: "Confirmation instructions"
+      reset_password_instructions: 
+        subject: "Reset password instructions"
+      unlock_instructions: 
+        subject: "Unlock Instructions"
+    omniauth_callbacks: 
+      failure: "Could not authenticate you from %{kind} because \"%{reason}\"."
+      success: "Successfully authenticated from %{kind} account."
+    passwords: 
+      no_token: "You can't access this page without coming from a password reset email. If you do come from a password reset email, please make sure you used the full URL provided."
+      send_instructions: "You will receive an email with instructions about how to reset your password in a few minutes."
+      send_paranoid_instructions: "If your email address exists in our database, you will receive a password recovery link at your email address in a few minutes."
+      updated: "Your password was changed successfully. You are now signed in."
+      updated_not_active: "Your password was changed successfully."
+    registrations: 
+      destroyed: "Bye! Your account was successfully cancelled. We hope to see you again soon."
+      signed_up: "Welcome! You have signed up successfully."
+      signed_up_but_inactive: "You have signed up successfully. However, we could not sign you in because your account is not yet activated."
+      signed_up_but_locked: "You have signed up successfully. However, we could not sign you in because your account is locked."
+      signed_up_but_unconfirmed: "A message with a confirmation link has been sent to your email address. Please open the link to activate your account."
+      update_needs_confirmation: "You updated your account successfully, but we need to verify your new email address. Please check your email and click on the confirm link to finalize confirming your new email address."
+      updated: "You updated your account successfully."
+      user: 
+        signed_up_but_not_approved: "You have signed up successfully but your account has not been approved by your administrator yet"
+    sessions: 
+      signed_in: "Signed in successfully."
+      signed_out: "Signed out successfully."
+      user: 
+        signed_in: "Signed In"
+    unlocks: 
+      send_instructions: "You will receive an email with instructions about how to unlock your account in a few minutes."
+      send_paranoid_instructions: "If your account exists, you will receive an email with instructions about how to unlock it in a few minutes."
+      unlocked: "Your account has been unlocked successfully. Please sign in to continue."
+  errors: 
+    format: "%{attribute} %{message}"
+    messages: 
+      accepted: "must be accepted"
+      already_confirmed: "was already confirmed, please try signing in"
+      blank: "can't be blank"
+      carrierwave_download_error: "could not be downloaded"
+      carrierwave_integrity_error: "is not of an allowed file type"
+      carrierwave_processing_error: "failed to be processed"
+      confirmation: "doesn't match %{attribute}"
+      confirmation_period_expired: "needs to be confirmed within %{period}, please request a new one"
+      empty: "can't be empty"
+      equal_to: "must be equal to %{count}"
+      even: "must be even"
+      exclusion: "is reserved"
+      expired: "has expired, please request a new one"
+      extension_black_list_error: "You are not allowed to upload %{extension} files, prohibited types: %{prohibited_types}"
+      extension_white_list_error: "You are not allowed to upload %{extension} files, allowed types: %{allowed_types}"
+      greater_than: "must be greater than %{count}"
+      greater_than_or_equal_to: "must be greater than or equal to %{count}"
+      inclusion: "is not included in the list"
+      invalid: "is invalid"
+      less_than: "must be less than %{count}"
+      less_than_or_equal_to: "must be less than or equal to %{count}"
+      mime_types_processing_error: "Failed to process file with MIME::Types, maybe not valid content-type? Original Error: %{e}"
+      mini_magick_processing_error: "Failed to manipulate with MiniMagick, maybe it is not an image? Original Error: %{e}"
+      not_a_number: "is not a number"
+      not_an_integer: "must be an integer"
+      not_found: "not found"
+      not_locked: "was not locked"
+      not_saved: 
+        one: "1 error prohibited this %{resource} from being saved:"
+        other: "%{count} errors prohibited this %{resource} from being saved:"
+      odd: "must be odd"
+      other_than: "must be other than %{count}"
+      present: "must be blank"
+      rmagick_processing_error: "Failed to manipulate with rmagick, maybe it is not an image? Original Error: %{e}"
+      taken: "has already been taken"
+      too_long: "is too long (maximum is %{count} characters)"
+      too_short: "is too short (minimum is %{count} characters)"
+      wrong_length: "is the wrong length (should be %{count} characters)"
+  helpers: 
+    label: 
+      apply_message: 
+        birthdate: Birthdate
+        city: "City *"
+        civility: Civilidade
+        company: "Company *"
+        country: "Country *"
+        email: "Email *"
         first_name: "First name *"
         last_name: "Last name *"
-        email: "Email *"
-        birthdate: "Birthdate"
-        company: "Company *"
-        position: "Position*"
-        years_of_experience: "Years of experience"
+        position: Position*
         work_phone: "Work phone"
-        city: "City *"
-        country: "Country *"
-      contact_message:
+        years_of_experience: "Years of experience"
+      article: 
+        title: Title
+      contact_message: 
+        calendar: Schedule
+        company: Company
+        email: Email
         first_name: "First name"
         last_name: "Last name"
-        email: "Email"
-        calendar: "Schedule"
-        company: "Company"
-        position: "Position"
-        phone: "Telephone"
-        observations: "Observations"
-  high_performance: "High performance"
-  focus: "Focus"
-  quality_of_life: "Lifestyle"
-  intuition: "Intuition"
-  leadership: "Leadership"
-  human_relationships: "Human relationships"
-  static_pages:
-    header:
-      teaching_phrase: TEACHING TOP LEADERS SINCE 1960
-      countries_html: "Paris &#8226; London &#8226; New York &#8226; Roma &#8226; Barcelona &#8226; Buenos Aires &#8226; Lisboa &#8226; Porto &#8226; Rio &#8226; São Paulo"
-    navbar:
-      derose_for_leaders:
-        title_html: DeR<span class="navbar-title-smallcaps">OSE</span>  F<span class="navbar-title-smallcaps">OR</span> L<span class="navbar-title-smallcaps">EADERS</span> <b class="caret"></b>
-        derose_method_html: DeR<span class="navbar-title-smallcaps">OSE</span> Method
-        personal_teachers: Personal Teachers
-        all_over_the_world_html: DeR<span class="navbar-title-smallcaps">OSE</span> All Over the World
-      programs:
-        title_html: P<span class="navbar-title-smallcaps">ROGRAMS</span>
-        individuals:
-          title: FOR INDIVIDUALS
-          personal_teaching: Personal Teaching
-          consulting: Consulting
-          training: Training
-        enterprises:
-          title: FOR BUSINESSES
-          small_group_teaching: Small Group Teaching
-          training: Small Group Training
-          talks: Lectures
-          workshop: Workshop
-      testimonials:
-        title_html: T<span class="navbar-title-smallcaps">ESTIMONIALS</span>
-        enterprises: Enterpises
-        institutions: Institutions
-      articles:
-        title_html: A<span class="navbar-title-smallcaps">RTICLES</span>
-      contact_type:
-        title_html: C<span class="navbar-title-smallcaps">ONTACT</span>
-        contact: Get in touch with us
-    slideshow:
-      first_phrase_html: YOU KNOW HOW YOUR BUSINESS WORKS<br> WE KNOW HOW <span class="you-emphasis gold-color">YOU</span> WORK
-      second_phrase_html: YOU HAVE THE GOALS<br> WE HAVE THE TOOLS
-      third_phrase_html: "IN THE BUSINESS WORLD,<br> HUMAN BEING IS WHAT REALLY MATTERS"
-    programs:
-      title: OUR PROGRAMS
-      subtitle: INVEST IN TAILORED PROGRAMS
-      individuals:
-        title: FOR INDIVIDUALS
-        personal_teaching:
-          title: PERSONAL TEACHING
-          subtitle: 1h two times per week
-          first_item: Develop your potential
-          second_item: Attain High Performance in all areas of your life
-          third_item: Improve your Quality of Life
-        consultory: 
-          title: CONSULTING
-          subtitle: 1h per week
-          first_item: High productivity
-          second_item: Live and work better
-          third_item: "Behavior, ethic and results"
-        training:
-          title: TRAINING
-          subtitle: 15 minutes per day
-          first_item: Promote your high productivity
-          second_item: Improve your physical fitness
-          third_item: Develop your well being
-          third_item: ""
-      enterprise:
-        title: FOR BUSINESSES
-        small_group_teaching:
-          title: SMALL GROUP TEACHING
-          subtitle: 1h two times per week
-          first_item: Strengthen bonds with other leaders
-          second_item: Develop high performance in the profession
-          third_item: Improve quality of life
-        workshop:
-          title: WORKSHOPS
-          subtitle: "4, 8 or 16 hours"
-          first_item: Time management
-          second_item: Conflict management
-          third_item: Stress management
-        small_group_training:
-          title: SMALL GROUP TRAINING
-          subtitle: 15 minutes per day
-          first_item: Improve physical fitness
-          second_item: Provide a moment for well being
-          third_item: Promote high productivity
-        talks:
-          title: LECTURES
-          subtitle: 2 or 4 hours
-          first_item: High Performance
-          second_item: Quality of Life
-          third_item: Conflict management
-          fourth_item: Stress management
-          fifth_item: Management of emotions
-    articles:
-      title: OUR ARTICLES
-      subtitle: SHORT AND DYNAMIC TEXTS TO STIMULATE THE LEARNING PROCESS
+        observations: Observations
+        phone: Telephone
+        position: Position
+        submit: Submit
+    select: 
+      prompt: "Please select"
+    submit: 
+      create: "Create %{model}"
+      submit: "Save %{model}"
+      update: "Update %{model}"
+  number: 
+    currency: 
+      format: 
+        delimiter: ","
+        format: "%u%n"
+        precision: 2
+        separator: "."
+        unit: $
+    format: 
+      delimiter: ","
+      precision: 3
+      separator: "."
+    human: 
+      decimal_units: 
+        format: "%n %u"
+        units: 
+          billion: Billion
+          million: Million
+          quadrillion: Quadrillion
+          thousand: Thousand
+          trillion: Trillion
+      format: 
+        precision: 3
+        significant: true
+        strip_insignificant_zeros: true
+      storage_units: 
+        format: "%n %u"
+        units: 
+          byte: 
+            one: Byte
+            other: Bytes
+          gb: GB
+          kb: KB
+          mb: MB
+          tb: TB
+    percentage: 
+      format: 
+        format: "%n%"
+  static_pages: 
+    articles: 
       read_more: "READ MORE >>"
-    partners:
-      title: OUR PARTNERS
-      subtitle: SEE WHO INVESTS IN US
-    footer:
-      title_html: DeR<span class="navbar-title-smallcaps">OSE</span> F<span class="navbar-title-smallcaps">OR</span> L<span class="navbar-title-smallcaps">EADERS</span>
-      derose_for_leaders:
-        title: Who are we?
-        derose_method_html: The DeR<span class="navbar-title-smallcaps">OSE</span> Method
-        personal_teachers: Personal Teachers
-        all_over_the_world_html: DeR<span class="navbar-title-smallcaps">OSE</span> All Over The World
-      individuals:
-        title: Programs for individuals
-        personal_teaching: Personal Teaching
-        training: Training
-        consulting: Consulting
-      enterprises:
-        title: Programs for businesses
-        small_group_teaching: Small Group Teaching
-        training: Training
-        talks: Lecture
-        workshop: Workshops
-      articles:
-        title: Articles
-        leadership: Leadership
-        high_performance: High Productivity
-        focus: Focus
-        intuition: Applied Intuiton
-        human_relationships: Interpersonal Relations
-        quality_of_life: Lifestyle
-      testimonials:
-        title: Testimonials
-        enterprises: Business
-        institutions: Institutions
-      contact_us: "Contact Us!"
+      subtitle: "SHORT TEXTS TO STIMULATE THE LEARNING PROCESS"
+      title: "OUR ARTICLES"
+    categories: 
+      focus: Focus
+      high_performance: "High performance"
+      human_relationships: "Human relationships"
+      leadership: Leadership
+      quality_of_life: "Quality of life"
+    contact: 
+      countries_html: "<h2>UNITED STATES</h2> New York <h2>FRANCE</h2> Paris <h2>BRASIL</h2> Sao Paulo <br/> Rio de Janeiro <br/> Brasilia<br/> Porto Alegre<br/> <h2>ARGENTINA</h2> Buenos Aires"
+      message: "Our team is happy to answer your questions regarding our programs and our admissions process and assist you with your application."
+      title: "CONTACT US"
+    derose_method: 
+      body: 
+        main: 
+          first_block: 
+            content_html: "<p>The DeR<span class=\"navbar-title-smallcaps\">OSE</span> Method is an interweavement of <b>techniques</b> and <b>concepts</b>, building a proposal of behavioral refinement towards good quality of life, good manners, good human relations, good culture, good nutrition, good physical fitness and good ideals.</p> <p>Some of the tools we use are respiratory re-education, stress management, organic body techniques that promote vitality and energy, procedures that enhance emotional relaxation and mental concentration.</p>"
+          fourth_block: 
+            title: "A PROPOSAL OF GOOD THINGS:"
+          second_block: 
+            content_html: "The DeR<span class=\"navbar-title-smallcaps\">OSE</span> Method is greatly valuable for leaders seeking efficient tools to enhance and increase their personal and professional performance. We create a tailored program for each leader, including <b>Personal Teaching</b>, <b>Training</b> and <b>Consulting</b>. Together we define your objectives and teach the most appropriate tools so they can progress effectively and sustainably."
+            title: "THE DeROSE METHOD FOR LEADERS"
+          third_block: 
+            content_html: "<p>Leaders recognize our great difrencial: an <b>incomparable know-how to improve human beings</b>. The increases in performance and quality of life our clients have achieved are very significant and due to the excellent quality of the tools we teach. Discipline and consistency in the application of our techniques and concepts are enough to reap the positive results in professional and personal life.</p>"
+            title: "WHAT MAKES OUR METHOD SO UNIQUE"
+        sidebar: 
+          video: 
+            title: "VIDEO: INSPIRE YOUR ESSENCE"
+        title: "WHAT IS THE DeROSE METHOD"
+      footer: 
+        first_column: 
+          content_html: "Afin de développer le potentiel de vos équipes, vous devez vous-même vous même être un modèle de productivité et de réussite. Nos programmes sont construits sur mesure pour vous permettre d'atteindre vos objectifs."
+          title: "PROGRAMMES POUR LES INDIVIDUS"
+        second_column: 
+          content_html: "A strong team is composed of focused and well prepared individuals; the programs for companies not only strengthen each of the leaders in a well rounded way, but also makes them a team."
+          title: "PROGRAMS FOR BUSINESSES"
+        third_column: 
+          content_html: "The techniques and concepts of the DeR<span class=\"navbar-title-smallcaps\">OSE</span> Method not only get results in terms of quality of life - they will also generate wealth for companies!"
+          title_html: "DeROSE METHOD IN BUSINESSES"
+      header: 
+        subtitle: "| High productivity | Breathing | Focus | Interpersonal Relations | Performance | Conflict management | Stress management | Strength | Results |"
+        title_html: "The DeR<span class=\"navbar-title-smallcaps\">OSE</span> Method"
+    footer: 
       apply_now: "Apply Now!"
-      follow_us: Follow us!
-    derose_method:
-      header:
-        title_html: The DeR<span class="navbar-title-smallcaps">OSE</span> Method
-        subtitle: '| High productivity | Breathing | Focus | Interpersonal Relations | Performance | Conflict management | Stress management | Strength | Results |'
-      body:
-        title: WHAT IS THE DeROSE METHOD
-        main:
-          first_block:
-            content_html: '<p>The DeR<span class="navbar-title-smallcaps">OSE</span> Method is an interweavement of <b>techniques</b> and <b>concepts</b>, building a proposal of behavioral refinement towards good quality of life, good manners, good human relations, good culture, good nutrition, good physical fitness and good ideals.</p> <p>Some of the tools we use are respiratory re-education, stress management, organic body techniques that promote vitality and energy, procedures that enhance emotional relaxation and mental concentration.</p>'
-          second_block:
-            title: THE DeROSE METHOD FOR LEADERS
-            content_html: 'The DeR<span class="navbar-title-smallcaps">OSE</span> Method is greatly valuable for leaders seeking efficient tools to enhance and increase their personal and professional performance. We create a tailored program for each leader, including <b>Personal Teaching</b>, <b>Training</b> and <b>Consulting</b>. Together we define your objectives and teach the most appropriate tools so they can progress effectively and sustainably.'
-          third_block:
-            title: WHAT MAKES OUR METHOD SO UNIQUE
-            content_html: '<p>Leaders recognize our great difrencial: an <b>incomparable know-how to improve human beings</b>. The increases in performance and quality of life our clients have achieved are very significant and due to the excellent quality of the tools we teach. Discipline and consistency in the application of our techniques and concepts are enough to reap the positive results in professional and personal life.</p>'
-          fourth_block:
-            title: 'A PROPOSAL OF GOOD THINGS:'
-        sidebar:
-          video:
-            title: 'VIDEO: INSPIRE YOUR ESSENCE'
-      footer:
-        first_column:
-          title: PROGRAMS FOR INDIVIDUALS
-          content_html: 'To develop the potential of people you manage, it is important that you also constantly improve; refine your own High Productivity with our programs for individuals.'
-        second_column:
-          title: PROGRAMS FOR BUSINESSES
-          content_html: 'A strong team is composed of focused and well prepared individuals; the programs for companies not only strengthen each of the leaders in a well rounded way, but also makes them a team.'
-        third_column:
-          title_html: DeROSE METHOD IN BUSINESSES
-          content_html: 'The techniques and concepts of the DeR<span class="navbar-title-smallcaps">OSE</span> Method not only get results in terms of quality of life - they will also generate wealth for companies!'
-    sidebar:
-      nestle:
-        title: MY WELL BEING IS IN NESTLÉ
-        content: "Research by Prof. Rosana Ortega"
-      our_criteria:
-        title: SELECTION CRITERIA
-        content_html: "All of our programs have a limited number of vacancies. Applications undergo a rigorous selection process. <br><br> The main criteria for the programs are: <p>- Recommendation from DeR<span class='navbar-title-smallcaps'>OSE</span> Method students;</p> <p>- Leadership role and high level of responsibility; </p> <p>- Professional curriculum that demonstrates excellent capacity for personal growth;</p><p>- Motivation to enter the program.</p>"
-      experts:
-        title: MEET OUR EXPERT CONSULTORS
-        see_more: SEE MORE DETAILS
-      peugeot:
-        title: RECOMENDATION
-        erwin_data_html: "<h3>Erwin MUSEUR</h3> <h4>Paris</h4> <p>Design Manager</p> <p>PEUGEOT</p> "
-        testimonial: "From the very beginning I've enjoyed the classes because I felt that they produced positive effects very fast. In the first months I learned very efficient tools to increase my vitality, I improved my breathing capacity as well as my flexibility and muscle tone. Soon afterwards I started training my mental capabilities. The theoretical knowledge explained in conversations added great value to my personal and professional growth."
-        see_more: READ MORE
-      unique_method:
-        title: WHAT MAKES OUR METHOD UNIQUE
-        content: "Leaders recognize our great difrencial: an incomparable know-how to improve human beings. The increases in performance and quality of life our clients have achieved are very significant and due to the excellent quality of the tools we teach. Discipline and consistency in the application of our techniques and concepts are enough to reap the positive results in your professional and personal life."
-    our_consultors:
-      header:
-        title: PERSONAL TEACHERS
-      footer:
-        see_our_programs: SEE OUR PROGRAMS
-      body:
-        first_block:
-          title: OUR PROFESSIONALS
-          content_html: 'We have hundreds of Personal Teachers around the world. The quality of each of their training is the constant focus within the DeR<span class="navbar-title-smallcaps">OSE</span> Method: they are trained for at least four years and are reevaluated annually to maintain the highest level of excellence. We administer lectures, workshops and trainings on topics such as good human relations, conflict management, stress management, high productivity, focus and other issues. The client can choose the language they want their program to be taught in: English, Portuguese, French, Spanish, Italian and German.'
-          personal_teachers: personal teachers
-        second_block:
-          title: EXPERT CONSULTANTS
-          content_html: 'Within our group of hundreds of professionals all over the world there is a selection of specialists who have more experience teaching the DeR<span class="navbar-title-smallcaps">OSE</span> Method: Expert Consultants. They all have at least 15 years of international experience training leaders throughout the Americas and Europe (lecturing in Brazil, Argentina, Portugal, France and the United States). Programs such as consulting and lectures are given exclusively by our Expert Consultants who are considered the best in their respective areas of expertise.'
-        consultors:
-          luis:
-            title: Luís LOPES
-            content_html: "Working with the DeR<span class='navbar-title-smallcaps'>OSE</span> Method since 1988, Luís Lopes was the founder of the first certified DeR<span class='navbar-title-smallcaps'>OSE</span> Network school in Portugal. He has been teaching courses since the 1990's and is an expert in the field of Emotional Reprogramming and Organic Purification Techniques. He is also specialized in tailoring DeR<span class='navbar-title-smallcaps'>OSE</span> Method for professionals and businesses."
-          gus:
-            title: Gustavo OLIVEIRA
-            content_html: 'A DeR<span class="navbar-title-smallcaps">OSE</span> Method Professor, holds a bachelors degree in Mechanical Engineering from Unicamp and a post-graduate degree in Business Administration and Marketing from ESPM. His courses focus on quality of life, body development, mentoring, meditation, and motivation.'
-          rogerio:
-            title: Rogério BRANT
-            content_html: "Graduate of the Pontifícia Catholic University of Paraná (PUC-PR) and the Lusophone University of Lisbon. He specializes in the DeR<span class='navbar-title-smallcaps'>OSE</span> Method's organic body techniques. He teaches courses in several cities throughout Brazil, South America and Europe."
-          edu:
-            title: Eduardo CIRILO
-            content_html: 'A DeR<span class="navbar-title-smallcaps">OSE</span> Method Entrepreneur since 1999, he has directed his own school in the city of Porto, Portugal since 2004. He specializes in entrepreneur training program and also specializes in teaching techniques and concepts, mainly respiratory and stress management techniques, to business professionals, entrepreneurs and students.'
-          flavio:
-            title: Flávio MOREIRA
-            content_html: 'Founded two DeR<span class="navbar-title-smallcaps">OSE</span> Method establishments in São Paulo, Brazil and has nearly 20 years experience as a lecturer and teacher in the network. As a teacher, he gave several practical and theoretical courses in Brazil and in several European countries. It specializes in High Performance techniques.'
-    net:
-      header:
-        title: ALL OVER THE WORLD
-      body:
-        numbers:
-          establishments: establishments
+      articles: 
+        focus: Focus
+        high_performance: "High Productivity"
+        human_relationships: "Interpersonal Relations"
+        intuition: "Applied Intuiton"
+        leadership: Leadership
+        quality_of_life: Lifestyle
+        title: Articles
+      contact_us: "Contact Us!"
+      derose_for_leaders: 
+        all_over_the_world_html: "DeR<span class=\"navbar-title-smallcaps\">OSE</span> All Over The World"
+        derose_method_html: "The DeR<span class=\"navbar-title-smallcaps\">OSE</span> Method"
+        personal_teachers: "Personal Teachers"
+        title: "Who are we?"
+      enterprises: 
+        small_group_teaching: "Small Group Teaching"
+        talks: Lecture
+        title: "Programs for businesses"
+        training: Training
+        workshop: Workshops
+      follow_us: "Follow us!"
+      individuals: 
+        consulting: Consulting
+        personal_teaching: "Personal Teaching"
+        title: "Programs for individuals"
+        training: Training
+      testimonials: 
+        apply_now: "Déposer une candature"
+        enterprises: Business
+        follow_us: "Nous suivre"
+        institutions: Institutions
+        title: Testimonials
+      title_html: "DeR<span class=\"navbar-title-smallcaps\">OSE</span> F<span class=\"navbar-title-smallcaps\">OR</span> L<span class=\"navbar-title-smallcaps\">EADERS</span>"
+    group_consultory_body: 
+      candidates: CANDIDATES
+      pills: 
+        small_group_teaching: 
+          subtitle: "Two classes per week of one hour"
+          title: "SMALL GROUP TEACHING"
+        small_group_training: 
+          subtitle: "FIfteen minutes per day"
+          title: TRAINING
+        talks: 
+          subtitle: "One, two or four hours"
+          title: LECTURE
+        workshops: 
+          subtitle: "Four, eight or sixteen hours"
+          title: WORKSHOP
+    group_consultory_header: 
+      small_group_teaching: 
+        expand_subtitle_html: "<p>Developing professional and personal High Performance</p> <p>Improving Quality of Life </p> <p>Strengthen relations between leaders</p>"
+        subtitle: "Two classes per week of one hour"
+        title: "SMALL GROUP TEACHING"
+      small_group_training: 
+        expand_subtitle_html: "<p>Develop High Productivity</p> <p>Improve Fitness</p> <p>Boost Well Being</p>"
+        subtitle: "Fifteen minutes per day"
+        title: "SMALL GROUP TRAINING"
+      talks: 
+        subtitle: "One, two or four hours"
+        title: LECTURES
+      workshops: 
+        expand_subtitle_html: "TOPICS High productivity  Live and work better  Attitude, ethics and results  Wise leadership"
+        subtitle: "Four, eight or sixteen hours"
+        title: WORKSHOPS
+    header: 
+      countries_html: "Paris &#8226; London &#8226; New York &#8226; Roma &#8226; Barcelona &#8226; Buenos Aires &#8226; Lisboa &#8226; Porto &#8226; Rio &#8226; São Paulo"
+      teaching_phrase: "TEACHING TOP LEADERS SINCE 1960"
+    individual_consultory_body: 
+      first_meeting: "FIRST MEETING"
+      pills: 
+        consulting: 
+          subtitle: "1 hour per week"
+          title: CONSULTING
+        personal: 
+          subtitle: "1 hour two times per week"
+          title: "PERSONAL TEACHING"
+        training: 
+          subtitle: "15 minutes per day"
+          title: TRAINING
+    individual_consultory_header: 
+      consulting: 
+        expand_subtitle_html: "<h2>TOPICS</h2> <p>High productivity</p> <p>Live and work better</p> <p>Behavior, ethics and results</p> <p>Wise leadership</p>"
+        subtitle: "3 to 6 months"
+        title: "CONSULTING PROGRAM"
+      intensive: 
+        expand_subtitle_html: ""
+        subtitle: "2 dias"
+        title: "INTENSIVE TEACHING"
+      personal: 
+        expand_subtitle_html: "<p>Learn tools to develop your potential </p> <p>Develop High Performance in all areas of your life</p> <p>Improve your Quality of Life</p>"
+        subtitle: "1 hour two times per week"
+        title: "PERSONAL TEACHING PROGRAM"
+      training: 
+        expand_subtitle_html: "<p>Improve your High Productivity</p> <p>Improve your Physical Fitness</p> <p>Develop your Well Being</p>"
+        subtitle: "15 minutes per day"
+        title: TRAINING
+    navbar: 
+      articles: 
+        title_html: "A<span class=\"navbar-title-smallcaps\">RTICLES</span>"
+      contact_type: 
+        contact: "Get in touch with us"
+        title_html: "C<span class=\"navbar-title-smallcaps\">ONTACT</span>"
+      derose_for_leaders: 
+        all_over_the_world_html: "DeR<span class=\"navbar-title-smallcaps\">OSE</span> All Over the World"
+        derose_method_html: "DeR<span class=\"navbar-title-smallcaps\">OSE</span> Method"
+        personal_teachers: "Personal Teachers"
+        title_html: "DeR<span class=\"navbar-title-smallcaps\">OSE</span>  F<span class=\"navbar-title-smallcaps\">OR</span> L<span class=\"navbar-title-smallcaps\">EADERS</span> <b class=\"caret\"></b>"
+      programs: 
+        enterprises: 
+          small_group_teaching: "Small Group Teaching"
+          talks: Lectures
+          title: "FOR BUSINESSES"
+          training: "Small Group Training"
+          workshop: Workshop
+        individuals: 
+          consulting: Consulting
+          personal_teaching: "Personal Teaching"
+          title: "FOR INDIVIDUALS"
+          training: Training
+        title_html: "P<span class=\"navbar-title-smallcaps\">ROGRAMS</span>"
+      testimonials: 
+        enterprises: Enterprises
+        institutions: Institutions
+        title_html: "T<span class=\"navbar-title-smallcaps\">ESTIMONIALS</span>"
+    net: 
+      body: 
+        content_html: "We have Personal Teachers who can teach private sessions in most major cities in the Americas and Europe, and elsewhere in the world. They can perform sessions with students in their business or while traveling. Our professionals are available throughout Brazil and Argentina, Chile, Portugal, Spain, France, England, Scotland, Italy, Luxembourg and the United States (including Hawaii). The client can choose the languages they want their sessions conducted in, including English, Spanish Portuguese, French, Italian, German, Dutch, Finnish, Hebrew and Arabic."
+        numbers: 
+          businesses: "partner companies"
           consultors: consultors
           countries: countries
-          businesses: partner companies
-        content_html: 'We have Personal Teachers who can teach private sessions in most major cities in the Americas and Europe, and elsewhere in the world. They can perform sessions with students in their business or while traveling. Our professionals are available throughout Brazil and Argentina, Chile, Portugal, Spain, France, England, Scotland, Italy, Luxembourg and the United States (including Hawaii). The client can choose the languages they want their sessions conducted in, including English, Spanish Portuguese, French, Italian, German, Dutch, Finnish, Hebrew and Arabic.'
-        see_our_programs: SEE OUR PROGRAMS
-    individual_consultory_header:
-      personal:
-        title: PERSONAL TEACHING PROGRAM
-        subtitle: 1 hour two times per week
-        expand_subtitle_html: "<p>Learn tools to develop your potential </p> <p>Develop High Performance in all areas of your life</p> <p>Improve your Quality of Life</p>"
-      training:
-        title: TRAINING
-        subtitle: 15 minutes per day
-        expand_subtitle_html: <p>Improve your High Productivity</p> <p>Improve your Physical Fitness</p> <p>Develop your Well Being</p>
-      consulting:
-        title: CONSULTING PROGRAM
-        subtitle: 3 to 6 months
-        expand_subtitle_html: "<h2>TOPICS</h2> <p>High productivity</p> <p>Live and work better</p> <p>Behavior, ethics and results</p> <p>Wise leadership</p>"
-      intensive:
-        title: INTENSIVE TEACHING
-        subtitle: 2 dias
-        expand_subtitle_html:
-    individual_consultory_body:
-      pills:
-        personal:
-          title: PERSONAL TEACHING
-          subtitle: 1 hour two times per week
-        training:
-          title: TRAINING
-          subtitle: 15 minutes per day
-        consulting:
+          establishments: establishments
+        see_our_programs: "SEE OUR PROGRAMS"
+      header: 
+        title: "ALL OVER THE WORLD"
+    our_consultors: 
+      body: 
+        consultors: 
+          edu: 
+            content_html: "A DeR<span class=\"navbar-title-smallcaps\">OSE</span> Method Entrepreneur since 1999, he has directed his own school in the city of Porto, Portugal since 2004. He specializes in entrepreneur training program and also specializes in teaching techniques and concepts, mainly respiratory and stress management techniques, to business professionals, entrepreneurs and students."
+            title: "Eduardo CIRILO"
+          flavio: 
+            content_html: "Founded two DeR<span class=\"navbar-title-smallcaps\">OSE</span> Method establishments in São Paulo, Brazil and has nearly 20 years experience as a lecturer and teacher in the network. As a teacher, he gave several practical and theoretical courses in Brazil and in several European countries. It specializes in High Performance techniques."
+            title: "Flávio MOREIRA"
+          gus: 
+            content_html: "A DeR<span class=\"navbar-title-smallcaps\">OSE</span> Method Professor, holds a bachelors degree in Mechanical Engineering from Unicamp and a post-graduate degree in Business Administration and Marketing from ESPM. His courses focus on quality of life, body development, mentoring, meditation, and motivation."
+            title: "Gustavo OLIVEIRA"
+          luis: 
+            content_html: "Working with the DeR<span class='navbar-title-smallcaps'>OSE</span> Method since 1988, Luís Lopes was the founder of the first certified DeR<span class='navbar-title-smallcaps'>OSE</span> Network school in Portugal. He has been teaching courses since the 1990's and is an expert in the field of Emotional Reprogramming and Organic Purification Techniques. He is also specialized in tailoring DeR<span class='navbar-title-smallcaps'>OSE</span> Method for professionals and businesses."
+            title: "Luís LOPES"
+          rogerio: 
+            content_html: "Graduate of the Pontifícia Catholic University of Paraná (PUC-PR) and the Lusophone University of Lisbon. He specializes in the DeR<span class='navbar-title-smallcaps'>OSE</span> Method's organic body techniques. He teaches courses in several cities throughout Brazil, South America and Europe."
+            title: "Rogério BRANT"
+        first_block: 
+          content_html: "We have hundreds of Personal Teachers around the world. The quality of each of their training is the constant focus within the DeR<span class=\"navbar-title-smallcaps\">OSE</span> Method: they are trained for at least four years and are reevaluated annually to maintain the highest level of excellence. We administer lectures, workshops and trainings on topics such as good human relations, conflict management, stress management, high productivity, focus and other issues. The client can choose the language they want their program to be taught in: English, Portuguese, French, Spanish, Italian and German."
+          personal_teachers: "personal teachers"
+          title: "OUR PROFESSIONALS"
+        second_block: 
+          content_html: "Within our group of hundreds of professionals all over the world there is a selection of specialists who have more experience teaching the DeR<span class=\"navbar-title-smallcaps\">OSE</span> Method: Expert Consultants. They all have at least 15 years of international experience training leaders throughout the Americas and Europe (lecturing in Brazil, Argentina, Portugal, France and the United States). Programs such as consulting and lectures are given exclusively by our Expert Consultants who are considered the best in their respective areas of expertise."
+          title: "EXPERT CONSULTANTS"
+      footer: 
+        see_our_programs: "SEE OUR PROGRAMS"
+      header: 
+        title: "PERSONAL TEACHERS"
+    partners: 
+      subtitle: "SEE WHO INVESTS IN US"
+      title: "OUR PARTNERS"
+    programs: 
+      enterprise: 
+        small_group_teaching: 
+          first_item: "Strengthen bonds with other leaders"
+          second_item: "Develop high performance in the profession"
+          subtitle: "1h two times per week"
+          third_item: "Improve quality of life"
+          title: "SMALL GROUP TEACHING"
+        small_group_training: 
+          first_item: "Improve physical fitness"
+          second_item: "Provide a moment for well being"
+          subtitle: "15 minutes per day"
+          third_item: "Promote high productivity"
+          title: "SMALL GROUP TRAINING"
+        talks: 
+          fifth_item: "Management of emotions"
+          first_item: "High Performance"
+          fourth_item: "Stress management"
+          second_item: "Quality of Life"
+          subtitle: "2 or 4 hours"
+          third_item: "Conflict management"
+          title: LECTURES
+        title: "FOR BUSINESSES"
+        workshop: 
+          first_item: "Time management"
+          second_item: "Conflict management"
+          subtitle: "4, 8 or 16 hours"
+          third_item: "Stress management"
+          title: WORKSHOPS
+      individuals: 
+        consultory: 
+          first_item: "High Productivity"
+          second_item: "Live and work better"
+          subtitle: "1h per week"
+          third_item: "Attitude, ethics and results"
           title: CONSULTING
-          subtitle: 1 hour per week
-      first_meeting: FIRST MEETING
-    group_consultory_header:
-      small_group_teaching:
-        title: SMALL GROUP TEACHING
-        subtitle: Two classes per week of one hour
-        expand_subtitle_html: "<p>Developing professional and personal High Performance</p> <p>Improving Quality of Life </p> <p>Strengthen relations between leaders</p>"
-      small_group_training:
-        title: SMALL GROUP TRAINING
-        subtitle: Fifteen minutes per day
-        expand_subtitle_html: <p>Develop High Productivity</p> <p>Improve Fitness</p> <p>Boost Well Being</p>
-      workshops:
-        title: WORKSHOPS
-        subtitle: "Four, eight or sixteen hours"
-        expand_subtitle_html:
-      talks:
-        title: LECTURES
-        subtitle: "One, two or four hours"
-        expand_subtitle_html:
-    group_consultory_body:
-      pills:
-        small_group_teaching:
-          title: SMALL GROUP TEACHING
-          subtitle: Two classes per week of one hour
-        small_group_training:
+        personal_teaching: 
+          first_item: "Develop your potential"
+          second_item: "Attain High Performance in all areas of your life"
+          subtitle: "1h two times per week"
+          third_item: "Improve your Quality of Life"
+          title: "PERSONAL TEACHING"
+        title: "FOR INDIVIDUALS"
+        training: 
+          first_item: "Promote your high productivity"
+          second_item: "Improve your physical fitness"
+          subtitle: "15 minutes per day"
+          third_item: "Develop your well being"
           title: TRAINING
-          subtitle: FIfteen minutes per day
-        workshops:
-          title: WORKSHOP
-          subtitle: "Four, eight or sixteen hours"
-        talks:
-          title: LECTURE
-          subtitle: "One, two or four hours"
-      candidates: CANDIDATES
-    testimonials:
-      enterprise:
-        title: TESTIMONIALS FROM STUDENTS
-        erwin:
+      subtitle: "INVEST IN TAILORED PROGRAMS"
+      title: "OUR PROGRAMS"
+    sidebar: 
+      experts: 
+        see_more: "SEE MORE DETAILS"
+        title: "MEET OUR EXPERT CONSULTORS"
+      nestle: 
+        content: "Research by Prof. Rosana Ortega"
+        title: "MY WELL BEING IS IN NESTLÉ"
+      our_criteria: 
+        content_html: "All of our programs have a limited number of vacancies. Applications undergo a rigorous selection process. <br><br> The main criteria for the programs are: <p>- Recommendation from DeR<span class='navbar-title-smallcaps'>OSE</span> Method students;</p> <p>- Leadership role and high level of responsibility; </p> <p>- Professional curriculum that demonstrates excellent capacity for personal growth;</p><p>- Motivation to enter the program.</p>"
+        title: "SELECTION CRITERIA"
+      peugeot: 
+        erwin_data_html: "<h3>Erwin MUSEUR</h3> <h4>Paris</h4> <p>Design Manager</p> <p>PEUGEOT</p> "
+        see_more: "READ MORE"
+        testimonial: "From the very beginning I've enjoyed the classes because I felt that they produced positive effects very fast. In the first months I learned very efficient tools to increase my vitality, I improved my breathing capacity as well as my flexibility and muscle tone. Soon afterwards I started training my mental capabilities. The theoretical knowledge explained in conversations added great value to my personal and professional growth."
+        title: RECOMENDATION
+      unique_method: 
+        content: "Leaders recognize our great difrencial: an incomparable know-how to improve human beings. The increases in performance and quality of life our clients have achieved are very significant and due to the excellent quality of the tools we teach. Discipline and consistency in the application of our techniques and concepts are enough to reap the positive results in your professional and personal life."
+        title: "WHAT MAKES OUR METHOD UNIQUE"
+    slideshow: 
+      first_phrase_html: "YOU KNOW HOW YOUR BUSINESS WORKS<br> WE KNOW HOW <span class=\"you-emphasis gold-color\">YOU</span> WORK"
+      second_phrase_html: "YOU HAVE THE GOALS<br> WE HAVE THE TOOLS"
+      third_phrase_html: "IN THE BUSINESS WORLD,<br> HUMAN BEING IS WHAT REALLY MATTERS"
+    testimonials: 
+      enterprise: 
+        erwin: 
           content_html: "<p>From the very beginning I've enjoyed the classes because I felt that they produced positive effects very fast. In the first months I learned very efficient tools to increase my vitality, I improved my breathing capacity as well as my flexibility and muscle tone. Soon afterwards I started training my mental capabilities. The theoretical knowledge explained in conversations added great value to my personal and professional growth.</p> <p>With the DeR<span class='navbar-title-smallcaps'>OSE</span> Method, I developed my potential and more self-awareness. I feel better day-to-day, calmer and more prepared to face challenges. </p> <p>As a professional, I felt a significant improvement in my ability to prioritize my tasks, in conflict management, stress management, and in my ability to lead others. This resulted in significant growth in my career opportunities because my colleagues and superiors realized how much I had progressed and trusted me with new responsibilities and leadership roles.</p>"
-        judith:
-          content_html: "<p>I have practiced the DeR<span class='navbar-title-smallcaps'>OSE</span> Method for a short period of time, and I'm happy to say I am amazed by the techniques, the culture and lifestyle taught in this methodology. Immediately, I realized that I was feeling more relaxed, as much as the techniques were intense and even quite difficult for a beginner like myself. Now this methodology is a part of my life! The DeRose Method is really impressive, and helps improve all aspects of life. I'm really pleased to have found this lifestyle, discovered this method and encourage all who seek overall improvement, both physical and personal, to try for yourself.</p>"
-        miguel:
-          info_html: "<h2>Miguel <br> DAL'NEGRO CARVALHO</h2> <h3>Curitiba, <br> BRAZIL</h3> <h4>Analyst  <br> Department of <br> Organizational Systems <br> Financial <br> BANK OF BRAZIL</h4>"
-          content_html: "<p>Well, before practicing, I had the notion of the inter-relationship between the emotional, mental and physical bodies. I knew about the effect that the emotional body has on the physical body, both beneficial as well as negative. But I knew little about the effect that the physical body can have on the mental and emotional bodies. I realized that the physical balance techniques helped me stabilize emotionally.</p> <p>I learned how to use breath control to calm down or to energize myself. The body awareness I gained helped me to identify the causes of physical imbalances and avoid them. Besides these, there are many other minor benefits which together improved my overall quality of life.</p>"
-        first_quote:
+        first_quote: 
           content_html: "My well-being has improved considerably since I started practicing DeR<span class='navbar-title-smallcaps'>OSE</span> Method."
           info_html: "<h2>Renata Ribeiro</h2> Consumer Insight Head at Nestlé Brazil "
-        second_quote:
+        judith: 
+          content_html: "<p>I have practiced the DeR<span class='navbar-title-smallcaps'>OSE</span> Method for a short period of time, and I'm happy to say I am amazed by the techniques, the culture and lifestyle taught in this methodology. Immediately, I realized that I was feeling more relaxed, as much as the techniques were intense and even quite difficult for a beginner like myself. Now this methodology is a part of my life! The DeRose Method is really impressive, and helps improve all aspects of life. I'm really pleased to have found this lifestyle, discovered this method and encourage all who seek overall improvement, both physical and personal, to try for yourself.</p>"
+        miguel: 
+          content_html: "<p>Well, before practicing, I had the notion of the inter-relationship between the emotional, mental and physical bodies. I knew about the effect that the emotional body has on the physical body, both beneficial as well as negative. But I knew little about the effect that the physical body can have on the mental and emotional bodies. I realized that the physical balance techniques helped me stabilize emotionally.</p> <p>I learned how to use breath control to calm down or to energize myself. The body awareness I gained helped me to identify the causes of physical imbalances and avoid them. Besides these, there are many other minor benefits which together improved my overall quality of life.</p>"
+          info_html: "<h2>Miguel <br> DAL'NEGRO CARVALHO</h2> <h3>Curitiba, <br> BRAZIL</h3> <h4>Analyst  <br> Department of <br> Organizational Systems <br> Financial <br> BANK OF BRAZIL</h4>"
+        second_quote: 
           content_html: "I think the DeR<span class='navbar-title-smallcaps'>OSE</span> Method program in our company is very well run."
           info_html: "<h2>Nanci Yamada</h2> Development Specialist and R&S at Nestle Brazil"
-      institutions:
+        title: "TESTIMONIALS FROM STUDENTS"
+      institutions: 
+        content_html: "The Commendator DeR<span class=\"navbar-title-smallcaps\">OSE</span> is supported by a substantial number of cultural, academic, humanitarian, military and governmental institutions that recognize the value of his work. However, he always declares: \"I accept these accolades and merits on behalf of all DeRose Method professionals. Let them not to inflate our ego, but rather serve as a demonstration of respect from these organizations. society provides to the work of all professionals in this area.\""
         header_html: "ACKNOWLEDGMENTS <br> OF THE DeROSE METHOD"
-        content_html: 'The Commendator DeR<span class="navbar-title-smallcaps">OSE</span> is supported by a substantial number of cultural, academic, humanitarian, military and governmental institutions that recognize the value of his work. However, he always declares: "I accept these accolades and merits on behalf of all DeRose Method professionals. Let them not to inflate our ego, but rather serve as a demonstration of respect from these organizations. society provides to the work of all professionals in this area."'
-    contact:
-      title: CONTACT US
-      message: Our team is happy to answer your questions regarding our programs and our admissions process and assist you with your application.
-      countries_html: "<h2>UNITED STATES</h2> New York <h2>FRANCE</h2> Paris <h2>BRASIL</h2> Sao Paulo <br/> Rio de Janeiro <br/> Brasilia<br/> Porto Alegre<br/> <h2>ARGENTINA</h2> Buenos Aires"
+  support: 
+    array: 
+      last_word_connector: ", and "
+      two_words_connector: " and "
+      words_connector: ", "
+  time: 
+    am: am
+    formats: 
+      default: "%a, %d %b %Y %H:%M:%S %z"
+      long: "%B %d, %Y %H:%M"
+      short: "%d %b %H:%M"
+    pm: pm
+  translation_center: 
+    actions: 
+      are_you_sure: "Are you sure ?"
+    back_to_app: "Back To App"
+    categories: 
+      category: 
+        complete: Complete
+        keys: Keys
+      index: 
+        categories: Categories
+      show: 
+        all: All
+        pending: Pending
+        translated: Translated
+        untranslated: Untranslated
+    center: 
+      activity: 
+        ago: ago
+        changes: Changes
+        key: Key
+        locale: Locale
+        time: Time
+        user: User
+      dashboard: 
+        activity: Activity
+        all: All
+        controls: Controls
+        dashboard: Dashboard
+        language: Language
+        pending: Pending
+        progress: Progress
+        reset: Reset
+        search: Search
+        select_locale: "Select Locale"
+        these_actions_will_affect_existing_data: "These actions will affect existing data"
+        translated: Translated
+        untranslated: Untranslated
+      search: 
+        title: "Keys with translations that contain '%{value}'"
+    dashboard: Dashboard
+    pagination: 
+      first: First
+      last: Last
+      next: Next
+      prev: Prev.
+    search_keys: Keys
+    search_translations: Translations
+    translate_to: "Translate To"
+    translation_center: "Translation Center"
+    translation_keys: 
+      destroyed_successfully: "Destroyed Successfully"
+      show: 
+        add_edit_translation: "Add/Edit Translation"
+        back_to_category: "Back to"
+        destroy: Destroy
+        translations: Translations
+      show_keys: 
+        created_on: "created on"
+        translated: Translated
+      translation_keys: 
+        no_translation_keys: "No Translation Keys"
+    translations: 
+      accept_translation: 
+        unaccept: Unaccept
+      index: 
+        date: Date
+        sort_by: "Sort by"
+        votings: Votes
+      show: 
+        by: by
+        on_date: "on"
+        vote: Vote
+        votings: Votes
+        you: You
+  views: 
+    pagination: 
+      first: "&laquo; First"
+      last: "Last &raquo;"
+      next: "Next &rsaquo;"
+      previous: "&lsaquo; Prev"
+      truncate: "..."

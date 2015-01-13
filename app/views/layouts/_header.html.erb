@@ -3,22 +3,25 @@
     <div class="header-main-row">
       <div class="col-md-4 image-row" data-no-turbolink>
         <%= link_to root_path do %>
-          <%= image_tag 'logo_mdl.png', class: "center" %>
+          <% locale_logo  %>
         <% end %>
       </div>
       <div class="col-md-7 header-text-row">
         <% render "layouts/languages" %>
-        <div class="teaching-phrase">
-          <span class="teaching-phrase-location">
-            <%= t('static_pages.header.teaching_phrase') %>
-          </span>
+        <div class="col-md-12">
+          <div class="row pull-right teaching-phrase">
+            <span class="teaching-phrase-location">
+              <%= t('static_pages.header.teaching_phrase') %>
+            </span>
+          </div>
         </div>
-
-        <div class="countries-header">
-          <span class="countries-list">
+        <div class="col-md-12">
+          <div class="row pull-right countries-header">
             <%= raw t('static_pages.header.countries_html') %>
-          </span>
+          </div>
         </div>
+      </div>
+      <div class="col-md-1">
       </div>
     </div>
   </div>

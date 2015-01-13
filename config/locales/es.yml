@@ -1,18 +1,58 @@
 --- 
 es: 
   devise: 
+    confirmations: 
+      confirmed: "Su cuenta fue confirmada exitosamente"
+      send_instructions: "Recibirá un email con instrucciones sobre como confirmar su cuenta en unos minutos"
+      send_paranoid_instructions: "Si su email existe en nuestra base de datos, recibirá un email con instrucciones acerca de cómo confirmar su cuenta"
     failure: 
       already_authenticated: "Ya se encuentra logueado"
       inactive: "Su cuenta no se encuentra activada aún."
+      invalid: "Mail o contraseña inválidas"
+      last_attempt: "Tiene un intento más antes de que su cuenta quede bloqueada"
+      locked: "Su cuenta ha sido bloqueada"
+      not_approved: "Su cuenta no fue aprobada aún por el administrador"
+      not_found_in_database: "Email o contraseña inválidas"
+      timeout: "Su sesión expiró. Por favor ingrese nuevamente para continuar."
       unauthenticated: "Es necesario loguearse al sistema antes de continuar"
+      unconfirmed: "Debe confirmar su cuenta antes de continuar."
+      user: 
+        unauthenticated: "No autenticado."
     mailer: 
       confirmation_instructions: 
         subject: "Instrucciones para confirmar"
+      reset_password_instructions: 
+        subject: "Instrucciones para volver a generar la contraseña."
+      unlock_instructions: 
+        subject: "Instrucciones para desbloquear"
     omniauth_callbacks: 
+      failure: "No se pudo autenticar de %{kind} por \"%{reason}\"."
       success: "Autenticado exitosamente a la cuenta %{kind}"
     passwords: 
       no_token: "No puede accedar a esta página sin haber cliqueado en el email de reset de password. Si viene de ahí, por favor asegúrese de que haya ingresaro la URL completa correctamente."
+      send_instructions: "Recibirá un email con instrucciones para volver a generar su contraseña en unos minutos"
+      send_paranoid_instructions: "Si su email existe en nuestra base, recibirá un enlace para volver a establecer su contraseña en unos minutos"
       updated: "Su contraseña ha sido cambiada exitosamente. Ahora está logueado."
+      updated_not_active: "Su contraseña ha sido cambiada exitosamente."
+    registrations: 
+      destroyed: "Adios! Su cuenta fue exitosamente cancelada. Esperamos verlo pronto."
+      signed_up: "Bienvenido! Ingresó correctamente."
+      signed_up_but_inactive: "Su cuenta se generó correctamente Sin embargo no pudimos ingresarlo porque su cuenta aún no está activada."
+      signed_up_but_locked: "Su cuenta se generó exitosamente. Sin embargo, no pudimos ingresarlo porque su cuenta se encuentra bloqueada."
+      signed_up_but_unconfirmed: "Un mensaje con un enlace de confirmación fue enviado a su dirección de email. Por favor abra el link para activar su cuenta."
+      update_needs_confirmation: "Ha actualizado su cuenta exitosamente, pero necesitamos verificar su nueva dirección de email. Por favor chequee su email y siga el enlace de confirmación para finalizar la confirmación de su nuevo email."
+      updated: "Actualizó su cuenta exitosamente."
+      user: 
+        signed_up_but_not_approved: "Ingresó exitosamente, pero su cuenta no fue aprobada aún por el administrador."
+    sessions: 
+      signed_in: "Ingresado exitosamente."
+      signed_out: "Sesión cerrada exitosamente."
+      user: 
+        signed_in: Ingresó
+    unlocks: 
+      send_instructions: "Recibirá un email con instrucciones acerca de cómo desbloquear su cuenta en un par de minutos."
+      send_paranoid_instructions: "Si su cuenta existe, recibirá un email con instrucctiones para desbloquearla en unos minutos."
+      unlocked: "Su cuenta ha sido desbloqueada exitosamente. Por favor ingrese para continuar."
   helpers: 
     label: 
       apply_message: 
@@ -36,24 +76,25 @@ es:
         observations: Observaciones
         phone: Teléfono
         position: Cargo
+        submit: Enviar
   static_pages: 
     articles: 
       read_more: "LEER MAS >>"
       subtitle: "TEXTOS RÁPIDOS Y DINÁMICOS PARA POTENCIAR SU APRENDIZAJE"
       title: "NUESTROS ARTÍCULOS"
     contact: 
-      countries_html: "<h2>BRASIL</h2> Sao Paulo <br/> Rio de Janeiro <br/> Brasilia<br/> Porto Alegre<br/> <h2>ARGENTINA</h2> Buenos Aires <h2>FRANCE</h2> Paris <h2>UNITED STATES</h2> New York"
+      countries_html: "FRANCE Paris ETATS UNIS New-York BRESIL São Paulo Rio de Janeiro Brasilia Floripa ARGENTINE Buenos Aires"
       message: "Our team is happy to answer your questions regarding our programs and our admissions process and assist you with your application."
       title: CONTACTARNOS
     derose_method: 
       body: 
         main: 
           first_block: 
-            content_html: "El M<span class='navbar-title-smallcaps'>ÉTODO</span> DeR<span class='navbar-title-smallcaps'>OSE</span> es un entramado de técnicas y conceptos que construyen una propuesta de reeducación comportamental en pro de la buena calidad de vida, buenas maneras, buenas relaciones humanas, buena cultura, buena alimentación, buena forma, buen ambiente y buenos ideales. <br/> <br/> Algunas de nuestras herramientas técnicas son la reeducación respiratoria, la administración del estrés, las técnicas orgánicas que promueven la vitalidad y la energía, procedimientos para perfeccionar la descontracción emocional y la concentración mental."
+            content_html: "El Método DeR<span class='navbar-title-smallcaps'>OSE</span> es un entramado de técnicas y conceptos que construyen una propuesta de reeducación comportamental en pro de la buena calidad de vida, buenas maneras, buenas relaciones humanas, buena cultura, buena alimentación, buena forma, buen ambiente y buenos ideales. <br/> <br/> Algunas de nuestras herramientas técnicas son la reeducación respiratoria, la administración del estrés, las técnicas orgánicas que promueven la vitalidad y la energía, procedimientos para perfeccionar la descontracción emocional y la concentración mental."
           fourth_block: 
             title: "UNA PROPUESTA DE BUENAS COSAS:"
           second_block: 
-            content_html: "El M<span class='navbar-title-smallcaps'>ÉTODO</span> DeR<span class='navbar-title-smallcaps'>OSE</span> es de gran valor para los líderes que buscan herramientas eficientes para perfeccionarse, aumentando su desempeño personal y profesional. Montamos con cada líder un programa a medida que incluye Personal Teaching, Entrenamientos y Consultorías. Definimos juntos sus objetivos y le enseñamos las herramientas más adecuadas para que pueda progresar en forma efectiva y duradera."
+            content_html: "El Método DeR<span class='navbar-title-smallcaps'>OSE</span> es de gran valor para los líderes que buscan herramientas eficientes para perfeccionarse, aumentando su desempeño personal y profesional. Montamos con cada líder un programa a medida que incluye Personal Teaching, Entrenamientos y Consultorías. Definimos juntos sus objetivos y le enseñamos las herramientas más adecuadas para que pueda progresar en forma efectiva y duradera."
             title: "MÉTODO DeROSE FOR LEADERS"
           third_block: 
             content_html: "Los líderes reconocen nuestro gran diferencial: un know how incomparable para mejorar al ser humano. Los resultados que conseguimos en el aumento de la performance y de la calidad de vida son muy significativos debido a la calidad superlativa de las herramientas que enseñamos. Bastan disciplina y constancia en la aplicación de nuestras técnicas y de nuestros conceptos para recoger frutos positivos en la vida profesional y personal."
@@ -70,11 +111,11 @@ es:
           content_html: "Para desarrollar el potencial de las personas que usted dirige, es importante que usted también esté en constante perfeccionamiento; trabaje su propria Alta Productividad con nuestros programas para individuos."
           title: "PROGRAMAS PARA EMPRESAS"
         third_column: 
-          content_html: "Las técnicas y los conceptos del M<span class='navbar-title-smallcaps'>ÉTODO</span> DeR<span class='navbar-title-smallcaps'>OSE</span> no producen sólo resultados en la calidad de vida, ¡también son capaces de generar riqueza para empresas!"
+          content_html: "Las técnicas y los conceptos del Método DeR<span class='navbar-title-smallcaps'>OSE</span> no producen sólo resultados en la calidad de vida, ¡también son capaces de generar riqueza para empresas!"
           title_html: "MÉTODO DeR<span class='navbar-title-smallcaps'>OSE</span> EN EMPRESAS"
       header: 
         subtitle: "| Alta Productividad | Respiración | Foco | Relaciones Interpersonales | Performance | Administración de conflictos | Gestión del estrés | Fuerza | Resultados |"
-        title_html: "M<span class='navbar-title-smallcaps'>ÉTODO</span> DeR<span class='navbar-title-smallcaps'>OSE</span>"
+        title_html: "Método DeR<span class='navbar-title-smallcaps'>OSE</span>"
     footer: 
       apply_now: "Apply Now!"
       articles: 
@@ -88,7 +129,7 @@ es:
       contact_us: "Contact us!"
       derose_for_leaders: 
         all_over_the_world_html: "DeR<span class='navbar-title-smallcaps'>OSE</span> All Over The World"
-        derose_method_html: "El M<span class='navbar-title-smallcaps'>ÉTODO</span> DeR<span class='navbar-title-smallcaps'>OSE</span>"
+        derose_method_html: "El Método DeR<span class='navbar-title-smallcaps'>OSE</span>"
         personal_teachers: "Personal Teachers"
         title: "¿Quiénes somos?"
       enterprises: 
@@ -135,7 +176,6 @@ es:
         subtitle: "15 minutos por día"
         title: "SMALL GROUP TRAINING"
       talks: 
-        expand_subtitle_html: ""
         subtitle: "1, 2 o 4 horas"
         title: CONFERENCIAS
       workshops: 
@@ -163,7 +203,6 @@ es:
         subtitle: "3 a 6 meses"
         title: "CONSULTING PROGRAM"
       intensive: 
-        expand_subtitle_html: ""
         subtitle: "2 días"
         title: "INTENSIVE TEACHING"
       personal: 
@@ -182,7 +221,7 @@ es:
         title_html: "C<span class='navbar-title-smallcaps'>ONTACTO</span>"
       derose_for_leaders: 
         all_over_the_world_html: "DeR<span class='navbar-title-smallcaps'>OSE</span> All Over the World"
-        derose_method_html: "M<span class='navbar-title-smallcaps'>ÉTODO</span> DeR<span class='navbar-title-smallcaps'>OSE</span>"
+        derose_method_html: "Método DeR<span class='navbar-title-smallcaps'>OSE</span>"
         personal_teachers: "Personal Teachers"
         title_html: "DeR<span class='navbar-title-smallcaps'>OSE</span>  F<span class='navbar-title-smallcaps'>OR</span> L<span class='navbar-title-smallcaps'>EADERS</span> <b class='caret'></b>"
       programs: 
@@ -217,26 +256,26 @@ es:
       body: 
         consultors: 
           edu: 
-            content_html: "Emprendedor del M<span class='navbar-title-smallcaps'>ÉTODO</span> DeR<span class='navbar-title-smallcaps'>OSE</span> desde 1999, dirige su propia escuela en la ciudad de Porto, en Portugal, desde 2004. Se dedica a la formación de profesionales de la red, y también se ha especializado en la enseñanza de técnicas y conceptos para profesionales, empresarios y estudiantes, principalmente en técnicas respiratorias y administración del estrés."
+            content_html: "Emprendedor del Método DeR<span class='navbar-title-smallcaps'>OSE</span> desde 1999, dirige su propia escuela en la ciudad de Porto, en Portugal, desde 2004. Se dedica a la formación de profesionales de la red, y también se ha especializado en la enseñanza de técnicas y conceptos para profesionales, empresarios y estudiantes, principalmente en técnicas respiratorias y administración del estrés."
             title: "Eduardo CIRILO"
           flavio: 
-            content_html: "Fundador de dos emprendimientos del M<span class='navbar-title-smallcaps'>ÉTODO</span> DeR<span class='navbar-title-smallcaps'>OSE</span> en la ciudad de São Paulo, posee casi 20 años como profesor de la red. Ha dictado diversos cursos prácticos y teóricos en Brasil y en diversos países de Europa. Se especializa en técnicas de Alta Performance."
+            content_html: "Fundador de dos emprendimientos del Método DeR<span class='navbar-title-smallcaps'>OSE</span> en la ciudad de São Paulo, posee casi 20 años como profesor de la red. Ha dictado diversos cursos prácticos y teóricos en Brasil y en diversos países de Europa. Se especializa en técnicas de Alta Performance."
             title: "Flávio MOREIRA"
           gus: 
-            content_html: "Docente del M<span class='navbar-title-smallcaps'>ÉTODO</span> DeR<span class='navbar-title-smallcaps'>OSE</span>, es también licenciado en Ingeniería Mecánica por la Unicamp y tiene posgrado en Administración y Marketing por la ESPM. Dicta cursos orientados hacia calidad de vida, desarrollo corporal, mentalización, meditación y motivación."
+            content_html: "Docente del Método DeR<span class='navbar-title-smallcaps'>OSE</span>, es también licenciado en Ingeniería Mecánica por la Unicamp y tiene posgrado en Administración y Marketing por la ESPM. Dicta cursos orientados hacia calidad de vida, desarrollo corporal, mentalización, meditación y motivación."
             title: "Gustavo OLIVEIRA"
           luis: 
-            content_html: "Involucrado con el trabajo en el M<span class='navbar-title-smallcaps'>ÉTODO</span> DeR<span class='navbar-title-smallcaps'>OSE</span> desde 1988, Luís Lopes fue fundador de la primera escuela certificada de la red en Portugal. Dicta cursos desde 1990. Es especialista en el área de Reprogramación Emocional y Técnicas de Purificación Orgánicas. Se ha especializado en adaptar el M<span class='navbar-title-smallcaps'>ÉTODO</span> DeR<span class='navbar-title-smallcaps'>OSE</span> para profesionales y empresas."
+            content_html: "Involucrado con el trabajo en el Método DeR<span class='navbar-title-smallcaps'>OSE</span> desde 1988, Luís Lopes fue fundador de la primera escuela certificada de la red en Portugal. Dicta cursos desde 1990. Es especialista en el área de Reprogramación Emocional y Técnicas de Purificación Orgánicas. Se ha especializado en adaptar el Método DeR<span class='navbar-title-smallcaps'>OSE</span> para profesionales y empresas."
             title: "Luís LOPES"
           rogerio: 
-            content_html: "Formado por la Pontificia Universidad Católica de Paraná (PUC-PR) y por la Universidad Lusófona, de Lisboa, se especializó en las técnicas orgánicas del M<span class='navbar-title-smallcaps'>ÉTODO</span> DeR<span class='navbar-title-smallcaps'>OSE</span>. Dicta cursos en varias ciudades de Brasil, América del Sur y Europa."
+            content_html: "Formado por la Pontificia Universidad Católica de Paraná (PUC-PR) y por la Universidad Lusófona, de Lisboa, se especializó en las técnicas orgánicas del Método DeR<span class='navbar-title-smallcaps'>OSE</span>. Dicta cursos en varias ciudades de Brasil, América del Sur y Europa."
             title: "Rogério BRANT"
         first_block: 
-          content_html: "Disponemos de cientos de Personal Teachers por todo el mundo. La calidad de la formación de cada uno de ellos es foco constante dentro del M<span class='navbar-title-smallcaps'>ÉTODO</span> DeR<span class='navbar-title-smallcaps'>OSE</span>: se preparan durante 4 años como mínimo y son revalidados anualmente para que mantengan un alto nivel de excelencia. Damos conferencias, workshops y entrenamientos sobre temas como buenas relaciones humanas, administración de conflictos, gestión del estrés, alta productividad, foco y otros. El contratante puede elegir la lengua que desea para su programa: portugués, inglés, francés, español, italiano y alemán."
+          content_html: "Disponemos de cientos de Personal Teachers por todo el mundo. La calidad de la formación de cada uno de ellos es foco constante dentro del Método DeR<span class='navbar-title-smallcaps'>OSE</span>: se preparan durante 4 años como mínimo y son revalidados anualmente para que mantengan un alto nivel de excelencia. Damos conferencias, workshops y entrenamientos sobre temas como buenas relaciones humanas, administración de conflictos, gestión del estrés, alta productividad, foco y otros. El contratante puede elegir la lengua que desea para su programa: portugués, inglés, francés, español, italiano y alemán."
           personal_teachers: "personal teachers"
           title: "NUESTROS PROFESIONALES"
         second_block: 
-          content_html: "Dentro de nuestro grupo de cientos de profesionales esparcidos por todo el globo, hay una selección de algunos especialistas con más tiempo de enseñanza del M<span class='navbar-title-smallcaps'>ÉTODO</span> DeR<span class='navbar-title-smallcaps'>OSE</span>: los Consultores Experts.Todos ellos poseen más de 15 años de experiencia y han estado presentes en eventos internacionales por las Américas y Europa (dando charlas en Brasil, Argentina, Portugal, Francia y  Estados Unidos). Los programas como consultorías y conferencias están a cargo exclusivamente de los Consultores Experts que son considerados los mejores en sus respectivas áreas de especialización."
+          content_html: "Dentro de nuestro grupo de cientos de profesionales esparcidos por todo el globo, hay una selección de algunos especialistas con más tiempo de enseñanza del Método DeR<span class='navbar-title-smallcaps'>OSE</span>: los Consultores Experts.Todos ellos poseen más de 15 años de experiencia y han estado presentes en eventos internacionales por las Américas y Europa (dando charlas en Brasil, Argentina, Portugal, Francia y  Estados Unidos). Los programas como consultorías y conferencias están a cargo exclusivamente de los Consultores Experts que son considerados los mejores en sus respectivas áreas de especialización."
           title: "CONSULTORES EXPERTS"
       footer: 
         see_our_programs: "VER NUESTROS PROGRAMAS"
@@ -303,7 +342,7 @@ es:
         content: "Investigación de la  Prof. Rosana Ortega"
         title: "MI BIENESTAR ESTÁ EN NESTLÉ"
       our_criteria: 
-        content_html: "Todos nuestros programas tienen un número de vacantes limitadas. Las solicitudes pasan por un riguroso proceso selectivo. <br><br> Los criterios principales de los programas Personal Teaching y Entrenamiento son: <p>- Recomendación de alumnos del M<span class='navbar-title-smallcaps'>ÉTODO</span> DeR<span class='navbar-title-smallcaps'>OSE</span>;</p> <p>- Cargo y nivel de responsabilidad;</p> <p>- Currículum profesional que demuestre una buena capacidad de crecimiento personal;</p><p>- Motivación para entrar en el programa.</p>"
+        content_html: "Todos nuestros programas tienen un número de vacantes limitadas. Las solicitudes pasan por un riguroso proceso selectivo. <br><br> Los criterios principales de los programas Personal Teaching y Entrenamiento son: <p>- Recomendación de alumnos del Método DeR<span class='navbar-title-smallcaps'>OSE</span>;</p> <p>- Cargo y nivel de responsabilidad;</p> <p>- Currículum profesional que demuestre una buena capacidad de crecimiento personal;</p><p>- Motivación para entrar en el programa.</p>"
         title: "CRITERIOS DE SELECCIÓN"
       peugeot: 
         erwin_data_html: "<h3>Erwin MUSEUR</h3> <h4>Paris</h4> <p>Design Manager</p> <p>PEUGEOT</p> "
@@ -319,19 +358,24 @@ es:
     testimonials: 
       enterprise: 
         erwin: 
-          content_html: "Desde el principio me gustaron mucho las clases pues sentí que producían efectos positivos muy rápido. En los primeros meses aprendí herramientas muy eficientes para aumentar mi vitalidad, mejoré mi capacidad respiratoria así como la flexibilidad y el tono muscular. Luego comencé a entrenar mis capacidades mentales. El conocimiento teórico transmitido a través de las conversaciones agregó mucho valor a mi crecimiento personal y profesional.<br><br> Con el M<span class='navbar-title-smallcaps'>ÉTODO</span> DeR<span class='navbar-title-smallcaps'>OSE</span> desarrollé más conocimiento de mí mismo y de mi potencial. Me siento mejor en la actividad diaria, más sereno y más preparado para enfrentar desafíos.<br><br> Como profesional sentí una mejora significativa en la priorización de mis tareas, en la administración de conflictos, en la gestión del estrés y en mi capacidad de liderar. Eso resultó en una progresión muy significativa en mi carrera, pues mis colegas y superiores advirtieron cuánto había progresado y me confiaron nuevas responsabilidades y cargos de liderazgo."
+          content_html: "Desde el principio me gustaron mucho las clases pues sentí que producían efectos positivos muy rápido. En los primeros meses aprendí herramientas muy eficientes para aumentar mi vitalidad, mejoré mi capacidad respiratoria así como la flexibilidad y el tono muscular. Luego comencé a entrenar mis capacidades mentales. El conocimiento teórico transmitido a través de las conversaciones agregó mucho valor a mi crecimiento personal y profesional.<br><br> Con el Método DeR<span class='navbar-title-smallcaps'>OSE</span> desarrollé más conocimiento de mí mismo y de mi potencial. Me siento mejor en la actividad diaria, más sereno y más preparado para enfrentar desafíos.<br><br> Como profesional sentí una mejora significativa en la priorización de mis tareas, en la administración de conflictos, en la gestión del estrés y en mi capacidad de liderar. Eso resultó en una progresión muy significativa en mi carrera, pues mis colegas y superiores advirtieron cuánto había progresado y me confiaron nuevas responsabilidades y cargos de liderazgo."
         first_quote: 
-          content_html: "“Mi bienestar mejoró sensiblemente desde que comencé a practicar el M<span class='navbar-title-smallcaps'>ÉTODO</span> DeR<span class='navbar-title-smallcaps'>OSE</span>.”"
+          content_html: "“Mi bienestar mejoró sensiblemente desde que comencé a practicar el Método DeR<span class='navbar-title-smallcaps'>OSE</span>.”"
           info_html: "<h2>Renata Ribeiro</h2> Consumer Insight Head at Nestlé Brazil"
         judith: 
-          content_html: "Practico el M<span class='navbar-title-smallcaps'>ÉTODO</span> DeR<span class='navbar-title-smallcaps'>OSE</span> desde hace poco tiempo, y me hace feliz decir que estoy maravillada por las técnicas, por la cultura y por el estilo de vida que se enseñan en esta metodología. De inmediato noté que me estaba sintiendo más relajada, por más que las técnicas fuesen muy intensas e incluso difíciles para una iniciante como yo. ¡Ahora esos ejercicios son parte de mi vida! El M<span class='navbar-title-smallcaps'>ÉTODO</span> DeR<span class='navbar-title-smallcaps'>OSE</span> es  impresionante y ayuda a mejorar todos los aspectos de la vida. Estoy realmente satisfecha por haber encontrado este estilo de vida, descubierto este método y el incentivo a todos los que buscan perfeccionamiento general, tanto físico como peronal."
+          content_html: "Practico el Método DeR<span class='navbar-title-smallcaps'>OSE</span> desde hace poco tiempo, y me hace feliz decir que estoy maravillada por las técnicas, por la cultura y por el estilo de vida que se enseñan en esta metodología. De inmediato noté que me estaba sintiendo más relajada, por más que las técnicas fuesen muy intensas e incluso difíciles para una iniciante como yo. ¡Ahora esos ejercicios son parte de mi vida! El Método DeR<span class='navbar-title-smallcaps'>OSE</span> es  impresionante y ayuda a mejorar todos los aspectos de la vida. Estoy realmente satisfecha por haber encontrado este estilo de vida, descubierto este método y el incentivo a todos los que buscan perfeccionamiento general, tanto físico como peronal."
         miguel: 
           content_html: "Bueno, antes de practicar, ya tenía  noción de la interrelación de los cuerpos emocional, mental y físico. Conocía los reflejos que el cuerpo emocional imprime en el cuerpo físico, tanto benéficos como perjudiciales. Pero poco sabía de los reflejos que el cuerpo físico imprime a los cuerpos mental y emocional. Entonces noté que las posiciones de equilibrio físico me ayudaron en el equilibrio emocional. <br/><br/> Pude utilizar el control de la respiración para calmarme o para  energizarme. La conciencia corporal adquirida me ayudó a  identificar mejor las causas de los desequilibrios físicos y a evitarlos. Además hay muchos otros beneficios menores que en conjunto mejoraron mi calidad de vida."
           info_html: "<h2>Miguel <br> DAL'NEGRO CARVALHO</h2> <h3>Curitiba, <br> BRASIL</h3> <h4>Analista<br> Departamento de <br> Organización del Sistema <br> Financeiro<br> BANCO DO BRASIL</h4>"
         second_quote: 
-          content_html: "“Considero que el Programa del M<span class='navbar-title-smallcaps'>ÉTODO</span> DeR<span class='navbar-title-smallcaps'>OSE</span> en nuestra empresa está muy bien conducido.”"
+          content_html: "“Considero que el Programa del Método DeR<span class='navbar-title-smallcaps'>OSE</span> en nuestra empresa está muy bien conducido.”"
           info_html: "<h2>Nanci Yamada</h2> Especialista Desenvolvimiento y R&S, Nestle Brazil"
         title: "DECLARACIONES DE ALUMNOS"
       institutions: 
         content_html: "El Comendador DeR<span class='navbar-title-smallcaps'>OSE</span> es apoyado por un significativo número de instituciones culturales, académicas, humanitarias, militares y gubernamentales que reconocen el valor de su obra. Sin embargo él siempre declara: “Acepto estos homenajes porque no son para engrandecer el ego de una persona sino que sirven como manifestaciones del respeto que brinda la sociedad al trabajo de todos los profesionales de esta área. Por eso quiero compartir con usted el mérito de este reconocimiento.”"
         header_html: "RECONOCIMIENTOS <br> DEL MÉTODO DeROSE"
+  support: 
+    array: 
+      last_word_connector: ", y"
+      two_words_connector: "y"
+      words_connector: ","
