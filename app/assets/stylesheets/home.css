@@ -1308,6 +1308,10 @@ ul.dropdown-menu {
 
 /* ARTICLES */
 
+.home-single-article-container {
+  height: 420px;
+}
+
 .articles-title-container {
   font-family: 'Roboto', sans-serif;
   color: #273451;
