@@ -813,6 +813,7 @@ ul.dropdown-menu {
 .programme-header {
   font-family: 'Roboto', sans-serif;
   color: white;
+  padding-top: 10px;
   /*font-size: 18px;*/
   letter-spacing: 1px;
   /*font-weight: 700;*/
