@@ -28,10 +28,13 @@
     </div>
     <!-- %= content_tag :div, msg, id: "flash_#{name}" % -->
   <% end %>
-  <%= render "layouts/header" %>
-  <%= yield %>
-  <%= render "zopim" %>
-  <%= render "layouts/footer" %>
+  <%= render "layouts/navbar_mobile" %>
+  <div id="page-content">
+    <%= render "layouts/header" %>
+    <%= yield %>
+    <%= render "zopim" %>
+    <%= render "layouts/footer" %>
+  </div>
 
   <%= render 'layouts/analytics' %>
 </body>
