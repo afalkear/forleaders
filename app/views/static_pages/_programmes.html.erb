@@ -3,16 +3,18 @@
     <div class="home-section-title">
       <%= t('static_pages.programs.title') %>
     </div>
-    <div class="home-section-subtitle hover-gold">
+    <div class="home-section-subtitle">
       <%= t('static_pages.programs.subtitle') %>
     </div>
   </div>
   <div class="col-sm-8 col-md-7 subprogramme-container">
       <div class="row">
         <div class="col-sm-6 col-md-6 programme-option">
-            <div class="row programme-header hover-gold">
-              <span><%= t('static_pages.programs.individuals.title') %></span>
-            </div>
+            <%= link_to individual_consultory_path(:value => "0")+"#personal" do %>
+              <div class="row programme-header hover-gold">
+                  <span><%= t('static_pages.programs.individuals.title') %></span>
+              </div>
+            <% end %>
             <div class="programme-border-left">
               <div class="row single-programme-row">
                 <div class="col-sm-6 col-md-6 without-padding-left-or-right">
@@ -69,9 +71,11 @@
             </div>
         </div>
         <div class="col-sm-6 col-md-6 programme-option">
-            <div class="row programme-header hover-gold">
-              <span><%= t('static_pages.programs.enterprise.title') %></span>
-            </div>
+            <%= link_to group_consultory_path do %>
+              <div class="row programme-header hover-gold">
+                <span><%= t('static_pages.programs.enterprise.title') %></span>
+              </div>
+            <% end %>
             <div class="programme-border-left programme-border-right">
               <div class="row single-programme-row">
                 <div class="col-sm-6 col-md-6 without-padding-left-or-right">
@@ -128,7 +132,7 @@
             </div>
         </div>
       </div>
-      <div class="row programme-show-with-plus">
+      <div class="row">
         <div class="col-sm-6 col-md-6 programme-option">
             <div class="programme-border-left">
               <div class="row single-programme-row">
@@ -252,7 +256,7 @@
               </div>
           </div>
       </div>
-      <div class="programme-plus">
+      <!-- div class="programme-plus">
         <div class="col-md-offset-4 col-md-7">
           <div class="row">
             <div class="col-md-6 programme-option">
@@ -277,6 +281,6 @@
             </div>
           </div>
         </div>
-      </div>
+      </div -->
   </div>
 </div>
