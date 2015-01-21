@@ -1,5 +1,5 @@
 ready = ->
-  $('#my-affix').affix
+  $('.my-affix').affix
     offset: 
       top: 100
 
