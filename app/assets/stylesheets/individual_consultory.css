@@ -4,42 +4,58 @@
 
 .individual-with-personal-background-header {
   background-image: url('individual_personal_header.jpg');
-  background-position: 0% 45%;
+  background-position: 100% 40%;
+  background-repeat: no-repeat;
+  background-color: #273451;
 }
 
 .individual-with-training-background-header {
   background-image: url('individual_training_header.png');
-  background-position: 0% 45%;
+  background-position: 100% 40%;
+  background-repeat: no-repeat;
+  background-color: #273451;
 }
 
 .individual-with-consultory-background-header {
   background-image: url('individual_consultants_header.jpg');
-  background-position: 0% 45%;
+  background-position: 100% 40%;
+  background-repeat: no-repeat;
+  background-color: #273451;
 }
 
 .individual-with-intensive-background-header {
   background-image: url('consultants_header.jpg');
-  background-position: 0% 45%;
+  background-position: 100% 40%;
+  background-repeat: no-repeat;
+  background-color: #273451;
 }
 
 .individual-with-small-group-teaching-background-header {
   background-image: url('small_group_teaching_header.jpg');
-  background-position: 0% 0%;
+  background-position: 100% 40%;
+  background-repeat: no-repeat;
+  background-color: #273451;
 }
 
 .individual-with-small-group-training-background-header {
   background-image: url('small_group_training_header.jpg');
-  background-position: 0% 0%;
+  background-position: 100% 40%;
+  background-repeat: no-repeat;
+  background-color: #273451;
 }
 
 .individual-with-workshop-background-header {
-   background-image: url('workshop_header.jpg');
-  background-position: 0% 60%;
+  background-image: url('workshop_header.jpg');
+  background-position: 100% 40%;
+  background-repeat: no-repeat;
+  background-color: #273451;
 }
 
 .individual-with-talks-background-header {
-   background-image: url('talks_header.jpg');
-  background-position: 0% 60%;
+  background-image: url('talks_header.jpg');
+  background-position: 100% 40%;
+  background-repeat: no-repeat;
+  background-color: #273451;
 }
 
 .individual-consultory-title {
@@ -63,7 +79,7 @@
   font-weight: 300;
 }
 
-.individual-sidebar > hr {
+.individual-sidebar > .row > div > hr {
   background: #D5D5D5; 
   border: 0; 
   height: 1px;  
@@ -137,9 +153,9 @@
 .individual-sidebar {
   padding-top: 20px;
   padding-bottom: 20px;
-  padding-right: 30px;
+  /*padding-right: 30px;
   padding-left: 80px;
-  float: right;
+  float: right;*/
 }
 
 .individual-sidebar > div > h2 {

@@ -5,6 +5,10 @@
   height: 400px;
 }
 
+#net-header-container {
+  background: none;
+}
+
 .net-header .page-header-title {
   line-height: 400px;
   vertical-align: middle;

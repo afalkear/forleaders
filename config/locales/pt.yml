@@ -160,6 +160,7 @@ pt:
         expand_subtitle_html: ""
         subtitle: "2 dias"
         title: "INTENSIVE TEACHING"
+        expand_subtitle_html: "<p>Bom relacionamento</p> <p>Administração de conflitos</p> <p>Gestão do tempo</p> <p>Comportamento</p> <p>Liderança sábia</p>"
       personal: 
         expand_subtitle_html: "<p>Aprenda ferramentas para desenvolver o seu potencial</p> <p>Desenvolva Alta Performance em todas as áreas da sua vida</p> <p>Melhore a sua Qualidade de Vida</p>"
         subtitle: "1 hora duas vezes por semana"
