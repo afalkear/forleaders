@@ -4,10 +4,6 @@
     <div class="row individual-tab-navigation">
       <hr />
       <ul class="nav nav-pills" id="individual-pills">
-        <li class="active">
-          <a href="#small-group-teaching" id="individual-small-group-teaching-link" data-toggle="tab" data-target=".small-group-teaching, #small-group-teaching-header"><%= t('static_pages.group_consultory_body.pills.small_group_teaching.title') %></a>
-          <p><%= t('static_pages.group_consultory_body.pills.small_group_teaching.subtitle') %></p>
-        </li>
         <li>
           <a href="#small-group-training" id="individual-small-group-training-link" data-toggle="tab" data-target=".small-group-training, #small-group-training-header"><%= t('static_pages.group_consultory_body.pills.small_group_training.title') %></a>
           <p><%= t('static_pages.group_consultory_body.pills.small_group_training.subtitle') %></p>
@@ -31,6 +27,11 @@
                <%= render 'individual_consultory_small_group_teaching' %>
              </div>
             </div>
+            <div class="our-consultors-programs-link">
+              <a href="contact">
+                <%= t('static_pages.group_consultory_body.candidates') %>
+              </a>
+            </div>
           </div>
           <div class="col-md-5 individual-sidebar">
             <div class="row">
@@ -48,6 +49,11 @@
              <div>
                <%= render 'individual_consultory_small_group_training' %>
              </div>
+            </div>
+            <div class="our-consultors-programs-link">
+              <a href="contact">
+                <%= t('static_pages.group_consultory_body.candidates') %>
+              </a>
             </div>
           </div>
           <div class="col-md-5 individual-sidebar">
@@ -67,6 +73,11 @@
              <div>
                <%= render 'individual_consultory_workshop' %>
              </div>
+            </div>
+            <div class="our-consultors-programs-link">
+              <a href="contact">
+                <%= t('static_pages.group_consultory_body.candidates') %>
+              </a>
             </div>
             <!-- div class="container">
               <div class="row our-consultors-programs-link">
@@ -94,11 +105,11 @@
                <%= render 'individual_consultory_talks' %>
              </div>
             </div>
-              <div class="our-consultors-programs-link">
-                <a href="contact">
-                  <%= t('static_pages.group_consultory_body.candidates') %>
-                </a>
-              </div>
+            <div class="our-consultors-programs-link">
+              <a href="contact">
+                <%= t('static_pages.group_consultory_body.candidates') %>
+              </a>
+            </div>
           </div>
           <div class="col-md-5 individual-sidebar">
             <div class="row">
