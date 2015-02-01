@@ -619,6 +619,7 @@ body.slide-active {
   font-weight: 700;
   /*padding-top: 6px;*/
   margin-bottom: 6px;
+  margin-top: 20px;
 }
 
 .page-main-body > ul {
