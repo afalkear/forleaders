@@ -13,15 +13,13 @@
                 
                 <h5><%= t('static_pages.derose_method.body.main.second_block.title') %></h5>
                 <%= t('static_pages.derose_method.body.main.second_block.content_html') %>
-                <p>
-                </p>
-
+                
                 <h5><%= t('static_pages.derose_method.body.main.third_block.title') %></h5>
                 <%= t('static_pages.derose_method.body.main.third_block.content_html') %>
 
                 <h5><%= t('static_pages.derose_method.body.main.fourth_block.title') %></h5>
-                <%= link_to "/assets/derose_method_characteristics.jpg", class: 'image-link '  do %>
-                  <%= image_tag 'derose_method_characteristics.jpg', class: "derose-method-characteristics-image" %>
+                <%= link_to "/assets/derose_method_characteristics_#{I18n.locale.to_s.downcase}.jpg", class: 'image-link '  do %>
+                  <% locale_image(name: 'derose_method_characteristics', extension: 'jpg', class: "derose-method-characteristics-image") %>
                 <% end %>
 
               </div>
@@ -29,12 +27,18 @@
           <div class="col-md-5 individual-sidebar">
             <hr/>
             <div class="individual-sidebar-container">
-              <div class="row individual-sidebar-title">
-                <h1><%= t('static_pages.derose_method.body.sidebar.video.title') %></h1>
-                <%= raw youtube_embed "https://www.youtube.com/watch?v=t2KhPPyqhm8","384px", "226px" %>
+              <div class="row">
+                <div class="col-md-10 col-md-offset-1 individual-sidebar-title">
+                    <h1><%= t('static_pages.derose_method.body.sidebar.video.title') %></h1>
+                    <%= raw youtube_embed "https://www.youtube.com/watch?v=t2KhPPyqhm8","384px", "226px" %>
+                </div>
               </div>
             </div>
-            <%= render 'individual_sidebar_nestle' %>
+            <div class="row">
+              <div class="col-md-10 col-md-offset-1 individual-sidebar-title">
+                <%= render 'individual_sidebar_nestle' %>
+              </div>
+            </div>
           </div>
         </div>
     </div>

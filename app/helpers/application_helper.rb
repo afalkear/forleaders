@@ -15,6 +15,12 @@ module ApplicationHelper
     image_tag image, class: "center"
   end
 
+  def locale_image(options = {})
+    available_locales = %w(es pt fr en)
+    image = (available_locales.include? I18n.locale.to_s.downcase) ? "#{options[:name]}_#{I18n.locale.to_s.downcase}.#{options[:extension]}" : "#{options[:name]}.#{options[:extension]}"
+    image_tag image, class: "#{options[:class]}"
+  end
+
   def mark_required(object, attribute)  
     "*" if object.class.validators_on(attribute).map(&:class).include? ActiveModel::Validations::PresenceValidator  
   end 
