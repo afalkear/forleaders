@@ -21,17 +21,19 @@
       <%= t('static_pages.navbar.programs.title_html') %><b class="caret"></b>
     </a>
     <ul class="dropdown-menu" data-no-turbolink>
-      <li class="navbar-non-clickable"><%= t('static_pages.navbar.programs.individuals.title') %></li>
-      <li>
-        <%= link_to t('static_pages.navbar.programs.individuals.training'), individual_consultory_path(:q => "3")+"#training"%>
-      </li>
-      <li>
-        <%= link_to t('static_pages.navbar.programs.individuals.personal_teaching'), (individual_consultory_path(:q => "1")+"#personal")%>
-      </li>
-      <li>
-        <%= link_to t('static_pages.navbar.programs.individuals.consulting'), individual_consultory_path(:q => "2")+"#consultory"%>
-      </li>
-      <li class="navbar-non-clickable"><%= t('static_pages.navbar.programs.enterprises.title') %></li>
+      <% if false %>
+        <li class="navbar-non-clickable"><%= t('static_pages.navbar.programs.individuals.title') %></li>
+        <li>
+          <%= link_to t('static_pages.navbar.programs.individuals.training'), individual_consultory_path(:q => "3")+"#training"%>
+        </li>
+        <li>
+          <%= link_to t('static_pages.navbar.programs.individuals.personal_teaching'), (individual_consultory_path(:q => "1")+"#personal")%>
+        </li>
+        <li>
+          <%= link_to t('static_pages.navbar.programs.individuals.consulting'), individual_consultory_path(:q => "2")+"#consultory"%>
+        </li>
+        <li class="navbar-non-clickable"><%= t('static_pages.navbar.programs.enterprises.title') %></li>
+      <% end %>
       <li>
         <%= link_to t('static_pages.navbar.programs.enterprises.training'), group_consultory_path(:q => "1")+"#small-group-training"%>
       </li>

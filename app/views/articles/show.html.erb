@@ -85,7 +85,7 @@
                   <hr>
                   <div class="container related-articles">
                     <h2>
-                      <%= t("articles.show.related_texts", default: "TEXTOS RELACIONADOS") %>
+                      <%= t("articles.related_texts", default: "TEXTOS RELACIONADOS") %>
                     </h2>
                     <% cache "#{@article.categories.first.name}-related_articles" do%>
                       <div class="row">
@@ -114,7 +114,7 @@
           </div>
           <div class="col-md-4 article-sidebar">
               <div class="container latest-articles">
-                <h2>ULTIMOS ARTIGOS</h2>
+                <h2><%= t('articles.latest_articles') %></h2>
                 <% 3.times do |i| %>
                   <div class="row">
                     <% if @latest_articles.count > i %>
@@ -136,7 +136,7 @@
               </div>
             <hr/>
             <div class="container articles-follow-us">
-              <h2>FOLLOW US ON FACEBOOK</h2>
+              <h2><%= t('articles.follow_us_on_facebook') %></h2>
 
             </div>
             <hr/>
@@ -147,7 +147,7 @@
             </div>
             <hr/>
             <div class="container article-sidebar-author-container">
-              <h2>O AUTOR</h2>
+              <h2><%= t('articles.author.title') %></h2>
               <div>
                 <% if @article.author == "DeRose" %>
                   <div class="row articles-authors-mini-container">
@@ -157,7 +157,10 @@
                     </div>
                     <div class="col-md-9 articles-authors-mini-info">
                       <h3>DeRose</h3>
-                      <p>Estudioso na área de Qualidade de Vida e Alta Performance há mais de 50 anos, já escreveu mais de 30 livros e é o idealizador do M<span class='navbar-title-smallcaps'>ÉTODO</span> DeR<span class='navbar-title-smallcaps'>OSE</span></p>
+                      <p><%= t('articles.authors.derose_bio') %></p>
+                      <% if false %>
+                        <p>Estudioso na área de Qualidade de Vida e Alta Performance há mais de 50 anos, já escreveu mais de 30 livros e é o idealizador do M<span class='navbar-title-smallcaps'>ÉTODO</span> DeR<span class='navbar-title-smallcaps'>OSE</span></p>
+                      <% end %>
                     </div>
                   </div>
                 <% elsif @article.author == "Edgardo Caramella" %>
@@ -168,7 +171,10 @@
                     </div>
                     <div class="col-md-9 articles-authors-mini-info">
                       <h3>Edgardo Caramella</h3>
-                      <p>Presidente da Federação do M<span class='navbar-title-smallcaps'>ÉTODO</span> DeR<span class='navbar-title-smallcaps'>OSE</span> na Argentina, com mais de 25 anos de experiência na área dando aulas e formando novos profissionais</p>
+                      <p><%= t('articles.authors.edgardo_bio') %></p>
+                      <% if false %>
+                        <p>Presidente da Federação do M<span class='navbar-title-smallcaps'>ÉTODO</span> DeR<span class='navbar-title-smallcaps'>OSE</span> na Argentina, com mais de 25 anos de experiência na área dando aulas e formando novos profissionais</p>
+                      <% end %>
                     </div>
                   </div>
                 <% elsif @article.author == "Carlo Mea" %>
@@ -179,7 +185,10 @@
                     </div>
                     <div class="col-md-9 articles-authors-mini-info">
                       <h3>Carlo Mea</h3>
-                      <p>Representante do M<span class='navbar-title-smallcaps'>ÉTODO</span> DeR<span class='navbar-title-smallcaps'>OSE</span> na Itália, é um dos mais reconhecidos demonstradores das nossas técnicas corporais, trabalhando com empreendedor desde 2002</p>
+                      <p><%= t('articles.authors.carlo_bio') %></p>
+                      <% if false %>
+                        <p>Representante do M<span class='navbar-title-smallcaps'>ÉTODO</span> DeR<span class='navbar-title-smallcaps'>OSE</span> na Itália, é um dos mais reconhecidos demonstradores das nossas técnicas corporais, trabalhando com empreendedor desde 2002</p>
+                      <% end %>
                     </div>
                   </div>
                 <% elsif @article.author == "Joris Marengo" %>
@@ -201,9 +210,10 @@
                     </div>
                     <div class="col-md-9 articles-authors-mini-info">
                       <h3>Yael Barcesat</h3>
-                      <p>
+                      <p><%= t('articles.authors.yael_bio') %></p>
+                      <% if false %>
                         Autora de livros sobre vocalização de sons e formação de novos profissionais, é também demonstradora das técnicas do M<span class='navbar-title-smallcaps'>ÉTODO</span> DeR<span class='navbar-title-smallcaps'>OSE</span>
-                      </p>
+                      <% end %>
                     </div>
                   </div>
                 <% elsif @article.author == "Gustavo Marson" %>

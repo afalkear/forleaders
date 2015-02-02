@@ -19,7 +19,7 @@
           </div>
           <div class="col-md-4 article-sidebar">
             <div class="container latest-articles">
-              <h2>ULTIMOS ARTIGOS</h2>
+              <h2><%= t('articles.latest_articles') %></h2>
               <% 3.times do |i| %>
                 <% if @latest_articles.count > i %> 
                   <div class="row">
@@ -41,7 +41,7 @@
             </div>
             <hr/>
             <div class="container articles-follow-us">
-              <h2>FOLLOW US ON FACEBOOK</h2>
+              <h2><%= t('articles.follow_us_on_facebook') %></h2>
               
             </div>
             <hr/>
@@ -52,7 +52,7 @@
             </div>
             <hr/>
             <div class="container">
-            <h2>NOSSOS AUTORES</h2>
+            <h2><%= t('articles.our_authors') %></h2>
               <div class="row articles-authors-mini-container">
                 <div class="col-md-3">
                   <div class="articles-authors-mini-photo derose">
@@ -60,7 +60,7 @@
                 </div>
                 <div class="col-md-9 articles-authors-mini-info">
                   <h3>DeRose</h3>
-                  <p>Presidente M<span class='navbar-title-smallcaps'>ÉTODO</span> DeR<span class='navbar-title-smallcaps'>OSE</span> Mundo</p>
+                  <p><%= t('articles.authors.mini_info.derose') %></p>
                 </div>
               </div>
               <div class="row articles-authors-mini-container">
@@ -70,7 +70,7 @@
                 </div>
                 <div class="col-md-9 articles-authors-mini-info">
                   <h3>Edgardo Caramella</h3>
-                  <p>Presidente M<span class='navbar-title-smallcaps'>ÉTODO</span> DeR<span class='navbar-title-smallcaps'>OSE</span> Argentina</p>
+                  <p><%= t('articles.authors.mini_info.edgardo') %></p>
                 </div>
               </div>
               <div class="row articles-authors-mini-container">

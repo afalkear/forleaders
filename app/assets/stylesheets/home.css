@@ -820,7 +820,7 @@ body.slide-active {
 /* PROGRAMMES */
 
 .programme-container {
-  min-height: 225px;
+  min-height: 150px;
   overflow: hidden;
 }
 
@@ -979,7 +979,7 @@ body.slide-active {
 
 .programme-subheader {
   font-family: 'Open Sans Condensed', sans-serif;
-  font-size: 17px;
+  font-size: 23px;
   font-weight: 600;
   /*text-align: center;*/
   padding-left: 15px;
