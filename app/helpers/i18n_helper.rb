@@ -18,7 +18,7 @@ module I18nHelper
       if TranslationCenter::CONFIG['inspector'] == 'off' 
         %(<span class="info translation_missing" title="translation missing: #{keys.join('.')}">#{key}</span>)
       else
-        %(<span class="success translation_missing tc-inspector-key" data-locale='#{I18n.locale}' >#{key}</span>)
+        ""
       end
     end
   end
