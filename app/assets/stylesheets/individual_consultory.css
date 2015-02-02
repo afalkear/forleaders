@@ -38,21 +38,21 @@
 }
 
 .individual-with-small-group-training-background-header {
-  background-image: url('small_group_training_header.jpg');
+  background-image: url('individual_consultants_header.jpg');
   background-position: 100% 40%;
   background-repeat: no-repeat;
   background-color: #273451;
 }
 
 .individual-with-workshop-background-header {
-  background-image: url('workshop_header.jpg');
+  background-image: url('individual_personal_header.jpg');
   background-position: 100% 40%;
   background-repeat: no-repeat;
   background-color: #273451;
 }
 
 .individual-with-talks-background-header {
-  background-image: url('talks_header.jpg');
+  background-image: url('small_group_teaching_header.jpg');
   background-position: 100% 40%;
   background-repeat: no-repeat;
   background-color: #273451;
@@ -228,6 +228,13 @@
   font-style: italic;
   margin-bottom: 0px;
   font-size: 12px;
+}
+
+.individual-sidebar-nestle-image > span {
+  font-family: 'Roboto', sans-serif;
+  color: black;
+  font-weight: 300;
+  padding: 12px;
 }
 
 .peugeot-container {

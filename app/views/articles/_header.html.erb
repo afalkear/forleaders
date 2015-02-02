@@ -1,22 +1,28 @@
 <div class="container articles-header-container">
   <div class="row">
-    <div class="col-md-1 col-md-offset-1 articles-main-logo" data-no-turbolink >
-      <%= link_to root_url do %>
-        <%= image_tag 'logo_mdl.png' %>
-      <% end %>
-    </div>
-    <div class="col-md-5 col-md-offset-4 articles-main-logo">
-      <div class="container">
-        <div class="row articles-go-to-homepage">
-          <div class="col-md-12">
-            GO TO <%= link_to "DEROSEFORLEADERS.COM", root_url %>
+    <div class="col-md-3 col-md-offset-1" data-no-turbolink >
+      <a href="articles">
+        <%= link_to articles_url do %>
+          <div class="row articles-main-title">
+            Insights For Leaders
           </div>
-          <!-- div class="col-md-3">
-            <%= render "layouts/languages" %>
-          </div -->
+        <% end %>
+      </a>
+    </div>
+    <div class="col-md-3 col-md-offset-4 articles-main-logo">
+      <div class="row articles-go-to-homepage">
+        <div class="col-md-12">
+          <%= t('articles.header.go_to') %> <%= link_to "DEROSEFORLEADERS.COM", root_url %>
         </div>
-        <div class="row articles-main-title pull-right">
-          Insights For Leaders
+        <!-- div class="col-md-3">
+          <%= render "layouts/languages" %>
+        </div -->
+      </div>
+      <div class="row pull-right">
+        <div class="col-md-12 articles-main-logo">
+          <%= link_to root_url do %>
+            <%= image_tag 'logo_mdl.png' %>
+          <% end %>
         </div>
       </div>
     </div>

@@ -17,23 +17,22 @@
             </div>
           </div>
           <div class="col-md-4 footer-inner-column">
-            <div class="after-title gold-color inner-footer-title"><%= t('static_pages.footer.individuals.title') %></div>
+            <div class="after-title gold-color inner-footer-title"><%= t('static_pages.footer.testimonials.title') %></div>
             <div class="inner-footer-content">
-              <%= link_to t('static_pages.footer.individuals.personal_teaching'), (individual_consultory_path(:q => "1")+"#personal"), class: "inner-footer-link"%>
-              <%= link_to t('static_pages.footer.individuals.training'), individual_consultory_path(:q => "3")+"#training", class: "inner-footer-link"%>
-              <%= link_to t('static_pages.footer.individuals.consulting'), individual_consultory_path(:q => "2")+"#consultory", class: "inner-footer-link"%>
+              <%= link_to t('static_pages.footer.testimonials.enterprises'), enterprise_testimonials_path, class: "inner-footer-link"%>
+              <%= link_to t('static_pages.footer.testimonials.institutions'), institution_testimonials_path, class: "inner-footer-link"%>
             </div>
           </div>
-          <div class="col-md-4">
-            <div class="after-title gold-color inner-footer-title footer-inner-column ">
-              <%= t('static_pages.footer.enterprises.title') %>
+            <div class="col-md-4">
+              <div class="after-title gold-color inner-footer-title footer-inner-column ">
+                <%= t('static_pages.footer.enterprises.title') %>
+              </div>
+              <div class="inner-footer-content">
+                <%= link_to t('static_pages.footer.enterprises.training'), group_consultory_path(:q => "1")+"#small-group-training", class: "inner-footer-link"%>
+                <%= link_to t('static_pages.footer.enterprises.talks'), group_consultory_path(:q => "2")+"#talks", class: "inner-footer-link"%>
+                <%= link_to t('static_pages.footer.enterprises.workshop'), group_consultory_path(:q => "3")+"#workshop", class: "inner-footer-link"%>
+              </div>
             </div>
-            <div class="inner-footer-content">
-              <%= link_to t('static_pages.footer.enterprises.training'), group_consultory_path(:q => "1")+"#small-group-training", class: "inner-footer-link"%>
-              <%= link_to t('static_pages.footer.enterprises.talks'), group_consultory_path(:q => "2")+"#talks", class: "inner-footer-link"%>
-              <%= link_to t('static_pages.footer.enterprises.workshop'), group_consultory_path(:q => "3")+"#workshop", class: "inner-footer-link"%>
-            </div>
-          </div>
         </div>
         <div class="row">
           <div class="col-md-4 footer-inner-column">
@@ -47,13 +46,7 @@
               <%= link_to t('static_pages.footer.articles.quality_of_life'), articles_url(category: "quality of life"), class: "inner-footer-link" %>
             </div>
           </div>
-          <div class="col-md-4 footer-inner-column">
-            <div class="after-title gold-color inner-footer-title"><%= t('static_pages.footer.testimonials.title') %></div>
-            <div class="inner-footer-content">
-              <%= link_to t('static_pages.footer.testimonials.enterprises'), enterprise_testimonials_path, class: "inner-footer-link"%>
-              <%= link_to t('static_pages.footer.testimonials.institutions'), institution_testimonials_path, class: "inner-footer-link"%>
-            </div>
-          </div>
+          <div class="col-md-4"></div>
           <div class="col-md-4 footer-inner-column footer-contact-us">
               <div class="pull-right">
                 <div class="follow-title">
