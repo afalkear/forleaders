@@ -107,9 +107,8 @@
     </ul>
   </li>
   <li class="<%= 'active' if controller?('static_pages') && action?("articles") %> dropdown">
-    <a href="articles">
-      <%= t('static_pages.navbar.articles.title_html') %><!-- b class="caret"></b -->
-    </a>
+    <%= link_to t('static_pages.navbar.articles.title_html'), articles_path %>
+    
     <!-- ul class="dropdown-menu">
       <li><a href="#">Liderança</a></li>
       <li><a href="#">Alta Produtividade</a></li>
