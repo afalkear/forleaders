@@ -22,9 +22,11 @@
                 <div class="individual-sidebar-container">
                   <hr/>
                   <div class="row individual-testimonial-data">
-                    <div class="testimonial-data-image">
-                      <%= image_tag "erwin_museur.jpg" %>
-                    </div>
+                    <% if false %>
+                      <div class="testimonial-data-image">
+                        <%= image_tag "erwin_museur.jpg" %>
+                      </div>
+                    <% end %>
                     <h2>Erwin MUSEUR</h2>
                     <h3>Paris, <br>
                     FRANCE</h3>
@@ -50,9 +52,6 @@
                 <div class="individual-sidebar-container">
                   <hr/>
                   <div class="row individual-testimonial-data">
-                    <div class="testimonial-data-image">
-                      <%= image_tag "judith_adamson.jpg", id: "judith_testimonial_image" %>
-                    </div>
                     <h2>Judith ADAMSON</h2>
                     <h3>Edinburgh, <br>
                     UNITED KINGDOM</h3>
@@ -78,10 +77,9 @@
                 <div class="individual-sidebar-container">
                   <hr/>
                   <div class="row individual-testimonial-data">
-                    <div class="testimonial-data-image">
-                      <%= image_tag "miguel_dalnegro.jpg", id: "miguel_dalnegro_image" %>
-                    </div>
-                    <%= t('static_pages.testimonials.enterprise.miguel.info_html') %>
+                    <h2>Paulo RODRIGUES GUINO</h2>
+                    <h3><%= t('static_pages.sidebar.volkswagen.position') %></h3>
+                    <h4>VOLKSWAGEN</h4>
                   </div>
                 </div>
               </div>
@@ -90,37 +88,82 @@
                   <%= image_tag "initial_quotes.gif" %>
                 </div>
                 <div class="row">
-                  <%= t('static_pages.testimonials.enterprise.miguel.content_html') %>
+                  <%= t('static_pages.sidebar.volkswagen.content_html') %>
                 </div>
                 <div class="row testimonial-finish-quotes">
                   <%= image_tag "finish_quotes.gif" %>
                 </div>
               </div>
             </div>
-            <div class="row enterprise-testimonials-footer">
+            <div class="row single-testimonials">
               <div class="col-md-3">
+                <div class="individual-sidebar-container">
+                  <hr/>
+                  <div class="row individual-testimonial-data">
+                    <h2>John GOMEZ</h2>
+                    <h3><%= t('static_pages.sidebar.ericsson.position') %></h3>
+                    <h4>ERICSSON</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-md-offset-2 individual-testimonial-text">
+                <div class="row testimonial-initial-quotes">
+                  <%= image_tag "initial_quotes.gif" %>
+                </div>
                 <div class="row">
-                  <%= image_tag "nestle_logo.jpg" %>
+                  <%= t('static_pages.sidebar.ericsson.content_html') %>
                 </div>
-              </div>
-              <div class="col-md-3 col-md-offset-2">
-                <div class="row testimonials-footer-quote">
-                  <%= t('static_pages.testimonials.enterprise.first_quote.content_html') %>
-                </div>
-                <div class="row testimonials-footer-person">
-                  <%= t('static_pages.testimonials.enterprise.first_quote.info_html') %>
-                </div>
-              </div>
-              <div class="col-md-3 col-md-offset-1 last-enterprise-footer-testimonial">
-                <div class="row testimonials-footer-quote">
-                  <%= t('static_pages.testimonials.enterprise.second_quote.content_html') %>
-                </div>
-                <div class="row testimonials-footer-person">
-                  <%= t('static_pages.testimonials.enterprise.second_quote.info_html') %>
+                <div class="row testimonial-finish-quotes">
+                  <%= image_tag "finish_quotes.gif" %>
                 </div>
               </div>
             </div>
-          </div>
+            <div class="row single-testimonials">
+              <div class="col-md-3">
+                <div class="individual-sidebar-container">
+                  <hr/>
+                  <div class="row individual-testimonial-data">
+                    <h3>Renata Ribeiro</h3>
+                    <h3><%= t('static_pages.sidebar.nestle_1.position') %></h3>
+                    <h4>Nestlé Brazil</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-md-offset-2 individual-testimonial-text">
+                <div class="row testimonial-initial-quotes">
+                  <%= image_tag "initial_quotes.gif" %>
+                </div>
+                <div class="row">
+                  <%= t('static_pages.testimonials.enterprise.first_quote.content_html') %>
+                </div>
+                <div class="row testimonial-finish-quotes">
+                  <%= image_tag "finish_quotes.gif" %>
+                </div>
+              </div>
+            </div>
+            <div class="row single-testimonials">
+              <div class="col-md-3">
+                <div class="individual-sidebar-container">
+                  <hr/>
+                  <div class="row individual-testimonial-data">
+                    <h3>Nanci Yamada</h3>
+                    <h3><%= t('static_pages.sidebar.nestle_2.position') %></h3>
+                    <h4>Nestlé Brazil</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-md-offset-2 individual-testimonial-text">
+                <div class="row testimonial-initial-quotes">
+                  <%= image_tag "initial_quotes.gif" %>
+                </div>
+                <div class="row">
+                  <%= t('static_pages.testimonials.enterprise.second_quote.content_html') %>
+                </div>
+                <div class="row testimonial-finish-quotes">
+                  <%= image_tag "finish_quotes.gif" %>
+                </div>
+              </div>
+            </div>
         </div>
       </div>
     </div>
