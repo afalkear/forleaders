@@ -1,5 +1,16 @@
 --- 
 pt: 
+  routes:
+    articles: artigos
+    contact: contato
+    derose_method: metodo_derose
+    intense_training: intensive_training
+    extensive_training: extensive_training
+    leader_coaching: coaching
+    institution_testimonials: institutions
+    enterprise_testimonials: depoimentos
+    net: world
+    our_consultors: consultores
   helpers: 
     label: 
       apply_message: 

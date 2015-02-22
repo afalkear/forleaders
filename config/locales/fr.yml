@@ -1,5 +1,16 @@
 --- 
 fr: 
+  routes:
+    articles: articles
+    contact: contact
+    derose_method: la_methode_derose
+    intense_training: formations_intensives
+    extensive_training: formations_extensives
+    leader_coaching: coaching
+    institution_testimonials: institutions
+    enterprise_testimonials: temoignages
+    net: monde
+    our_consultors: nos_consultants
   articles: 
     follow_us_on_facebook: "SUIVEZ NOUS SUR FACEBOOK"
     latest_articles: "DERNIERS ARTICLES"
@@ -103,7 +114,7 @@ fr:
           title: "SMALL GROUP TEACHING"
         small_group_training: 
           subtitle: ""
-          title: "FORMATIONS INTENSIVES ET CONFÉRENCES"
+          title: "FORMATIONS INTENSIVES"
         talks: 
           subtitle: ""
           title: "FORMATIONS EXTENSIVES"
@@ -168,7 +179,7 @@ fr:
       derose_for_leaders: 
         all_over_the_world_html: "DeRose dans le monde entier"
         derose_method_html: "La Méthode DeRose"
-        personal_teachers: "Personal Teachers"
+        personal_teachers: "Nos Consultants"
         title_html: "DeROSE FOR LEADERS"
       programs: 
         enterprises: 
@@ -228,15 +239,15 @@ fr:
             content_html: "Démonstratrice à l'internationale pour la Methode DeRose, elle dirige son propre établissement. En tant que conférencière elle s'interesse plus particulièrement à la formation professionnelles et aux techniques vocales."
         first_block: 
           content_html: "Nous disposons de plusieurs centaines de formateurs dans le monde entier. Ils ont tous suivi une formation initiale de 4 ans puis sont réévalués chaque année. Cela nous permet de garantir leur excellence professionnelle. Nous offrons ainsi des conférences, des formations ainsi que des programmes de cours particuliers sur de nombreux thèmes comme les relations interpersonnelles, la résolution des conflits, la gestion du stress, la productivité et l'efficacité au travail, entre autres. Nos programmes sont proposés en français, anglais, portugais, espagnol, italien et allemand."
-          personal_teachers: formateurs
-          title: "NOS INTERVENANTS"
+          personal_teachers: consultants
+          title: "UN RESEAU INTERNATIONAL DE CONSULTANTS"
         second_block: 
-          content_html: "Au sein de notre groupe de plusieurs centaines de formateurs certains sont devenus de grands spécialistes de part leur expérience et l'excellence de leurs eneignement. Nous vous proposons ainsi une équipe de consultants Experts qui possèdent tous plus de 15 ans dans la formation de leaders et réalisent des conférences au niveau international. Nos programmes de consultings, ainsi que les conférences et les ateliers sont données exclusivement par ce groupe de consultants considérés les meilleurs dans leur domaine d'expertise."
+          content_html: "Au sein de notre groupe de plusieurs centaines de formateurs certains sont devenus de grands spécialistes de part leur expérience et l'excellence de leurs eneignements. Nous vous proposons ainsi une équipe de consultants experts qui possèdent tous plus de 15 ans d'expérience dans la formation de leaders et réalisent des conférences au niveau international. Nos programmes de coaching dirigeant, ainsi que les conférences et les formations intensives sont données exclusivement par ce groupe de consultants considérés comme les meilleurs dans leur domaine d'expertise."
           title: "UNE ÉQUIPE DE CONSULTANTS EXPERTS"
       footer: 
         see_our_programs: "DÉCOUVREZ NOS PROGRAMMES"
       header: 
-        title: "PERSONAL TEACHERS"
+        title: "NOS CONSULTANTS"
     partners: 
       subtitle: "ILS NOUS FONT CONFIANCE"
       title: "NOS PARTENAIRES"
@@ -253,7 +264,7 @@ fr:
           second_item: "Amélioration du bien-être"
           subtitle: ""
           third_item: "Haute productivité"
-          title: "FORMATIONS INTENSIVES ET CONFÉRENCES"
+          title: "FORMATIONS INTENSIVES"
         talks: 
           fifth_item: "Gestion des émotions"
           first_item: "Haute Performance"
