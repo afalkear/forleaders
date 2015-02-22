@@ -5,7 +5,7 @@ module ApplicationHelper
     elsif page_title.to_s == "DeRose For Leaders"
       content_for :title, "DeRose For Leaders"
     else
-      content_for :title, page_title.to_s.capitalize
+      content_for :title, t("static_pages.#{params[:action]}.title").capitalize
     end
   end
 
