@@ -1,5 +1,16 @@
 --- 
 en: 
+  routes:
+    articles: articles
+    contact: contact
+    derose_method: derose_method
+    intense_training: intensive_training
+    extensive_training: extensive_training
+    leader_coaching: coaching
+    institution_testimonials: institutions
+    enterprise_testimonials: testimonials
+    net: world
+    our_consultors: our_consultors
   activerecord: 
     errors: 
       messages: 

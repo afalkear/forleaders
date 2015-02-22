@@ -1,5 +1,17 @@
 --- 
 es: 
+  routes:
+    articles: articulos
+    group_consultory: entrenamiento
+    contact: contacto
+    derose_method: "MetodoDeRose"
+    intense_training: formacion_intensiva
+    extensive_training: formacion_extensiva
+    leader_coaching: coaching
+    institution_testimonials: instituciones
+    enterprise_testimonials: testimonios
+    net: mundo
+    our_consultors: nuestros_profesionales
   devise: 
     confirmations: 
       confirmed: "Su cuenta fue confirmada exitosamente"

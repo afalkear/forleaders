@@ -4,15 +4,15 @@
     <div class="row individual-tab-navigation">
       <hr />
       <ul class="nav nav-pills" id="individual-pills">
-        <li>
+        <li class="<%= "active" if params[:type] == "it" %>">
           <a href="#small-group-training" id="individual-small-group-training-link" data-toggle="tab" data-target=".small-group-training, #small-group-training-header"><%= t('static_pages.group_consultory_body.pills.small_group_training.title') %></a>
           <p><%= t('static_pages.group_consultory_body.pills.small_group_training.subtitle') %></p>
         </li>
-        <li>
+        <li class="<%= "active" if params[:type] == "et" %>">
           <a href="#talks" id="individual-talks-link" data-toggle="tab" data-target=".talks, #talks-header"><%= t('static_pages.group_consultory_body.pills.talks.title') %></a>
           <p><%= t('static_pages.group_consultory_body.pills.talks.subtitle') %></p>
         </li>
-        <li>
+        <li class="<%= "active" if params[:type] == "lc" %>">
           <a href="#workshop" id="individual-workshop-link" data-toggle="tab" data-target=".workshop, #workshop-header"><%= t('static_pages.group_consultory_body.pills.workshops.title') %></a>
           <p><%= t('static_pages.group_consultory_body.pills.workshops.subtitle') %></p>
         </li>
@@ -20,7 +20,7 @@
       <hr />
       <!-- small-group-teaching -->
       <div class="tab-content">
-        <div id="small-group-teaching-header" class="tab-pane active small-group-teaching">
+        <div id="small-group-teaching-header" class="tab-pane small-group-teaching">
           <div class="col-md-7 ind-body">
             <div>
              <div>
@@ -43,7 +43,7 @@
           </div>
         </div>
       <!-- TRAINING -->
-        <div id="small-group-training" class="tab-pane small-group-training">
+        <div id="small-group-training" class="tab-pane <%= "active "if params[:type] == "it" %> small-group-training">
           <div class="col-md-7 ind-body">
             <div>
              <div>
@@ -67,7 +67,7 @@
           </div>
         </div>
       <!-- WORKSHOP -->
-        <div id="workshop" class="tab-pane workshop">
+        <div id="workshop" class="tab-pane <%= "active "if params[:type] == "lc" %> workshop">
           <div class="col-md-7 ind-body">
             <div>
              <div>
@@ -98,7 +98,7 @@
           </div>
         </div>
       <!-- TALKS -->
-        <div id="talks" class="tab-pane talks">
+        <div id="talks" class="tab-pane <%= "active "if params[:type] == "et" %> talks">
           <div class="col-md-7 ind-body">
             <div>
              <div>

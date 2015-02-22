@@ -42,6 +42,9 @@ Forleaders::Application.routes.draw do
       get 'net', to: 'static_pages#net'
       get 'enterprise_testimonials', to: 'static_pages#enterprise_testimonials'
       get 'institution_testimonials', to: 'static_pages#institution_testimonials'
+      get 'intense_training', to: 'static_pages#group_consultory', type: "it"
+      get 'extensive_training', to: 'static_pages#group_consultory', type: "et"
+      get 'leader_coaching', to: 'static_pages#group_consultory', type: "lc"
       resources :articles
   end
 
