@@ -38,7 +38,9 @@
   </div>
   <div class="row individual-consultors-button-link" id="experts-button-bottom-0-padding">
     <span>
-      <a href="our_consultors"><%= t('static_pages.sidebar.experts.see_more') %></a>
+      <%= link_to our_consultors_path do %>
+        <%= t('static_pages.sidebar.experts.see_more') %>
+      <% end %>
     </span>
   </div>
 </div>

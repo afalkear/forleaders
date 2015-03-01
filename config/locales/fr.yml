@@ -26,6 +26,17 @@ fr:
         phone: Téléphone
         position: Poste
         submit: Envoyer
+  routes: 
+    articles: articles
+    contact: contact
+    derose_method: la_methode_derose
+    enterprise_testimonials: temoignages
+    extensive_training: formations_extensives
+    institution_testimonials: institutions
+    intense_training: formations_intensives
+    leader_coaching: coaching
+    net: monde
+    our_consultors: nos_consultants
   static_pages: 
     articles: 
       read_more: "LIRE LA SUITE"
@@ -71,6 +82,8 @@ fr:
       header: 
         subtitle: ""
         title_html: "La Méthode DeROSE"
+    enterprise_testimonials: 
+      title: Témoignages
     footer: 
       apply_now: "Déposez une candidature"
       articles: 
@@ -106,6 +119,8 @@ fr:
         institutions: Institutions
         title: Témoignages
       title_html: "DeROSE FOR LEADERS"
+    group_consultory: 
+      title: Programmes
     group_consultory_body: 
       candidates: "NOUS RENCONTRER"
       pills: 
@@ -170,6 +185,8 @@ fr:
         expand_subtitle_html: "<p>Haute productivité</p> <p>Développement de la qualité de vie</p> <p>Amélioration du bien-être</p>"
         subtitle: "Quinze minutes par jour"
         title: TRAINING
+    institution_testimonials: 
+      title: Institutions
     navbar: 
       articles: 
         title_html: ARTICLES
@@ -209,6 +226,7 @@ fr:
         see_our_programs: "DÉCOUVREZ NOS PROGRAMMES"
       header: 
         title: "DANS LE MONDE ENTIER"
+      title: "DeRose dans le monde entier"
     our_consultors: 
       body: 
         consultors: 
@@ -248,6 +266,7 @@ fr:
         see_our_programs: "DÉCOUVREZ NOS PROGRAMMES"
       header: 
         title: "NOS CONSULTANTS"
+      title: "Nos Consultants"
     partners: 
       subtitle: "ILS NOUS FONT CONFIANCE"
       title: "NOS PARTENAIRES"
