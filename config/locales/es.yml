@@ -1,5 +1,5 @@
 --- 
-es: 
+es:
   routes:
     articles: articulos
     group_consultory: entrenamiento
@@ -146,10 +146,10 @@ es:
         title: "¿Quiénes somos?"
       enterprises: 
         small_group_teaching: "Small Group Teaching"
-        talks: Conferencia
+        talks: "Formación extensiva"
         title: "Programas para empresas"
-        training: Entrenamiento
-        workshop: Workshops
+        training: "Formación intensiva"
+        workshop: "Coaching de dirigentes"
       follow_us: "Follow us!"
       individuals: 
         consulting: Consultoría
@@ -171,13 +171,13 @@ es:
           title: "SMALL GROUP TEACHING"
         small_group_training: 
           subtitle: "15 minutos por día"
-          title: ENTRENAMIENTO
+          title: "FORMACIÓN INTENSIVA"
         talks: 
           subtitle: "1, 2 o 4 horas"
-          title: CONFERENCIA
+          title: "FORMACIÓN EXTENSIVA"
         workshops: 
           subtitle: "4, 8 o 16 horas"
-          title: WORKSHOP
+          title: "COACHING DE DIRIGENTES"
     group_consultory_header: 
       small_group_teaching: 
         expand_subtitle_html: "<p>Desarrollar Alta Performance profesional y personal</p> <p>Mejorar la Calidad de Vida</p> <p>Reforzar los vínculos entre los líderes</p>"
@@ -186,14 +186,14 @@ es:
       small_group_training: 
         expand_subtitle_html: "<p>Favorecer la Alta Productividad</p> <p>Perfeccionar la Buena Forma</p> <p>Desarrollar Bienestar</p>"
         subtitle: "15 minutos por día"
-        title: "SMALL GROUP TRAINING"
+        title: "FORMACIÓN INTENSIVA"
       talks: 
         subtitle: "1, 2 o 4 horas"
-        title: CONFERENCIAS
+        title: "FORMACIÓN EXTENSIVA"
       workshops: 
         expand_subtitle_html: "<h2>TÓPICOS</h2> <p>Alta productividad</p> <p>Vivir y trabajar mejor</p> <p>Comportamiento, ética y resultados</p> <p>Liderazgo sabio</p>"
         subtitle: "4, 8 o 16 horas"
-        title: WORKSHOPS
+        title: "COACHING DE DIRIGENTES"
     header: 
       countries_html: "Paris - London - New York - Roma - Barcelona - Buenos Aires - Lisboa - Porto - Rio - São Paulo"
       teaching_phrase: "TEACHING TOP LEADERS SINCE 1960"
@@ -239,9 +239,9 @@ es:
       programs: 
         enterprises: 
           small_group_teaching: "Small Group Teaching"
-          talks: Conferencias
+          talks: "Formación extensiva"
           title: "PARA EMPRESAS"
-          training: Entrenamiento
+          training: "Formación intensiva"
           workshop: Workshop
         individuals: 
           consulting: Consultoría
@@ -309,21 +309,21 @@ es:
           second_item: "Desarrollar Bienestar"
           subtitle: "15 minutos por día"
           third_item: "Favorezca su Alta Productividad"
-          title: "SMALL GROUP TRAINING"
+          title: "FORMACIÓN INTENSIVA"
         talks: 
           fifth_item: "Manejo de emociones"
           first_item: "Alta productividad"
           second_item: "Calidad de Vida"
           subtitle: "2 o 4 horas"
           third_item: "Manejo de conflictos"
-          title: CONFERENCIAS
+          title: "FORMACIÓN EXTENSIVA"
         title: "PARA EMPRESAS"
         workshop: 
           first_item: "Administración de tiempo"
           second_item: "Administración de conflictos"
           subtitle: "4, 8 o 16 horas"
           third_item: "Gestión del estrés"
-          title: WORKSHOPS
+          title: "COACHING DE DIRIGENTES"
       individuals: 
         consultory: 
           first_item: "Alta Productividad"
@@ -347,9 +347,19 @@ es:
       subtitle: "INVIERTA EN PROGRAMAS A MEDIDA"
       title: "NUESTROS PROGRAMAS"
     sidebar: 
+      ericsson: 
+        company: ERICSSON
+        content_html: "Hace poco más de un año fui a conocer la escuela del Método de Rose. De la búsqueda que hice de las diferentes alternativas, la del Método DeRose me llamó la atención por sobre todas debido a esa propuesta de una visión más integral orientada hacia la alta performance y calidad de vida. Intuía de alguna manera que el Método DeRose era otra cosa, más allá de lo que aparecía en las otras ofertas, y eso es algo que he podido confirmar en la práctica. Mi día a día es, digamos, algo agitado: en lo profesional tengo una posición directiva en una multinacional de telecomunicaciones, a cargo de plataformas que atienden más de 60 millones de clientes. En lo personal, tengo a mi familia, además soy triatleta y corredor de montaña aficionado, actividades que me encantan y a las que dedico en promedio 12 a 15 horas por semana. Hoy en día, después de estos meses iniciales de práctica he podido observar impactos positivos en cada uno de esos aspectos y sé que esto es solo el comienzo."
+        name: "John GOMEZ"
+        position: "COO America Latina"
       experts: 
         see_more: "VER MÁS DETALLES"
         title: "CONOZCA A LOS CONSULTORES EXPERTS"
+      hunter_adams: 
+        company: "HUNTER ADAMS"
+        content_html: "Estoy muy contento de haber encontrado un enfoque integral. Así aprendo nuevas herramientas prácticas y teóricas de gran valor. Rápidamente me sentí mejor cada día. Este método es realmente sorprendente, ya que permite mejorar en todos los aspectos de la vida. En resumen, estoy muy contento de haber tenido la suerte de encontrar esta metodología y animo a todos aquellos que buscan crecer, no sólo físicamente, sino también en la vida."
+        name: "Judith ADAMSON"
+        position: "Senior HR Advisor"
       nestle: 
         content: "Investigación de la  Prof. Rosana Ortega"
         title: "MI BIENESTAR ESTÁ EN NESTLÉ"
@@ -364,6 +374,16 @@ es:
       unique_method: 
         content: "Los líderes reconocen nuestro gran diferencial: un know how incomparable para mejorar al ser humano. Los resultados que conseguimos en el aumento de la performance y la calidad de vida son muy significativos debido a la calidad superlativa de las herramientas que enseñamos. Bastan disciplina y constancia en la aplicación de nuestras técnicas y conceptos para recoger frutos positivos para la vida profesional y personal."
         title: "LO QUE TORNA ÚNICO A NUESTRO MÉTODO"
+      volkswagen: 
+        company: VOLKSWAGEN
+        content_html: "El Método DeRose me ayudó a mejorar el autoconocimiento, mejorar las habilidades de razonamiento, mejorar la disposición y la reducción del estrés."
+        name: "Paulo Rodrigues Guino"
+        position: "Gerente Ejecutivo Mundial de Promoción de Calidad"
+      volkswagen_2: 
+        company: VOLKSWAGEN
+        content_html: "Las técnicas y conceptos del Método DeRose duda me ayudan a concentrarme y aumentar mi concentración. Las clases son una gran salida para el estrés mental y físico. Realmente necesito las técnicas para recuperar la bioenergía y mantener el cuerpo y la mente en buena forma."
+        name: "Bernd H. Schimidt-Liermann"
+        position: "Director de la Tesorería de America del sur"
     slideshow: 
       first_phrase_html: "YOU KNOW HOW YOUR BUSINESS WORKS <br> WE KNOW HOW YOU WORK"
       second_phrase_html: "YOU HAVE THE GOALS <br> WE HAVE THE TOOLS"
