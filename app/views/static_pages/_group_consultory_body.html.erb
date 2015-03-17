@@ -113,9 +113,9 @@
                 <%= render 'individual_sidebar_peugeot_testimony' %>
               </div>
               <div class="our-consultors-programs-link">
-                <a href="contact">
+                <%= link_to contact_path do %>
                   <%= t('static_pages.group_consultory_body.candidates') %>
-                </a>
+                <% end %>
               </div>
             </div>
           </div>
