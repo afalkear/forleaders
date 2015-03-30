@@ -5,9 +5,6 @@ class ArticlesController < ApplicationController
 
   def index
     category = params[:category].present? ? params[:category] : ""
-    
-    puts ""
-    puts "category: #{category}"
     @featured_articles = Article.includes(:categories).where("categories.name LIKE ? AND lang = ? AND publish_at <= ?", "%#{category}%", params[:locale], DateTime.now).references(:categories).take(4)
     @latest_articles = Article.includes(:categories).where("publish_at <= ? AND lang = ?", DateTime.now, params[:locale]).last(3)
   end
@@ -15,7 +12,7 @@ class ArticlesController < ApplicationController
   def show
     @article = Article.find(params[:id])
     @related_articles =  Article.includes(:categories).where("categories.name LIKE ? AND lang = ? AND publish_at <= ?", "%#{@article.category}%", params[:locale], DateTime.now).references(:categories).where.not(id: @article.id).take(3) # Article.page(params[:page]).per(3)
-    @latest_articles = Article.includes(:categories).where("publish_at <= ?", DateTime.now).where.not(id: @article.id).last(3) #Article.page(params[:page]).per(3).order('created_at DESC')
+    @latest_articles = Article.includes(:categories).where("publish_at <= ? AND lang = ?", DateTime.now, params[:locale]).where.not(id: @article.id).last(3) #Article.page(params[:page]).per(3).order('created_at DESC')
     youtube_url = @article.video_url
     youtube_id = nil
     if !youtube_url.nil?
@@ -48,7 +45,7 @@ class ArticlesController < ApplicationController
       article_language = params[:article][:article_language] ? ArticleLanguage.find(params[:article][:article_language]) : ArticleLanguage.create
       article_language.articles << @article
       if !params[:article][:article_image] && @article.article_language.articles.count > 1
-        @article.article_image_url = @article.article_language.articles.first.article_image
+        #@article.article_image_url = @article.article_language.articles.first.article_image
         @article.save
       end
 
