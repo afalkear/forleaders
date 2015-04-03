@@ -10,8 +10,9 @@ module ApplicationHelper
   end
 
   def locale_logo
-    available_locales = %w(es pt fr en)
-    image = (available_locales.include? I18n.locale.to_s.downcase) ? "logo_mdl_#{I18n.locale.to_s.downcase}.png" : "logo_mdl.png"
+    #available_locales = %w(es pt fr en)
+    #image = (available_locales.include? I18n.locale.to_s.downcase) ? "logo_mdl_#{I18n.locale.to_s.downcase}.png" : "logo_mdl.png"
+    image = "logo_derose_method.png"
     image_tag image, class: "center"
   end
 
