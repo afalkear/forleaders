@@ -1,0 +1,27 @@
+<ul class="nav navbar-nav">
+  <li class="<%= 'active' if controller?('static_pages') && action?("derose_method", "our_consultors", "net") %> dropdown">
+    <%= t('static_pages.navbar.derose_for_leaders.title_html') %>
+    <%= link_to t('static_pages.navbar.derose_for_leaders.derose_method_html'), derose_method_path%>
+    <%= link_to t('static_pages.navbar.derose_for_leaders.personal_teachers'), our_consultors_path%>
+    <%= link_to t('static_pages.navbar.derose_for_leaders.all_over_the_world_html'), net_path%>
+  </li>
+  
+  <li class="<%= 'active' if controller?('static_pages') && action?("individual_consultory", "group_consultory") %> dropdown">
+    <%= t('static_pages.navbar.programs.title_html') %>
+    <%= link_to t('static_pages.navbar.programs.enterprises.training'), intense_training_path %>
+    <%= link_to t('static_pages.navbar.programs.enterprises.talks'), extensive_training_path %>
+    <%= link_to t('static_pages.navbar.programs.enterprises.workshop'), leader_coaching_path %>
+  </li>
+  <li class="<%= 'active' if controller?('static_pages') && action?("enterprise_testimonials", "institution_testimonials") %> dropdown">
+    <%= t('static_pages.navbar.testimonials.title_html') %>
+    <%= link_to t('static_pages.navbar.testimonials.enterprises'), enterprise_testimonials_path%>
+    <%= link_to t('static_pages.navbar.testimonials.institutions'), institution_testimonials_path%>
+  </li>
+  <li class="<%= 'active' if controller?('static_pages') && action?("articles") %> dropdown">
+    <%= link_to t('static_pages.navbar.articles.title_html'), articles_path %>
+  </li>
+  <li class="<%= 'active' if controller?('static_pages') && action?("contact", "apply") %> dropdown">
+    <%= t('static_pages.navbar.contact_type.title_html') %>
+    <%= link_to t('static_pages.navbar.contact_type.contact'), contact_path %>
+  </li>
+</ul>
