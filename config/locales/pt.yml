@@ -1,16 +1,5 @@
 --- 
 pt: 
-  routes:
-    articles: artigos
-    contact: contato
-    derose_method: metodo_derose
-    intense_training: intensive_training
-    extensive_training: extensive_training
-    leader_coaching: coaching
-    institution_testimonials: institutions
-    enterprise_testimonials: depoimentos
-    net: world
-    our_consultors: consultores
   helpers: 
     label: 
       apply_message: 
@@ -37,6 +26,17 @@ pt:
         phone: Telefone
         position: Cargo
         submit: Submit
+  routes: 
+    articles: artigos
+    contact: contato
+    derose_method: metodo_derose
+    enterprise_testimonials: depoimentos
+    extensive_training: extensive_training
+    institution_testimonials: institutions
+    intense_training: intensive_training
+    leader_coaching: coaching
+    net: world
+    our_consultors: consultores
   static_pages: 
     articles: 
       read_more: "LER MAIS >>"
@@ -49,7 +49,7 @@ pt:
       leadership: Liderança
       quality_of_life: Lifestyle
     contact: 
-      countries_html: "<h2>BRASIL</h2><h4>São Paulo</h4>Av. Paulista, 726, 17° andar<br>patricia.taurizano@metododerose.org<br>+(55 11) 99875-9954 <h4>Rio de Janeiro</h4> rafaella.coelho@metododerose.org<br>+(55 21) 98888-5954<h4>Brasília<h4>andre.bouchardet@metododerose.org<br>+(55 61) 9656-4747<h2>UNITED STATES</h2><h4>New York</h4>55 Murray Street, New York, NY 10007<br>john.chisenhall@derosemethod.org<br>+(1) 917-727-0233<h2>FRANCE</h2><h4>Paris</h4>8 rue Balzac, Paris 8ème<br>jonathan.sardas@methodederose.org<br>+(33) 06 71 88 81 08<h2>ESPAÑA</h2><h4>Barcelona</h4> Carrer de la Diputación, 286<br>mariana.chiavini@metododerose.org<br>+(34) 672 193 352<h2>ARGENTINA</h2><h4>Buenos Aires</h4>República Árabe Siria 3088, Buenos Aires<br>lucia.lopez@metododerose.org<br>+(54) 11 4801-8522"
+      countries_html: "<h2>BRASIL</h2><h4>São Paulo</h4>Av. Paulista, 726, 17° andar<br>patricia.taurizano@metododerose.org<br>+(55 11) 99875-9954 <h4>Rio de Janeiro</h4>Rua Dias Ferreira, 259 - Leblon<br> rafaella.coelho@metododerose.org<br>+(55 21) 98888-5954<h4>Brasília<h4>andre.bouchardet@metododerose.org<br>+(55 61) 9656-4747<h2>UNITED STATES</h2><h4>New York</h4>55 Murray Street, New York, NY 10007<br>john.chisenhall@derosemethod.org<br>+(1) 917-727-0233<h2>FRANCE</h2><h4>Paris</h4>8 rue Balzac, Paris 8ème<br>jonathan.sardas@methodederose.org<br>+(33) 06 71 88 81 08<h2>ESPAÑA</h2><h4>Barcelona</h4> Carrer de la Diputación, 286<br>mariana.chiavini@metododerose.org<br>+(34) 672 193 352<h2>ARGENTINA</h2><h4>Buenos Aires</h4>República Árabe Siria 3088, Buenos Aires<br>lucia.lopez@metododerose.org<br>+(54) 11 4801-8522"
       message: "Estaremos felizes em poder esclarecer questões relativas aos nossos programas e ao processo de admissão"
       title: CONTATE-NOS
     derose_method: 
@@ -63,7 +63,7 @@ pt:
             content_html: "O M<span class='navbar-title-smallcaps'>ÉTODO</span> DeR<span class='navbar-title-smallcaps'>OSE</span> é de grande valia para os líderes que buscam ferramentas eficientes para se aprimorar, aumentando o seu desempenho pessoal e profissional. Montamos com cada líder um programa sob medida incluindo aulas de <b><i>Personal Teaching</i></b>, <b>Treinamentos</b> e <b>Consultorias</b>. Definimos juntos os seus objetivos e ensinamos as ferramentas mais adequadas para que ele possa progredir de forma efetiva e duradoura."
             title: "O MÉTODO DeROSE FOR LEADERS"
           third_block: 
-            content_html: "<p>Os líderes reconhecem o nosso grande difrencial: um <b><i>know-how</i> incomparável para melhorar o ser humano</b>. Os resultados que conseguimos no aumento da <i>performance</i> e da qualidade de vida são muito expressivos devido à qualidade superlativa das ferramentas que ensinamos. Bastam disciplina e constância na aplicação das nossas técnicas e dos nossos conceitos para colher frutos positivos na vida profissional e pessoal.</p>"
+            content_html: "<p>Os líderes reconhecem o nosso grande difrencial: um <b><i>know-how</i> incomparável para melhorar o ser humano</b>. Os resultados que conseguimos no aumento da performance e da qualidade de vida são muito expressivos devido à qualidade superlativa das ferramentas que ensinamos. Bastam disciplina e constância na aplicação das nossas técnicas e dos nossos conceitos para colher frutos positivos na vida profissional e pessoal.</p>"
             title: "O QUE TORNA O NOSSO MÉTODO TÃO ÚNICO"
         sidebar: 
           video: 
@@ -100,10 +100,10 @@ pt:
         title: "Quem somos?"
       enterprises: 
         small_group_teaching: "Small Group Teaching"
-        talks: Palestra
+        talks: "PROGRAMA EXTENSIVO"
         title: "Programas para empresas"
-        training: Treinamento
-        workshop: Workshops
+        training: "PROGRAMA INTENSIVO"
+        workshop: "CONSULTORIA PARA DIRIGENTES"
       follow_us: "Follow us!"
       individuals: 
         consulting: Consultoria
@@ -122,14 +122,11 @@ pt:
           subtitle: "1h duas vezes por semana"
           title: "SMALL GROUP TEACHING"
         small_group_training: 
-          subtitle: "15 minutos por día"
-          title: TREINAMENTO
+          title: "PROGRAMA INTENSIVO"
         talks: 
-          subtitle: "1, 2 ou 4 horas"
-          title: PALESTRA
+          title: "PROGRAMA EXTENSIVO"
         workshops: 
-          subtitle: "4, 8 ou 16 horas"
-          title: WORKSHOP
+          title: "CONSULTORIA PARA DIRIGENTES"
     group_consultory_header: 
       small_group_teaching: 
         expand_subtitle_html: "<p>Desenvolver Alta Performance</p> <p>Aumentar a fluidez na comunicação</p> <p>Melhorar a Qualidade de Vida</p> <p>Reforçar os vinculos entre os líderes</p>"
@@ -138,15 +135,15 @@ pt:
       small_group_training: 
         expand_subtitle_html: "<p>Desenvolver Alta Performance</p> <p>Aumentar a fluidez na comunicação</p> <p>Melhorar a Qualidade de Vida</p> <p>Reforçar os vinculos entre os líderes</p>"
         subtitle: "15 minutos por dia"
-        title: "SMALL GROUP TRAINING"
+        title: "PROGRAMA INTENSIVO"
       talks: 
         expand_subtitle_html: "<p>Bom relacionamento</p> <p>Administração dos conflitos</p> <p>Gestão do tempo</p> <p>Liderança sábia</p>"
         subtitle: "1, 2 ou 4 horas"
-        title: PALESTRAS
+        title: "PROGRAMA EXTENSIVO"
       workshops: 
         expand_subtitle_html: "<p>Bom relacionamento</p> <p>Administração dos conflitos</p> <p>Gestão do tempo</p> <p>Liderança sábia</p>"
         subtitle: "4, 8 ou 16 horas"
-        title: WORKSHOPS
+        title: "CONSULTORIA PARA DIRIGENTES"
     header: 
       countries_html: "Paris &#8226; London &#8226; New York &#8226; Roma &#8226; Barcelona &#8226; Buenos Aires &#8226; Lisboa &#8226; Porto &#8226; Rio &#8226; São Paulo"
       teaching_phrase: "ENSINANDO ALTA PERFORMANCE DESDE 1960"
@@ -171,7 +168,6 @@ pt:
         expand_subtitle_html: ""
         subtitle: "2 dias"
         title: "INTENSIVE TEACHING"
-        expand_subtitle_html: "<p>Bom relacionamento</p> <p>Administração de conflitos</p> <p>Gestão do tempo</p> <p>Comportamento</p> <p>Liderança sábia</p>"
       personal: 
         expand_subtitle_html: "<p>Aprenda ferramentas para desenvolver o seu potencial</p> <p>Desenvolva Alta Performance em todas as áreas da sua vida</p> <p>Melhore a sua Qualidade de Vida</p>"
         subtitle: "1 hora duas vezes por semana"
@@ -184,7 +180,7 @@ pt:
       articles: 
         title_html: "A<span class=\"navbar-title-smallcaps\">RTIGOS</span>"
       contact_type: 
-        contact: "Falar conosco"
+        contact: "Fale conosco"
         title_html: "C<span class=\"navbar-title-smallcaps\">ONTATO</span>"
       derose_for_leaders: 
         all_over_the_world_html: "DeR<span class=\"navbar-title-smallcaps\">OSE</span> All Over the World"
@@ -194,10 +190,10 @@ pt:
       programs: 
         enterprises: 
           small_group_teaching: "Small Group Teaching"
-          talks: Palestra
+          talks: "Programa extensivo"
           title: "PARA EMPRESAS"
-          training: Treinamento
-          workshop: Workshop
+          training: "Programa intensivo"
+          workshop: Consultoria
         individuals: 
           consulting: Consultoria
           personal_teaching: "Personal Teaching"
@@ -206,7 +202,7 @@ pt:
         title_html: "P<span class=\"navbar-title-smallcaps\">ROGRAMAS</span>"
       testimonials: 
         enterprises: Empresas
-        institutions: Instituções
+        institutions: "Instituções que nos apoiam"
         title_html: "D<span class=\"navbar-title-smallcaps\">EPOIMENTOS</span>"
     net: 
       body: 
@@ -265,7 +261,7 @@ pt:
         title: "PERSONAL TEACHERS"
     partners: 
       subtitle: "SEE WHO TRUST US"
-      title: "NOSSOS PARECEIROS"
+      title: "NOSSOS PARCEIROS"
     programs: 
       enterprise: 
         small_group_teaching: 
@@ -277,25 +273,23 @@ pt:
         small_group_training: 
           first_item: "Desenvolver Alta Performance"
           second_item: "Aumentar a fluidez na comunicação"
-          subtitle: "15 minutos por dia"
+          subtitle: "individual ou em grupo"
           third_item: "Reforçar os vinculos entre os líderes"
-          title: "SMALL GROUP TRAINING"
+          title: "PROGRAMA INTENSIVO"
         talks: 
           fifth_item: "Gestão emocional"
           first_item: "Bom relacionamento"
           fourth_item: "Liderança sábia"
           second_item: "Administração dos conflitos"
-          subtitle: "2 ou 4 horas"
           third_item: "Gestão do tempo"
-          title: PALESTRAS
+          title: "PROGRAMA EXTENSIVO"
         title: "PARA SUA EMPRESA"
         workshop: 
           first_item: "Bom relacionamento"
           fourth_item: "Liderança sábia"
           second_item: "Administração dos conflitos"
-          subtitle: "4, 8 ou 16 horas"
           third_item: "Gestão do tempo"
-          title: WORKSHOPS
+          title: "CONSULTORIA PARA DIRIGENTES"
       individuals: 
         consultory: 
           first_item: "Alta Produtividade"
@@ -320,15 +314,25 @@ pt:
       subtitle: "SERVIÇOS PERSONALIZADOS"
       title: "NOSSOS PROGRAMAS"
     sidebar: 
+      ericsson: 
+        company: Ericsson
+        content_html: "Hace poco más de un año fui a conocer la escuela del Método DeRose en Santiago. Mi día a día es, digamos, algo agitado: tengo una posición directiva en una multinacional de telecomunicaciones, a cargo de plataformas que atienden más de 60 millones de clientes y responsable directo de los resultados financieros de las operaciones de la compañía en 10 países de la región. Mi vivencia del Método me ha llevado a experimentar la “alta performance” como un concepto continuo, que se aplica en cada actividad, en cada día, sin importar lo pequeña o insignificante que parezca. Alta performance significa excelencia, conciencia y autosuperación constantes: es la realización de esa mejor versión de cada uno todo el tiempo."
+        name: "John Gomez"
+        position: "COO América Latina"
       experts: 
         see_more: "VER MAIS DETALHES"
         title: "CONHEÇA OS CONSULTORES EXPERTS"
       group_criteria: 
         content_html: "Todos nossos programas tem um número de vagas limitado. As candidaturas passam por um rigoroso processo seletivo. <br><br> Os principais critérios para admissão são: <p>Indicação</p> <p>Grupo de pessoas com grandes responsabilidades</p> <p>Alinhamento de valores da empresa com os que são cultivados no M<span class='navbar-title-smallcaps'>ÉTODO</span> DeR<span class='navbar-title-smallcaps'>OSE</span>.</p>"
         title: "CRITÉRIOS DE SELEÇÃO"
+      hunter_adams: 
+        company: "HUNTER ADAMS"
+        content_html: "  Pratico o MÉTODO DeROSE por um curto período de tempo, e estou feliz em dizer que estou maravilhada pelas técnicas, pela cultura e pelo estilo de vida ensinados nesta metodologia. De imediato, percebi que estava me sentindo mais estável, por mais que as técnicas fossem muito intensas e até mesmo difíceis para uma iniciante como eu. Agora esses exercícios fazem parte do meu cotidiano! O MÉTODO DeROSE é mesmo impressionante, e ajuda a melhorar todos os aspectos da vida. Estou realmente satisfeita por ter encontrado essa cultura, descoberto esse Método e o incentivo a todos que buscam aprimoramento geral."
+        name: "Judith ADAMSON"
+        position: "Senior HR Advisor"
       nestle: 
         content: "Pesquisa Profa. Rosana Ortega"
-        title: "O MEU BEM-ESTAR ESTÁ NA NESTLÉ"
+        title: "Meu bem-estar, com os treinamentos do Método DeRose na Nestlé, está"
       our_criteria: 
         content_html: "Todos nossos programas tem um número de vagas limitado. As candidaturas passam por um rigoroso processo seletivo. <br><br> Os principais critérios para admissão são: <p>Indicação</p> <p>Percurso profissional que demonstre uma boa capacidade de crescimento pessoal</p> <p>Alinhamento de valores da empresa com os que são cultivados no M<span class='navbar-title-smallcaps'>ÉTODO</span> DeR<span class='navbar-title-smallcaps'>OSE</span>.</p>"
         title: "CRITÉRIOS DE SELEÇÃO"
@@ -340,6 +344,16 @@ pt:
       unique_method: 
         content: "Os líderes reconhecem o nosso grande difrencial: um know-how incomparável para melhorar o ser humano. Os resultados que conseguimos no aumento da performance e da qualidade de vida são muito expressivos devido à qualidade superlativa das ferramentas que ensinamos. Bastam disciplina e constância na aplicação das nossas técnicas e dos nossos conceitos para sentir um aprimoramento bem consolidado na vida profissional e pessoal."
         title: "O QUE TORNA O NOSSO MÉTODO ÚNICO"
+      volkswagen: 
+        company: Volkswagen
+        content_html: "De que forma o Método DeROSE contribui para alavancar a minha alta performance?  Através da melhoria do autoconhecimento.  Melhoria da capacidade de raciocínio.  Melhoria da disposição e redução do stress."
+        name: "Paulo Rodrigues Guino"
+        position: "Gerente Executivo Mundial de Fomento da Qualidade"
+      volkswagen_2: 
+        company: Volkswagen
+        content_html: "As técnicas e conceitos do Método DeRose definitivamente me ajudam a focar e aumentar minha concentração.  As aulas são uma ótima saída para o stress mental e físico.  Eu realmente preciso das técnicas para recuperar energia e manter corpo e mente em boa forma."
+        name: "Bernd H. Schimidt-Liermann"
+        position: "FT Head Regional South America"
     slideshow: 
       first_phrase_html: "VOCÊ <br> MAIS RÁPIDO, MAIS FORTE,<br> MAIS ASSERTIVO"
       second_phrase_html: "VOCÊ TEM AS METAS <br> NÓS TEMOS AS FERRAMENTAS"
@@ -359,7 +373,6 @@ pt:
         second_quote: 
           content_html: "“Acho que o Programa do M<span class='navbar-title-smallcaps'>ÉTODO</span> DeR<span class='navbar-title-smallcaps'>OSE</span> na nossa empresa está muito bem conduzido.”"
           info_html: "<h2>Nanci Yamada</h2> Especialista Desenvolvimento e R&S at Nestle Brazil"
-        title: "DEPOIMENTOS DE ALUNOS"
       institutions: 
         content_html: "<p>O Comendador DeR<span class='navbar-title-smallcaps'>OSE</span> é apoiado por um expressivo número de instituições culturais, acadêmicas, humanitárias, militares e governamentais que reconhecem o valor da sua obra. Contudo, ele sempre declara: “Aceito essas homenagens porque elas não são para engrandecer o ego de uma pessoa, mas servem como manifestações do respeito que a sociedade presta ao trabalho de todos os profissionais desta área. Assim sendo, quero dividir com você o mérito deste reconhecimento.”</p>"
         header_html: "RECONHECIMENTOS <br> DO MÉTODO DeROSE"
