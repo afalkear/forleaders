@@ -1,16 +1,5 @@
 --- 
 en: 
-  routes:
-    articles: articles
-    contact: contact
-    derose_method: derose_method
-    intense_training: intensive_training
-    extensive_training: extensive_training
-    leader_coaching: coaching
-    institution_testimonials: institutions
-    enterprise_testimonials: testimonials
-    net: world
-    our_consultors: our_consultors
   activerecord: 
     errors: 
       messages: 
@@ -341,10 +330,10 @@ en:
         title: "Who are we?"
       enterprises: 
         small_group_teaching: "Small Group Teaching"
-        talks: Lecture
+        talks: "Extensive Training"
         title: "Programs for businesses"
-        training: Training
-        workshop: Workshops
+        training: "Intensive Training and Conferences"
+        workshop: "Executive Coaching"
       follow_us: "Follow us!"
       individuals: 
         consulting: Consulting
@@ -366,13 +355,13 @@ en:
           title: "SMALL GROUP TEACHING"
         small_group_training: 
           subtitle: "FIfteen minutes per day"
-          title: TRAINING
+          title: "INTENSIVE TRAINING AND CONFERENCES"
         talks: 
           subtitle: "One, two or four hours"
-          title: LECTURE
+          title: "EXTENSIVE TRAINING"
         workshops: 
           subtitle: "Four, eight or sixteen hours"
-          title: WORKSHOP
+          title: "EXECUTIVE COACHING"
     group_consultory_header: 
       small_group_teaching: 
         expand_subtitle_html: "<p>Developing professional and personal High Performance</p> <p>Improving Quality of Life </p> <p>Strengthen relations between leaders</p>"
@@ -381,14 +370,14 @@ en:
       small_group_training: 
         expand_subtitle_html: "<p>Develop High Productivity</p> <p>Improve Fitness</p> <p>Boost Well Being</p>"
         subtitle: "Fifteen minutes per day"
-        title: "SMALL GROUP TRAINING"
+        title: "INTENSIVE TRAINING AND CONFERENCES"
       talks: 
         subtitle: "One, two or four hours"
-        title: LECTURES
+        title: "EXTENSIVE TRAINING"
       workshops: 
         expand_subtitle_html: "TOPICS High productivity  Live and work better  Attitude, ethics and results  Wise leadership"
         subtitle: "Four, eight or sixteen hours"
-        title: WORKSHOPS
+        title: "EXECUTIVE COACHING"
     header: 
       countries_html: "Paris &#8226; London &#8226; New York &#8226; Roma &#8226; Barcelona &#8226; Buenos Aires &#8226; Lisboa &#8226; Porto &#8226; Rio &#8226; São Paulo"
       teaching_phrase: "TEACHING TOP LEADERS SINCE 1960"
@@ -435,10 +424,10 @@ en:
       programs: 
         enterprises: 
           small_group_teaching: "Small Group Teaching"
-          talks: Lectures
+          talks: "Extensive Training"
           title: "FOR BUSINESSES"
-          training: "Small Group Training"
-          workshop: Workshop
+          training: "Intensive Training and Conferences"
+          workshop: "EXECUTIVE COACHING"
         individuals: 
           consulting: Consulting
           personal_teaching: "Personal Teaching"
@@ -488,7 +477,7 @@ en:
       footer: 
         see_our_programs: "SEE OUR PROGRAMS"
       header: 
-        title: "PERSONAL TEACHERS"
+        title: "NOS CONSULTANTS"
     partners: 
       subtitle: "SEE WHO INVESTS IN US"
       title: "OUR PARTNERS"
@@ -503,24 +492,22 @@ en:
         small_group_training: 
           first_item: "Improve physical fitness"
           second_item: "Provide a moment for well being"
-          subtitle: "15 minutes per day"
           third_item: "Promote high productivity"
-          title: "SMALL GROUP TRAINING"
+          title: "INTENSIVE TRAINING AND CONFERENCES"
         talks: 
           fifth_item: "Management of emotions"
           first_item: "High Performance"
           fourth_item: "Stress management"
           second_item: "Quality of Life"
-          subtitle: "2 or 4 hours"
+          subtitle: ""
           third_item: "Conflict management"
-          title: LECTURES
+          title: "EXTENSIVE TRAINING"
         title: "FOR BUSINESSES"
         workshop: 
           first_item: "Time management"
           second_item: "Conflict management"
-          subtitle: "4, 8 or 16 hours"
           third_item: "Stress management"
-          title: WORKSHOPS
+          title: "EXECUTIVE COACHING"
       individuals: 
         consultory: 
           first_item: "High Productivity"
@@ -541,12 +528,22 @@ en:
           subtitle: "15 minutes per day"
           third_item: "Develop your well being"
           title: TRAINING
-      subtitle: "INVEST IN TAILORED PROGRAMS"
-      title: "OUR PROGRAMS"
+      subtitle: "FOR YOU AND YOUR BUSINESS"
+      title: "OUR TAILORED PROGRAMS"
     sidebar: 
+      ericsson: 
+        company: ERICSSON
+        content_html: "There is a little more than a year I first started the DeRose Method with the aim to enhance both my levels of performance and life quality. And have been experienced this in a very concrete way. My everyday life is slightly restless, I am indeed responsible for the financial results and my business operations among 10 countries, as well as manage the platforms that serve more than 60 million customers. I am a family man and also dedicates a longstanding passion for triathlon. I have seen over time that the DeRose Method had a strong positive impact through various aspects of my life."
+        name: "John GOMEZ"
+        position: "COO Latin America"
       experts: 
         see_more: "SEE MORE DETAILS"
         title: "MEET OUR EXPERT CONSULTORS"
+      hunter_adams: 
+        company: "HUNTER ADAMS"
+        content_html: "I am very pleased to have found such a comprehensive approach. Thus I learn new practical and theoretical tools of great value. I quickly felt better every day. This method is really amazing because it enables to improve in all aspects of life. In a nutshell, I'm really glad to have had the chance to find this Methodology and I would encourage all those who seek to be developed at the physical level but also in life as well."
+        name: "Judith ADAMSON"
+        position: "Senior HR Advisor"
       nestle: 
         content: "Research by Prof. Rosana Ortega"
         title: "MY WELL BEING IS IN NESTLÉ"
@@ -556,11 +553,21 @@ en:
       peugeot: 
         erwin_data_html: "<h3>Erwin MUSEUR</h3> <h4>Paris</h4> <p>Design Manager</p> <p>PEUGEOT</p> "
         see_more: "READ MORE"
-        testimonial: "From the very beginning I've enjoyed the classes because I felt that they produced positive effects very fast. In the first months I learned very efficient tools to increase my vitality, I improved my breathing capacity as well as my flexibility and muscle tone. Soon afterwards I started training my mental capabilities. The theoretical knowledge explained in conversations added great value to my personal and professional growth."
+        testimonial: "The first sessions basically help to prepare physically and later mental work is enhanced. Formal lectures transmitted through conversations are of great value and fully contributed to my personal and professional growth.  This has led to a significant increase in my career since my colleagues and my superiors soon perceived that I was getting better. I have thus assumed new responsibilities and leadership positions within the company."
         title: RECOMENDATION
       unique_method: 
         content: "Leaders recognize our great difrencial: an incomparable know-how to improve human beings. The increases in performance and quality of life our clients have achieved are very significant and due to the excellent quality of the tools we teach. Discipline and consistency in the application of our techniques and concepts are enough to reap the positive results in your professional and personal life."
         title: "WHAT MAKES OUR METHOD UNIQUE"
+      volkswagen: 
+        company: VOLKSWAGEN
+        content_html: "The DeRose Method allows me to know myself better. I have thus improved my efficiency in decision making. I also noticed a better standard of my body shape and reduced my stress level."
+        name: "Paulo RODRIGUES GUINO"
+        position: "Director of Quality Worldwide"
+      volkswagen_2: 
+        company: VOLKSWAGEN
+        content_html: "The techniques and concepts of the DeRose Method allow me to be more focused and concentrate better. I have learned to better manage my stress physically and mentally. Today I feel the extent to which I need these tools to get my vitality level and keep me in shape."
+        name: "Bernd H. Schimidt-LIERMANN"
+        position: "Head of Treasury South America"
     slideshow: 
       first_phrase_html: "YOU KNOW HOW YOUR BUSINESS WORKS<br> WE KNOW HOW <span class=\"you-emphasis gold-color\">YOU</span> WORK"
       second_phrase_html: "YOU HAVE THE GOALS<br> WE HAVE THE TOOLS"
