@@ -8,6 +8,8 @@ class Article < ActiveRecord::Base
 
   friendly_id :title, :use => [:slugged, :finders, :history]
 
+  validates :title, uniqueness: true
+
   VALID_STATUSES = %w(draft published)
 
   attr_reader :category_tokens, :article_image_cache
