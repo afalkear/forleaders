@@ -18,6 +18,13 @@ class Article < ActiveRecord::Base
   def self.home_articles
   end
 
+  def slug_candidates
+    [
+      :url_name,
+      [:url_name, :lang]
+    ]
+  end
+
   def category
     self.categories.count == 0 ? "" : self.categories.first.name
   end
