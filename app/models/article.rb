@@ -8,7 +8,7 @@ class Article < ActiveRecord::Base
 
   friendly_id :url_name, :use => [:slugged, :finders, :history]
 
-  validates :title, uniqueness: true
+  validates :title
 
   VALID_STATUSES = %w(draft published)
 
