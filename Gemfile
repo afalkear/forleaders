@@ -53,6 +53,9 @@ gem 'cancancan', '~> 1.8'
 # put the locale in the URL as: deroseforleaders.com/en/articles
 gem 'route_translator'
 
+# put frinedly ids, so you can see articles/how-to-lead instead of articles/342
+gem 'friendly_id', '~> 5.1.0'
+
 # select jQuery plugin
 gem "select2-rails"
 
