@@ -6,7 +6,7 @@ class Article < ActiveRecord::Base
   belongs_to :user
   before_save :set_status
 
-  friendly_id :title, :use => [:slugged, :finders, :history]
+  friendly_id :url_name, :use => [:slugged, :finders, :history]
 
   validates :title, uniqueness: true
 
