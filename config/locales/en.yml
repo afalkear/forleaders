@@ -267,6 +267,8 @@ en:
     percentage: 
       format: 
         format: "%n%"
+  routes: 
+    articles: articles
   static_pages: 
     articles: 
       read_more: "READ MORE >>"
@@ -354,13 +356,10 @@ en:
           subtitle: "Two classes per week of one hour"
           title: "SMALL GROUP TEACHING"
         small_group_training: 
-          subtitle: "FIfteen minutes per day"
           title: "INTENSIVE TRAINING AND CONFERENCES"
         talks: 
-          subtitle: "One, two or four hours"
           title: "EXTENSIVE TRAINING"
         workshops: 
-          subtitle: "Four, eight or sixteen hours"
           title: "EXECUTIVE COACHING"
     group_consultory_header: 
       small_group_teaching: 
@@ -427,7 +426,7 @@ en:
           talks: "Extensive Training"
           title: "FOR BUSINESSES"
           training: "Intensive Training and Conferences"
-          workshop: "EXECUTIVE COACHING"
+          workshop: "Executive Coaching"
         individuals: 
           consulting: Consulting
           personal_teaching: "Personal Teaching"
