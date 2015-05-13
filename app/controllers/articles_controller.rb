@@ -55,8 +55,8 @@ class ArticlesController < ApplicationController
       flash[:success] = "Successfully created article"
       redirect_to article_path(@article.id)
     else
-      flash[:warning] = "Error: #{@article.errors}"
-      render action: 'new'
+      flash[:warning] = "Error: #{@article.errors.messages}"
+      redirect_to new_article_path(params)
     end
   end
 
@@ -84,6 +84,7 @@ class ArticlesController < ApplicationController
     def article_params
       params.require(:article).permit(
         :title,
+        :url_name,
         :author,
         :content,
         :tag_id,
