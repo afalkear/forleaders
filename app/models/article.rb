@@ -5,10 +5,11 @@ class Article < ActiveRecord::Base
   belongs_to :article_language
   belongs_to :user
   before_save :set_status
+  before_validation :set_friendly_url_name
+  after_create :update_url_name_to_match_slug
 
-  friendly_id :title, :use => [:slugged, :finders, :history]
-
-  validates :title, uniqueness: true
+  friendly_id :url_name, :use => [:slugged, :finders, :history]
+  validates :url_name, :presence => true
 
   VALID_STATUSES = %w(draft published)
 
@@ -17,6 +18,17 @@ class Article < ActiveRecord::Base
   mount_uploader :article_image, ImageUploader
 
   def self.home_articles
+  end
+
+  def slug_candidates
+    [
+      :url_name,
+      [:url_name, :lang]
+    ]
+  end
+
+  def should_generate_new_friendly_id?
+    url_name_changed? || super
   end
 
   def category
@@ -62,5 +74,13 @@ class Article < ActiveRecord::Base
     else
       self.status = "draft"
     end
+  end
+
+  def set_friendly_url_name
+    self.url_name = title if url_name.blank?
+  end
+
+  def update_url_name_to_match_slug
+    self.update_attribute(:url_name, friendly_id)
   end
 end

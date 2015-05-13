@@ -48,6 +48,7 @@ ActiveRecord::Schema.define(version: 20140822191518943294) do
     t.string   "status"
     t.datetime "publish_at"
     t.string   "slug"
+    t.string   "url_name"
   end
 
   add_index "articles", ["slug"], name: "index_articles_on_slug", using: :btree
