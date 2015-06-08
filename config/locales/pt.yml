@@ -31,10 +31,10 @@ pt:
     contact: contato
     derose_method: metodo_derose
     enterprise_testimonials: depoimentos
-    extensive_training: extensive_training
+    extensive_training: programa_extensivo
     institution_testimonials: institutions
-    intense_training: intensive_training
-    leader_coaching: coaching
+    intense_training: programa_intensivo
+    leader_coaching: consultoria
     net: world
     our_consultors: consultores
   static_pages: 
@@ -50,7 +50,7 @@ pt:
       quality_of_life: Lifestyle
     contact: 
       countries_html: "<h2>BRASIL</h2><h4>São Paulo</h4>Av. Paulista, 726, 17° andar<br>patricia.taurizano@metododerose.org<br>+(55 11) 99875-9954 <h4>Rio de Janeiro</h4>Rua Dias Ferreira, 259 - Leblon<br> rafaella.coelho@metododerose.org<br>+(55 21) 98888-5954<h4>Brasília<h4>andre.bouchardet@metododerose.org<br>+(55 61) 9656-4747<h2>UNITED STATES</h2><h4>New York</h4>55 Murray Street, New York, NY 10007<br>john.chisenhall@derosemethod.org<br>+(1) 917-727-0233<h2>FRANCE</h2><h4>Paris</h4>8 rue Balzac, Paris 8ème<br>jonathan.sardas@methodederose.org<br>+(33) 06 71 88 81 08<h2>ESPAÑA</h2><h4>Barcelona</h4> Carrer de la Diputación, 286<br>mariana.chiavini@metododerose.org<br>+(34) 672 193 352<h2>ARGENTINA</h2><h4>Buenos Aires</h4>República Árabe Siria 3088, Buenos Aires<br>lucia.lopez@metododerose.org<br>+(54) 11 4801-8522"
-      message: "Estaremos felizes em poder esclarecer questões relativas aos nossos programas e ao processo de admissão"
+      message: "Estaremos felizes em poder esclarecer questões relativas aos nossos programas e ao processo de admissão."
       title: CONTATE-NOS
     derose_method: 
       body: 
@@ -100,10 +100,10 @@ pt:
         title: "Quem somos?"
       enterprises: 
         small_group_teaching: "Small Group Teaching"
-        talks: "PROGRAMA EXTENSIVO"
+        talks: "Programa Extensivo"
         title: "Programas para empresas"
-        training: "PROGRAMA INTENSIVO"
-        workshop: "CONSULTORIA PARA DIRIGENTES"
+        training: "Programa Intensivo"
+        workshop: "Consultoria para Dirigentes"
       follow_us: "Follow us!"
       individuals: 
         consulting: Consultoria
@@ -193,7 +193,7 @@ pt:
           talks: "Programa extensivo"
           title: "PARA EMPRESAS"
           training: "Programa intensivo"
-          workshop: Consultoria
+          workshop: "Consultoria para Dirigentes"
         individuals: 
           consulting: Consultoria
           personal_teaching: "Personal Teaching"
@@ -212,7 +212,7 @@ pt:
           consultors: consultores
           countries: paises
           establishments: establecimentos
-        see_our_programs: "VER NOSSOS PROGRAMAS"
+        see_our_programs: "VEJA NOSSOS PROGRAMAS"
       header: 
         title: "ALL OVER THE WORLD"
     our_consultors: 
