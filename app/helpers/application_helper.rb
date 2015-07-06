@@ -1,12 +1,11 @@
 module ApplicationHelper
   def title(page_title)
-    if page_title.to_s == "Método DeRose"
-      content_for :title, "Método DeRose"
-    elsif page_title.to_s == "DeRose For Leaders"
-      content_for :title, "DeRose For Leaders"
-    else
-      content_for :title, t("static_pages.#{params[:action]}.title").capitalize
-    end
+    normalized_title = ActionView::Base.full_sanitizer.sanitize(page_title).capitalize
+    normalized_title.gsub! 'Derose', 'DeRose'
+    normalized_title.gsub! 'For leaders', 'For Leaders'
+    normalized_title.gsub! 'method', 'Method'
+    normalized_title.gsub! 'método', 'Método'
+    content_for :title, normalized_title
   end
 
   def locale_logo
