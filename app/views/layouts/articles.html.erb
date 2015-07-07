@@ -1,3 +1,36 @@
-<%= render "articles/header" %>
-<%= render template: "layouts/application" %>
-<%= render "layouts/footer" %>
+<!DOCTYPE html>
+<html>
+<head>
+  <title><%= yield(:title) %></title>
+  <%= stylesheet_link_tag    "application", media: "all" %>
+  <%= javascript_include_tag "application" %>
+  <link href="/assets/favicon.ico?v=1" rel="shortcut icon">
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700,900' rel='stylesheet' type='text/css'>
+  <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <%= render "articles/header" %>
+  <% flash.each do |key, value| %>
+    <% if !(%w(success info warning danger).include? key) %>
+      <% key = "info" %>
+    <% end %>
+    <div class="alert alert-<%= key %>" role="alert">
+      <a href="#" data-dismiss="alert" class="close">×</a>
+        <ul>
+          <li>
+            <%= value %>
+          </li>
+        </ul>
+    </div>
+    <!-- %= content_tag :div, msg, id: "flash_#{name}" % -->
+  <% end %>
+  <%= yield %>
+  <%= render "layouts/footer" %>
+  <%= render 'layouts/analytics' %>
+</body>
+</html>
+
