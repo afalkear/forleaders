@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title><%= yield(:title) %></title>
-  <%= stylesheet_link_tag    "application", media: "all" %>
+  <%= stylesheet_link_tag "application", media: "all" %>
   <%= javascript_include_tag "application" %>
   <link href="/assets/favicon.ico?v=1" rel="shortcut icon">
   <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
@@ -10,6 +9,7 @@
   <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700,900' rel='stylesheet' type='text/css'>
   <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title><%= yield(:title) %></title>
   <%= csrf_meta_tags %>
 </head>
 <body>
