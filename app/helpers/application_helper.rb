@@ -2,9 +2,11 @@ module ApplicationHelper
   def title(page_title)
     normalized_title = ActionView::Base.full_sanitizer.sanitize(page_title).capitalize
     normalized_title.gsub! 'Derose', 'DeRose'
+    normalized_title.gsub! 'derose', 'DeRose'
     normalized_title.gsub! 'For leaders', 'For Leaders'
     normalized_title.gsub! 'method', 'Method'
     normalized_title.gsub! 'método', 'Método'
+    normalized_title.gsub! 'mÉtodo', 'Método'
     content_for :title, normalized_title
   end
 
