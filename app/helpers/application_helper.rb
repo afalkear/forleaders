@@ -1,5 +1,5 @@
 module ApplicationHelper
-  def title(page_title)
+  def normalize_title(page_title)
     normalized_title = ActionView::Base.full_sanitizer.sanitize(page_title).capitalize
     normalized_title.gsub! 'Derose', 'DeRose'
     normalized_title.gsub! 'derose', 'DeRose'
@@ -7,8 +7,11 @@ module ApplicationHelper
     normalized_title.gsub! 'method', 'Method'
     normalized_title.gsub! 'método', 'Método'
     normalized_title.gsub! 'mÉtodo', 'Método'
-    content_for :title, normalized_title
   end
+
+  #def title(page_title)
+  #  content_for :title, normalize_title(page_title)
+  #end
 
   def locale_logo
     #available_locales = %w(es pt fr en)
