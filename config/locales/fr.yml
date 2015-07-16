@@ -1,16 +1,5 @@
 --- 
 fr: 
-  routes:
-    articles: articles
-    contact: contact
-    derose_method: la_methode_derose
-    intense_training: formations_intensives
-    extensive_training: formations_extensives
-    leader_coaching: coaching
-    institution_testimonials: institutions
-    enterprise_testimonials: temoignages
-    net: monde
-    our_consultors: nos_consultants
   articles: 
     follow_us_on_facebook: "SUIVEZ NOUS SUR FACEBOOK"
     latest_articles: "DERNIERS ARTICLES"
@@ -49,7 +38,7 @@ fr:
       leadership: Leadership
       quality_of_life: Lifestyle
     contact: 
-      countries_html: "<h2>FRANCE</h2><h4>Paris</h4>8 rue Balzac, Paris 8ème<br>jonathan.sardas@methodederose.org<br>+(33) 06 71 88 81 08<h2>ETATS UNIS</h2><h4>New York</h4>55 Murray Street, New York, NY 10007<br>john.chisenhall@derosemethod.org<br>+(1) 917-727-0233<h2>ESPAGNE</h2><h4>Barcelona</h4> Carrer de la Diputación, 286<br>mariana.chiavini@metododerose.org<br>+(34) 672 193 352<h2>BRESIL</h2><h4>São Paulo</h4>Av. Paulista, 726, 17° andar<br>patricia.taurizano@metododerose.org<br>+(55 11) 99875-9954 <h4>Rio de Janeiro</h4> rafaella.coelho@metododerose.org<br>+(55 21) 98888-5954<h4>Brasília<h4>andre.bouchardet@metododerose.org<br>+(55 61) 9656-4747<h2>ARGENTINE</h2><h4>Buenos Aires</h4>República Árabe Siria 3088, Buenos Aires<br>lucia.lopez@metododerose.org<br>+(54) 11 4801-8522"
+      countries_html: "<h2>FRANCE</h2><h4>Paris</h4>8 rue Balzac, Paris 8ème<br>jonathan.sardas@methodederose.org<br>+(33) 06 71 88 81 08<h2>ETATS UNIS</h2><h4>New York</h4>55 Murray Street, New York, NY 10007<br>john.chisenhall@derosemethod.org<br>+(1) 917-727-0233<h2>BRESIL</h2><h4>São Paulo</h4>Av. Paulista, 726, 17° andar<br>patricia.taurizano@metododerose.org<br>+(55 11) 99875-9954 <h4>Rio de Janeiro</h4> rafaella.coelho@metododerose.org<br>+(55 21) 98888-5954<h4>Brasília<h4>andre.bouchardet@metododerose.org<br>+(55 61) 9656-4747<h2>ARGENTINE</h2><h4>Buenos Aires</h4>República Árabe Siria 3088, Buenos Aires<br>lucia.lopez@metododerose.org<br>+(54) 11 4801-8522"
       message: "Nos équipes sont là pour répondre à vos questions sur nos programmes, notre processus d'admission et vous accompagner pour réaliser votre candidature."
       title: CONTACTEZ-NOUS
     derose_method: 
@@ -265,7 +254,7 @@ fr:
       footer: 
         see_our_programs: "DÉCOUVREZ NOS PROGRAMMES"
       header: 
-        title: "NOS CONSULTANTS"
+        title: "OUR CONSULTANTS"
       title: "Nos Consultants"
     partners: 
       subtitle: "ILS NOUS FONT CONFIANCE"
