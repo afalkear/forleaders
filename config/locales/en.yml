@@ -269,6 +269,14 @@ en:
         format: "%n%"
   routes: 
     articles: articles
+    contact: contact
+    derose_method: derose_method
+    enterprise_testimonials: enterprises_testimonials
+    extensive_training: extensive_training
+    institution_testimonials: institutions_testimonials
+    intense_training: intensive_training
+    leader_coaching: executive_coaching
+    our_consultors: our_consultants
   static_pages: 
     articles: 
       read_more: "READ MORE >>"
@@ -476,7 +484,7 @@ en:
       footer: 
         see_our_programs: "SEE OUR PROGRAMS"
       header: 
-        title: "NOS CONSULTANTS"
+        title: "OUR CONSULTANTS"
     partners: 
       subtitle: "SEE WHO INVESTS IN US"
       title: "OUR PARTNERS"
