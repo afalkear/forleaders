@@ -7,8 +7,12 @@ module ApplicationHelper
     normalized_title.gsub! 'method', 'Method'
     normalized_title.gsub! 'método', 'Método'
     normalized_title.gsub! 'mÉtodo', 'Método'
+    return normalized_title
   end
 
+  def meta_title_for(title)
+    return normalize_title(title)
+  end
   #def title(page_title)
   #  content_for :title, normalize_title(page_title)
   #end
