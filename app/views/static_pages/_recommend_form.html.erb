@@ -1,0 +1,57 @@
+<div class="container new-contact-form-container">
+  <div class="row">
+    <%= form_for @contact_message, url: contact_message_url, html: {role: 'form'} do |f| %>
+      <% if @contact_message.errors.any? %>
+        <div class="error_messages">
+          <h2><%= pluralize(@contact_message.errors.count, "error") %> prohibited this message from being saved:</h2>
+          <ul>
+          <% @contact_message.errors.full_messages.each do |msg| %>
+            <li><%= msg %></li>
+          <% end %>
+          </ul>
+        </div>
+      <% end %>
+      <div class="form-group">
+        <%= label(:contact_message, :first_name) %>
+          <%= f.text_field :first_name, class: 'form-control', id: 'contact_first_name', placeholder: "#{t('helpers.label.contact_message.first_name')}" %>
+      </div>
+      <div class="form-group">
+        <%= label(:contact_message, :last_name) %>
+          <%= f.text_field :last_name, class: 'form-control', id: 'contact_last_name', placeholder: "#{t('helpers.label.contact_message.last_name')}" %>
+      </div>
+      <div class="form-group">
+        <%= label(:contact_message, :phone) %>
+          <%= f.text_field :phone, class: 'form-control', id: 'contact_phone', placeholder: "#{t('helpers.label.contact_message.phone')}" %>
+      </div>
+      <div class="form-group">
+        <%= label(:contact_message, :email) %>
+          <%= f.text_field :email, class: 'form-control', id: 'contact_email', placeholder: "#{t('helpers.label.contact_message.email')}" %>
+      </div>
+      <div class="form-group">
+        <%= label(:contact_message, :school) %>
+          <%= f.text_field :school, class: 'form-control', id: 'contact_position', placeholder: "#{t('helpers.label.contact_message.school')}" %>
+      </div>
+      <% if false %>
+        <div class="form-group">
+          <%= label(:contact_message, :calendar) %>
+            <%= f.date_field :calendar, class: 'form-control', id: 'contact_calendar' %>
+        </div>
+      <% end %>
+      <div class="form-group">
+        <%= label(:contact_message, :company) %>
+          <%= f.text_field :company, class: 'form-control', id: 'contact_company', placeholder: "#{t('helpers.label.contact_message.company')}" %>
+      </div>
+      <div class="form-group">
+        <%= label(:contact_message, :position) %>
+          <%= f.text_field :position, class: 'form-control', id: 'contact_position', placeholder: "#{t('helpers.label.contact_message.position')}" %>
+      </div>
+      <div class="form-group">
+        <%= label(:contact_message, :observations) %>
+          <%= f.text_area :observations, class: 'form-control', id: 'contact_observations', placeholder: "#{t('helpers.label.contact_message.observations')}", size: "60x12" %>
+      </div>
+      <div class="form-group">
+          <%= f.submit "#{t('helpers.label.contact_message.submit')}", class: 'btn btn-default' %>
+      </div>
+    <% end %>
+  </div>
+</div>
