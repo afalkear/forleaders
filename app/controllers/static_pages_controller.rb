@@ -70,6 +70,10 @@ class StaticPagesController < ApplicationController
     @contact_message = ContactMessage.new
   end
 
+  def recommend
+    @contact_message = ContactMessage.new
+  end
+
   def contact_message
     @contact_message = ContactMessage.new(params[:contact_message])
 
