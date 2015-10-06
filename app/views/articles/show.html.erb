@@ -1,4 +1,19 @@
-<% title @article.title.capitalize %>
+<% 
+  meta title: @article.title.capitalize,
+        description: @article.excerpt,
+        og: {
+          description: @article.excerpt,
+          image: (@article.image? ? @article.image.url : "http://www.deroseforleaders.com/assets/logo_derose_method.png"),
+          url: article_path(@article.id),
+          title: (@article.title.capitalize)
+        },
+        twitter: {
+          card: "summary",
+          description: @article.excerpt,
+          site: "@deroseforleaders",
+          image: (@article.image? ? @article.image.url : "http://www.deroseforleaders.com/assets/logo_derose_method.png")
+        }
+%>
 <div class="single-article-container container">
   <div class="row">
     <div class="col-md-10 col-md-offset-1">
