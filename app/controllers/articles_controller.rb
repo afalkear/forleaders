@@ -99,6 +99,8 @@ class ArticlesController < ApplicationController
         :lang,
         :status,
         :publish_at,
+        :metatag_title,
+        :metatag_description,
         :category_ids => []
         )
     end
