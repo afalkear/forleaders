@@ -1,4 +1,20 @@
-<% title normalize_title(t('static_pages.navbar.testimonials.institutions')) %>
+<% 
+  meta title: normalize_title(t('static_pages.navbar.testimonials.institutions')),
+        description: "DeRose For Leaders",
+        og: {
+          description: "DeRose For Leaders",
+          image: "http://www.deroseforleaders.com/assets/logo_derose_method.png",
+          url: institution_testimonials_url,
+          title: (normalize_title(t('static_pages.navbar.testimonials.institutions')))
+        },
+        twitter: {
+          card: "summary",
+          description: "DeRose For Leaders",
+          site: "@deroseforleaders",
+          image: "http://www.deroseforleaders.com/assets/logo_derose_method.png"
+        }
+%>
+
 <%= render 'institution_testimonials_header' %>
 <div class="container padding-topbottom-50">
   <div class="row">

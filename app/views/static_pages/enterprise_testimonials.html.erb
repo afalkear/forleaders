@@ -1,4 +1,19 @@
-<% title normalize_title(t('static_pages.navbar.testimonials.enterprises')) %>
+<% 
+  meta title: normalize_title(t('static_pages.navbar.testimonials.enterprises')),
+        description: "DeRose Method: companies testimonials",
+        og: {
+          description: "DeRose Method: companies testimonials",
+          image: "http://www.deroseforleaders.com/assets/logo_derose_method.png",
+          url: enterprise_testimonials_url,
+          title: (normalize_title(t('static_pages.navbar.testimonials.enterprises')))
+        },
+        twitter: {
+          card: "summary",
+          description: "DeRose Method: companies testimonials",
+          site: "@deroseforleaders",
+          image: "http://www.deroseforleaders.com/assets/logo_derose_method.png"
+        }
+%>
 <div class="container padding-topbottom-50 more-bottom-padding-100">
   <div class="row">
     <div class="col-md-10 col-md-offset-1">
