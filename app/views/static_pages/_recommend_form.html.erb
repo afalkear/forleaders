@@ -20,10 +20,6 @@
           <%= f.text_field :last_name, class: 'form-control', id: 'contact_last_name', placeholder: "#{t('helpers.label.contact_message.last_name')}" %>
       </div>
       <div class="form-group">
-        <%= label(:contact_message, :phone) %>
-          <%= f.text_field :phone, class: 'form-control', id: 'contact_phone', placeholder: "#{t('helpers.label.contact_message.phone')}" %>
-      </div>
-      <div class="form-group">
         <%= label(:contact_message, :email) %>
           <%= f.text_field :email, class: 'form-control', id: 'contact_email', placeholder: "#{t('helpers.label.contact_message.email')}" %>
       </div>
@@ -31,19 +27,9 @@
         <%= label(:contact_message, :school) %>
           <%= f.text_field :school, class: 'form-control', id: 'contact_position', placeholder: "#{t('helpers.label.contact_message.school')}" %>
       </div>
-      <% if false %>
-        <div class="form-group">
-          <%= label(:contact_message, :calendar) %>
-            <%= f.date_field :calendar, class: 'form-control', id: 'contact_calendar' %>
-        </div>
-      <% end %>
       <div class="form-group">
         <%= label(:contact_message, :company) %>
           <%= f.text_field :company, class: 'form-control', id: 'contact_company', placeholder: "#{t('helpers.label.contact_message.company')}" %>
-      </div>
-      <div class="form-group">
-        <%= label(:contact_message, :position) %>
-          <%= f.text_field :position, class: 'form-control', id: 'contact_position', placeholder: "#{t('helpers.label.contact_message.position')}" %>
       </div>
       <div class="form-group">
         <%= label(:contact_message, :observations) %>
