@@ -79,4 +79,16 @@ class Article < ActiveRecord::Base
   def update_url_name_to_match_slug
     self.update_attribute(:url_name, friendly_id)
   end
+
+  def get_metatag_title
+    metatag_title.blank? ? title.capitalize : metatag_title
+  end
+
+  def get_metatag_description
+    metatag_description.blank? ? excerpt : metatag_description
+  end
+
+  def get_metatag_image
+    image? ? image.url : "http://www.deroseforleaders.com/assets/logo_derose_method.png"
+  end
 end
