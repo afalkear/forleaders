@@ -1,17 +1,17 @@
 <% 
   meta title: @article.title.capitalize,
-        description: @article.excerpt,
+        description: @article.get_metatag_description,
         og: {
-          description: @article.excerpt,
-          image: (@article.image? ? @article.image.url : "http://www.deroseforleaders.com/assets/logo_derose_method.png"),
+          description: @article.get_metatag_description,
+          image: @article.get_metatag_image,
           url: article_path(@article.id),
-          title: (@article.title.capitalize)
+          title: (@article.get_metatag_title)
         },
         twitter: {
           card: "summary",
-          description: @article.excerpt,
+          description: @article.get_metatag_description,
           site: "@deroseforleaders",
-          image: (@article.image? ? @article.image.url : "http://www.deroseforleaders.com/assets/logo_derose_method.png")
+          image: @article.get_metatag_image
         }
 %>
 <div class="single-article-container container">
