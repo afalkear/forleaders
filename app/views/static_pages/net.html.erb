@@ -1,4 +1,20 @@
-<% title normalize_title(t('static_pages.navbar.derose_for_leaders.all_over_the_world_html')) %>
+<% 
+  meta title: normalize_title(t('static_pages.navbar.derose_for_leaders.all_over_the_world_html')),
+        description: "DeRose For Leaders all over the world",
+        og: {
+          description: "DeRose For Leaders all over the world",
+          image: "http://www.deroseforleaders.com/assets/logo_derose_method.png",
+          url: net_url,
+          title: (normalize_title(t('static_pages.navbar.derose_for_leaders.all_over_the_world_html')))
+        },
+        twitter: {
+          card: "summary",
+          description: "DeRose For Leaders all over the world",
+          site: "@deroseforleaders",
+          image: "http://www.deroseforleaders.com/assets/logo_derose_method.png"
+        }
+%>
+
   <%= render 'net_header' %>
   <%= render 'net_body' %>
   <%= render 'derose_method_footer' %>

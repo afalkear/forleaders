@@ -1,3 +1,18 @@
-<% title normalize_title(t('static_pages.navbar.recommend.title_html')) %>
+<% 
+  meta title: normalize_title(t('static_pages.navbar.recommend.title_html')),
+        description: "DeRose For Leaders",
+        og: {
+          description: "DeRose For Leaders",
+          image: "http://www.deroseforleaders.com/assets/logo_derose_method.png",
+          url: recommend_url,
+          title: (normalize_title(t('static_pages.navbar.recommend.title_html')))
+        },
+        twitter: {
+          card: "summary",
+          description: "DeRose For Leaders",
+          site: "@deroseforleaders",
+          image: "http://www.deroseforleaders.com/assets/logo_derose_method.png"
+        }
+%>
 <%= render 'recommend_header' %>
 <%= render 'recommend_body' %>

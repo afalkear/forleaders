@@ -1,7 +1,23 @@
-<% title normalize_title(t('static_pages.navbar.programs.title_html')) %>
-  <%= render 'group_consultory_header' %>
-  <%= render 'group_consultory_body' %>
-  <%= render 'partners' %>
+<% 
+  meta title: normalize_title(t('static_pages.navbar.programs.title_html')),
+        description: "DeRose For Leaders: see out tailored programs",
+        og: {
+          description: "DeRose For Leaders: see out tailored programs",
+          image: "http://www.deroseforleaders.com/assets/logo_derose_method.png",
+          url: group_consultory_url,
+          title: (normalize_title(t('static_pages.navbar.programs.title_html')))
+        },
+        twitter: {
+          card: "summary",
+          description: "DeRose For Leaders: see out tailored programs",
+          site: "@deroseforleaders",
+          image: "http://www.deroseforleaders.com/assets/logo_derose_method.png"
+        }
+%>
+
+<%= render 'group_consultory_header' %>
+<%= render 'group_consultory_body' %>
+<%= render 'partners' %>
 
 <script type="text/javascript">
   $(function() {
