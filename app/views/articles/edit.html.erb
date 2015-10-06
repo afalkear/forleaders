@@ -98,13 +98,13 @@
       <div class="form-group">
         <%= label(:article, :metatag_title, class: 'col-sm-2 control-label') %>
         <div class="col-sm-10">
-          <%= f.text_field :metatag_title, class: 'form-control', id: 'article_metatag_title', placeholder: "MetaTag: Set your title here", value: (@original_article.metatag_title if @original_article) %>
+          <%= f.text_field :metatag_title, class: 'form-control', id: 'article_metatag_title', placeholder: "MetaTag: Set your title here", value: (@article.metatag_title) %>
         </div>
       </div>
       <div class="form-group">
         <%= label(:article, :metatag_description, class: 'col-sm-2 control-label') %>
         <div class="col-sm-10">
-          <%= f.text_field :metatag_description, class: 'form-control', id: 'article_metatag_description', placeholder: "MetaTag: Set your description here", value: (@original_article.metatag_description if @original_article) %>
+          <%= f.text_field :metatag_description, class: 'form-control', id: 'article_metatag_description', placeholder: "MetaTag: Set your description here", value: (@article.metatag_description) %>
         </div>
       </div>
       <div class="form-group">
