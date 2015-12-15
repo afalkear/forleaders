@@ -4,7 +4,7 @@
         og: {
           description: @article.get_metatag_description,
           image: @article.get_metatag_image,
-          url: article_url(@article.id),
+          url: article_url + @article.friendly_id,
           title: meta_title_for(@article.get_metatag_title)
         },
         twitter: {
