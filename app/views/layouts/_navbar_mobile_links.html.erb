@@ -1,0 +1,62 @@
+<ul class="nav navbar-nav mobile-navbar">
+  <li class="">
+    <a href="#" class="" data-toggle="">
+      <%= t('static_pages.navbar.derose_for_leaders.title_html') %>
+    </a>
+    <ul class="" data-no-turbolink>
+      <li>
+        <%= link_to t('static_pages.navbar.derose_for_leaders.derose_method_html'), derose_method_path%>
+      </li>
+      <li>
+        <%= link_to t('static_pages.navbar.derose_for_leaders.personal_teachers'), our_consultors_path%>
+      </a></li>
+      <li>
+        <%= link_to t('static_pages.navbar.derose_for_leaders.all_over_the_world_html'), net_path%>
+      </a></li>
+    </ul>
+  </li>
+
+  <li class="">
+    <a href="#" class="" data-toggle="">
+      <%= t('static_pages.navbar.programs.title_html') %><b class="caret"></b>
+    </a>
+    <ul class="" data-no-turbolink>
+      <li>
+        <%= link_to t('static_pages.navbar.programs.enterprises.training'), intense_training_path %>
+      </li>
+      <li>
+        <%= link_to t('static_pages.navbar.programs.enterprises.talks'), extensive_training_path %>
+      </li>
+      <li>
+        <%= link_to t('static_pages.navbar.programs.enterprises.workshop'), leader_coaching_path %>
+      </li>
+
+    </ul>
+  </li>
+  <li class="">
+    <a href="#" class="" data-toggle="">
+      <%= t('static_pages.navbar.testimonials.title_html') %><b class="caret"></b>
+    </a>
+    <ul class="">
+      <li>
+        <%= link_to t('static_pages.navbar.testimonials.enterprises'), enterprise_testimonials_path%>
+      </li>
+      <li>
+        <%= link_to t('static_pages.navbar.testimonials.institutions'), institution_testimonials_path%>
+      </li>
+    </ul>
+  </li>
+  <li class="">
+    <%= link_to t('static_pages.navbar.articles.title_html'), articles_path %>
+  </li>
+  <li class="">
+    <a href="#" class="" data-toggle="">
+      <%= t('static_pages.navbar.contact_type.title_html') %><b class="caret"></b>
+    </a>
+    <ul class="">
+      <li>
+        <%= link_to t('static_pages.navbar.contact_type.contact'), contact_path %>
+      </li>
+    </ul>
+  </li>
+</ul>
