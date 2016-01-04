@@ -1,3 +1,4 @@
+<% title "New article" %>
 <%= render 'users/navbar' %>
 <div class="container new-article-container">
   <h1>New article</h1>
@@ -23,6 +24,12 @@
         <%= label(:article, :subtitle, class: 'col-sm-2 control-label') %>
         <div class="col-sm-10">
           <%= f.text_field :subtitle, class: 'form-control', id: 'article_subtitle', placeholder: "Set your subtitle here", value: (@original_article.subtitle if @original_article) %>
+        </div>
+      </div>
+      <div class="form-group">
+        <%= label(:article, :url_name, class: 'col-sm-2 control-label') %>
+        <div class="col-sm-10">
+          <%= f.text_field :url_name, class: 'form-control', id: 'article_url_name', placeholder: "URL that is to be displayed", value: (@original_article.url_name if @original_article) %>
         </div>
       </div>
       <div class="form-group">
@@ -93,6 +100,19 @@
         <%= label(:article, :publish_at, class: 'col-sm-2 control-label') %>
         <div class="col-sm-10">
           <%= f.date_field :publish_at, class: 'form-control', id: 'article_published_at', placeholder: "Set the date to publish the article", :'data-provide' =>'datepicker',value: Date.today %>
+        </div>
+      </div>
+      <h2>Metatags</h2>
+      <div class="form-group">
+        <%= label(:article, :metatag_title, class: 'col-sm-2 control-label') %>
+        <div class="col-sm-10">
+          <%= f.text_field :metatag_title, class: 'form-control', id: 'article_metatag_title', placeholder: "MetaTag: Set your title here", value: (@original_article.metatag_title if @original_article) %>
+        </div>
+      </div>
+      <div class="form-group">
+        <%= label(:article, :metatag_description, class: 'col-sm-2 control-label') %>
+        <div class="col-sm-10">
+          <%= f.text_field :metatag_description, class: 'form-control', id: 'article_metatag_description', placeholder: "MetaTag: Set your description here", value: (@original_article.metatag_description if @original_article) %>
         </div>
       </div>
       <div class="form-group">

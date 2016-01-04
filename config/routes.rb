@@ -39,6 +39,7 @@ Forleaders::Application.routes.draw do
       get 'derose_method', to: 'static_pages#derose_method'
       get 'apply', to: 'static_pages#apply'
       get 'contact', to: 'static_pages#contact'
+      get 'recommend', to: 'static_pages#recommend'
       get 'net', to: 'static_pages#net'
       get 'enterprise_testimonials', to: 'static_pages#enterprise_testimonials'
       get 'institution_testimonials', to: 'static_pages#institution_testimonials'

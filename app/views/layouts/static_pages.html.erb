@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title><%= yield(:title) %></title>
   <%= stylesheet_link_tag    "application", media: "all" %>
   <%= javascript_include_tag "application" %>
   <link href="/assets/favicon.ico?v=1" rel="shortcut icon">
@@ -11,7 +10,9 @@
   <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+  
   <%= csrf_meta_tags %>
+  <%= metamagic %>
 </head>
 <body>
   <% flash.each do |key, value| %>

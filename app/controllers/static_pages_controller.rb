@@ -70,12 +70,16 @@ class StaticPagesController < ApplicationController
     @contact_message = ContactMessage.new
   end
 
+  def recommend
+    @contact_message = ContactMessage.new
+  end
+
   def contact_message
     @contact_message = ContactMessage.new(params[:contact_message])
 
     if @contact_message.valid?
       ContactMailer.new_contact_form(@contact_message).deliver
-      redirect_to contact_url, notice: "Message sent. Thank you for contacting us."
+      redirect_to root_url, notice: "Message sent. Thank you for contacting us."
     else
       redirect_to contact_url, notice: "Please fill all required fields."
     end

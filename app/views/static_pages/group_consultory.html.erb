@@ -1,7 +1,23 @@
-<% title "Programas grupales" %>
-  <%= render 'group_consultory_header' %>
-  <%= render 'group_consultory_body' %>
-  <%= render 'partners' %>
+<% 
+  meta title: normalize_title(t('static_pages.navbar.programs.title_html')),
+        description: t('static_pages.metatags.programs.description'),
+        og: {
+          description: t('static_pages.metatags.programs.description'),
+          image: "http://www.deroseforleaders.com/assets/logo_derose_method.png",
+          url: group_consultory_url,
+          title: (normalize_title(t('static_pages.navbar.programs.title_html')))
+        },
+        twitter: {
+          card: "summary",
+          description: t('static_pages.metatags.programs.description'),
+          site: "@deroseforleaders",
+          image: "http://www.deroseforleaders.com/assets/logo_derose_method.png"
+        }
+%>
+
+<%= render 'group_consultory_header' %>
+<%= render 'group_consultory_body' %>
+<%= render 'partners' %>
 
 <script type="text/javascript">
   $(function() {

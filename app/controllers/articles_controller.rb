@@ -11,6 +11,9 @@ class ArticlesController < ApplicationController
 
   def show
     @article = Article.find(params[:id])
+    if request.path != article_path(@article)
+      redirect_to @article, status: :moved_permanently
+    end
     @related_articles =  Article.includes(:categories).where("categories.name LIKE ? AND lang = ? AND publish_at <= ?", "%#{@article.category}%", params[:locale], DateTime.now).references(:categories).where.not(id: @article.id).take(3) # Article.page(params[:page]).per(3)
     @latest_articles = Article.includes(:categories).where("publish_at <= ? AND lang = ?", DateTime.now, params[:locale]).where.not(id: @article.id).last(3) #Article.page(params[:page]).per(3).order('created_at DESC')
     youtube_url = @article.video_url
@@ -52,8 +55,8 @@ class ArticlesController < ApplicationController
       flash[:success] = "Successfully created article"
       redirect_to article_path(@article.id)
     else
-      flash[:warning] = "Error: #{@article.errors}"
-      render action: 'new'
+      flash[:warning] = "Error: #{@article.errors.messages}"
+      redirect_to new_article_path(params)
     end
   end
 
@@ -81,6 +84,7 @@ class ArticlesController < ApplicationController
     def article_params
       params.require(:article).permit(
         :title,
+        :url_name,
         :author,
         :content,
         :tag_id,
@@ -95,6 +99,8 @@ class ArticlesController < ApplicationController
         :lang,
         :status,
         :publish_at,
+        :metatag_title,
+        :metatag_description,
         :category_ids => []
         )
     end

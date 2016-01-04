@@ -1,3 +1,18 @@
-<% title "Contato" %>
+<% 
+  meta title: normalize_title(t('static_pages.navbar.contact_type.title_html')),
+        description: t('static_pages.metatags.contact.description'),
+        og: {
+          description: t('static_pages.metatags.contact.description'),
+          image: "http://www.deroseforleaders.com/assets/logo_derose_method.png",
+          url: contact_url,
+          title: (normalize_title(t('static_pages.navbar.contact_type.title_html')))
+        },
+        twitter: {
+          card: "summary",
+          description: t('static_pages.metatags.contact.description'),
+          site: "@deroseforleaders",
+          image: "http://www.deroseforleaders.com/assets/logo_derose_method.png"
+        }
+%>
   <%= render 'contact_header' %>
   <%= render 'contact_body' %>

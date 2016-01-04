@@ -1,4 +1,19 @@
-<% title "Método DeRose" %>
+<% 
+  meta title: normalize_title(t('static_pages.navbar.derose_for_leaders.derose_method_html')),
+        description: t('static_pages.metatags.derose_method.description'),
+        og: {
+          description: t('static_pages.metatags.derose_method.description'),
+          image: "http://www.deroseforleaders.com/assets/logo_derose_method.png",
+          url: derose_method_url,
+          title: (normalize_title(t('static_pages.navbar.derose_for_leaders.derose_method_html')))
+        },
+        twitter: {
+          card: "summary",
+          description: t('static_pages.metatags.derose_method.description'),
+          site: "@deroseforleaders",
+          image: "http://www.deroseforleaders.com/assets/logo_derose_method.png"
+        }
+%>
 
   <%= render 'derose_method_header' %>
   <%= render 'derose_method_body' %>

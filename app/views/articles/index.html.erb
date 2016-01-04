@@ -1,4 +1,19 @@
-<% title "artigos" %>
+<% 
+  meta title: normalize_title(t('static_pages.navbar.articles.title_html')),
+        description: "DeRose For Leaders: our articles",
+        og: {
+          description: "DeRose For Leaders: our articles",
+          image: "http://www.deroseforleaders.com/assets/logo_derose_method.png",
+          url: articles_url,
+          title: (normalize_title(t('static_pages.navbar.articles.title_html')))
+        },
+        twitter: {
+          card: "summary",
+          description: "DeRose For Leaders: our articles",
+          site: "@deroseforleaders",
+          image: "http://www.deroseforleaders.com/assets/logo_derose_method.png"
+        }
+%>
 <div class="single-article-container container">
   <div class="row">
     <div class="col-md-10 col-md-offset-1">

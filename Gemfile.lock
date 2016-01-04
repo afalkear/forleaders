@@ -106,6 +106,8 @@ GEM
     font-awesome-rails (4.1.0.0)
       railties (>= 3.2, < 5.0)
     formatador (0.2.5)
+    friendly_id (5.1.0)
+      activerecord (>= 4.0.0)
     git-pivotal-tracker-integration (1.4.0)
       highline (~> 1.6)
       pivotal-tracker (~> 0.5)
@@ -162,6 +164,8 @@ GEM
     mail (2.5.4)
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
+    metamagic (3.1.7)
+      rails (>= 3.0.0)
     method_source (0.8.2)
     mime-types (1.25.1)
     mini_magick (3.7.0)
@@ -301,12 +305,14 @@ DEPENDENCIES
   devise
   elastic-beanstalk
   figaro
+  friendly_id (~> 5.1.0)
   git-pivotal-tracker-integration
   guard-livereload
   jbuilder (~> 1.2)
   jquery-rails
   kaminari
   less-rails-bootstrap
+  metamagic
   mini_magick
   mysql2
   newrelic_rpm (~> 3.7)

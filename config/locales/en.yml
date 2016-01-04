@@ -267,6 +267,16 @@ en:
     percentage: 
       format: 
         format: "%n%"
+  routes: 
+    articles: articles
+    contact: contact
+    derose_method: derose_method
+    enterprise_testimonials: enterprises_testimonials
+    extensive_training: extensive_training
+    institution_testimonials: institutions_testimonials
+    intense_training: intensive_training
+    leader_coaching: executive_coaching
+    our_consultors: our_consultants
   static_pages: 
     articles: 
       read_more: "READ MORE >>"
@@ -301,8 +311,8 @@ en:
         title: "WHAT IS THE DeROSE METHOD"
       footer: 
         first_column: 
-          content_html: "Afin de développer le potentiel de vos équipes, vous devez vous-même vous même être un modèle de productivité et de réussite. Nos programmes sont construits sur mesure pour vous permettre d'atteindre vos objectifs."
-          title: "PROGRAMMES POUR LES INDIVIDUS"
+          content_html: "To develop the potential of people you manage, it is important that you also constantly improve; refine your own High Productivity with our programs for individuals."
+          title: "PROGRAMS FOR INDIVIDUALS"
         second_column: 
           content_html: "A strong team is composed of focused and well prepared individuals; the programs for companies not only strengthen each of the leaders in a well rounded way, but also makes them a team."
           title: "PROGRAMS FOR BUSINESSES"
@@ -354,13 +364,10 @@ en:
           subtitle: "Two classes per week of one hour"
           title: "SMALL GROUP TEACHING"
         small_group_training: 
-          subtitle: "FIfteen minutes per day"
           title: "INTENSIVE TRAINING AND CONFERENCES"
         talks: 
-          subtitle: "One, two or four hours"
           title: "EXTENSIVE TRAINING"
         workshops: 
-          subtitle: "Four, eight or sixteen hours"
           title: "EXECUTIVE COACHING"
     group_consultory_header: 
       small_group_teaching: 
@@ -427,7 +434,7 @@ en:
           talks: "Extensive Training"
           title: "FOR BUSINESSES"
           training: "Intensive Training and Conferences"
-          workshop: "EXECUTIVE COACHING"
+          workshop: "Executive Coaching"
         individuals: 
           consulting: Consulting
           personal_teaching: "Personal Teaching"
@@ -477,7 +484,7 @@ en:
       footer: 
         see_our_programs: "SEE OUR PROGRAMS"
       header: 
-        title: "NOS CONSULTANTS"
+        title: "OUR CONSULTANTS"
     partners: 
       subtitle: "SEE WHO INVESTS IN US"
       title: "OUR PARTNERS"
@@ -533,7 +540,7 @@ en:
     sidebar: 
       ericsson: 
         company: ERICSSON
-        content_html: "There is a little more than a year I first started the DeRose Method with the aim to enhance both my levels of performance and life quality. And have been experienced this in a very concrete way. My everyday life is slightly restless, I am indeed responsible for the financial results and my business operations among 10 countries, as well as manage the platforms that serve more than 60 million customers. I am a family man and also dedicates a longstanding passion for triathlon. I have seen over time that the DeRose Method had a strong positive impact through various aspects of my life."
+        content_html: "It has been a little more than a year since I first started the DeRose Method, with the aim to enhance both my levels of performance and quality of life, and I have already experienced this in a very perceptible way. My everyday life is quite restless, I am responsible for the financial results of business operations across ten countries, and I manage the platforms that serve more than 60 million customers. I am a family man with a longstanding passion for triathlons. I have seen over time how the DeRose Method had a strong positive impact throughout various aspects of my life."
         name: "John GOMEZ"
         position: "COO Latin America"
       experts: 
@@ -560,7 +567,7 @@ en:
         title: "WHAT MAKES OUR METHOD UNIQUE"
       volkswagen: 
         company: VOLKSWAGEN
-        content_html: "The DeRose Method allows me to know myself better. I have thus improved my efficiency in decision making. I also noticed a better standard of my body shape and reduced my stress level."
+        content_html: "The DeRose Method allows me to know myself better. I have thus improved my efficiency in decision making. I also noticed an improvement in my physical condition and reduced my stress level."
         name: "Paulo RODRIGUES GUINO"
         position: "Director of Quality Worldwide"
       volkswagen_2: 

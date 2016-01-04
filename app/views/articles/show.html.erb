@@ -1,4 +1,19 @@
-<% title @article.title.capitalize %>
+<% 
+  meta title: meta_title_for(@article.title.capitalize),
+        description: @article.get_metatag_description,
+        og: {
+          description: @article.get_metatag_description,
+          image: @article.get_metatag_image,
+          url: article_url,
+          title: meta_title_for(@article.get_metatag_title)
+        },
+        twitter: {
+          card: "summary",
+          description: @article.get_metatag_description,
+          site: "@deroseforleaders",
+          image: @article.get_metatag_image
+        }
+%>
 <div class="single-article-container container">
   <div class="row">
     <div class="col-md-10 col-md-offset-1">
