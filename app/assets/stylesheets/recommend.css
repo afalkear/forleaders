@@ -61,7 +61,15 @@
 
 .new-recommend-form-container label {
   text-transform: uppercase;
-  color: #AE9029;
+  color: #273451;
+  letter-spacing: 2px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+
+.new-recommend-form-container input {
+  text-transform: uppercase;
+  color: #273451;
   letter-spacing: 2px;
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
