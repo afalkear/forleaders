@@ -14,6 +14,7 @@ fr:
         observations: Message
         phone: Téléphone
         position: Poste
+        school: École
         submit: Envoyer
   routes: 
     articles: articles
@@ -38,7 +39,7 @@ fr:
       leadership: Leadership
       quality_of_life: Lifestyle
     contact: 
-      countries_html: "<h2>FRANCE</h2><h4>Paris</h4>8 rue Balzac, Paris 8ème<br>jonathan.sardas@methodederose.org<br>+(33) 06 71 88 81 08<h2>ETATS UNIS</h2><h4>New York</h4>55 Murray Street, New York, NY 10007<br>john.chisenhall@derosemethod.org<br>+(1) 917-727-0233<h2>BRESIL</h2><h4>São Paulo</h4>Av. Paulista, 726, 17° andar<br>patricia.taurizano@metododerose.org<br>+(55 11) 99875-9954 <h4>Rio de Janeiro</h4> rafaella.coelho@metododerose.org<br>+(55 21) 98888-5954<h4>Brasília<h4>andre.bouchardet@metododerose.org<br>+(55 61) 9656-4747<h2>ARGENTINE</h2><h4>Buenos Aires</h4>República Árabe Siria 3088, Buenos Aires<br>lucia.lopez@metododerose.org<br>+(54) 11 4801-8522"
+      countries_html: "<h2>FRANCE</h2><h4>Paris</h4>8 rue Balzac, Paris 8ème<br>jonathan.sardas@methodederose.org<br>+(33) 06 71 88 81 08<h2>ETATS UNIS</h2><h4>New York</h4>55 Murray Street, New York, NY 10007<br>john.chisenhall@derosemethod.org<br>+(1) 917-727-0233<h2>BRESIL</h2><h4>São Paulo</h4>Av. Paulista, 726, 17° andar<br>patricia.taurizano@metododerose.org<br>+(55 11) 99875-9954 <h4>Rio de Janeiro</h4> rafaella.coelho@metododerose.org<br>+(55 21) 98888-5954<h4>Brasília<h4>andre.bouchardet@metododerose.org<br>+(55 61) 9656-4747<h2>ARGENTINE</h2><h4>Buenos Aires</h4>Luis María Campos 1395, Buenos Aires<br>alex.falke@metododerose.org<br>+(54) 11 4785-4882"
       message: "Nos équipes sont là pour répondre à vos questions sur nos programmes, notre processus d'admission et vous accompagner pour réaliser votre candidature."
       title: CONTACTEZ-NOUS
     derose_method: 
@@ -310,6 +311,9 @@ fr:
           title: TRAINING
       subtitle: "POUR VOUS ET VOTRE ENTREPRISE"
       title: "NOS PROGRAMMES SUR MESURE"
+    recommend: 
+      message: ""
+      title: ""
     sidebar: 
       ericsson: 
         company: ERICSSON

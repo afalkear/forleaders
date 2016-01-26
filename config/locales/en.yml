@@ -222,6 +222,7 @@ en:
         observations: Observations
         phone: Telephone
         position: Position
+        school: School
         submit: Submit
     select: 
       prompt: "Please select"
@@ -537,6 +538,9 @@ en:
           title: TRAINING
       subtitle: "FOR YOU AND YOUR BUSINESS"
       title: "OUR TAILORED PROGRAMS"
+    recommend: 
+      message: ""
+      title: ""
     sidebar: 
       ericsson: 
         company: ERICSSON

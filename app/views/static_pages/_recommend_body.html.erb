@@ -8,15 +8,53 @@
                 <%= t('static_pages.recommend.title') %>
               </div>
               <div class="page-main-body">
-                <%= t('static_pages.recommend.message') %>
+                <% t('static_pages.recommend.message') %>
               </div>
           </div>
         </div>
         <div class="row contact-form">
-          <div class="col-md-7">
+          <div class="col-md-8">
               <div class="contact-form">
                 <%= render 'recommend_form' %>
               </div>
+          </div>
+          <div class="col-md-4 individual-sidebar">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="recommend-sidebar-container">
+                  <div class="recommend-sidebar-title">
+                    <h1> <%= t('recommend.sidebar.talks_and_workshops.title') %> </h1>
+                  </div>
+                  <div class="recommend-sidebar-body">
+                    <%= t('recommend.sidebar.talks_and_workshops.body') %>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <div class="recommend-sidebar-container">
+                  <div class="recommend-sidebar-title">
+                    <h1> <%= t('recommend.sidebar.individual_and_group.title') %> </h1>
+                  </div>
+                  <div class="recommend-sidebar-body">
+                    <%= t('recommend.sidebar.individual_and_group.body') %>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <div class="recommend-sidebar-container">
+                  <div class="recommend-sidebar-title">
+                    <h1> <%= t('recommend.sidebar.coaching.title') %> </h1>
+                  </div>
+                  <div class="recommend-sidebar-body">
+                    <%= t('recommend.sidebar.coaching.body') %>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
     </div>
