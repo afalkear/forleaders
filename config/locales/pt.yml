@@ -27,6 +27,24 @@ pt:
         position: Cargo
         school: Escola
         submit: Submit
+      recommend_message: 
+        submit: ENVIAR
+    submit: 
+      submit: ENVIAR
+  recommend: 
+    header: 
+      title: "E se o Método DeRose fosse ensinado na sua empresa?"
+    sidebar: 
+      coaching: 
+        body: "Para responder aos desafios dos Presidentes, CEOs e altos executivos."
+        title: "Consultoria para Dirigentes"
+      individual_and_group: 
+        body: "15 minutos, 30 minutos ou 1h uma o várias vezes por semana"
+        title: "Treinamentos individual ou em grupo"
+      talks_and_workshops: 
+        body: "Alta produtividade, gestão do stress, boas relações humanas, administração de conflitos, foco, gestão do tempo, etc"
+        title: "Palestras e Workshops"
+      title: "NOS OFERECEMOS:"
   routes: 
     articles: artigos
     contact: contato
@@ -317,7 +335,7 @@ pt:
       title: "NOSSOS PROGRAMAS"
     recommend: 
       message: "O que você vivencia na escola pode ser transportado para o ambiente corporativo. Com o DeRose For Leaders, um programa internacional de consultoria, treinamentos e palestras atendemos diretores, gestores e suas equipes. Deixe aqui os dados. Nós entraremos em contato para ver o tipo de serviço que será melhor para a realidade da sua empresa."
-      title: "E se o Método DeRose fosse ensinado na sua empresa?"
+      title: "O DeROSE For Leaders é um programa internacional de consultoria, treinamentos e palestras, atendemos diretores, gestores e suas equipes."
     sidebar: 
       ericsson: 
         company: Ericsson
