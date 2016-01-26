@@ -200,6 +200,10 @@ ul.dropdown-menu {
     .navbar .navbar-collapse {
         text-align: center;
     }
+
+    .recommend-page-title-container > div > .page-header-title {
+        font-size: 50px;
+    }
 }
 
 .my-affix {
