@@ -25,6 +25,7 @@ pt:
         observations: OBSERVAÇÕES
         phone: Telefone
         position: Cargo
+        school: Escola
         submit: Submit
   routes: 
     articles: artigos
@@ -49,7 +50,7 @@ pt:
       leadership: Liderança
       quality_of_life: Lifestyle
     contact: 
-      countries_html: "<h2>BRASIL</h2><h4>São Paulo</h4>Av. Paulista, 726, 17° andar<br>patricia.taurizano@metododerose.org<br>+(55 11) 99875-9954 <h4>Rio de Janeiro</h4>Rua Dias Ferreira, 259 - Leblon<br> rafaella.coelho@metododerose.org<br>+(55 21) 98888-5954<h4>Brasília<h4>andre.bouchardet@metododerose.org<br>+(55 61) 9656-4747<h2>UNITED STATES</h2><h4>New York</h4>55 Murray Street, New York, NY 10007<br>john.chisenhall@derosemethod.org<br>+(1) 917-727-0233<h2>FRANCE</h2><h4>Paris</h4>8 rue Balzac, Paris 8ème<br>jonathan.sardas@methodederose.org<br>+(33) 06 71 88 81 08<h2>ARGENTINA</h2><h4>Buenos Aires</h4>República Árabe Siria 3088, Buenos Aires<br>lucia.lopez@metododerose.org<br>+(54) 11 4801-8522"
+      countries_html: "<h2>BRASIL</h2><h4>São Paulo</h4>Av. Paulista, 726, 17° andar<br>patricia.taurizano@metododerose.org<br>+(55 11) 99875-9954 <h4>Rio de Janeiro</h4>Rua Dias Ferreira, 259 - Leblon<br> rafaella.coelho@metododerose.org<br>+(55 21) 98888-5954<h4>Brasília<h4>andre.bouchardet@metododerose.org<br>+(55 61) 9656-4747<h2>UNITED STATES</h2><h4>New York</h4>55 Murray Street, New York, NY 10007<br>john.chisenhall@derosemethod.org<br>+(1) 917-727-0233<h2>FRANCE</h2><h4>Paris</h4>8 rue Balzac, Paris 8ème<br>jonathan.sardas@methodederose.org<br>+(33) 06 71 88 81 08<h2>ARGENTINA</h2><h4>Buenos Aires</h4>Luis María Campos 1395, Buenos Aires<br>alex.falke@metododerose.org<br>+(54) 11 4785-4882"
       message: "Estaremos felizes em poder esclarecer questões relativas aos nossos programas e ao processo de admissão."
       title: CONTATE-NOS
     derose_method: 
@@ -200,6 +201,8 @@ pt:
           title: "PARA INDIVIDUOS"
           training: Treinamento
         title_html: "P<span class=\"navbar-title-smallcaps\">ROGRAMAS</span>"
+      recommend: 
+        title_html: Recommend
       testimonials: 
         enterprises: Empresas
         institutions: "Instituções que nos apoiam"
@@ -312,6 +315,9 @@ pt:
           title: TREINAMENTO
       subtitle: "SERVIÇOS PERSONALIZADOS"
       title: "NOSSOS PROGRAMAS"
+    recommend: 
+      message: "O que você vivencia na escola pode ser transportado para o ambiente corporativo. Com o DeRose For Leaders, um programa internacional de consultoria, treinamentos e palestras atendemos diretores, gestores e suas equipes. Deixe aqui os dados. Nós entraremos em contato para ver o tipo de serviço que será melhor para a realidade da sua empresa."
+      title: "E se o Método DeRose fosse ensinado na sua empresa?"
     sidebar: 
       ericsson: 
         company: Ericsson
