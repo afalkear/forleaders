@@ -8,7 +8,7 @@
                 <%= t('static_pages.recommend.title') %>
               </div>
               <div class="page-main-body">
-                <%= t('static_pages.recommend.message') %>
+                <% t('static_pages.recommend.message') %>
               </div>
           </div>
         </div>
@@ -18,8 +18,43 @@
                 <%= render 'recommend_form' %>
               </div>
           </div>
-          <div class="col-md-4">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          <div class="col-md-4 individual-sidebar">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="recommend-sidebar-container">
+                  <div class="recommend-sidebar-title">
+                    <h1> <%= t('recommend.sidebar.talks_and_workshops.title') %> </h1>
+                  </div>
+                  <div class="recommend-sidebar-body">
+                    <%= t('recommend.sidebar.talks_and_workshops.body') %>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <div class="recommend-sidebar-container">
+                  <div class="recommend-sidebar-title">
+                    <h1> <%= t('recommend.sidebar.individual_and_group.title') %> </h1>
+                  </div>
+                  <div class="recommend-sidebar-body">
+                    <%= t('recommend.sidebar.individual_and_group.body') %>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <div class="recommend-sidebar-container">
+                  <div class="recommend-sidebar-title">
+                    <h1> <%= t('recommend.sidebar.coaching.title') %> </h1>
+                  </div>
+                  <div class="recommend-sidebar-body">
+                    <%= t('recommend.sidebar.coaching.body') %>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
     </div>
