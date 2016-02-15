@@ -141,6 +141,11 @@ img.center {
   padding-top: 10px;
 }
 
+.languages-row img {
+  max-width: 27px;
+  max-height: 20px;
+}
+
 /* NAVBAR */
 
 #navbar-collapse {
