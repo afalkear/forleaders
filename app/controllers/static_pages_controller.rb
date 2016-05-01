@@ -1,6 +1,10 @@
 class StaticPagesController < ApplicationController
   layout "static_pages"
-  
+  caches_page :home, :individual_consultory, :group_consultory, :our_consultors,
+              :derose_method, :institution_testimonials, :enterprise_testimonials,
+              :apply, :apply_message, :contact, :contact_message, :recommend,
+              :net
+
   def home
     if user_signed_in? && !current_user.nil? && (current_user.role? "translator") && ((current_user.debug_translations == "missing") || (current_user.debug_translations == "all"))
       expire_fragment('home')
