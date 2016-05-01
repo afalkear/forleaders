@@ -37,14 +37,15 @@ class ArticlesController < ApplicationController
 
   def create
     @article = current_user.articles.new(article_params)
-    
-    
+
+
     if @article.save
       # expire cache so related and last articles will be reloaded with this new article
       expire_fragment("latest_articles")
       expire_fragment("#{@article.categories.first.name}-related_articles")
+      expire_page(:controller => "static_pages", :action => "home")
 
-      
+
       article_language = params[:article][:article_language] ? ArticleLanguage.find(params[:article][:article_language]) : ArticleLanguage.create
       article_language.articles << @article
       if !params[:article][:article_image] && @article.article_language.articles.count > 1
@@ -67,9 +68,10 @@ class ArticlesController < ApplicationController
   def update
     @article = Article.find(params[:id])
 
-    
+
     expire_fragment(["v1", @article])
-    
+    response = expire_page(:controller => "static_pages", :action => "home")
+
     @article.update_attributes(article_params)
 
     expire_fragment("#{@article.categories.first.name}-related_articles")
@@ -91,6 +93,7 @@ class ArticlesController < ApplicationController
         :category_tokens,
         :image_url,
         :article_image,
+        :article_image_cache,
         :remote_article_image_url,
         :subtitle,
         :hover_frase,
