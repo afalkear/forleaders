@@ -43,6 +43,9 @@ gem 'kaminari'
 # AWS elastic beanstalk
 gem 'elastic-beanstalk'
 
+## CACHE
+gem "actionpack-page_caching"
+
 # Authentication
 gem 'devise'
 gem 'cancancan', '~> 1.8'
@@ -89,7 +92,7 @@ group :staging, :production do
 end
 
 group :staging do
-  
+
 end
 
 group :production do
