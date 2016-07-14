@@ -81,7 +81,7 @@ class StaticPagesController < ApplicationController
   def contact_message
     @contact_message = ContactMessage.new(params[:contact_message])
 
-    if @contact_message.valid?
+    if @contact_message.valid? && verify_recaptcha(model: @contact_message)
       ContactMailer.new_contact_form(@contact_message).deliver
       redirect_to root_url, notice: "Message sent. Thank you for contacting us."
     else

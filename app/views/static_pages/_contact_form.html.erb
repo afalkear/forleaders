@@ -45,6 +45,7 @@
         <%= label(:contact_message, :observations) %>
           <%= f.text_area :observations, class: 'form-control', id: 'contact_observations', placeholder: "#{t('helpers.label.contact_message.observations')}", size: "60x12" %>
       </div>
+      <%= recaptcha_tags %>
       <div class="form-group">
           <%= f.submit "#{t('helpers.label.contact_message.submit')}", class: 'btn btn-default' %>
       </div>

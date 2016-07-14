@@ -50,6 +50,9 @@ gem "actionpack-page_caching"
 gem 'devise'
 gem 'cancancan', '~> 1.8'
 
+# ReCaptcha
+gem "recaptcha", require: "recaptcha/rails"
+
 # Internationalization
 # --------------------
 
