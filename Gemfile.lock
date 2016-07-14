@@ -224,6 +224,8 @@ GEM
       ffi (>= 0.5.0)
     rdoc (4.1.1)
       json (~> 1.4)
+    recaptcha (3.3.0)
+      json
     ref (1.0.5)
     rest-client (1.6.7)
       mime-types (>= 1.16)
@@ -322,6 +324,7 @@ DEPENDENCIES
   pg
   puma
   rails (= 4.0.5)
+  recaptcha
   route_translator
   rspec-rails (~> 3.0.0.beta)
   sass-rails (~> 4.0.0)
