@@ -18,5 +18,4 @@
 //= require analytics
 //= require jquery.magnific-popup
 //= require lazysizes.min
-//= require translation_center/inspector
 //= require_tree .

@@ -1,5 +1,5 @@
 Forleaders::Application.routes.draw do
-  
+
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
@@ -22,7 +22,7 @@ Forleaders::Application.routes.draw do
 
   localized do
     # resources for users
-    
+
     # devise_for :admins
     #scope "/admin" do
     #  get 'admin_root' => 'admins#index', as: :admin_root
@@ -30,7 +30,7 @@ Forleaders::Application.routes.draw do
     #  resources :admins
     #end
       root 'static_pages#home'
-      
+
       #resources :static_pages
       get 'individual_consultory', to:'static_pages#individual_consultory'
       get 'group_consultory', to:'static_pages#group_consultory'
@@ -51,8 +51,8 @@ Forleaders::Application.routes.draw do
 
   match 'apply_message' => 'static_pages#apply_message', :via => :post
   match 'contact_message' => 'static_pages#contact_message', :via => :post
-  mount TranslationCenter::Engine => "/translation_center"
-  
+  #mount TranslationCenter::Engine => "/translation_center"
+
   resources :categories
 
   # Example of regular route:
