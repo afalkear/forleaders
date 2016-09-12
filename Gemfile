@@ -70,8 +70,8 @@ gem 'metamagic'
 gem "select2-rails"
 
 # translator center ** My translation center fork
-gem 'afalkear_translation_center', '1.8.2'
-gem 'audited-activerecord', '~> 4.0.0.rc1'
+#gem 'afalkear_translation_center', '1.8.2'
+#gem 'audited-activerecord', '~> 4.0.0.rc1'
 
 group :development do
   gem 'git-pivotal-tracker-integration'

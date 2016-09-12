@@ -5,7 +5,7 @@ class User < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable, :confirmable, :lockable
 
   has_many :articles
-  acts_as_translator
+  #acts_as_translator
 
   ROLES = %w[banned author translator moderator admin superadmin]
   DEBUG_TRANSLATIONS = %w(none all missing)
@@ -20,12 +20,12 @@ class User < ActiveRecord::Base
     super && approved?
   end
 
-  def inactive_message 
-    if !approved? 
-      :not_approved 
-    else 
-      super # Use whatever other message 
-    end 
+  def inactive_message
+    if !approved?
+      :not_approved
+    else
+      super # Use whatever other message
+    end
   end
 
   def send_admin_mail
