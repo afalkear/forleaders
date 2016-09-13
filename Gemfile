@@ -40,8 +40,11 @@ gem 'active_attr'
 # pagination with kaminari
 gem 'kaminari'
 
+## DEPLOYMENT
+
 # AWS elastic beanstalk
 gem 'elastic-beanstalk'
+
 
 ## CACHE
 gem "actionpack-page_caching"
@@ -76,6 +79,7 @@ gem "select2-rails"
 group :development do
   gem 'git-pivotal-tracker-integration'
   gem 'guard-livereload'
+  gem "capistrano", "~> 3.6"
 end
 
 group :development, :staging do
