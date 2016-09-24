@@ -15,7 +15,7 @@
 /log/*.log
 /tmp
 /config/application.yml
-/config/deploy/production.rb
+/config/deploy/*
 .elasticbeanstalk/
 aprobacion/
 cambios/
