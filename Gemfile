@@ -88,9 +88,9 @@ group :development do
   gem 'capistrano3-puma'
 end
 
-group :staging do
-  gem 'pg'
-end
+#group :staging do
+#  gem 'pg'
+#end
 
 group :development, :test do
   gem 'rspec-rails', '~> 3.0.0.beta'
