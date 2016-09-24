@@ -46,7 +46,7 @@ gem 'kaminari'
 # gem 'elastic-beanstalk'
 
 # PUMA
-gem 'puma'
+gem 'puma', "~> 3.6.0"
 
 ## CACHE
 gem "actionpack-page_caching"
