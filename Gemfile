@@ -43,8 +43,10 @@ gem 'kaminari'
 ## DEPLOYMENT
 
 # AWS elastic beanstalk
-gem 'elastic-beanstalk'
+# gem 'elastic-beanstalk'
 
+# PUMA
+gem 'puma'
 
 ## CACHE
 gem "actionpack-page_caching"
@@ -86,9 +88,8 @@ group :development do
   gem 'capistrano3-puma'
 end
 
-group :development, :staging do
-  #gem 'pg'
-  #gem 'puma'
+group :staging do
+  gem 'pg'
 end
 
 group :development, :test do
@@ -106,7 +107,7 @@ group :staging do
 
 end
 
-group :production do
+group :development, :production do
   # mysql 2 for ec2
   gem 'mysql2'
 end
