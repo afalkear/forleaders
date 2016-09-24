@@ -7,6 +7,8 @@ set :repo_url, 'git@github.com:afalkear/forleaders.git'
 # Default branch will be production
 set :branch, :production
 
+set :stage, :production
+
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
 
@@ -71,4 +73,11 @@ namespace :deploy do
     end
   end
 
+  task :production do
+    set :bundle_without, [:development, :test, :staging]
+  end
+
+  task :staging do
+    set :bundle_without, [:development, :test]
+  end
 end
