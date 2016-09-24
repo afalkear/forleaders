@@ -33,10 +33,6 @@ GEM
     airbrussh (1.1.1)
       sshkit (>= 1.6.1, != 1.7.0)
     arel (4.0.2)
-    awesome_print (1.2.0)
-    aws-sdk (1.41.0)
-      json (~> 1.4)
-      nokogiri (>= 1.4.4)
     bcrypt-ruby (3.1.2)
     bootstrap-datepicker-rails (1.1.1.11)
       railties (>= 3.0)
@@ -91,16 +87,6 @@ GEM
     diff-lcs (1.2.5)
     dropbox-sdk (1.6.3)
       json
-    eb_deployer (0.4.4)
-      aws-sdk
-    elastic-beanstalk (1.0.1)
-      awesome_print
-      eb_deployer (>= 0.4.4)
-      nokogiri
-      railties (>= 3.2)
-      rubyzip
-      table_print
-      time_diff
     em-websocket (0.5.1)
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0.6.0)
@@ -245,7 +231,6 @@ GEM
       rspec-expectations (= 3.0.0.beta1)
       rspec-mocks (= 3.0.0.beta1)
     rspec-support (3.0.0.beta1)
-    rubyzip (1.1.3)
     safe_yaml (1.0.1)
     sass (3.2.14)
     sass-rails (4.0.1)
@@ -272,16 +257,12 @@ GEM
       net-scp (>= 1.1.2)
       net-ssh (>= 2.8.0)
     subexec (0.2.3)
-    table_print (1.5.1)
     therubyracer (0.12.0)
       libv8 (~> 3.16.14.0)
       ref
     thor (0.19.1)
     thread_safe (0.3.4)
     tilt (1.4.1)
-    time_diff (0.3.0)
-      activesupport
-      i18n
     timers (1.1.0)
     treetop (1.4.15)
       polyglot
@@ -309,7 +290,6 @@ DEPENDENCIES
   carrierwave-dropbox
   coffee-rails (~> 4.0.0)
   devise
-  elastic-beanstalk
   figaro
   friendly_id (~> 5.1.0)
   git-pivotal-tracker-integration
