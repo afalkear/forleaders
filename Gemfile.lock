@@ -166,7 +166,6 @@ GEM
     nokogiri-happymapper (0.5.8)
       nokogiri (~> 1.5)
     orm_adapter (0.5.0)
-    pg (0.17.1)
     pivotal-tracker (0.5.12)
       builder
       builder
@@ -302,7 +301,6 @@ DEPENDENCIES
   mini_magick
   mysql2
   newrelic_rpm (~> 3.7)
-  pg
   puma
   rails (= 4.0.5)
   recaptcha
