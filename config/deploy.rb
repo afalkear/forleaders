@@ -41,7 +41,7 @@ set :keep_releases, 3
 
 # RVM
 set :rvm_type, :user
-set :rvm_ruby_version, 'ruby-2.0.0p247'
+set :rvm_ruby_version, 'ruby-2.2'
 
 
 # PUMA configuration
