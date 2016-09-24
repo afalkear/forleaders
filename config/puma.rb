@@ -7,7 +7,7 @@ rackup      DefaultRackup
 port        ENV['PORT']     || 3000
 environment ENV['RACK_ENV'] || 'production'
 bind "unix:///dfl/forleaders/share/tmp/sockets/puma.sock"
-pid_file "unix:///dfl/forleaders/share/tmp/pids/puma.pid"
+pidfile "unix:///dfl/forleaders/share/tmp/pids/puma.pid"
 
 on_worker_boot do
   # worker specific setup
