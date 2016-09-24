@@ -40,6 +40,7 @@ append :linked_files, 'config/database.yml', 'config/secrets.yml', 'config/appli
 
 # Default value for keep_releases is 5
 set :keep_releases, 3
+after "deploy", "deploy:cleanup"
 
 # RVM
 set :rvm_type, :user
