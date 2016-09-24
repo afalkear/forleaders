@@ -88,10 +88,6 @@ group :development do
   gem 'capistrano3-puma'
 end
 
-#group :staging do
-#  gem 'pg'
-#end
-
 group :development, :test do
   gem 'rspec-rails', '~> 3.0.0.beta'
   gem 'figaro'
@@ -101,10 +97,6 @@ end
 
 group :staging, :production do
   gem 'newrelic_rpm', '~> 3.7 '
-end
-
-group :staging do
-
 end
 
 group :development, :production do
