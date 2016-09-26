@@ -45,7 +45,7 @@ after "deploy", "deploy:cleanup"
 
 # RVM
 set :rvm_type, :user
-set :rvm_ruby_version, 'ruby-2.2'
+set :rvm_ruby_version, 'ruby-2.3.1'
 
 
 # PUMA configuration
