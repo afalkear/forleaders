@@ -3,56 +3,56 @@
 }
 
 .individual-with-personal-background-header {
-  background-image: url('individual_personal_header.jpg');
+  background-image: image-url('individual_personal_header.jpg');
   background-position: 100% 40%;
   background-repeat: no-repeat;
   background-color: #273451;
 }
 
 .individual-with-training-background-header {
-  background-image: url('individual_training_header.png');
+  background-image: image-url('individual_training_header.png');
   background-position: 100% 40%;
   background-repeat: no-repeat;
   background-color: #273451;
 }
 
 .individual-with-consultory-background-header {
-  background-image: url('individual_consultants_header.jpg');
+  background-image: image-url('individual_consultants_header.jpg');
   background-position: 100% 40%;
   background-repeat: no-repeat;
   background-color: #273451;
 }
 
 .individual-with-intensive-background-header {
-  background-image: url('consultants_header.jpg');
+  background-image: image-url('consultants_header.jpg');
   background-position: 100% 40%;
   background-repeat: no-repeat;
   background-color: #273451;
 }
 
 .individual-with-small-group-teaching-background-header {
-  background-image: url('small_group_teaching_header.jpg');
+  background-image: image-url('small_group_teaching_header.jpg');
   background-position: 100% 40%;
   background-repeat: no-repeat;
   background-color: #273451;
 }
 
 .individual-with-small-group-training-background-header {
-  background-image: url('individual_consultants_header.jpg');
+  background-image: image-url('individual_consultants_header.jpg');
   background-position: 100% 40%;
   background-repeat: no-repeat;
   background-color: #273451;
 }
 
 .individual-with-workshop-background-header {
-  background-image: url('individual_personal_header.jpg');
+  background-image: image-url('individual_personal_header.jpg');
   background-position: 100% 40%;
   background-repeat: no-repeat;
   background-color: #273451;
 }
 
 .individual-with-talks-background-header {
-  background-image: url('small_group_teaching_header.jpg');
+  background-image: image-url('small_group_teaching_header.jpg');
   background-position: 100% 40%;
   background-repeat: no-repeat;
   background-color: #273451;
@@ -80,9 +80,9 @@
 }
 
 .individual-sidebar > .row > div > hr {
-  background: #D5D5D5; 
-  border: 0; 
-  height: 1px;  
+  background: #D5D5D5;
+  border: 0;
+  height: 1px;
   margin-left: -15px;
   margin-right: -15px;
   margin-bottom: 0px;
@@ -131,7 +131,7 @@
   letter-spacing: 1px;
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
-} 
+}
 
 .tab-content > .active >.ind-body > div > div > h2 {
   font-family: 'Roboto', sans-serif;
@@ -217,9 +217,9 @@
 }
 
 .individual-sidebar-container > hr {
-  background: #273451; 
-  border: 0; 
-  height: 4px;  
+  background: #273451;
+  border: 0;
+  height: 4px;
   margin: 0px;
   margin-left: -15px;
   margin-right: -15px;
@@ -397,7 +397,7 @@
 .individual-footer-container {
   border-style: none;
   border-color: transparent;
-  background: #FFFFFF url("blizzard.jpg") repeat left top;
+  background: #FFFFFF image-url("blizzard.jpg") repeat left top;
 }
 
 .individual-footer-thumb-info-container {
@@ -418,13 +418,13 @@
   font-family: 'Roboto', sans-serif;
   font-size: 15px;
   line-height: 19px;
-  font-weight: 700; 
-  margin: 0px; 
+  font-weight: 700;
+  margin: 0px;
   min-height: 45px;
 }
 
 .individual-footer-text-container > p {
-  color: #7F7F7F; 
+  color: #7F7F7F;
   /*text-align: justify;*/
 }
 

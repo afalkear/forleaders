@@ -1,5 +1,5 @@
 .apply-header {
-  background-image: url('apply_header.jpg');
+  background-image: image-url('apply_header.jpg');
   background-position: 0% 45%;
 }
 
@@ -34,9 +34,9 @@
 }
 
 .apply-container > hr {
-  background: #273451; 
-  border: 0; 
-  height: 4px;  
+  background: #273451;
+  border: 0;
+  height: 4px;
   margin: 0px;
   margin-left: -15px;
   margin-right: -15px;
