@@ -80,12 +80,13 @@ gem "select2-rails"
 
 group :development do
   gem 'git-pivotal-tracker-integration'
-  gem 'guard-livereload'
+  #gem 'guard-livereload'
   gem "capistrano", "~> 3.6"
   gem 'capistrano-rvm'
   gem 'capistrano-rails'
   gem 'capistrano-bundler'
   gem 'capistrano3-puma'
+  gem 'pg'
 end
 
 group :development, :test do
@@ -99,10 +100,11 @@ group :staging, :production do
   gem 'newrelic_rpm', '~> 3.7 '
 end
 
-group :development, :production do
+group :production do
   # mysql 2 for ec2
-  gem 'mysql2'
+  gem 'mysql2', '~> 0.4.4'
 end
+
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
