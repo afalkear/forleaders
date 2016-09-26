@@ -48,6 +48,9 @@ gem 'kaminari'
 # PUMA
 gem 'puma', "~> 3.6.0"
 
+# mysql 2 for ec2
+gem 'mysql2', '~> 0.4.4'
+
 ## CACHE
 gem "actionpack-page_caching"
 
@@ -99,12 +102,6 @@ end
 group :staging, :production do
   gem 'newrelic_rpm', '~> 3.7 '
 end
-
-group :production do
-  # mysql 2 for ec2
-  gem 'mysql2', '~> 0.4.4'
-end
-
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
