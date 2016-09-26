@@ -6,7 +6,7 @@
   /*font-family: Arial;
   font-size: 15px;
   color: black;*/
-  background-image: image-url('consultants_header2.jpg');
+  background-image: asset-url('consultants_header2.jpg');
   background-position: 100% 0%;
   background-repeat: no-repeat;
   background-color: #273451;
@@ -97,7 +97,7 @@
 
 .our-consultors-middle-banner {
   min-height: 312px;
-  background-image: image-url('consultants_banner.jpg');
+  background-image: url(asset-path('consultants_banner.jpg'));
   background-size: 100%;
   /*background-position: 0% 45%;*/
 }
