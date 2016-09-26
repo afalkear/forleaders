@@ -40,6 +40,9 @@ gem 'active_attr'
 # pagination with kaminari
 gem 'kaminari'
 
+# environment variables with figaro
+gem 'figaro'
+
 ## DEPLOYMENT
 
 # AWS elastic beanstalk
@@ -94,7 +97,6 @@ end
 
 group :development, :test do
   gem 'rspec-rails', '~> 3.0.0.beta'
-  gem 'figaro'
   # Use sqlite3 as the database for Active Record
   gem 'sqlite3'
 end
