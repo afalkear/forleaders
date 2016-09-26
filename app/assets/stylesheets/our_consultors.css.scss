@@ -6,7 +6,7 @@
   /*font-family: Arial;
   font-size: 15px;
   color: black;*/
-  background-image: url('consultants_header2.jpg');
+  background-image: image-url('consultants_header2.jpg');
   background-position: 100% 0%;
   background-repeat: no-repeat;
   background-color: #273451;
@@ -51,7 +51,7 @@
   font-size: 60px;
   color: rgb(39, 52, 81);
   letter-spacing: 1px;
-  text-align: center; 
+  text-align: center;
   padding-top: 14%;
 }
 
@@ -60,7 +60,7 @@
   font-weight: 700;
   font-size: 28px;
   color: rgb(39, 52, 81);
-  letter-spacing: 1px; 
+  letter-spacing: 1px;
   text-align: center;
 }
 
@@ -97,7 +97,7 @@
 
 .our-consultors-middle-banner {
   min-height: 312px;
-  background-image: url('consultants_banner.jpg');
+  background-image: image-url('consultants_banner.jpg');
   background-size: 100%;
   /*background-position: 0% 45%;*/
 }

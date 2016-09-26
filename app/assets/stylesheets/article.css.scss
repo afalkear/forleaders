@@ -23,7 +23,7 @@
 
 .articles-header-container {
   min-height: 135px;
-  background: #FFFFFF url("blizzard.jpg") repeat left top;
+  background: #FFFFFF image-url("blizzard.jpg") repeat left top;
 }
 
 .articles-header-container > .row {
@@ -66,7 +66,7 @@
 /* MAIN CONTAINER */
 
 .single-article-container {
-  background: url('articles_background.jpg') no-repeat left center;
+  background: image-url('articles_background.jpg') no-repeat left center;
   background-size: cover !important;
   padding-bottom: 50px;
 }
@@ -80,24 +80,24 @@
   padding-right: 0px;
 }
 
-.articles-categories > ul { 
+.articles-categories > ul {
   display: table;
   width: 100%;
   background-color: #E8950E;
   padding-left: 0px;
 }
 
-.articles-categories > ul > li { 
+.articles-categories > ul > li {
   display: table-cell;
   border-right-style: solid;
   border-color: #E8950E;
 }
 
-.articles-categories > ul > li:last-child { 
+.articles-categories > ul > li:last-child {
   border: 0px;
 }
 
-.articles-categories > ul > li:hover { 
+.articles-categories > ul > li:hover {
   background-color: #000B1A;
 }
 
@@ -155,8 +155,8 @@
 
 .article-info-container > hr {
   height: 1px;
-  background: #B6B5B5; 
-  border: 0; 
+  background: #B6B5B5;
+  border: 0;
   margin-top: 10px;
   margin-bottom: 0px;
 }
@@ -224,8 +224,8 @@
 
 .article-sidebar > hr {
   height: 1px;
-  background: #B6B5B5; 
-  border: 0; 
+  background: #B6B5B5;
+  border: 0;
   margin-top: 10px;
   margin-left: 15px;
   margin-right: 15px;
@@ -290,7 +290,7 @@
 }
 
 .featured-article-metadata {
-  padding-left: 0px; 
+  padding-left: 0px;
 }
 
 .article-metadata > .container {
@@ -335,7 +335,7 @@
   font-family: 'Roboto', sans-serif;
   font-size: 12px;
   font-weight: 400;
-  color: #7F7F7F; 
+  color: #7F7F7F;
 }
 
 .article-content {
@@ -529,27 +529,27 @@
 }
 
 .joris {
-  background: #FFFFFF url("joris marengo.jpg") no-repeat center center;
+  background: #FFFFFF image-url("joris marengo.jpg") no-repeat center center;
 }
 
 .edgardo {
- background: #FFFFFF url("edgardo caramella.jpg") no-repeat center center; 
+ background: #FFFFFF image-url("edgardo caramella.jpg") no-repeat center center;
 }
 
 .derose {
-  background: #FFFFFF url("derose.jpg") no-repeat center top;
+  background: #FFFFFF image-url("derose.jpg") no-repeat center top;
 }
 
 .carlo {
-  background: #FFFFFF url("carlo mea.jpg") no-repeat center top;
+  background: #FFFFFF image-url("carlo mea.jpg") no-repeat center top;
 }
 
 .yael {
-  background: #FFFFFF url("yael barcesat.jpg") no-repeat center top;
+  background: #FFFFFF image-url("yael barcesat.jpg") no-repeat center top;
 }
 
 .gustavo {
-  background: #FFFFFF url("gustavo marson.jpg") no-repeat left center;
+  background: #FFFFFF image-url("gustavo marson.jpg") no-repeat left center;
 }
 
 .articles-authors-mini-photo > img {

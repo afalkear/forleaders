@@ -167,7 +167,7 @@ img.center {
 }
 
 ul.dropdown-menu {
-  background: #FFFFFF url("blizzard.jpg") repeat left top;
+  background: #FFFFFF image-url("blizzard.jpg") repeat left top;
 }
 
 /*.affix > .container-fluid > #navbar-collapse > ul {
@@ -175,7 +175,7 @@ ul.dropdown-menu {
 }*/
 
 .navbar {
-  background: #FFFFFF url("blizzard.jpg") repeat left top;
+  background: #FFFFFF image-url("blizzard.jpg") repeat left top;
 }
 
 /*.navbar .navbar-nav {
@@ -689,7 +689,7 @@ body.slide-active {
 .page-footer {
   border-style: none;
   border-color: transparent;
-  background: #FFFFFF url("blizzard.jpg") repeat left top;
+  background: #FFFFFF image-url("blizzard.jpg") repeat left top;
 }
 
 .page-footer-info-container {
@@ -1066,11 +1066,11 @@ body.slide-active {
 }
 
 .programme-container {
-  background: #FFFFFF url("blizzard.jpg") repeat left top;
+  background: #FFFFFF image-url("blizzard.jpg") repeat left top;
 }
 
 .partners-container {
-  background: #FFFFFF url("blizzard.jpg") repeat left top;
+  background: #FFFFFF image-url("blizzard.jpg") repeat left top;
 }
 
 .partners-container table {
@@ -1220,128 +1220,128 @@ body.slide-active {
 
 
 .partners-image.google {
-  background:transparent url('google.png') center no-repeat;
+  background:transparent image-url('google.png') center no-repeat;
   min-width: 100px;
 }
 
 .partners-image.google:hover {
-  background:transparent url('google-hover.png') center no-repeat;
+  background:transparent image-url('google-hover.png') center no-repeat;
   min-width: 100px;
 }
 
 .partners-image.itau {
-  background:transparent url('itau.png') center no-repeat;
+  background:transparent image-url('itau.png') center no-repeat;
   min-width: 100px;
 }
 
 .partners-image.itau:hover {
-  background:transparent url('itau-hover.png') center no-repeat;
+  background:transparent image-url('itau-hover.png') center no-repeat;
   min-width: 100px;
 }
 
 .partners-image.park-hyatt {
-  background:transparent url('park-hyatt.png') center no-repeat;
+  background:transparent image-url('park-hyatt.png') center no-repeat;
   min-width: 100px;
 }
 
 .partners-image.park-hyatt:hover {
-  background:transparent url('park-hyatt-hover.png') center no-repeat;
+  background:transparent image-url('park-hyatt-hover.png') center no-repeat;
   min-width: 100px;
 }
 
 .partners-image.adidas {
-  background:transparent url('adidas.png') center no-repeat;
+  background:transparent image-url('adidas.png') center no-repeat;
   min-width: 100px;
 }
 
 .partners-image.adidas:hover {
-  background:transparent url('adidas-hover.png') center no-repeat;
+  background:transparent image-url('adidas-hover.png') center no-repeat;
   min-width: 100px;
 }
 
 .partners-image.exxon {
-  background:transparent url('exxon.png') center no-repeat;
+  background:transparent image-url('exxon.png') center no-repeat;
   min-width: 100px;
   /*margin-left: -10px;*/
 }
 
 .partners-image.exxon:hover {
-  background:transparent url('exxon-hover.png') center no-repeat;
+  background:transparent image-url('exxon-hover.png') center no-repeat;
   min-width: 100px;
   /*margin-left: -10px;*/
 }
 
 .partners-image.petrobras {
-  background:transparent url('petrobras.png') center no-repeat;
+  background:transparent image-url('petrobras.png') center no-repeat;
   min-width: 100px;
 }
 
 .partners-image.petrobras:hover {
-  background:transparent url('petrobras-hover.png') center no-repeat;
+  background:transparent image-url('petrobras-hover.png') center no-repeat;
   min-width: 100px;
 }
 
 .partners-image.visa {
-  background:transparent url('visa.png') center no-repeat;
+  background:transparent image-url('visa.png') center no-repeat;
   min-width: 100px;
 }
 
 .partners-image.visa:hover {
-  background:transparent url('visa-hover.png') center no-repeat;
+  background:transparent image-url('visa-hover.png') center no-repeat;
   min-width: 100px;
 }
 
 .partners-image.nestle {
-  background:transparent url('nestle-thumb.png') center no-repeat;
+  background:transparent image-url('nestle-thumb.png') center no-repeat;
   min-width: 100px;
   /*margin-left: 20px;*/
 }
 
 .partners-image.nestle:hover {
-  background:transparent url('nestle-thumb-hover.png') center no-repeat;
+  background:transparent image-url('nestle-thumb-hover.png') center no-repeat;
   min-width: 100px;
   /*margin-left: 20px;*/
 }
 
 .partners-image.coca {
-  background:transparent url('coca_cola.png') center no-repeat;
+  background:transparent image-url('coca_cola.png') center no-repeat;
   min-width: 100px;
 }
 
 .partners-image.coca:hover {
-  background:transparent url('coca_cola-hover.png') center no-repeat;
+  background:transparent image-url('coca_cola-hover.png') center no-repeat;
   min-width: 100px;
 }
 
 .partners-image.banco-de-chile {
-  background:transparent url('banco_de_chile.png') center no-repeat;
+  background:transparent image-url('banco_de_chile.png') center no-repeat;
   min-width: 100px;
 }
 
 .partners-image.banco-de-chile:hover {
-  background:transparent url('banco_de_chile-hover.png') center no-repeat;
+  background:transparent image-url('banco_de_chile-hover.png') center no-repeat;
   min-width: 100px;
 }
 
 .partners-image.johnsons {
-  background:transparent url('johnsons.png') center no-repeat;
+  background:transparent image-url('johnsons.png') center no-repeat;
   min-width: 100px;
   /*margin-right: 10px;*/
 }
 
 .partners-image.johnsons:hover {
-  background:transparent url('johnsons-hover.png') center no-repeat;
+  background:transparent image-url('johnsons-hover.png') center no-repeat;
   min-width: 100px;
   /*margin-right: 10px;*/
 }
 
 .partners-image.natura {
-  background:transparent url('natura.jpg') center no-repeat;
+  background:transparent image-url('natura.jpg') center no-repeat;
   min-width: 100px;
 }
 
 .partners-image.natura:hover {
-  background:transparent url('natura-hover.jpg') center no-repeat;
+  background:transparent image-url('natura-hover.jpg') center no-repeat;
   min-width: 100px;
 }
 
