@@ -40,6 +40,9 @@ gem 'active_attr'
 # pagination with kaminari
 gem 'kaminari'
 
+# environment variables with figaro
+gem 'figaro'
+
 ## DEPLOYMENT
 
 # AWS elastic beanstalk
@@ -90,8 +93,6 @@ group :development do
   gem 'capistrano-bundler'
   gem 'capistrano3-puma'
   gem 'pg'
-  # environment variables with figaro
-  gem 'figaro'
 end
 
 group :development, :test do
