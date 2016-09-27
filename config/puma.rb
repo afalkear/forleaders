@@ -7,10 +7,8 @@
 #port        ENV['PORT']     || 3000
 #environment ENV['RACK_ENV'] || 'production'
 
-if Rails.env.production?
-  bind "unix:/home/dfl/forleaders/shared/tmp/sockets/puma.sock"
-  pidfile "/home/dfl/forleaders/shared/tmp/pids/puma.pid"
-end
+#bind "unix:/home/dfl/forleaders/shared/tmp/sockets/puma.sock"
+#pidfile "/home/dfl/forleaders/shared/tmp/pids/puma.pid"
 
 #on_worker_boot do
   # worker specific setup
