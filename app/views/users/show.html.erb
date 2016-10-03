@@ -10,23 +10,7 @@
       <h3>Actions</h3>
       <% if (current_user.role? 'author') %>
         <%= link_to "Add new article", new_article_path %><br>
-      <% end %>
-      <% if (current_user.is? "translator") || (current_user.is? "moderator") || (current_user.is? "admin") || (current_user.is? "superadmin") %>
-        <h2>Translations</h2>
-        <h3>See missing or all translations</h3>
-        Currently I am seeing <%= current_user.debug_translations %> translation information.
-        <p>Change:</p>
-        <%= form_for @user, url: edit_users_path(id: current_user.id), html: {method: "post",class: "form-inline", role: "form", id: "change_debug_translations_form"} do |f| %>
-          <div id="user_debug_translations_change" class="form-group">
-            <%= f.select :debug_translations, User::DEBUG_TRANSLATIONS, selected: @user.debug_translations %>
-          </div>
-          <button type="submit" class="btn btn-default">Change</button>
-        <% end %>
-
-        <h3>Translation Center</h3>
-        <%= link_to "Go to translation center", translation_center_path %>
-      <% end %>
+      <% end %>      
     </div>
   </div>
 </div>
-
