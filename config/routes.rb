@@ -20,6 +20,8 @@ Forleaders::Application.routes.draw do
   get 'dashboard', to: 'dashboard#index'
   get 'dashboard/articles', to: 'dashboard#articles'
 
+  get 'live', to: 'static_pages#live'
+
   localized do
     # resources for users
 
