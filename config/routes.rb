@@ -21,6 +21,7 @@ Forleaders::Application.routes.draw do
   get 'dashboard/articles', to: 'dashboard#articles'
 
   get 'live', to: 'static_pages#live'
+  get 'aovivo', to: 'static_pages#aovivo'
 
   localized do
     # resources for users
