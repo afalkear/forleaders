@@ -96,10 +96,10 @@ class StaticPagesController < ApplicationController
   end
 
   def live
-    redirect_to "https://www.youtube.com/watch?v=MFuIPkP4hoc", :status => 301
+    redirect_to "https://www.youtube.com/metododerose", :status => 301
   end
 
   def aovivo
-    redirect_to "https://www.youtube.com/watch?v=yib1abt9-jY", :status => 301
+    redirect_to "https://www.youtube.com/metododerose", :status => 301
   end
 end
