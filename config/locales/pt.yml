@@ -1,8 +1,8 @@
---- 
-pt: 
-  helpers: 
-    label: 
-      apply_message: 
+---
+pt:
+  helpers:
+    label:
+      apply_message:
         birthdate: "Data de nascimento"
         city: "Cidade *"
         civility: Civilidade
@@ -14,9 +14,9 @@ pt:
         position: Cargo*
         work_phone: "Work phone"
         years_of_experience: "Anos de experiencia"
-      article: 
+      article:
         title: Title
-      contact_message: 
+      contact_message:
         calendar: Calendario
         company: Empresa
         email: Email
@@ -27,25 +27,25 @@ pt:
         position: Cargo
         school: Escola
         submit: Submit
-      recommend_message: 
+      recommend_message:
         submit: ENVIAR
-    submit: 
+    submit:
       submit: ENVIAR
-  recommend: 
-    header: 
+  recommend:
+    header:
       title: "E se o Método DeRose fosse ensinado na sua empresa?"
-    sidebar: 
-      coaching: 
+    sidebar:
+      coaching:
         body: "Para responder aos desafios dos Presidentes, CEOs e altos executivos."
         title: "Consultoria para Dirigentes"
-      individual_and_group: 
+      individual_and_group:
         body: "15 minutos, 30 minutos ou 1h uma o várias vezes por semana"
         title: "Treinamentos individual ou em grupo"
-      talks_and_workshops: 
+      talks_and_workshops:
         body: "Alta produtividade, gestão do stress, boas relações humanas, administração de conflitos, foco, gestão do tempo, etc"
         title: "Palestras e Workshops"
       title: "NOS OFERECEMOS:"
-  routes: 
+  routes:
     articles: artigos
     contact: contato
     derose_method: metodo_derose
@@ -56,54 +56,54 @@ pt:
     leader_coaching: consultoria
     net: world
     our_consultors: consultores
-  static_pages: 
-    articles: 
+  static_pages:
+    articles:
       read_more: "LER MAIS >>"
       subtitle: "TEXTOS RÁPIDOS E DINÂMICOS PARA POTENCIALIZAR SEU APRENDIZADO"
       title: "NOSSOS ARTIGOS"
-    categories: 
+    categories:
       focus: Foco
       high_performance: "Alta Produtividade"
       human_relationships: "Relações Interpessoais"
       leadership: Liderança
       quality_of_life: Lifestyle
-    contact: 
+    contact:
       countries_html: "<h2>BRASIL</h2><h4>São Paulo</h4>Av. Paulista, 726, 17° andar<br>patricia.taurizano@metododerose.org<br>+(55 11) 99875-9954 <h4>Rio de Janeiro</h4>Rua Dias Ferreira, 259 - Leblon<br> rafaella.coelho@metododerose.org<br>+(55 21) 98888-5954<h4>Brasília<h4>andre.bouchardet@metododerose.org<br>+(55 61) 9656-4747<h2>UNITED STATES</h2><h4>New York</h4>55 Murray Street, New York, NY 10007<br>john.chisenhall@derosemethod.org<br>+(1) 917-727-0233<h2>FRANCE</h2><h4>Paris</h4>8 rue Balzac, Paris 8ème<br>jonathan.sardas@methodederose.org<br>+(33) 06 71 88 81 08<h2>ARGENTINA</h2><h4>Buenos Aires</h4>Luis María Campos 1395, Buenos Aires<br>alex.falke@metododerose.org<br>+(54) 11 4785-4882"
       message: "Estaremos felizes em poder esclarecer questões relativas aos nossos programas e ao processo de admissão."
       title: CONTATE-NOS
-    derose_method: 
-      body: 
-        main: 
-          first_block: 
+    derose_method:
+      body:
+        main:
+          first_block:
             content_html: "<p>O M<span class='navbar-title-smallcaps'>ÉTODO</span> DeR<span class='navbar-title-smallcaps'>OSE</span> é uma urdidura de <b>técnicas</b> e <b>conceitos</b>, edificando uma proposta de reeducação comportamental em prol da boa qualidade de vida, boas maneiras, boas relações humanas, boa cultura, boa alimentação, boa forma, bom ambiente e bons ideais.</p> <p>Algumas das nossas ferramentas técnicas são a reeducação respiratória, a administração do stress, as técnicas orgânicas que promovem a vitalidade e a energia, procedimentos para o aprimoramento da descontração emocional e da concentração mental.</p>"
-          fourth_block: 
+          fourth_block:
             title: "UMA PROPOSTA DE BOAS COISAS:"
-          second_block: 
+          second_block:
             content_html: "O M<span class='navbar-title-smallcaps'>ÉTODO</span> DeR<span class='navbar-title-smallcaps'>OSE</span> é de grande valia para os líderes que buscam ferramentas eficientes para se aprimorar, aumentando o seu desempenho pessoal e profissional. Montamos com cada líder um programa sob medida incluindo aulas de <b><i>Personal Teaching</i></b>, <b>Treinamentos</b> e <b>Consultorias</b>. Definimos juntos os seus objetivos e ensinamos as ferramentas mais adequadas para que ele possa progredir de forma efetiva e duradoura."
             title: "O MÉTODO DeROSE FOR LEADERS"
-          third_block: 
+          third_block:
             content_html: "<p>Os líderes reconhecem o nosso grande difrencial: um <b><i>know-how</i> incomparável para melhorar o ser humano</b>. Os resultados que conseguimos no aumento da performance e da qualidade de vida são muito expressivos devido à qualidade superlativa das ferramentas que ensinamos. Bastam disciplina e constância na aplicação das nossas técnicas e dos nossos conceitos para colher frutos positivos na vida profissional e pessoal.</p>"
             title: "O QUE TORNA O NOSSO MÉTODO TÃO ÚNICO"
-        sidebar: 
-          video: 
+        sidebar:
+          video:
             title: "VIDEO: INSPIRE SUA ESSÊNCIA"
         title: "O QUE É O MÉTODO DeROSE"
-      footer: 
-        first_column: 
+      footer:
+        first_column:
           content_html: "Para desenvolver o potencial das pessoas que você gerencia, é importante que você também esteja em constante aprimoramento; trabalhe sua própria Alta Produtividade com nossos programas para indivíduos."
           title: "PROGRAMAS PARA INDIVIDUOS"
-        second_column: 
+        second_column:
           content_html: "Um time forte é formado por indivíduos focados e bem-preparados; os programas para empresas fortalecem não só cada um dos líderes de maneira completa, mas também os integram como um time."
           title: "PROGRAMAS PARA EMPRESAS"
-        third_column: 
+        third_column:
           content_html: "As técnicas e os conceitos do M<span class='navbar-title-smallcaps'>ÉTODO</span> DeR<span class='navbar-title-smallcaps'>OSE</span> não trazem apenas resultados na qualidade de vida daqueles que praticam. Como consequência inevitável, eles também geram properidade para as empresas."
           title_html: "MÉTODO DeROSE NAS EMPRESAS"
-      header: 
-        subtitle: "Produtividade | Respiração | Foco | Boas Relacionamento | Alta Performance | Administração de Conflitos | Gestão do Stress | Força | Resultados"
+      header:
+        subtitle: "Produtividade | Respiração | Foco | Boas Relações | Alta Performance | Administração de Conflitos | Gestão do Stress | Força | Resultados"
         title_html: "O M<span class='navbar-title-smallcaps'>ÉTODO</span> DeR<span class='navbar-title-smallcaps'>OSE</span>"
-    footer: 
+    footer:
       apply_now: "Apply Now!"
-      articles: 
+      articles:
         focus: Foco
         high_performance: "Alta Produtividade"
         human_relationships: "Relações Interpessoais"
@@ -112,191 +112,191 @@ pt:
         quality_of_life: Lifestyle
         title: Artigos
       contact_us: "Contact Us!"
-      derose_for_leaders: 
+      derose_for_leaders:
         all_over_the_world_html: "DeR<span class=\"navbar-title-smallcaps\">OSE</span> All Over The World"
         derose_method_html: "O M<span class='navbar-title-smallcaps'>ÉTODO</span> DeR<span class='navbar-title-smallcaps'>OSE</span>"
         personal_teachers: "Personal Teachers"
         title: "Quem somos?"
-      enterprises: 
+      enterprises:
         small_group_teaching: "Small Group Teaching"
         talks: "Programa Extensivo"
         title: "Programas para empresas"
         training: "Programa Intensivo"
         workshop: "Consultoria para Dirigentes"
       follow_us: "Follow us!"
-      individuals: 
+      individuals:
         consulting: Consultoria
         personal_teaching: "Personal Teaching"
         title: "Programas para indivíduos"
         training: Treinamento
-      testimonials: 
+      testimonials:
         enterprises: Empresas
         institutions: Instituções
         title: Depoimentos
       title_html: "DeR<span class=\"navbar-title-smallcaps\">OSE</span> F<span class=\"navbar-title-smallcaps\">OR</span> L<span class=\"navbar-title-smallcaps\">EADERS</span>"
-    group_consultory_body: 
+    group_consultory_body:
       candidates: CONTATE-NOS
-      pills: 
-        small_group_teaching: 
+      pills:
+        small_group_teaching:
           subtitle: "1h duas vezes por semana"
           title: "SMALL GROUP TEACHING"
-        small_group_training: 
+        small_group_training:
           title: "PROGRAMA INTENSIVO"
-        talks: 
+        talks:
           title: "PROGRAMA EXTENSIVO"
-        workshops: 
+        workshops:
           title: "CONSULTORIA PARA DIRIGENTES"
-    group_consultory_header: 
-      small_group_teaching: 
+    group_consultory_header:
+      small_group_teaching:
         expand_subtitle_html: "<p>Desenvolver Alta Performance</p> <p>Aumentar a fluidez na comunicação</p> <p>Melhorar a Qualidade de Vida</p> <p>Reforçar os vinculos entre os líderes</p>"
         subtitle: "1h duas vezes por semana"
         title: "SMALL GROUP TEACHING"
-      small_group_training: 
+      small_group_training:
         expand_subtitle_html: "<p>Desenvolver Alta Performance</p> <p>Aumentar a fluidez na comunicação</p> <p>Melhorar a Qualidade de Vida</p> <p>Reforçar os vinculos entre os líderes</p>"
         subtitle: "15 minutos por dia"
         title: "PROGRAMA INTENSIVO"
-      talks: 
+      talks:
         expand_subtitle_html: "<p>Bom relacionamento</p> <p>Administração dos conflitos</p> <p>Gestão do tempo</p> <p>Liderança sábia</p>"
         subtitle: "1, 2 ou 4 horas"
         title: "PROGRAMA EXTENSIVO"
-      workshops: 
+      workshops:
         expand_subtitle_html: "<p>Bom relacionamento</p> <p>Administração dos conflitos</p> <p>Gestão do tempo</p> <p>Liderança sábia</p>"
         subtitle: "4, 8 ou 16 horas"
         title: "CONSULTORIA PARA DIRIGENTES"
-    header: 
+    header:
       countries_html: "Paris &#8226; London &#8226; New York &#8226; Roma &#8226; Barcelona &#8226; Buenos Aires &#8226; Lisboa &#8226; Porto &#8226; Rio &#8226; São Paulo"
       teaching_phrase: "ENSINANDO ALTA PERFORMANCE DESDE 1960"
-    individual_consultory_body: 
+    individual_consultory_body:
       first_meeting: CONTATE-NOS
-      pills: 
-        consulting: 
+      pills:
+        consulting:
           subtitle: "3 a 6 meses"
           title: CONSULTORIA
-        personal: 
+        personal:
           subtitle: "1 hora duas vezes por semana"
           title: "PERSONAL TEACHING"
-        training: 
+        training:
           subtitle: "15 minutos por dia"
           title: TREINAMENTO
-    individual_consultory_header: 
-      consulting: 
+    individual_consultory_header:
+      consulting:
         expand_subtitle_html: "<p>Bom relacionamento</p> <p>Administração de conflitos</p> <p>Gestão do tempo</p> <p>Comportamento</p> <p>Liderança sábia</p>"
         subtitle: "3 a 6 meses"
         title: CONSULTORIA
-      intensive: 
+      intensive:
         expand_subtitle_html: ""
         subtitle: "2 dias"
         title: "INTENSIVE TEACHING"
-      personal: 
+      personal:
         expand_subtitle_html: "<p>Aprenda ferramentas para desenvolver o seu potencial</p> <p>Desenvolva Alta Performance em todas as áreas da sua vida</p> <p>Melhore a sua Qualidade de Vida</p>"
         subtitle: "1 hora duas vezes por semana"
         title: "PERSONAL TEACHING"
-      training: 
+      training:
         expand_subtitle_html: "<p>Alta Performance</p> <p>Boa Forma</p> <p>Administração emocional</p> <p>Concentração</p>"
         subtitle: "15 minutos por dia"
         title: TREINAMENTO
-    navbar: 
-      articles: 
+    navbar:
+      articles:
         title_html: "A<span class=\"navbar-title-smallcaps\">RTIGOS</span>"
-      contact_type: 
+      contact_type:
         contact: "Fale conosco"
         title_html: "C<span class=\"navbar-title-smallcaps\">ONTATO</span>"
-      derose_for_leaders: 
+      derose_for_leaders:
         all_over_the_world_html: "DeR<span class=\"navbar-title-smallcaps\">OSE</span> All Over the World"
         derose_method_html: "O M<span class='navbar-title-smallcaps'>ÉTODO</span> DeR<span class='navbar-title-smallcaps'>OSE</span>"
         personal_teachers: "Personal Teachers"
         title_html: "DeR<span class=\"navbar-title-smallcaps\">OSE</span>  F<span class=\"navbar-title-smallcaps\">OR</span> L<span class=\"navbar-title-smallcaps\">EADERS</span> <b class=\"caret\"></b>"
-      programs: 
-        enterprises: 
+      programs:
+        enterprises:
           small_group_teaching: "Small Group Teaching"
           talks: "Programa extensivo"
           title: "PARA EMPRESAS"
           training: "Programa intensivo"
           workshop: "Consultoria para Dirigentes"
-        individuals: 
+        individuals:
           consulting: Consultoria
           personal_teaching: "Personal Teaching"
           title: "PARA INDIVIDUOS"
           training: Treinamento
         title_html: "P<span class=\"navbar-title-smallcaps\">ROGRAMAS</span>"
-      recommend: 
+      recommend:
         title_html: Recommend
-      testimonials: 
+      testimonials:
         enterprises: Empresas
         institutions: "Instituções que nos apoiam"
         title_html: "D<span class=\"navbar-title-smallcaps\">EPOIMENTOS</span>"
-    net: 
-      body: 
+    net:
+      body:
         content_html: "Dispomos de <i>Personal Teachers</i> que podem ministrar sessões particulares em qualquer cidade do Brasil e em qualquer parte do mundo, inclusive acompanhando o aluno em suas viagens de negócios ou de passeio. Os nossos profissionais atuam em praticamente todo o Brasil e ainda Argentina, Chile, Portugal, Espanha, França, Inglaterra, Escócia, Itália, Luxemburgo e Estados Unidos (incluindo Havaí)."
-        numbers: 
+        numbers:
           businesses: "empresas parceiras"
           consultors: consultores
           countries: paises
           establishments: establecimentos
         see_our_programs: "VEJA NOSSOS PROGRAMAS"
-      header: 
+      header:
         title: "ALL OVER THE WORLD"
-    our_consultors: 
-      body: 
-        consultors: 
-          charles: 
+    our_consultors:
+      body:
+        consultors:
+          charles:
             content_html: "Diretor do Office (órgão administrativo da Rede DeR<span class='navbar-title-smallcaps'>OSE</span>), Membro do Conselho Administrativo do M<span class='navbar-title-smallcaps'>ÉTODO</span> DeR<span class='navbar-title-smallcaps'>OSE</span>, o professor Charles Maciel é um dos primeiros docentes e principais palestrantes das nossas técnicas e conceitos. Administração de tempo é uma de suas especialidades, especialmente na organização de tarefas proposta pelo GTD (getting things done)."
             title: "Charles MACIEL"
-          edgardo: 
+          edgardo:
             content_html: "Um dos precursores da difusão do M<span class='navbar-title-smallcaps'>ÉTODO</span> DeR<span class='navbar-title-smallcaps'>OSE</span> em Buenos Aires, Edgardo Caramella tem mais de 25 de magistério na instituição. Ministra cursos sobre as técnicas e conceitos desta Cultura no Brasil, Portugal, Espanha e França, além de diversas cidades pela Argentina. Introduziu e coordena o programa M<span class='navbar-title-smallcaps'>ÉTODO</span> DeR<span class='navbar-title-smallcaps'>OSE</span> para Empresas neste país."
             title: "Edgardo CARAMELLA"
-          edu: 
+          edu:
             content_html: "Empreendedor do M<span class='navbar-title-smallcaps'>ÉTODO</span> DeR<span class='navbar-title-smallcaps'>OSE</span> desde 1999, dirige sua própria escola na cidade de Porto, em Portugal, desde 2004. Dedica-se à formação de profissionais da rede, e também especializou-se no ensino de técnicas e conceitos para profissionais, empresários e estudantes, principalmente em técnicas respiratórias e administração do stress."
             title: "Eduardo CIRILO"
-          flavio: 
+          flavio:
             content_html: "Fundador de dois empreendimentos do M<span class='navbar-title-smallcaps'>ÉTODO</span> DeR<span class='navbar-title-smallcaps'>OSE</span> na cidade de São Paulo, possui quase 20 anos como ministrante e professor da rede. Como professor, ministrou diversos cursos práticos e teóricos no Brasil e em diversos países da Europa. É especializado em Alta Performance em técnicas."
             title: "Flávio MOREIRA"
-          gus: 
+          gus:
             content_html: "Docente do M<span class='navbar-title-smallcaps'>ÉTODO</span> DeR<span class='navbar-title-smallcaps'>OSE</span>, é também bacharel em Engenharia Mecânica pela Unicamp e pós-graduado em Administração e Marketing pela ESPM. Ministra cursos voltados para qualidade de vida, desenvolvimento corporal, mentalização, meditação e motivação."
             title: "Gustavo OLIVEIRA"
-          joris: 
+          joris:
             content_html: "Professor e praticante do M<span class='navbar-title-smallcaps'>ÉTODO</span> DeR<span class='navbar-title-smallcaps'>OSE</span> desde 1976, é também escritor de extensas obras sobre a parte técnica desta Cultura, sendo presidente da Federação do Estado de Santa Catarina. Trabalha com empresários na aplicação efetiva dos conceitos do M<span class='navbar-title-smallcaps'>ÉTODO</span> DeR<span class='navbar-title-smallcaps'>OSE</span> para aumento da produtividade, da qualidade dos serviços prestados e também do valor das empresas."
             title: "Joris MARENGO"
-          luis: 
+          luis:
             content_html: "Envolvido com o trabalho no M<span class='navbar-title-smallcaps'>ÉTODO</span> DeR<span class='navbar-title-smallcaps'>OSE</span> desde 1988, Luís Lopes foi fundador da primeira escola certificada da rede em Portugal. Ministra cursos desde 1990. É especialista na área de Reprogramação Emocional e Técnicas de Purificação Orgânicas. É especializado em adaptar o M<span class='navbar-title-smallcaps'>ÉTODO</span> DeR<span class='navbar-title-smallcaps'>OSE</span> para profissionais e empresas."
             title: "Luís LOPES"
-          rogerio: 
+          rogerio:
             content_html: "Formado pela Pontifícia Universidade Católica do Paraná (PUC-PR) e pela Universidade Lusófona, de Lisboa, se especializou nas técnicas orgânicas do M<span class='navbar-title-smallcaps'>ÉTODO</span> DeR<span class='navbar-title-smallcaps'>OSE</span>. Ministra cursos em várias cidades do Brasil, América do Sul e Europa."
             title: "Rogério BRANT"
-          rosana: 
+          rosana:
             content_html: "Pratica o Método desde 1988, formou-se em 1995. Ela integra o Conselho Administrativo do M<span class='navbar-title-smallcaps'>ÉTODO</span> DeR<span class='navbar-title-smallcaps'>OSE</span> e ministra desde 2001 cursos em eventos na Europa, Estados Unidos e América Latina. Ela introduziu o M<span class='navbar-title-smallcaps'>ÉTODO</span> DeR<span class='navbar-title-smallcaps'>OSE</span> nas empresas a partir de 1997, neste mesmo ano fundou sua escola em São Paulo. "
             title: "Rosana ORTEGA"
-          yael: 
+          yael:
             content_html: "Demonstradora das técnicas do M<span class='navbar-title-smallcaps'>ÉTODO</span> DeR<span class='navbar-title-smallcaps'>OSE</span> em nível profissional, é também diretora de uma das unidades de ensino da rede DeR<span class='navbar-title-smallcaps'>OSE</span> em Buenos Aires. Como ministrante, tem especialização em temas como formação profissional e vocalização de sons e ultrassons."
             title: "Yael BARCESAT"
-        first_block: 
+        first_block:
           content_html: "Dispomos de centenas de <i>Personal Teachers</i> por todo o mundo. A qualidade da formação de cada um deles é foco constante dentro do M<span class='navbar-title-smallcaps'>ÉTODO</span> DeR<span class='navbar-title-smallcaps'>OSE</span>: eles são preparados por, no mínimo, 4 anos e são anualmente reavaliados para que mantenham o alto nível de excelência. Nós ministramos palestras, <i>workshops</i> e treinamentos sobre temas como boas relações humanas, administração de conflitos, gestão de stress, alta produtividade, foco e outros temas. O contratante pode escolher a língua em que deseja que seu programa seja ministrado: português, inglês, francês, espanhol, italiano e alemão."
           personal_teachers: "personal teachers"
           title: "NOSSOS PROFISSIONAIS"
-        second_block: 
+        second_block:
           content_html: "Dentro do nosso grupo de centenas de profissionais espalhados por todo o globo há uma seleção de alguns especialistas com mais tempo de ensinamento do M<span class='navbar-title-smallcaps'>ÉTODO</span> DeR<span class='navbar-title-smallcaps'>OSE</span>: os Consultores Experts. Todos eles possuem mais de 15 anos de experiência. Estão presentes em eventos internacionais pelas Américas e Europa (ministrando cursos no Brasil, na Argentina, em Portugal, na França e nos Estados Unidos). Os programas como as Consultorias e as Palestras são ministrados exclusivamente pelos Consultores Experts que são considerados os melhores nas suas respectivas áreas de especialização."
           title: "CONSULTORES EXPERTS"
-      footer: 
+      footer:
         see_our_programs: "VER NOSSOS PROGRAMAS"
-      header: 
+      header:
         title: "PERSONAL TEACHERS"
-    partners: 
+    partners:
       subtitle: "SEE WHO TRUST US"
       title: "NOSSOS PARCEIROS"
-    programs: 
-      enterprise: 
-        small_group_teaching: 
+    programs:
+      enterprise:
+        small_group_teaching:
           first_item: "Reforçar os vínculos entre os líderes"
           second_item: "Desenvolver Alta Performance profissional"
           subtitle: "1h duas vezes por semana"
           third_item: "Melhorar a Qualidade de Vida"
           title: "SMALL GROUP TEACHING"
-        small_group_training: 
+        small_group_training:
           first_item: "Desenvolver Alta Performance"
           second_item: "Aumentar a fluidez na comunicação"
           third_item: "Reforçar os vinculos entre os líderes"
           title: "PROGRAMA INTENSIVO"
-        talks: 
+        talks:
           fifth_item: "Gestão emocional"
           first_item: "Bom relacionamento"
           fourth_item: "Liderança sábia"
@@ -304,27 +304,27 @@ pt:
           third_item: "Gestão do tempo"
           title: "PROGRAMA EXTENSIVO"
         title: "PARA SUA EMPRESA"
-        workshop: 
+        workshop:
           first_item: "Bom relacionamento"
           fourth_item: "Liderança sábia"
           second_item: "Administração dos conflitos"
           third_item: "Gestão do tempo"
           title: "CONSULTORIA PARA DIRIGENTES"
-      individuals: 
-        consultory: 
+      individuals:
+        consultory:
           first_item: "Alta Produtividade"
           second_item: "Viver e trabalhar melhor"
           subtitle: "1h por semana"
           third_item: Comportamento
           title: CONSULTORIA
-        personal_teaching: 
+        personal_teaching:
           first_item: "Desenvolva o seu potencial"
           second_item: "Obtenha Alto Desempenho em todas as áreas da sua vida"
           subtitle: "1h duas vezes por semana"
           third_item: "Desfrute de Maior Qualidade de vida"
           title: "PERSONAL TEACHING"
         title: "PARA VOCÊ"
-        training: 
+        training:
           first_item: "Alta Performance"
           fourth_item: Concentração
           second_item: "Boa Forma"
@@ -333,69 +333,69 @@ pt:
           title: TREINAMENTO
       subtitle: "SERVIÇOS PERSONALIZADOS"
       title: "NOSSOS PROGRAMAS"
-    recommend: 
+    recommend:
       message: "O que você vivencia na escola pode ser transportado para o ambiente corporativo. Com o DeRose For Leaders, um programa internacional de consultoria, treinamentos e palestras atendemos diretores, gestores e suas equipes. Deixe aqui os dados. Nós entraremos em contato para ver o tipo de serviço que será melhor para a realidade da sua empresa."
       title: "Querido aluno do DeRose Method,  Juntos podemos fazer a diferença em mais empresas, instalando alta performance e maior qualidade de vida.  O DeRose For Leaders é o segmento do Nosso Método dedicado à comunicação corporativa. E, como é padrão na nossa Rede, priorizamos o crescimento por indicações. Preencha abaixo com os seus dados e a empresa que deseja indicar. Definiremos, junto à sua escola, como daremos seguimento."
-    sidebar: 
-      ericsson: 
+    sidebar:
+      ericsson:
         company: Ericsson
         content_html: "Hace poco más de un año fui a conocer la escuela del Método DeRose en Santiago. Mi día a día es, digamos, algo agitado: tengo una posición directiva en una multinacional de telecomunicaciones, a cargo de plataformas que atienden más de 60 millones de clientes y responsable directo de los resultados financieros de las operaciones de la compañía en 10 países de la región. Mi vivencia del Método me ha llevado a experimentar la “alta performance” como un concepto continuo, que se aplica en cada actividad, en cada día, sin importar lo pequeña o insignificante que parezca. Alta performance significa excelencia, conciencia y autosuperación constantes: es la realización de esa mejor versión de cada uno todo el tiempo."
         name: "John Gomez"
         position: "COO América Latina"
-      experts: 
+      experts:
         see_more: "VER MAIS DETALHES"
         title: "CONHEÇA OS CONSULTORES EXPERTS"
-      group_criteria: 
+      group_criteria:
         content_html: "Todos nossos programas tem um número de vagas limitado. As candidaturas passam por um rigoroso processo seletivo. <br><br> Os principais critérios para admissão são: <p>Indicação</p> <p>Grupo de pessoas com grandes responsabilidades</p> <p>Alinhamento de valores da empresa com os que são cultivados no M<span class='navbar-title-smallcaps'>ÉTODO</span> DeR<span class='navbar-title-smallcaps'>OSE</span>.</p>"
         title: "CRITÉRIOS DE SELEÇÃO"
-      hunter_adams: 
+      hunter_adams:
         company: "HUNTER ADAMS"
         content_html: "  Pratico o MÉTODO DeROSE por um curto período de tempo, e estou feliz em dizer que estou maravilhada pelas técnicas, pela cultura e pelo estilo de vida ensinados nesta metodologia. De imediato, percebi que estava me sentindo mais estável, por mais que as técnicas fossem muito intensas e até mesmo difíceis para uma iniciante como eu. Agora esses exercícios fazem parte do meu cotidiano! O MÉTODO DeROSE é mesmo impressionante, e ajuda a melhorar todos os aspectos da vida. Estou realmente satisfeita por ter encontrado essa cultura, descoberto esse Método e o incentivo a todos que buscam aprimoramento geral."
         name: "Judith ADAMSON"
         position: "Senior HR Advisor"
-      nestle: 
+      nestle:
         content: "Pesquisa Profa. Rosana Ortega"
         title: "Meu bem-estar, com os treinamentos do Método DeRose na Nestlé, está"
-      our_criteria: 
+      our_criteria:
         content_html: "Todos nossos programas tem um número de vagas limitado. As candidaturas passam por um rigoroso processo seletivo. <br><br> Os principais critérios para admissão são: <p>Indicação</p> <p>Percurso profissional que demonstre uma boa capacidade de crescimento pessoal</p> <p>Alinhamento de valores da empresa com os que são cultivados no M<span class='navbar-title-smallcaps'>ÉTODO</span> DeR<span class='navbar-title-smallcaps'>OSE</span>.</p>"
         title: "CRITÉRIOS DE SELEÇÃO"
-      peugeot: 
+      peugeot:
         erwin_data_html: "<h3>Erwin MUSEUR</h3> <h4>Paris</h4> <p>Design Manager</p> <p>PEUGEOT</p> "
         see_more: "LER MAIS"
         testimonial: "\"Desde o início gostei muito das aulas pois senti que produziam efeitos positivos muito rápido. Nos primeiros meses aprendi ferramentas muito eficientes para aumentar a minha vitalidade, melhorei a minha capacidade respiratória assim como a flexibilidade e o tônus muscular. Logo mais comecei a treinar as minhas capacidades mentais. O conhecimento teórico transmitido através das conversas agregou muito valor ao meu crescimento pessoal e profissional.\""
         title: DEPOIMENTO
-      unique_method: 
+      unique_method:
         content: "Os líderes reconhecem o nosso grande difrencial: um know-how incomparável para melhorar o ser humano. Os resultados que conseguimos no aumento da performance e da qualidade de vida são muito expressivos devido à qualidade superlativa das ferramentas que ensinamos. Bastam disciplina e constância na aplicação das nossas técnicas e dos nossos conceitos para sentir um aprimoramento bem consolidado na vida profissional e pessoal."
         title: "O QUE TORNA O NOSSO MÉTODO ÚNICO"
-      volkswagen: 
+      volkswagen:
         company: Volkswagen
         content_html: "De que forma o Método DeROSE contribui para alavancar a minha alta performance?  Através da melhoria do autoconhecimento.  Melhoria da capacidade de raciocínio.  Melhoria da disposição e redução do stress."
         name: "Paulo Rodrigues Guino"
         position: "Gerente Executivo Mundial de Fomento da Qualidade"
-      volkswagen_2: 
+      volkswagen_2:
         company: Volkswagen
         content_html: "As técnicas e conceitos do Método DeRose definitivamente me ajudam a focar e aumentar minha concentração.  As aulas são uma ótima saída para o stress mental e físico.  Eu realmente preciso das técnicas para recuperar energia e manter corpo e mente em boa forma."
         name: "Bernd H. Schimidt-Liermann"
         position: "FT Head Regional South America"
-    slideshow: 
+    slideshow:
       first_phrase_html: "VOCÊ <br> MAIS RÁPIDO, MAIS FORTE,<br> MAIS ASSERTIVO"
       second_phrase_html: "VOCÊ TEM AS METAS <br> NÓS TEMOS AS FERRAMENTAS"
       third_phrase_html: "IN THE BUSINESS WORLD,<br> HUMAN BEING IS WHAT REALLY MATTERS"
-    testimonials: 
-      enterprise: 
-        erwin: 
+    testimonials:
+      enterprise:
+        erwin:
           content_html: "<p>Desde o início gostei das aulas pois senti que produziam efeitos positivos muito rápido. Nos primeiros meses aprendi ferramentas eficazes para aumentar a minha vitalidade, melhorei a minha capacidade respiratória, a flexibilidade e o tônus muscular. Logo mais comecei a treinar as minhas capacidades mentais. O conhecimento teórico transmitido através das conversas também agregou muito valor no meu crescimento pessoal e profissional.</p> <p>Com o M<span class='navbar-title-smallcaps'>ÉTODO</span> DeR<span class='navbar-title-smallcaps'>OSE</span> desenvolvi mais conhecimento de mim mesmo e do meu potencial. Eu me sinto melhor no dia a dia, mais sereno e mais preparado para enfrentar os desafios.</p> <p>Como profissional eu senti uma melhoria significativa na priorização das minhas tarefas, na administração de conflitos, na gestão do stress e na capacidade de liderar. Isso resultou numa progressão muito expressiva na minha carreira pois meus colegas e superiores perceberam o quanto eu tinha progredido e me confiaram novas responsabilidades e cargos de responsabilidade.</p>"
-        first_quote: 
+        first_quote:
           content_html: "“Meu bem-estar melhorou sensivelmente desde que comecei a praticar o M<span class='navbar-title-smallcaps'>ÉTODO</span> DeR<span class='navbar-title-smallcaps'>OSE</span>.”"
           info_html: "<h2>Renata Ribeiro</h2> Consumer Insight Head at Nestlé Brazil"
-        judith: 
+        judith:
           content_html: "<p>Pratico o M<span class='navbar-title-smallcaps'>ÉTODO</span> DeR<span class='navbar-title-smallcaps'>OSE</span> por um curto período de tempo, e estou feliz em dizer que estou maravilhada pelas técnicas, pela cultura e pelo estilo de vida ensinados nesta metodologia. De imediato, percebi que estava me sentindo mais estável, por mais que as técnicas fossem muito intensas e até mesmo difíceis para uma iniciante como eu. Agora esses exercícios fazem parte do meu cotidiano! O M<span class='navbar-title-smallcaps'>ÉTODO</span> DeR<span class='navbar-title-smallcaps'>OSE</span> é mesmo impressionante, e ajuda a melhorar todos os aspectos da vida. Estou realmente satisfeita por ter encontrado essa cultura, descoberto esse Método e o incentivo a todos que buscam aprimoramento geral.</p>"
-        miguel: 
+        miguel:
           content_html: "<p>Bem, antes de praticar, já tinha a noção da interrelação dos corpos emocional, mental e físico. Conhecia os reflexos que o corpo emocional imprimia no corpo físico, tanto benéficos quanto maléficos. Mas pouco sabia dos reflexos que o corpo físico imprimia aos corpos mental e emocional. Então percebi que as posições de equilíbrio físico me ajudaram na estabilidade emocional.</p> <p>Pude utilizar o controle da respiração para me estabilizar ou para me energizar. A consciência corporal adquirida me ajudou a melhor identificar as causas dos desequilíbrios físicos e a evitá-los. Além destes, há muitos outros fatores que no conjunto melhoraram minha qualidade de vida.</p>"
           info_html: "<h2>Miguel <br> DAL'NEGRO CARVALHO</h2> <h3>Curitiba, <br> BRASIL</h3> <h4>Analista<br> Departamento de <br> Organização do Sistema <br> Financeiro<br> BANCO DO BRASIL</h4>"
-        second_quote: 
+        second_quote:
           content_html: "“Acho que o Programa do M<span class='navbar-title-smallcaps'>ÉTODO</span> DeR<span class='navbar-title-smallcaps'>OSE</span> na nossa empresa está muito bem conduzido.”"
           info_html: "<h2>Nanci Yamada</h2> Especialista Desenvolvimento e R&S at Nestle Brazil"
-      institutions: 
+      institutions:
         content_html: "<p>O Comendador DeR<span class='navbar-title-smallcaps'>OSE</span> é apoiado por um expressivo número de instituições culturais, acadêmicas, humanitárias, militares e governamentais que reconhecem o valor da sua obra. Contudo, ele sempre declara: “Aceito essas homenagens porque elas não são para engrandecer o ego de uma pessoa, mas servem como manifestações do respeito que a sociedade presta ao trabalho de todos os profissionais desta área. Assim sendo, quero dividir com você o mérito deste reconhecimento.”</p>"
         header_html: "RECONHECIMENTOS <br> DO MÉTODO DeROSE"
