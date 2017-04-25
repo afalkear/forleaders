@@ -357,6 +357,8 @@ en:
         follow_us: "Nous suivre"
         institutions: Institutions
         title: Testimonials
+      friends:
+        title: "Our contacts"
       title_html: "DeR<span class=\"navbar-title-smallcaps\">OSE</span> F<span class=\"navbar-title-smallcaps\">OR</span> L<span class=\"navbar-title-smallcaps\">EADERS</span>"
     group_consultory_body:
       candidates: CANDIDATES
