@@ -49,7 +49,7 @@ gem 'figaro'
 # gem 'elastic-beanstalk'
 
 # PUMA
-gem 'puma', "~> 3.6.0"
+gem 'puma'
 
 # mysql 2 for ec2
 gem 'mysql2', '~> 0.4.4'
@@ -102,7 +102,7 @@ group :development, :test do
 end
 
 group :staging, :production do
-  gem 'newrelic_rpm', '~> 3.7 '
+  gem 'newrelic_rpm', '~> 3.9.7 '
 end
 
 group :doc do
