@@ -169,7 +169,7 @@ GEM
       nokogiri-happymapper (>= 0.5.4)
       rest-client (>= 1.8.0)
     pkg-config (1.1.7)
-    puma (3.12.1)
+    puma (3.12.4)
     rack (1.6.4)
     rack-test (0.6.3)
       rack (>= 1.0)
